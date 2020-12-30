@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://www.shangzongyu.com/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0800</lastBuildDate>
+    
+        <atom:link href="http://www.shangzongyu.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>http://www.shangzongyu.com/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>http://www.shangzongyu.com/about/</guid>
+      
+        <description>&lt;p&gt;只想做一个快乐的人。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>APUE 和 UNP 环境搭建</title>
+      <link>http://www.shangzongyu.com/post/apue-env-config/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0800</pubDate>
+      
+      <guid>http://www.shangzongyu.com/post/apue-env-config/</guid>
+      
+        <description>&lt;p&gt;这篇文章主要介绍 APUE 和 UNP 的环境搭建介绍。&lt;/p&gt;
+&lt;h2 id=&#34;apue&#34;&gt;APUE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;网站：&lt;a href=&#34;http://www.apuebook.com/code2e.html&#34;&gt;http://www.apuebook.com/code2e.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;版本：APUE 第三版&lt;/li&gt;
+&lt;li&gt;系统：Linux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 下载代码&lt;/span&gt;
+$ wget http://www.apuebook.com/src.3e.tar.gz
+
+&lt;span class=&#34;c1&#34;&gt;# 解压&lt;/span&gt;
+$ tar -zxvf src.3e.tar.gz
+
+&lt;span class=&#34;c1&#34;&gt;# 编译&lt;/span&gt;
+$ &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; apue.3e/
+$ make
+...
+
+&lt;span class=&#34;c1&#34;&gt;# 测试&lt;/span&gt;
+$ &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; intro
+$ ./hello
+hello world from process ID &lt;span class=&#34;m&#34;&gt;3380&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;大功告成。&lt;/p&gt;
+&lt;h3 id=&#34;错误处理&#34;&gt;错误处理&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;...
+gcc -ansi -I../include -Wall -DLINUX -D_GNU_SOURCE  badexit2.c -o badexit2  -L../lib -lapue -pthread -lrt -lbsd
+/usr/bin/ld: cannot find -lbsd
+collect2: error: ld returned 1 exit status
+Makefile:31: recipe for target &amp;#39;badexit2&amp;#39; failed
+make[1]: *** [badexit2] Error 1
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;安装包 &lt;code&gt;libbsd-dev&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;sudo apt install -y libbsd-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;unp&#34;&gt;UNP&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;网站：&lt;a href=&#34;http://www.unpbook.com/&#34;&gt;http://www.unpbook.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;版本：UNP 第三版&lt;/li&gt;
+&lt;li&gt;系统：Linux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;git clone https://github.com/unpbook/unpv13e.git
+
+&lt;span class=&#34;c1&#34;&gt;# 生成配置 makefile&lt;/span&gt;
+$ ./configure
+
+&lt;span class=&#34;c1&#34;&gt;# 构建程序需要的基本库&lt;/span&gt;
+$ &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; lib
+$ make
+
+&lt;span class=&#34;c1&#34;&gt;# 继续构建基础库&lt;/span&gt;
+$ &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ../libfree
+$ make
+
+&lt;span class=&#34;c1&#34;&gt;# 测试&lt;/span&gt;
+$ &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ../intro
+$ make daytimetcpcli
+$ ./daytimetcpcli 127.0.0.1
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
