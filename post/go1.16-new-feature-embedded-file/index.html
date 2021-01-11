@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>APUE 和 UNP 环境搭建 - </title>
+  <title>Go1.16 新特性 - 内嵌文件 - </title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,8 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="ZY Shang" />
-  <meta name="description" content="这篇文章主要介绍 APUE 和 UNP 环境在 Linux 和 FreeBSD 系统下搭建的介绍。
-" />
+  <meta name="description" content="Go1.16 添加了一个新的特性 - 内嵌文件，可以用 embed 包很容易的嵌入文件到 Go 程序中。 这里简单的介绍下。 内嵌的文件内容必须是 string 、 []byte 或者 FS 三个中的一个中。 安装" />
 
   <meta name="keywords" content="TS, IT" />
 
@@ -36,7 +35,7 @@
 <meta name="generator" content="Hugo 0.80.0" />
 
 
-<link rel="canonical" href="/post/apue-env-config/" />
+<link rel="canonical" href="/post/go1.16-new-feature-embedded-file/" />
 
 
 
@@ -60,24 +59,24 @@
 
 
 
-<meta property="og:title" content="APUE 和 UNP 环境搭建" />
-<meta property="og:description" content="这篇文章主要介绍 APUE 和 UNP 环境在 Linux 和 FreeBSD 系统下搭建的介绍。" />
+<meta property="og:title" content="Go1.16 新特性 - 内嵌文件" />
+<meta property="og:description" content="Go1.16 添加了一个新的特性 - 内嵌文件，可以用 embed 包很容易的嵌入文件到 Go 程序中。 这里简单的介绍下。 内嵌的文件内容必须是 string 、 []byte 或者 FS 三个中的一个中。 安装" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/apue-env-config/" />
-<meta property="article:published_time" content="2020-12-30T00:00:00+08:00" />
-<meta property="article:modified_time" content="2021-01-11T12:32:32+08:00" />
-<meta itemprop="name" content="APUE 和 UNP 环境搭建">
-<meta itemprop="description" content="这篇文章主要介绍 APUE 和 UNP 环境在 Linux 和 FreeBSD 系统下搭建的介绍。">
-<meta itemprop="datePublished" content="2020-12-30T00:00:00+08:00" />
-<meta itemprop="dateModified" content="2021-01-11T12:32:32+08:00" />
-<meta itemprop="wordCount" content="1172">
+<meta property="og:url" content="/post/go1.16-new-feature-embedded-file/" />
+<meta property="article:published_time" content="2021-01-11T00:00:00+08:00" />
+<meta property="article:modified_time" content="2021-01-11T16:02:25+08:00" />
+<meta itemprop="name" content="Go1.16 新特性 - 内嵌文件">
+<meta itemprop="description" content="Go1.16 添加了一个新的特性 - 内嵌文件，可以用 embed 包很容易的嵌入文件到 Go 程序中。 这里简单的介绍下。 内嵌的文件内容必须是 string 、 []byte 或者 FS 三个中的一个中。 安装">
+<meta itemprop="datePublished" content="2021-01-11T00:00:00+08:00" />
+<meta itemprop="dateModified" content="2021-01-11T16:02:25+08:00" />
+<meta itemprop="wordCount" content="539">
 
 
 
-<meta itemprop="keywords" content="" />
+<meta itemprop="keywords" content="Go," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="APUE 和 UNP 环境搭建"/>
-<meta name="twitter:description" content="这篇文章主要介绍 APUE 和 UNP 环境在 Linux 和 FreeBSD 系统下搭建的介绍。"/>
+<meta name="twitter:title" content="Go1.16 新特性 - 内嵌文件"/>
+<meta name="twitter:description" content="Go1.16 添加了一个新的特性 - 内嵌文件，可以用 embed 包很容易的嵌入文件到 Go 程序中。 这里简单的介绍下。 内嵌的文件内容必须是 string 、 []byte 或者 FS 三个中的一个中。 安装"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -339,15 +338,18 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">APUE 和 UNP 环境搭建</h1>
+      <h1 class="post-title">Go1.16 新特性 - 内嵌文件</h1>
       
       <div class="post-meta">
-        <time datetime="2020-12-30" class="post-time">
-          2020-12-30
+        <time datetime="2021-01-11" class="post-time">
+          2021-01-11
         </time>
-        
-        <span class="more-meta"> 约 1172 字 </span>
-          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <div class="post-category">
+            <a href="/categories/go/"> Go </a>
+            
+          </div>
+        <span class="more-meta"> 约 539 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
 
         
         
@@ -368,13 +370,19 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#准备">准备</a></li>
-    <li><a href="#编译">编译</a>
+    <li><a href="#安装-go1-dot-16beta1">安装 go1.16beta1</a>
       <ul>
-        <li><a href="#linux">Linux</a></li>
-        <li><a href="#freebsd">FreeBSD</a></li>
+        <li><a href="#使用-go-命令">使用 Go 命令</a></li>
+        <li><a href="#使用-gvm">使用 GVM</a></li>
       </ul>
     </li>
+    <li><a href="#实例">实例</a>
+      <ul>
+        <li><a href="#简单">简单</a></li>
+        <li><a href="#实现文件服务器">实现文件服务器</a></li>
+      </ul>
+    </li>
+    <li><a href="#资料">资料</a></li>
   </ul>
 </nav>
   </div>
@@ -382,19 +390,32 @@
 
     
     <div class="post-content">
-      <p>这篇文章主要介绍 APUE 和 UNP 环境在 Linux 和 FreeBSD 系统下搭建的介绍。</p>
-<ul>
-<li>网站：<a href="http://www.apuebook.com/code2e.html">http://www.apuebook.com/code2e.html</a></li>
-<li>版本：APUE 第三版</li>
-</ul>
-<h2 id="准备">准备</h2>
-<ol>
-<li>到官网下载 APUE 的源码: <code>wget http://www.apuebook.com/src.3e.tar.gz</code></li>
-<li>解压: <code>tar -zxvf src.3e.tar.gz</code></li>
-</ol>
-<h2 id="编译">编译</h2>
-<h3 id="linux">Linux</h3>
-<p>Linux 自己平常使用的 Ubuntu，因此这里介绍在 Ubuntu 20.04 下的搭建。</p>
+      <p>Go1.16 添加了一个新的特性 - 内嵌文件，可以用 <code>embed</code> 包很容易的嵌入文件到 Go 程序中。 这里简单的介绍下。</p>
+<p>内嵌的文件内容必须是 <code>string</code> 、 <code>[]byte</code> 或者 <code>FS</code> 三个中的一个中。</p>
+<h2 id="安装-go1-dot-16beta1">安装 go1.16beta1</h2>
+<p>Go1.16 还是个 beta 版本，在这篇文件发布的时候，为了不和自己使用的 Go 版本冲突，因此可以使用 <code>go</code> 命令和 <code>gvm</code> 来安装 go1.16beta 。</p>
+<h3 id="使用-go-命令">使用 Go 命令</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ go get golang.org/dl/go1.16beta1
+$ go1.16beta1 download
+
+<span class="c1"># 运行 go1.16beta1</span>
+$ go1.16beta1
+</code></pre></td></tr></table>
+</div>
+</div><p>安装好后命令和 <code>go</code> 类似，只是之前的 <code>go</code> 替换成为 <code>go1.16beta1</code> 即可。</p>
+<h3 id="使用-gvm">使用 GVM</h3>
+<blockquote>
+<p>接下来会写一篇关于 Gvm 的文章。</p>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -407,90 +428,23 @@
 </span><span class="lnt"> 8
 </span><span class="lnt"> 9
 </span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># 安装编译需要的工具</span>
-sudo apt install make gcc
-<span class="c1"># 安装开发工具</span>
-sudo apt-get install libbsd-dev
+<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># 安装 go1.16beta1</span>
+$ gvm install go1.16beta1
 
-<span class="c1"># 进入到刚才解压的目录中</span>
-$ <span class="nb">cd</span> apue.3e/
-<span class="c1"># 执行 make 进行编译，如果编译过程中出现错误，看错误解决即可</span>
-$ make
-...
+<span class="c1"># 使用 go1.16beta1</span>
+$ gvm use go1.16beta1
+Now using version go1.16beta1
 
-<span class="c1"># 测试</span>
-$ <span class="nb">cd</span> intro
-$ ./hello
-hello world from process ID <span class="m">3380</span>
+<span class="c1"># 查看 go 的版本</span>
+$ go version
+go version go1.16beta1 darwin/amd64
 </code></pre></td></tr></table>
 </div>
-</div><p>复制生成的静态库 <code>libapue.a</code> 到 <code>/usr/lib</code> 目录下:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">sudo cp include/apue.h /usr/include/
-sudo cp lib/error.c /usr/include/
-sudo cp lib/libapue.a /usr/lib
-</code></pre></td></tr></table>
-</div>
-</div><p>如果使用 <code>err_sys</code> 等函数在编译时找不到的问题： 在 <code>apue.h</code> 文件里 添加 <code>#include &quot;error.c&quot;</code> 即可。</p>
-<h4 id="错误处理">错误处理</h4>
-<!-- raw HTML omitted -->
-<ul>
-<li>
-<p>devrdev.c:(.text+0xc5): undefined reference to `minor'</p>
-<p>详细错误如下：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">/usr/bin/ld: /tmp/cc3oujjJ.o: in function `main&#39;:
-devrdev.c:(.text+0xc5): undefined reference to `minor&#39;
-/usr/bin/ld: devrdev.c:(.text+0xdb): undefined reference to `major&#39;
-/usr/bin/ld: devrdev.c:(.text+0x128): undefined reference to `minor&#39;
-/usr/bin/ld: devrdev.c:(.text+0x13e): undefined reference to `major&#39;
-collect2: error: ld returned 1 exit status
-make[1]: *** [Makefile:18: devrdev] Error 1
-make[1]: Leaving directory &#39;/home/shine/apue.3e/filedir&#39;
-make: *** [Makefile:6: all] Error 1
-</code></pre></td></tr></table>
-</div>
-</div><p>解决方法:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">编译 makefile 不编译 filedir
-</code></pre></td></tr></table>
-</div>
-</div></li>
-</ul>
-<!-- raw HTML omitted -->
-<ul>
-<li>
-<p>buf.c: In function ‘is_unbuffered’:</p>
-<p>详细错误如下：</p>
+</div><h2 id="实例">实例</h2>
+<h3 id="简单">简单</h3>
+<p>文件的内容如下:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -514,125 +468,108 @@ make: *** [Makefile:6: all] Error 1
 </span><span class="lnt">19
 </span><span class="lnt">20
 </span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span><span class="lnt">44
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text"> make[1]: Entering directory &#39;/home/shine/apue.3e/stdio&#39;
-gcc -ansi -I../include -Wall -DLINUX -D_GNU_SOURCE  buf.c -o buf  -L../lib -lapue
-buf.c: In function ‘is_unbuffered’:
-buf.c:90:15: error: ‘FILE’ {aka ‘struct _IO_FILE’} has no member named ‘__pad’; did you mean ‘__pad5’?
-   90 | #define _flag __pad[4]
-      |               ^~~~~
-buf.c:98:13: note: in expansion of macro ‘_flag’
-   98 |  return(fp-&gt;_flag &amp; _IONBF);
-      |             ^~~~~
-buf.c: In function ‘is_linebuffered’:
-buf.c:90:15: error: ‘FILE’ {aka ‘struct _IO_FILE’} has no member named ‘__pad’; did you mean ‘__pad5’?
-   90 | #define _flag __pad[4]
-      |               ^~~~~
-buf.c:104:13: note: in expansion of macro ‘_flag’
-  104 |  return(fp-&gt;_flag &amp; _IOLBF);
-      |             ^~~~~
-buf.c: In function ‘buffer_size’:
-buf.c:92:15: error: ‘FILE’ {aka ‘struct _IO_FILE’} has no member named ‘__pad’; did you mean ‘__pad5’?
-   92 | #define _base __pad[2]
-      |               ^~~~~
-buf.c:111:13: note: in expansion of macro ‘_base’
-  111 |  return(fp-&gt;_base - fp-&gt;_ptr);
-      |             ^~~~~
-buf.c:91:14: error: ‘FILE’ {aka ‘struct _IO_FILE’} has no member named ‘__pad’; did you mean ‘__pad5’?
-   91 | #define _ptr __pad[1]
-      |              ^~~~~
-buf.c:111:25: note: in expansion of macro ‘_ptr’
-  111 |  return(fp-&gt;_base - fp-&gt;_ptr);
-      |                         ^~~~
-buf.c: In function ‘is_unbuffered’:
-buf.c:99:1: warning: control reaches end of non-void function [-Wreturn-type]
-   99 | }
-      | ^
-buf.c: In function ‘is_linebuffered’:
-buf.c:105:1: warning: control reaches end of non-void function [-Wreturn-type]
-  105 | }
-      | ^
-buf.c: In function ‘buffer_size’:
-buf.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
-  115 | }
-      | ^
-make[1]: *** [Makefile:16: buf] Error 1
-make[1]: Leaving directory &#39;/home/shine/apue.3e/stdio&#39;
-make: *** [Makefile:6: all] Error 1
-</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-gnuplot" data-lang="gnuplot"><span class="err">package</span> <span class="err">main
+</span><span class="err">
+</span><span class="err">import</span> <span class="err">&#34;embed&#34;
+</span><span class="err">
+</span><span class="err">func</span> <span class="err">main()</span> <span class="err">{
+</span><span class="err"></span>    <span class="err">//</span> <span class="err">以</span> <span class="err">string</span> <span class="err">的格式读取文件内容
+</span><span class="err"></span>    <span class="err">//go:embed</span> <span class="err">hel</span><span class="k">lo</span><span class="o">.</span><span class="n">txt</span>
+    <span class="err">var</span> <span class="err">s</span> <span class="err">string
+</span><span class="err"></span>    <span class="k">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="err">
+</span><span class="err"></span>    <span class="err">//</span> <span class="err">以</span> <span class="err">[]byte</span> <span class="err">的格式读取文件内容
+</span><span class="err"></span>    <span class="err">//go:embed</span> <span class="err">hel</span><span class="k">lo</span><span class="o">.</span><span class="n">txt</span>
+    <span class="err">var</span> <span class="err">b</span> <span class="err">[]byte
+</span><span class="err"></span>    <span class="k">print</span><span class="p">(</span><span class="nf">string</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="err">
+</span><span class="err"></span>    <span class="err">//</span> <span class="err">以</span> <span class="err">embed.FS</span> <span class="err">的格式读取文件内容
+</span><span class="err"></span>    <span class="err">//go:embed</span> <span class="err">hel</span><span class="k">lo</span><span class="o">.</span><span class="n">txt</span>
+    <span class="err">var</span> <span class="k">f</span> <span class="n">embed</span><span class="o">.</span><span class="n">FS</span>
+    <span class="err">data,</span> <span class="err">_</span> <span class="err">:=</span> <span class="k">f</span><span class="o">.</span><span class="nf">ReadFile</span><span class="p">(</span><span class="s">&#34;hello.txt&#34;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="nf">string</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+<span class="err">}
+</span></code></pre></td></tr></table>
 </div>
-</div><p>解决方法:</p>
-<p>修改 <code>stdio/buf.c</code> 文件, 把 <code>flag</code> 字段全部替换为 =flalgs=。</p>
-<p>修改函数 <code>buffer_size</code> :</p>
-<p><code>return(fp-&gt;_base - fp-&gt;_ptr);</code> 修改为 <code>return(fp-&gt;_IO_buf_end - fp-&gt;_IO_buf_base);</code></p>
-</li>
-</ul>
-<!-- raw HTML omitted -->
-<ul>
-<li>
-<p>Makefile:31: recipe for target &lsquo;badexit2&rsquo; failed</p>
-<p>详细错误如下：</p>
+</div><p>运行结果如下:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">...
-gcc -ansi -I../include -Wall -DLINUX -D_GNU_SOURCE  badexit2.c -o badexit2  -L../lib -lapue -pthread -lrt -lbsd
-/usr/bin/ld: cannot find -lbsd
-collect2: error: ld returned 1 exit status
-Makefile:31: recipe for target &#39;badexit2&#39; failed
-make[1]: *** [badexit2] Error 1
-...
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ go run embed.go
+Hello Go Embed
+Hello Go Embed
 </code></pre></td></tr></table>
 </div>
-</div><p>解决方法:</p>
+</div><h3 id="实现文件服务器">实现文件服务器</h3>
+<p>新建目录 <code>assets</code>, 并且新建一个文件 <code>hello.txt</code> 。</p>
+<blockquote>
+<p>注意：如果 assets 目录为空，则运行下面程序报错 =pattern assets/*: no matching files found=，只需要放一个文件到这个目录就可以了。</p>
+</blockquote>
+<p>文件的内容如下:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+    <span class="s">&#34;embed&#34;</span>
+    <span class="s">&#34;net/http&#34;</span>
+<span class="p">)</span>
+
+<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//go:embed assets/*
+</span><span class="c1"></span>    <span class="kd">var</span> <span class="nx">assets</span> <span class="nx">embed</span><span class="p">.</span><span class="nx">FS</span>
+
+    <span class="nx">fs</span> <span class="o">:=</span> <span class="nx">http</span><span class="p">.</span><span class="nf">FileServer</span><span class="p">(</span><span class="nx">http</span><span class="p">.</span><span class="nf">FS</span><span class="p">(</span><span class="nx">assets</span><span class="p">))</span>
+    <span class="nb">println</span><span class="p">(</span><span class="s">&#34;server listen on port: 8080&#34;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">http</span><span class="p">.</span><span class="nf">ListenAndServe</span><span class="p">(</span><span class="s">&#34;:8080&#34;</span><span class="p">,</span> <span class="nx">fs</span><span class="p">);</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+        <span class="nb">panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>运行结果如下:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># 安装包 libbsd-dev=</span>
-sudo apt install -y libbsd-dev
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ go run static_srver.go
+server listen on port: <span class="m">8080</span>
 </code></pre></td></tr></table>
 </div>
-</div></li>
+</div><p>然后就可以在浏览器上去查看 <code>assets</code> 目录里面的文件了。</p>
+<h2 id="资料">资料</h2>
+<ul>
+<li><a href="https://tip.golang.org/doc/go1.16">Go 1.16 Release Notes - The Go Programming Language</a></li>
+<li><a href="https://tip.golang.org/pkg/embed/">embed - The Go Programming Language</a></li>
 </ul>
-<h3 id="freebsd">FreeBSD</h3>
-<p>FreeBSD 没有那么多发行版，只需要选择版本就可以了，自己日常使用 FreeBSD 12。</p>
-<p>FreeBSD 现在默认使用 <code>llvm</code> 而不是使用 =gcc=，因此需要安装 =gcc=。</p>
-<p>不过自己想使用 <code>clang</code> 编译，而不是使用 <code>gcc</code> 编译，因此需要修改 Makefile, 这个需要耗费一些时间，因此 TODO 吧，尽快更新。</p>
+
     </div>
 
     
@@ -661,25 +598,28 @@ sudo apt install -y libbsd-dev
     
 
     <footer class="post-footer">
-      
+      <div class="post-tags">
+          <a href="/tags/go/">Go</a>
+          
+        </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/go1.16-new-feature-embedded-file/">
+        
+          <a class="next" href="/post/apue-env-config/">
+            <span class="next-text nav-default">APUE 和 UNP 环境搭建</span>
+            <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
 </svg>
 
             </i>
-            <span class="prev-text nav-default">Go1.16 新特性 - 内嵌文件</span>
-            <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        
       </nav>
     </footer>
   </article>

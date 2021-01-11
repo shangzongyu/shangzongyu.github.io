@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on </title>
-    <link>/post/</link>
-    <description>Recent content in Posts on </description>
+    <title>Go on </title>
+    <link>/categories/go/</link>
+    <description>Recent content in Go on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0800</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0800</lastBuildDate><atom:link href="/categories/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go1.16 新特性 - 内嵌文件</title>
       <link>/post/go1.16-new-feature-embedded-file/</link>
@@ -13,15 +13,6 @@
       
       <guid>/post/go1.16-new-feature-embedded-file/</guid>
       <description>Go1.16 添加了一个新的特性 - 内嵌文件，可以用 embed 包很容易的嵌入文件到 Go 程序中。 这里简单的介绍下。 内嵌的文件内容必须是 string 、 []byte 或者 FS 三个中的一个中。 安装</description>
-    </item>
-    
-    <item>
-      <title>APUE 和 UNP 环境搭建</title>
-      <link>/post/apue-env-config/</link>
-      <pubDate>Wed, 30 Dec 2020 00:00:00 +0800</pubDate>
-      
-      <guid>/post/apue-env-config/</guid>
-      <description>&lt;p&gt;这篇文章主要介绍 APUE 和 UNP 环境在 Linux 和 FreeBSD 系统下搭建的介绍。&lt;/p&gt;</description>
     </item>
     
   </channel>
