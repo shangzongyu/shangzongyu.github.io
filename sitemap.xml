@@ -1,27 +1,42 @@
-<?xml-stylesheet type="text/xsl" href="http://www.shangzongyu.com/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.shangzongyu.com/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2017-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.shangzongyu.com/</loc>
+    <loc>/post/apue-env-config/</loc>
+    <lastmod>2021-01-11T12:32:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.shangzongyu.com/categories/</loc>
+    <loc>/</loc>
+    <lastmod>2021-01-11T12:32:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.shangzongyu.com/tags/</loc>
+    <loc>/post/</loc>
+    <lastmod>2021-01-11T12:32:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

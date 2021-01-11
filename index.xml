@@ -2,22 +2,284 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>http://www.shangzongyu.com/</link>
+    <link>/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0800</lastBuildDate>
     
-        <atom:link href="http://www.shangzongyu.com/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>http://www.shangzongyu.com/about/</link>
+      <link>/about/</link>
       <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
       
-      <guid>http://www.shangzongyu.com/about/</guid>
+      <guid>/about/</guid>
       
         <description>&lt;p&gt;只想做一个快乐的人。&lt;/p&gt;
 </description>
+      
+    </item>
+    
+    <item>
+      <title>APUE 和 UNP 环境搭建</title>
+      <link>/post/apue-env-config/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0800</pubDate>
+      
+      <guid>/post/apue-env-config/</guid>
+      
+        <description>&lt;p&gt;这篇文章主要介绍 APUE 和 UNP 环境在 Linux 和 FreeBSD 系统下搭建的介绍。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;网站：&lt;a href=&#34;http://www.apuebook.com/code2e.html&#34;&gt;http://www.apuebook.com/code2e.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;版本：APUE 第三版&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;准备&#34;&gt;准备&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;到官网下载 APUE 的源码: &lt;code&gt;wget http://www.apuebook.com/src.3e.tar.gz&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;解压: &lt;code&gt;tar -zxvf src.3e.tar.gz&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;编译&#34;&gt;编译&lt;/h2&gt;
+&lt;h3 id=&#34;linux&#34;&gt;Linux&lt;/h3&gt;
+&lt;p&gt;Linux 自己平常使用的 Ubuntu，因此这里介绍在 Ubuntu 20.04 下的搭建。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 安装编译需要的工具&lt;/span&gt;
+sudo apt install make gcc
+&lt;span class=&#34;c1&#34;&gt;# 安装开发工具&lt;/span&gt;
+sudo apt-get install libbsd-dev
+
+&lt;span class=&#34;c1&#34;&gt;# 进入到刚才解压的目录中&lt;/span&gt;
+$ &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; apue.3e/
+&lt;span class=&#34;c1&#34;&gt;# 执行 make 进行编译，如果编译过程中出现错误，看错误解决即可&lt;/span&gt;
+$ make
+...
+
+&lt;span class=&#34;c1&#34;&gt;# 测试&lt;/span&gt;
+$ &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; intro
+$ ./hello
+hello world from process ID &lt;span class=&#34;m&#34;&gt;3380&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;复制生成的静态库 &lt;code&gt;libapue.a&lt;/code&gt; 到 &lt;code&gt;/usr/lib&lt;/code&gt; 目录下:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;sudo cp include/apue.h /usr/include/
+sudo cp lib/error.c /usr/include/
+sudo cp lib/libapue.a /usr/lib
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果使用 &lt;code&gt;err_sys&lt;/code&gt; 等函数在编译时找不到的问题： 在 &lt;code&gt;apue.h&lt;/code&gt; 文件里 添加 &lt;code&gt;#include &amp;quot;error.c&amp;quot;&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;h4 id=&#34;错误处理&#34;&gt;错误处理&lt;/h4&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;devrdev.c:(.text+0xc5): undefined reference to `minor&#39;&lt;/p&gt;
+&lt;p&gt;详细错误如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;/usr/bin/ld: /tmp/cc3oujjJ.o: in function `main&amp;#39;:
+devrdev.c:(.text+0xc5): undefined reference to `minor&amp;#39;
+/usr/bin/ld: devrdev.c:(.text+0xdb): undefined reference to `major&amp;#39;
+/usr/bin/ld: devrdev.c:(.text+0x128): undefined reference to `minor&amp;#39;
+/usr/bin/ld: devrdev.c:(.text+0x13e): undefined reference to `major&amp;#39;
+collect2: error: ld returned 1 exit status
+make[1]: *** [Makefile:18: devrdev] Error 1
+make[1]: Leaving directory &amp;#39;/home/shine/apue.3e/filedir&amp;#39;
+make: *** [Makefile:6: all] Error 1
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;解决方法:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;编译 makefile 不编译 filedir
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;buf.c: In function ‘is_unbuffered’:&lt;/p&gt;
+&lt;p&gt;详细错误如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt; make[1]: Entering directory &amp;#39;/home/shine/apue.3e/stdio&amp;#39;
+gcc -ansi -I../include -Wall -DLINUX -D_GNU_SOURCE  buf.c -o buf  -L../lib -lapue
+buf.c: In function ‘is_unbuffered’:
+buf.c:90:15: error: ‘FILE’ {aka ‘struct _IO_FILE’} has no member named ‘__pad’; did you mean ‘__pad5’?
+   90 | #define _flag __pad[4]
+      |               ^~~~~
+buf.c:98:13: note: in expansion of macro ‘_flag’
+   98 |  return(fp-&amp;gt;_flag &amp;amp; _IONBF);
+      |             ^~~~~
+buf.c: In function ‘is_linebuffered’:
+buf.c:90:15: error: ‘FILE’ {aka ‘struct _IO_FILE’} has no member named ‘__pad’; did you mean ‘__pad5’?
+   90 | #define _flag __pad[4]
+      |               ^~~~~
+buf.c:104:13: note: in expansion of macro ‘_flag’
+  104 |  return(fp-&amp;gt;_flag &amp;amp; _IOLBF);
+      |             ^~~~~
+buf.c: In function ‘buffer_size’:
+buf.c:92:15: error: ‘FILE’ {aka ‘struct _IO_FILE’} has no member named ‘__pad’; did you mean ‘__pad5’?
+   92 | #define _base __pad[2]
+      |               ^~~~~
+buf.c:111:13: note: in expansion of macro ‘_base’
+  111 |  return(fp-&amp;gt;_base - fp-&amp;gt;_ptr);
+      |             ^~~~~
+buf.c:91:14: error: ‘FILE’ {aka ‘struct _IO_FILE’} has no member named ‘__pad’; did you mean ‘__pad5’?
+   91 | #define _ptr __pad[1]
+      |              ^~~~~
+buf.c:111:25: note: in expansion of macro ‘_ptr’
+  111 |  return(fp-&amp;gt;_base - fp-&amp;gt;_ptr);
+      |                         ^~~~
+buf.c: In function ‘is_unbuffered’:
+buf.c:99:1: warning: control reaches end of non-void function [-Wreturn-type]
+   99 | }
+      | ^
+buf.c: In function ‘is_linebuffered’:
+buf.c:105:1: warning: control reaches end of non-void function [-Wreturn-type]
+  105 | }
+      | ^
+buf.c: In function ‘buffer_size’:
+buf.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
+  115 | }
+      | ^
+make[1]: *** [Makefile:16: buf] Error 1
+make[1]: Leaving directory &amp;#39;/home/shine/apue.3e/stdio&amp;#39;
+make: *** [Makefile:6: all] Error 1
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;解决方法:&lt;/p&gt;
+&lt;p&gt;修改 &lt;code&gt;stdio/buf.c&lt;/code&gt; 文件, 把 &lt;code&gt;flag&lt;/code&gt; 字段全部替换为 =flalgs=。&lt;/p&gt;
+&lt;p&gt;修改函数 &lt;code&gt;buffer_size&lt;/code&gt; :&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;return(fp-&amp;gt;_base - fp-&amp;gt;_ptr);&lt;/code&gt; 修改为 &lt;code&gt;return(fp-&amp;gt;_IO_buf_end - fp-&amp;gt;_IO_buf_base);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Makefile:31: recipe for target &amp;lsquo;badexit2&amp;rsquo; failed&lt;/p&gt;
+&lt;p&gt;详细错误如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;...
+gcc -ansi -I../include -Wall -DLINUX -D_GNU_SOURCE  badexit2.c -o badexit2  -L../lib -lapue -pthread -lrt -lbsd
+/usr/bin/ld: cannot find -lbsd
+collect2: error: ld returned 1 exit status
+Makefile:31: recipe for target &amp;#39;badexit2&amp;#39; failed
+make[1]: *** [badexit2] Error 1
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;解决方法:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 安装包 libbsd-dev=&lt;/span&gt;
+sudo apt install -y libbsd-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;freebsd&#34;&gt;FreeBSD&lt;/h3&gt;
+&lt;p&gt;FreeBSD 没有那么多发行版，只需要选择版本就可以了，自己日常使用 FreeBSD 12。&lt;/p&gt;
+&lt;p&gt;FreeBSD 现在默认使用 &lt;code&gt;llvm&lt;/code&gt; 而不是使用 =gcc=，因此需要安装 =gcc=。&lt;/p&gt;
+&lt;p&gt;不过自己想使用 &lt;code&gt;clang&lt;/code&gt; 编译，而不是使用 &lt;code&gt;gcc&lt;/code&gt; 编译，因此需要修改 Makefile, 这个需要耗费一些时间，因此 TODO 吧，尽快更新。&lt;/p&gt;</description>
       
     </item>
     

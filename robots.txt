@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://www.shangzongyu.com/sitemap.xml
+Sitemap: sitemap.xml
