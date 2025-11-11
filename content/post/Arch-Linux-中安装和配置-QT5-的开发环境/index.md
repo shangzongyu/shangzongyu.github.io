@@ -12,8 +12,8 @@ weight: 1
 
 环境如下：
 
-- OS: EndeavourOS x86_64
-- QT 版本: QT5
+- OS：EndeavourOS x86_64
+- QT 版本：QT5
 
 ```sh
 # 更新系统

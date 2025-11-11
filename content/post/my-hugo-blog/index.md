@@ -20,7 +20,7 @@ draft: true
 
 每次提交的时候需要执行 `zhlint` 格式化。
 
-使用 `pre-commit` 作为钩子工具.
+使用 `pre-commit` 作为钩子工具。
 
 ```sh
 pip install pre-commit

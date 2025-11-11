@@ -21,12 +21,12 @@ weight: 1
 
 ## 如何从 iPhone 上的视频中提取音频
 
-1️. 安装 [MyMp3](https://apps.apple.com/us/app/mymp3-convert-videos-to-mp3-and-best-music-player/id834818663) 应用程序。
-2️. 启动它并点击右上方的放大镜图标。
-3️. 点击 "Choose video from gallery"。
-4️. 选择您想提取音频的视频。
-5️. 点击三个点，选择 "打开"。
-6️. 选择 "保存到文件"。
+1️。安装 [MyMp3](https://apps.apple.com/us/app/mymp3-convert-videos-to-mp3-and-best-music-player/id834818663) 应用程序。
+2️。启动它并点击右上方的放大镜图标。
+3️。点击 “Choose video from gallery”。
+4️。选择您想提取音频的视频。
+5️。点击三个点，选择 “打开”。
+6️。选择 “保存到文件”。
 
 > 提取的音频将是 MP3 格式的。
 
@@ -45,6 +45,6 @@ Setting -> Screen Time -> Content & Privacy Restrictions -> Content Restrictions
 
 ## 快速锁定 iPhone 的方法
 
-连续续快速按5下锁屏关机键，即可快速锁定 iPhone，Face ID 和 Touch ID 均会失效，需要输入 iPhone 的密码才能重新启用面容解锁功能。
+连续续快速按 5 下锁屏关机键，即可快速锁定 iPhone，Face ID 和 Touch ID 均会失效，需要输入 iPhone 的密码才能重新启用面容解锁功能。
 
 在这个界面，还可以滑动关机，也是快速关机 iPhone 的方法。

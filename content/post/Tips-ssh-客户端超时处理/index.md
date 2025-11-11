@@ -12,7 +12,7 @@ weight: 1
 ---
 
 
-> SSH 客户端连接 SSH 服务器，如果长时间不操作，那么 SSH 就会自动断线，在日常开发中遇到这种情况让人很抓狂。 这篇文章就是为了解决这个问题，如果使用 ZOC 这种图形化工具，比较容易解决做个简单的配置就可以，Mac/Linux 需要做其他的处理。
+> SSH 客户端连接 SSH 服务器，如果长时间不操作，那么 SSH 就会自动断线，在日常开发中遇到这种情况让人很抓狂。这篇文章就是为了解决这个问题，如果使用 ZOC 这种图形化工具，比较容易解决做个简单的配置就可以，Mac/Linux 需要做其他的处理。
 
 ## Windows
 
@@ -26,7 +26,7 @@ weight: 1
 
 ### ZOC
 
-在顶部 `Options -> Edtion session Profile -> Terminal -> Idle time` 设置 **时长** 就可以了。
+在顶部 `Options -> Edtion session Profile -> Terminal -> Idle time` 设置**时长**就可以了。
 
 ![zoc-ssh-timeout-00](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230922_zoc-ssh-timeout-00.png)
 
@@ -36,7 +36,7 @@ weight: 1
 
 > 在 Mac/Linux 可以通过修改 SSH 客户端的配置达到这个目的。
 
-SSH Client 会从以下途径获取配置参数:
+SSH Client 会从以下途径获取配置参数：
 
 * SSH 命令行参数
 * 用户配置文件 `~/.ssh/config`
@@ -75,7 +75,7 @@ Host *
 
 ### 总结
 
-这样设置后 SSH Client 每隔 60s 向 Server 端发送 \`keep-alive\`\` 包，如果发送 30 次, Server 端还无回应则断开连接。
+这样设置后 SSH Client 每隔 60s 向 Server 端发送 \`keep-alive\`\` 包，如果发送 30 次，Server 端还无回应则断开连接。
 
 如果以上都设置了，那么顺序是：**命令** -&gt; **用户配置** -&gt; **系统配置**。
 
@@ -90,12 +90,12 @@ ClientAliveInterval 60
 ClientAliveCountMax 30
 ```
 
-说明:
+说明：
 
-* `ClientAliveInterval`: SSH Server 与 SSH Client 的心跳超时时间，也就是说，如果客户端没有发送任何指令，SSH Server 间隔 `ClientAliveInterval` 秒后，会发送一个空包来和客户都安保持心跳。
-* `ClientAliveCountMax` : 表示重试的最大次数，我们设置为 30，也就是说，如果 Server 像 Client 发送了每隔 `ClientAliveInterval` 秒后，发送了 `ClientAliveCountMax` 次后，都失败了，那么就会断开这个来连接。
+* `ClientAliveInterval`：SSH Server 与 SSH Client 的心跳超时时间，也就是说，如果客户端没有发送任何指令，SSH Server 间隔 `ClientAliveInterval` 秒后，会发送一个空包来和客户都安保持心跳。
+* `ClientAliveCountMax`：表示重试的最大次数，我们设置为 30，也就是说，如果 Server 像 Client 发送了每隔 `ClientAliveInterval` 秒后，发送了 `ClientAliveCountMax` 次后，都失败了，那么就会断开这个来连接。
 
-更多参考 [man ssh\_config](https://linux.die.net/man/5/ssh_config) :
+更多参考 [man ssh\_config](https://linux.die.net/man/5/ssh_config)：
 
 ```bash
 ServerAliveCountMax Sets the number of server alive messages (see below) which may be sent without ssh(1) receiving any messages back from the server. If this threshold is reached while server alive messages are being sent, ssh will disconnect from the server, terminating the session. It is important to note that the use of server alive messages is very different from TCPKeepAlive (below). The server alive messages are sent through the encrypted channel and therefore will not be spoofable. The TCP keepalive option enabled by TCPKeepAlive is spoofable. The server alive mechanism is valuable when the client or server depend on knowing when a connection has become inactive.

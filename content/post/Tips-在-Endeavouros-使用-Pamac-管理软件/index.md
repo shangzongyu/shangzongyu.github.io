@@ -19,7 +19,7 @@ weight: 1
 可以通过如下两种方法进行安装。
 
 1. 从 AUR 仓库中安装
-2. 从 [Chaotic-AUR][Chaotic-AUR] 安装，（推荐）
+2. 从 [Chaotic-AUR][Chaotic-AUR] 安装，(推荐)
 
 ### 从 AUR 仓库中安装
 

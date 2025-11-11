@@ -26,7 +26,7 @@ background-music 是一款 macOS 下的开源音频控制工具，它支持为�
 brew install background-music
 ```
 
-安装后，直接运行 Background Music.app 即可，在“系统设置 > 声音”中会自动切换为默认输出设备。[1]
+安装后，直接运行 Background Music.app 即可，在 “系统设置 > 声音” 中会自动切换为默认输出设备。[1]
 
 ### 相似工具推荐
 
@@ -41,7 +41,7 @@ brew install background-music
 
 ### 结语
 
-macOS 缺失的“多应用音量管理”功能，通过 background-music 这款免费小工具，可以轻松补齐。如果有更高阶需求，则可选择 Sound Control 或 SoundSource 这类专业软件辅助。[1]
+macOS 缺失的 “多应用音量管理” 功能，通过 background-music 这款免费小工具，可以轻松补齐。如果有更高阶需求，则可选择 Sound Control 或 SoundSource 这类专业软件辅助。[1]
 
 [1](https://github.com/kyleneideck/BackgroundMusic)
 

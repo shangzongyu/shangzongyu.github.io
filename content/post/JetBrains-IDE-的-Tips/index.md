@@ -16,11 +16,11 @@ weight: 1
 
 ### 行排序
 
-通过 `⌘ ⇧ A`(macOS) / `Ctrl+Shift+A` (Windows/Linux) 打开 Actions，搜索 `Sort Lines` 进行排序。
+通过 `⌘ ⇧ A` (macOS) / `Ctrl+Shift+A` (Windows/Linux) 打开 Actions，搜索 `Sort Lines` 进行排序。
 
 ### Open Blank Diff Window
 
-通过 `⌘ ⇧ A`(macOS) / `Ctrl+Shift+A` (Windows/Linux) 打开 Actions，搜索 `Blank Diff Window` 会打开左右里两个用户 differ 的窗口。
+通过 `⌘ ⇧ A` (macOS) / `Ctrl+Shift+A` (Windows/Linux) 打开 Actions，搜索 `Blank Diff Window` 会打开左右里两个用户 differ 的窗口。
 
 ### Scratch files
 
@@ -29,25 +29,25 @@ weight: 1
 
 操作：`Select File | New | Scratch File`，或者如下快捷键
 
- or press  on macOS or Windows/Linux.
+or press on macOS or Windows/Linux。
 
 - macOS：`⇧ ⌘ N`
 - Windows/Linux：`Ctrl+Alt+Shift+Insert`
 
 ### 多光标
 
-启动方式1:
+启动方式 1：
 
-1. 启动多光标：按两次 `⌥`（macOS）/ `Ctrl`（Windows/Linux），并且不释放它
+1. 启动多光标：按两次 `⌥` (macOS)/ `Ctrl` (Windows/Linux)，并且不释放它
 2. 接着按向上箭头或者向下箭头进行选择
 
-启动方式2:
+启动方式 2：
 
-按住 `⌥⇧` macOS）/ `Shift+Alt`（Windows/Linux）然后使用光标进行选择
+按住 `⌥⇧` macOS）/ `Shift+Alt` (Windows/Linux) 然后使用光标进行选择
 
-启动方式3:
+启动方式 3：
 
-按着 `⌥`（macOS）/ `Alt`（Windows/Linux）使用鼠标进行选择多光标的操作。
+按着 `⌥` (macOS)/ `Alt` (Windows/Linux) 使用鼠标进行选择多光标的操作。
 
 > 删除所有的按 `Escape` 键值。
 

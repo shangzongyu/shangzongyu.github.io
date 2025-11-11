@@ -11,7 +11,7 @@ weight: 1
 
 > 介绍如何在 Linux 下 Linux 下编译和使用 APUE 源码。
 
-![apue-cover-v3](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_apue-cover-v3.png align="center")
+![apue-cover-v3] (https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_apue-cover-v3.png align=“center”)
 
 ## 环境
 
@@ -20,7 +20,7 @@ weight: 1
 - Gcc 版本：11.2.0
 - GNU Make 版本：4.3
 
-> [EndeavourOS](https://endeavouros.com/) 是基于 Arch Linux 的发行版，默认已经安装 `make` 、`gcc` 以及 `libbsd` 。
+> [EndeavourOS](https://endeavouros.com/) 是基于 Arch Linux 的发行版，默认已经安装 `make`、`gcc` 以及 `libbsd`。
 
 ## 开始
 
@@ -31,9 +31,9 @@ weight: 1
 
 > 最重要的是编译这一步，编译其实很简单，只是会报错，我们一步一步解决即可。
 
-### 1. 下载源码
+### 1。下载源码
 
-到 [官网](http://www.apuebook.com/code2e.html) 下载 APUE 的源码或者使用命令 `wget` 进行下载
+到[官网](http://www.apuebook.com/code2e.html)下载 APUE 的源码或者使用命令 `wget` 进行下载
 
 > 这里使用 `wget` 命令下载。
 
@@ -45,7 +45,7 @@ $ wget http://www.apuebook.com/src.3e.tar.gz
 $ tar -zxvf src.3e.tar.gz
 ```
 
-### 2. 编译
+### 2。编译
 
 ```sh
 # 进入 apue 源码目录
@@ -84,7 +84,7 @@ make: *** [Makefile:6: all] Error 1
 
 修改成功后，再次执行 `make` 命令。
 
-##### 错误 2：编译 `devrdev.c` 出错，`devrdev.c:(.text+0xc7): undefined reference to`minor'\`
+##### 错误 2：编译 `devrdev.c` 出错，`devrdev.c:(.text+0xc7): undefined reference to` minor ‘\`
 
 详细的如下：
 
@@ -252,4 +252,4 @@ $ ./hello_process
 
 ### 其他
 
-如果使用 `err_sys` 等函数在编译时找不到的问题： 在 `apue.h` 文件里 添加 `#include "error.c"` 即可。
+如果使用 `err_sys` 等函数在编译时找不到的问题：在 `apue.h` 文件里添加 `#include "error.c"` 即可。

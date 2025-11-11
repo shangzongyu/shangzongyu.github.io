@@ -12,8 +12,8 @@ weight: 1
 
 > 自己使用的各种 `fetch` 工具。
 
-- `neofetch` 获取系统信息, shell 实现
-- `fastfetch` 获取系统信息, C 实现 比 `neofetch` 快很多 。neofetch 停止更新，现在使用 fastfetch
+- `neofetch` 获取系统信息，shell 实现
+- `fastfetch` 获取系统信息，C 实现比 `neofetch` 快很多。neofetch 停止更新，现在使用 fastfetch
 - `cpufetch` 获取 CPU 信息
 - `onefetch` 获取 Git 项目信息信息
 

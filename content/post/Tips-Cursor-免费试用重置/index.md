@@ -11,10 +11,10 @@ weight: 1
 
 ## 介绍
 
-* Github: [https://github.com/yuaotian/go-cursor-help](https://github.com/yuaotian/go-cursor-help)
+* Github：[https://github.com/yuaotian/go-cursor-help](https://github.com/yuaotian/go-cursor-help)
     
 
-解决 Cursor 免费订阅期间出现出现下面的问题:
+解决 Cursor 免费订阅期间出现出现下面的问题：
 
 ```plaintext
 Too many free trial accounts used on this machine. Please upgrade to pro. We have this limit in place to prevent abuse. Please let us know if you believe this is a mistake.

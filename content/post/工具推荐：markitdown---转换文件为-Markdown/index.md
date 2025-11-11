@@ -29,16 +29,16 @@ weight: 1
     
 * HTML
     
-* Text-based formats (CSV, JSON, XML)
+* Text-based formats (CSV，JSON，XML)
     
 * ZIP files (iterates over contents)
     
 
-> Github: [https://github.com/microsoft/markitdown](https://github.com/microsoft/markitdown)
+> Github：[https://github.com/microsoft/markitdown](https://github.com/microsoft/markitdown)
 
 ## 使用
 
-> 工具支持多种使用方式：命令行，Python API 以及 Docker等，下面以命令行为主介绍。
+> 工具支持多种使用方式：命令行，Python API 以及 Docker 等，下面以命令行为主介绍。
 
 ```sh
 # 安装

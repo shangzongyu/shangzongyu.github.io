@@ -46,7 +46,7 @@ Obsidian 默认的情况下一行显示一张，如果想要照片排列成类�
 }
 ```
 
-在需要的文档头部 `front-matter` 添加配置写上 `cssclass: img-grid` ，如下：
+在需要的文档头部 `front-matter` 添加配置写上 `cssclass: img-grid`，如下：
 
 ```yaml
 ---
@@ -63,7 +63,7 @@ cssclass: img-grid
     
 ## 最终效果如下
 
-![obsidian-css-grid](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_obsidian-css-grid.png align="center")
+![obsidian-css-grid] (https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_obsidian-css-grid.png align=“center”)
 
 ## 参考
 

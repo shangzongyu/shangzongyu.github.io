@@ -59,7 +59,7 @@ export ANTHROPIC_AUTH_TOKEN="your Zhipu API key"
 
 #### 1、错误处理 `API Error`
 
-若出现类似 **“API Error 401 ”** 的报错，只需删除旧的 API Key，重新生成一个新的即可解决。
+若出现类似 **“API Error 401”** 的报错，只需删除旧的 API Key，重新生成一个新的即可解决。
 
 错误如下图：
 

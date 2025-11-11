@@ -16,7 +16,7 @@ weight: 1
 
 ## 安装
 
-Github: &lt;[https://github.com/YiNNx/cmd-wrapped](https://github.com/YiNNx/cmd-wrapped)\&gt;
+Github： &lt;[https://github.com/YiNNx/cmd-wrapped](https://github.com/YiNNx/cmd-wrapped)\&gt;
 
 ```plaintext
 # 使用 cargo
@@ -34,7 +34,7 @@ cargo run -- 2023
 ./target/debug/cmd-wrapped 2023
 ```
 
-## cmd-wrapped 查看自己 2023年命令使用
+## cmd-wrapped 查看自己 2023 年命令使用
 
 我的运行结果如下图。
 
@@ -44,7 +44,7 @@ cargo run -- 2023
 
 ![cmd-wrapped-02](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2024/upgit_20240106_cmd-wrapped-02.png)
 
-## cmd-wrapped 查看自己 2024年命令使用
+## cmd-wrapped 查看自己 2024 年命令使用
 
 ![cmd-wrapped-2024](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2024/upgit_20241221_cmd-wrapped-2024.png)
 

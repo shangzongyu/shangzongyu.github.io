@@ -32,11 +32,11 @@ sudo sed -i 's/us.archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.lis
 sudo apt update
 ```
 
-也可以使用别人 snullp 大叔开发的 [配置生成器](https://mirrors.ustc.edu.cn/repogen) 。
+也可以使用别人 snullp 大叔开发的[配置生成器](https://mirrors.ustc.edu.cn/repogen)。
 
 ### FreeBSD
 
-FreeBSD `pkg` 包管理器官方源配置是 `/etc/pkg/FreeBSD.conf` 。
+FreeBSD `pkg` 包管理器官方源配置是 `/etc/pkg/FreeBSD.conf`。
 
 其中的 `url` 参数配置了官方仓库的地址，我们需要把它替换为镜像站的地址。该配置文件是 FreeBSD 系统的一部分，请不要直接创建，而是创建 `/usr/local/etc/pkg/repos/FreeBSD.conf` 覆盖配置，文件内容如下：
 
@@ -56,13 +56,13 @@ FreeBSD: {
 
 修改配置后，运行 `pkg update -f` 更新索引。
 
-> 小技巧: 使用 HTTPS 可以有效避免国内运营商的缓存劫持，但需要事先安 `security/ca_root_nss` 软件包。 参考这个 [https://mirrors.ustc.edu.cn/help/freebsd-pkg.html](https://mirrors.ustc.edu.cn/help/freebsd-pkg.html)
+> 小技巧：使用 HTTPS 可以有效避免国内运营商的缓存劫持，但需要事先安 `security/ca_root_nss` 软件包。参考这个 [https://mirrors.ustc.edu.cn/help/freebsd-pkg.html](https://mirrors.ustc.edu.cn/help/freebsd-pkg.html)
 
 ## 编程语言
 
 ### Python
 
-> 更换 pip 源，使用 阿里云 提供的镜像，创建 `$HOME/.pip/pip.conf` ，写入如下内容：
+> 更换 pip 源，使用阿里云提供的镜像，创建 `$HOME/.pip/pip.conf`，写入如下内容：
 
 ```ini
 [global]
@@ -84,11 +84,11 @@ trusted-host=mirrors.aliyun.com
 export GOPROXY=https://goproxy.cn,direct
 ```
 
-其他可用的 GOPROXY：[https://goproxy.io/zh](https://goproxy.io/zh) 一个全球代理 为 Go 模块而生。
+其他可用的 GOPROXY：[https://goproxy.io/zh](https://goproxy.io/zh) 一个全球代理为 Go 模块而生。
 
 ### Rust
 
-`.bashrc` 或者 `.zshrc` 中添加如下内容。
+`.bashrc` 或者 `.zshrc` 中添加如下内容。
 
 > 中科大的源
 

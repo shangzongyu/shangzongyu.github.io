@@ -12,7 +12,7 @@ weight: 1
 
 > 在常用的软件中设置自己常用的字体。
 
-- 中文使用  [霞鹜文楷](https://github.com/lxgw/LxgwWenKai)，很好看的中文字体题。
+- 中文使用[霞鹜文楷](https://github.com/lxgw/LxgwWenKai)，很好看的中文字体题。
 - 英文使用 [FiraCode](https://github.com/tonsky/FiraCode)
 
 ## VS Code 设置
@@ -67,7 +67,7 @@ weight: 1
 
 打开配置 `Preferences -> Profiles -> Default -> Font`：
 
-- `Font`  设置为 `Fira Code Nerd Font`
+- `Font` 设置为 `Fira Code Nerd Font`
 - `Non-ASCIIFont` 设置为 `LXGW WenKai Mono`
 
 ## Typroa

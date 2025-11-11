@@ -35,7 +35,7 @@ Change: 2024-01-14 10:23:24.184641738 +0800
 Birth: 2023-07-28 11:19:08.063247240 +0800
 ```
 
-> `stat` 的 [man page](https://man7.org/linux/man-pages/man1/stat.1.html).
+> `stat` 的 [man page](https://man7.org/linux/man-pages/man1/stat.1.html)。
 
 还有一个通用的方法如下：
 
@@ -43,7 +43,7 @@ Birth: 2023-07-28 11:19:08.063247240 +0800
 $ tune2fs: Bad magic number in super-block while trying to open /dev/vdb1
 ```
 
-> PS: 有可能报错，推荐第一种方法。
+> PS：有可能报错，推荐第一种方法。
 
 ## Debian 系列
 
@@ -53,7 +53,7 @@ $ tune2fs: Bad magic number in super-block while trying to open /dev/vdb1
 $ sudo head -n1 /var/log/installer/syslog
 ```
 
-> PS: 虚拟机或者容器安装有可能会报错：没有 syslog 文件。
+> PS：虚拟机或者容器安装有可能会报错：没有 syslog 文件。
 
 ## RHEL 系列
 
@@ -75,4 +75,4 @@ $ head -n1 /var/log/pacman.log
 
 ## 参考资料
 
-* [Linux Installation Date: How to Discover Your System’s Age](https://linuxiac.com/how-to-find-linux-os-installation-date/)
+* [Linux Installation Date：How to Discover Your System’s Age](https://linuxiac.com/how-to-find-linux-os-installation-date/)

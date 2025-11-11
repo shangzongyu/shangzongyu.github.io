@@ -36,7 +36,7 @@ sudo mv ./goji /usr/local/bin/
 
 ## 使用
 
-简单运行  `goji` 就可以开始交付模式：
+简单运行 `goji` 就可以开始交付模式：
 
 官方示例：![](https://raw.githubusercontent.com/muandane/goji/refs/heads/main/public/goji-demo.gif)
 
@@ -50,4 +50,4 @@ goji init --repo
 goji init --global
 ```
 
-> 配置文件的详细配置参考 [官方文档](https://github.com/muandane/goji)。
+> 配置文件的详细配置参考[官方文档](https://github.com/muandane/goji)。

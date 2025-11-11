@@ -14,7 +14,7 @@ weight: 1
 
 > 介绍：一个功能强大的 Telegram 聊天记录搜索工具，支持向量搜索和语义匹配。基于 OpenAI 的语义向量技术，让你的 Telegram 消息检索更智能、更精准。
 
-- Github: <https://github.com/groupultra/telegram-search>
+- Github：<https://github.com/groupultra/telegram-search>
 
 ### 使用
 
@@ -40,6 +40,6 @@ podman-compose up -d
 
 启动后就可以在 `http://localhost:3333` 看到界面。
 
-> PS: 需要修改配置文件 `config.yml`
-> 1. `database.host` 的值为数据库容器的服务名称 "pgvector"
-> 2. 修改 `api.telegram.apiKey` 为自己的 Open API Key。
+> PS：需要修改配置文件 `config.yml`
+> 1。`database.host` 的值为数据库容器的服务名称 “pgvector”
+> 2。修改 `api.telegram.apiKey` 为自己的 Open API Key。

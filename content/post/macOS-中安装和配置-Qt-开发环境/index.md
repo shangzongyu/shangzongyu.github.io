@@ -15,7 +15,7 @@ weight: 1
 
 ## 环境
 
-- macOS 版本: macOS 12.3.1
+- macOS 版本：macOS 12.3.1
 - Qt 版本：Qt 5
 - Shell 版本：Zsh
 
@@ -46,17 +46,17 @@ export PKG_CONFIG_PATH="/usr/local/opt/qt@5/lib/pkgconfig"
 
 在 `Qt Creator -> Preferences -> Kits -> Qt Versions -> Add` 添加 `qmake` 的位置，可以通过搜索 `qmake` 的位置。
 
-> PS：这个吐槽下 Qt Creator 的设计， 不能让用户自己直接通过 Add 输入路径，非要通过搜索才可以。
+> PS：这个吐槽下 Qt Creator 的设计，不能让用户自己直接通过 Add 输入路径，非要通过搜索才可以。
 
-![macos-config-qt-00](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_macos-config-qt-00.png align="center")
+![macos-config-qt-00] (https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_macos-config-qt-00.png align=“center”)
 
 配置完 Qt Versions 后，在 `Qt Creator -> Preferences -> Kits -> Kits` 配置 Qt 的版本，如下图：
 
-![macos-config-qt-01](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_macos-config-qt-01.png align="center")
+![macos-config-qt-01] (https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_macos-config-qt-01.png align=“center”)
 
 ## 总结
 
-macOS 需要安装 [Qt](https://www.qt.io/) 和 [Qt Creator](https://www.qt.io/product/development-tools):
+macOS 需要安装 [Qt](https://www.qt.io/) 和 [Qt Creator](https://www.qt.io/product/development-tools)：
 
 - Qt - 提供相应的 GUI 框架。
 - Qt Creator - 一个跨平台的 IDE 而已，理论上可以使用其他任意 IDE，但是为了方便还是使用这个。

@@ -24,7 +24,7 @@ upgit 可以快捷地将文件上传到 Github 仓库并得到其直链。简洁
 - 支持多种上传器
 - 不限制文件类型
 - 支持从剪贴板上传
-- 自定义自动重命名规则（包括路径）
+- 自定义自动重命名规则 (包括路径)
 - 可通过替换规则实现 CDN 加速
 - 可通过环境变量配置
 - 将 URL 输出到标准输出/剪贴板，支持 Markdown 格式
@@ -38,7 +38,7 @@ upgit 可以快捷地将文件上传到 Github 仓库并得到其直链。简洁
 
 ## 安装
 
-从 [这里](https://github.com/pluveto/upgit/releases) 下载系统对应的二进制版本，这里以 macOS 为例。
+从[这里](https://github.com/pluveto/upgit/releases)下载系统对应的二进制版本，这里以 macOS 为例。
 
 ```sh
 # 新建目录
@@ -61,7 +61,7 @@ echo 'export PATH="${PATH}:${HOME}/.local/bin/upgit"' >> ~/.zshrc"
 touch config.toml
 ```
 
-> 配置文件 `config.toml` 在程序的同目录下，配置参考 [这里](https://github.com/pluveto/upgit/blob/main/config.sample.zh-CN.toml)。
+> 配置文件 `config.toml` 在程序的同目录下，配置参考[这里](https://github.com/pluveto/upgit/blob/main/config.sample.zh-CN.toml)。
 
 ## 实例
 

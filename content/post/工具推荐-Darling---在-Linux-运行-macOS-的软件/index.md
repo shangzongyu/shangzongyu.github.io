@@ -20,7 +20,7 @@ weight: 1
 
 不同的平台需要安装的软件不同，这里以 Ubuntu 22.04 为例子进行介绍。
 
-> 其他的 Linux 的发行版参考 [这个](https://docs.darlinghq.org/build-instructions.html)。
+> 其他的 Linux 的发行版参考[这个](https://docs.darlinghq.org/build-instructions.html)。
 
 ### 下载需要库
 
@@ -33,7 +33,7 @@ libavformat-dev libavcodec-dev libswresample-dev libdbus-1-dev libxkbfile-dev \
 libssl-dev python2
 ```
 
-### 2. clone darling 项目
+### 2。clone darling 项目
 
 ```sh
 # clone 项目

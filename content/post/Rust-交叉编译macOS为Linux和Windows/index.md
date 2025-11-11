@@ -23,14 +23,14 @@ weight: 1
 ## 环境
 
 - macOS：
-	- OS：`macOS 12.3.1 21E258 x86_64`
-	- rustc：`rustc 1.60.0 (7737e0b5c 2022-04-04)`
-	- rustup：`rustup 1.24.3 (ce5817a94 2021-05-31)`
-- Linux： 
-	- OS：`EndeavourOS Linux x86_64`
-	- kernel：`5.17.1-arch1-1`
-	- rustc：`rustc 1.60.0 (7737e0b5c 2022-04-04)`
-	- rustup：`rustup 1.24.3 (ce5817a94 2021-05-31)`
+  - OS：`macOS 12.3.1 21E258 x86_64`
+  - rustc：`rustc 1.60.0 (7737e0b5c 2022-04-04)`
+  - rustup：`rustup 1.24.3 (ce5817a94 2021-05-31)`
+- Linux：
+  - OS：`EndeavourOS Linux x86_64`
+  - kernel：`5.17.1-arch1-1`
+  - rustc：`rustc 1.60.0 (7737e0b5c 2022-04-04)`
+  - rustup：`rustup 1.24.3 (ce5817a94 2021-05-31)`
 
 > 首先需要安装 Rust，使用命令 `` 。
 
@@ -46,7 +46,7 @@ cargo new --bin hello
 
 ```rust
 fn main() {
-	println!("Hello World!\n");
+  println!("Hello World!\n");
 }
 ```
 
@@ -59,13 +59,13 @@ fn main() {
 [musl] 在 macOS 上使用 musl-cross，musl-cross 是用来专门编译到 Linux 的工具链，下面进行安装：
 
 ```sh
-$ brew install FiloSottile/musl-cross/musl-cross    
+brew install FiloSottile/musl-cross/musl-cross    
 ```
 
 还需要创建 `musl-gcc`：
 
 ```sh
-$ ln -s /usr/local/bin/x86_64-linux-musl-gcc /usr/local/bin/musl-gcc
+ln -s /usr/local/bin/x86_64-linux-musl-gcc /usr/local/bin/musl-gcc
 ```
 
 添加对应的 Target，只需要执行一次就可以了：
@@ -193,15 +193,15 @@ error: requires `sized` lang_item
 那么怎么解决的呢，我发现自己之前使用 [Homebrew] 安装过 `rust`，而且还使用官方命令 `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` 再次进行安装，导致 rust 工具链对不上，只需要做如下操作就可以了：
 
 1. 先完全卸载
-	```sh
-	$ brew uninstall rust
-	$ rustup self uninstall
-	```
+  ```sh
+  $ brew uninstall rust
+  $ rustup self uninstall
+  ```
 
 2. 重新安装：
-	```sh
-	$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-	```
+  ```sh
+  $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  ```
 
 ### error：linking with `cc` failed：exit status：1
 
@@ -228,8 +228,7 @@ error: requires `sized` lang_item
 - [Everything you need to know about cross compiling Rust programs](https://rustrepo.com/repo/japaric-rust-cross-rust-embedded#cross-compiling-with-rustc)
 - [Cross-compiling Rust from ARM to x86-64](https://burgers.io/cross-compile-rust-from-arm-to-x86-64)
 - [Cross compiling Rust from Linux to macOS](https://wapl.es/rust/2019/02/17/rust-cross-compile-linux-to-macos.html)
-
-[musl]: https://musl.libc.org/
-[EndeavourOS]: https://endeavouros.com/
-[Homebrew]: https://brew.sh/
-[osxcross]: https://github.com/tpoechtrager/osxcross
+- [musl]: https://musl.libc.org/
+- [EndeavourOS]: https://endeavouros.com/
+- [Homebrew]: https://brew.sh/
+- [osxcross]: https://github.com/tpoechtrager/osxcross

@@ -1,7 +1,13 @@
 {
     "cSpell.words": [
+        "CACHEDIR",
         "disqus",
         "opengraph",
+        "pacman",
+        "println",
+        "rustc",
+        "rustup",
+        "SYSV",
         "zhlint"
     ]
 }

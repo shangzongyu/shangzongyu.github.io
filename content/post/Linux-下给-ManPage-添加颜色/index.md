@@ -14,7 +14,7 @@ weight: 1
 
 ## oh-my-zsh
 
-如果使用的是  `on-my-zhs`， 可以通过添加插件 `colored-man-pages` 就可实现 man page 带有颜色。
+如果使用的是 `on-my-zhs`，可以通过添加插件 `colored-man-pages` 就可实现 man page 带有颜色。
 
 ## bash
 
@@ -48,7 +48,7 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 特点：
 
-- 跨平台，支持 Unix, VMS, MSDOS 以及 win32 systems
+- 跨平台，支持 Unix，VMS，MSDOS 以及 win32 systems
 - 支持多窗口
 - 只是方向键
 - 使用空格进行向下滚动

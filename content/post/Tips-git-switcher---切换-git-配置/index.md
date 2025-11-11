@@ -45,4 +45,4 @@ git-switcher rename
 
 使用这个工具之后，它只是帮助我们修改 `user.name` 这个变量，但是我们提交代码的时候还有一个关联的变量 `user.email` 这个需要我们自己修改，这个需要注意。
 
-不过我们也可以通过配置文件进行修改，配置文件在 `~/.config/gitconfigs` 。
+不过我们也可以通过配置文件进行修改，配置文件在 `~/.config/gitconfigs`。

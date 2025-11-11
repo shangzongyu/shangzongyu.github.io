@@ -20,9 +20,9 @@ weight: 1
 - **Arc Browser**  
   Chrome 内核重新设计，主打多空间、多配置和隐私保护，非常适合多任务场景。  
   官网：[Arc Browser](https://arc.net/) 
-  特色功能包括“Spaces”、“Profiles”、“Split View”，以及贴心的隐私保护。[1]
+  特色功能包括 “Spaces”、“Profiles”、“Split View”，以及贴心的隐私保护。[1]
 
-- **Comet（AI 浏览器）** 
+- **Comet (AI 浏览器)** 
   Perplexity 推出的新型 AI 浏览器，集成智能助手，具备智能分类、自动整理、快速邮件回复等能力。让你在处理繁杂信息时更加轻松高效。[2]
   官网：[Comet](https://www.perplexity.ai/comet)
 
@@ -65,7 +65,7 @@ weight: 1
 
 ![OneTab](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-onetab.jpg)
 
-### Tampermonkey （油猴脚本管理）
+### Tampermonkey (油猴脚本管理)
 
 > 油猴脚本
 
@@ -78,7 +78,7 @@ weight: 1
 
 ####  Bilibili 批量拉黑助手
 
-- 介绍：Bilibili 批量拉黑助手 - 快速拉黑神人号、擦边号、广告号。Chrome 扩展,完全本地运行。
+- 介绍：Bilibili 批量拉黑助手 - 快速拉黑神人号、擦边号、广告号。Chrome 扩展，完全本地运行。
 - 插件地址：<https://github.com/Nothing1024/bilibili-block-extension>
 
 ![bilibili-block-extension](https://github.com/Nothing1024/bilibili-block-extension/blob/main/assets/index.png)
@@ -102,14 +102,14 @@ weight: 1
 #### 阅读：Douban Book+
 
 - 介绍：在豆瓣读书页面显示多个在线资源的链接，看到好书，想读就读，一键即达。
-- 插件地址： <https://chromewebstore.google.com/detail/douban-book+/lkmnoeojcpmcpjlbhbjbilpmccfljdoj>
+- 插件地址：<https://chromewebstore.google.com/detail/douban-book+/lkmnoeojcpmcpjlbhbjbilpmccfljdoj>
 
 ![Douban Book+](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-douban-book+.png)
 
 #### 豆伴：豆瓣账号备份工具
 
 - 介绍：用于备份豆瓣网的用户数据及图片，并支持将备份数据导出到 Excel 文档
-- 插件地址： <https://chromewebstore.google.com/detail/%E8%B1%86%E4%BC%B4%EF%BC%9A%E8%B1%86%E7%93%A3%E8%B4%A6%E5%8F%B7%E5%A4%87%E4%BB%BD%E5%B7%A5%E5%85%B7/ghppfgfeoafdcaebjoglabppkfmbcjdd>
+- 插件地址：<https://chromewebstore.google.com/detail/%E8%B1%86%E4%BC%B4%EF%BC%9A%E8%B1%86%E7%93%A3%E8%B4%A6%E5%8F%B7%E5%A4%87%E4%BB%BD%E5%B7%A5%E5%85%B7/ghppfgfeoafdcaebjoglabppkfmbcjdd>
 
 ![豆伴：豆瓣账号备份工具](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-douban.png)
 
@@ -149,13 +149,13 @@ weight: 1
 #### Save All Resources
 
 - 介绍：一键保存网页所有静态资源，网盘备份、离线必备。
-- 插件地址： <https://chromewebstore.google.com/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb>
+- 插件地址：<https://chromewebstore.google.com/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb>
 
 ![Save All Resources](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-youtube-save-all-resources.jpg)
 
 #### 网站分析：wappalyzer
 
 - 介绍：快速分析技术栈、第三方服务和网站架构，产品与技术调研必备。
-- 插件地址： <https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg>
+- 插件地址：<https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg>
 
 ![wappalyzer](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-wappalyzer.png)
