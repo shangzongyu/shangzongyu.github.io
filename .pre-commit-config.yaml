@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: zhlint-md-fix
+        name: zhlint fix markdown
+        entry: zhlint --fix
+        language: system
+        types: [markdown]
+        always_run: true

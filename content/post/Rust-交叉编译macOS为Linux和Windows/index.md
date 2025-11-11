@@ -23,14 +23,14 @@ weight: 1
 ## 环境
 
 - macOS：
-	- OS: `macOS 12.3.1 21E258 x86_64`
-	- rustc: `rustc 1.60.0 (7737e0b5c 2022-04-04)`
-	- rustup: `rustup 1.24.3 (ce5817a94 2021-05-31)`
-- Linux: 
-	- OS: `EndeavourOS Linux x86_64`
-	- kernel: `5.17.1-arch1-1`
-	- rustc: `rustc 1.60.0 (7737e0b5c 2022-04-04)`
-	- rustup: `rustup 1.24.3 (ce5817a94 2021-05-31)`
+	- OS：`macOS 12.3.1 21E258 x86_64`
+	- rustc：`rustc 1.60.0 (7737e0b5c 2022-04-04)`
+	- rustup：`rustup 1.24.3 (ce5817a94 2021-05-31)`
+- Linux： 
+	- OS：`EndeavourOS Linux x86_64`
+	- kernel：`5.17.1-arch1-1`
+	- rustc：`rustc 1.60.0 (7737e0b5c 2022-04-04)`
+	- rustup：`rustup 1.24.3 (ce5817a94 2021-05-31)`
 
 > 首先需要安装 Rust，使用命令 `` 。
 
@@ -54,15 +54,15 @@ fn main() {
 
 ### 编译为 Linux 平台
 
-> 要实现 Linux 平台可以运行的程序，那么需要使用 [musl] 来替代 `glibc`，[musl] 实现了`Linux libc`。
+> 要实现 Linux 平台可以运行的程序，那么需要使用 [musl] 来替代 `glibc`，[musl] 实现了 `Linux libc`。
 
-[musl] 在 macOS 上使用 musl-cross,   musl-cross 是用来专门编译到 Linux 的工具链， 下面进行安装：
+[musl] 在 macOS 上使用 musl-cross，musl-cross 是用来专门编译到 Linux 的工具链，下面进行安装：
 
 ```sh
 $ brew install FiloSottile/musl-cross/musl-cross    
 ```
 
-还需要创建`musl-gcc`:
+还需要创建 `musl-gcc`：
 
 ```sh
 $ ln -s /usr/local/bin/x86_64-linux-musl-gcc /usr/local/bin/musl-gcc
@@ -74,7 +74,7 @@ $ ln -s /usr/local/bin/x86_64-linux-musl-gcc /usr/local/bin/musl-gcc
 rustup target add x86_64-unknown-linux-musl
 ```
 
-修改配置文件 `~/.cargo/config` （如果没有可以新建），添加如下内容：
+修改配置文件 `~/.cargo/config` (如果没有可以新建)，添加如下内容：
 
 ```ini
 [target.x86_64-unknown-linux-musl]
@@ -117,13 +117,13 @@ target/x86_64-unknown-linux-musl/debug/hello: ELF 64-bit LSB pie executable, x86
 brew install mingw-w64  
 ```
 
-接下来添加 `mingw-64` 对应的 Target，只需要执行一次就可以了:
+接下来添加 `mingw-64` 对应的 Target，只需要执行一次就可以了：
 
 ```sh
 $ rustup target add x86_64-pc-windows-gnu
 ```
 
-修改配置文件 `~/.cargo/config` （如果没有可以新建），设置 Linker，添加如下内容：
+修改配置文件 `~/.cargo/config` (如果没有可以新建)，设置 Linker，添加如下内容：
 
 ```sh
 [target.x86_64-pc-windows-gnu]
@@ -161,11 +161,11 @@ target/x86_64-pc-windows-gnu/debug/hello.exe: PE32+ executable (console) x86-64,
 
 ### 编译为 macOS 平台
 
-在 Linux 编译 macOS 平台使用 [osxcross]。 [osxcross] 可以在 Linux/FreeBSD/OpenBSD 以及 Android (Termux）交叉编译 macOS 平台的工具。
+在 Linux 编译 macOS 平台使用 [osxcross]。[osxcross] 可以在 Linux/FreeBSD/OpenBSD 以及 Android (Termux) 交叉编译 macOS 平台的工具。
 
 我看了下 [osxcross] 编译为 macOS 平台真的还是挺麻烦的，我决定不编译为 macOS 版本，何必为难自己呢，何况自己有 Mac 电脑呢 😂。
 
-### 编译为  Windows 平台
+### 编译为 Windows 平台
 
 `mingw-w64` 是用来编译到 Windows 的工具链，Arch 对应的包为 [mingw-w64-gcc](https://archlinux.org/packages/community/x86_64/mingw-w64-gcc/)，接下来进行安装：
 
@@ -173,7 +173,7 @@ target/x86_64-pc-windows-gnu/debug/hello.exe: PE32+ executable (console) x86-64,
 sudo pacman -S mingw-w64-gcc
 ```
 
-接下来就容易了，和 “macOS 编译为 Linux 和 Windows” 一样了，就是添加 Target ，修改配置文件，然后编译就可以了。
+接下来就容易了，和 “macOS 编译为 Linux 和 Windows” 一样了，就是添加 Target，修改配置文件，然后编译就可以了。
 
 ## FAQ
 
@@ -190,7 +190,7 @@ error[E0463]: can't find crate for `std`
 error: requires `sized` lang_item
 ```
 
-那么怎么解决的呢，我发现自己之前使用 [Homebrew] 安装过 `rust` ，而且还使用官方命令 `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` 再次进行安装，导致 rust 工具链对不上，只需要做如下操作就可以了：
+那么怎么解决的呢，我发现自己之前使用 [Homebrew] 安装过 `rust`，而且还使用官方命令 `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` 再次进行安装，导致 rust 工具链对不上，只需要做如下操作就可以了：
 
 1. 先完全卸载
 	```sh
@@ -203,7 +203,7 @@ error: requires `sized` lang_item
 	$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 	```
 
-### error: linking with `cc` failed: exit status: 1
+### error：linking with `cc` failed：exit status：1
 
 配置 `~/.cargo/config` 或者在项目内 `.cargo/config` 文件就可以解决这个问题。
 
@@ -211,8 +211,8 @@ error: requires `sized` lang_item
 
 介绍了在 macOS 编译为 Linux/Windows 以及 Linux 平台编译为 macOS/Windows，其实就两个三个步骤：
 
-1. 添加相应的 Target 
-2. 安装对应的 Linker 
+1. 添加相应的 Target
+2. 安装对应的 Linker
 3. 修改配置文件
 
 从 macOS 编译其他的平台，其实是比较容易的，从其他平台编译为 macOS 平台却不那么简单，最终自己放弃了。
@@ -225,7 +225,7 @@ error: requires `sized` lang_item
 - [How to Cross-Compile from Mac to Linux on Rust](https://stackoverflow.com/questions/57797695/how-to-cross-compile-from-mac-to-linux-on-rust)
 - [MUSL support for fully static binaries](https://doc.rust-lang.org/edition-guide/rust-2018/platform-and-target-support/musl-support-for-fully-static-binaries.html)
 - [Cross-compile and link a static binary on macOS for Linux with cargo and rust](https://chr4.org/blog/2017/03/15/cross-compile-and-link-a-static-binary-on-macos-for-linux-with-cargo-and-rust/)
-- [Everything you need to know about cross compiling Rust programs!](https://rustrepo.com/repo/japaric-rust-cross-rust-embedded#cross-compiling-with-rustc)
+- [Everything you need to know about cross compiling Rust programs](https://rustrepo.com/repo/japaric-rust-cross-rust-embedded#cross-compiling-with-rustc)
 - [Cross-compiling Rust from ARM to x86-64](https://burgers.io/cross-compile-rust-from-arm-to-x86-64)
 - [Cross compiling Rust from Linux to macOS](https://wapl.es/rust/2019/02/17/rust-cross-compile-linux-to-macos.html)
 
