@@ -1,0 +1,130 @@
+---
+title: 工具推荐：音乐
+description: ''
+date: 2025-07-08 16:00:57+0000
+weight: 1
+---
+
+
+## 网易云
+
+### AlgerMusicPlayer
+
+![music-algerkong](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250708_music-algerkong.png)
+
+> 网易云第三方音乐播放器、本地服务、桌面歌词、音乐下载、最高音质。
+
+- Github: <https://github.com/algerkong/AlgerMusicPlayerw>
+
+主要功能如下:
+
+- 音乐推荐
+- 网易云账号登录与同步
+- 功能
+    - 播放历史记录
+    - 歌曲收藏管理
+    - 歌单 MV 排行榜 每日推荐
+    - 自定义快捷键配置（全局或应用内）
+- 界面与交互
+    - 沉浸式歌词显示（点击左下角封面进入）
+    - 独立桌面歌词窗口
+    - 明暗主题切换
+    - 迷你模式
+    - 状态栏控制
+    - 多语言支持
+- 音乐功能
+    - 支持歌单、MV、专辑等完整音乐服务
+    - 音乐资源解
+    - EQ均衡器
+    - 定时播放 远程控制播放 倍速播放
+    - 高品质音乐
+    - 音乐文件下载
+    - 搜索 MV、音乐、专辑、歌单、bilibili
+    - 音乐单独选择音源解析
+-  技术特性
+    - 本地化服务，无需依赖在线API
+    - 全平台适配（Desktop & Web & Mobile Web & Android<测试> & ios<后续>）
+
+### YesPlayMusic
+
+![music-YesPlayMusic](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250708_music-YesPlayMusic.png)
+
+> 高颜值的第三方网易云播放器，跨平台支持 Windows / macOS / Linux。
+
+- Github：<https://github.com/qier222/YesPlayMusic>
+- 官网：<https://music.qier222.com/>
+- 安装：
+	```sh
+	# macOS
+	brew install --cask yesplaymusic
+	```
+
+特性：
+
+- 网易云账号登录（扫码/手机/邮箱登录）
+- 支持 MV 播放
+- 支持歌词显示
+- 支持私人 FM / 每日推荐歌曲
+- 无任何社交功能
+- 海外用户可直接播放（需要登录网易云账号）
+- 支持 [UnblockNeteaseMusic](https://github.com/UnblockNeteaseMusic/server#%E9%9F%B3%E6%BA%90%E6%B8%85%E5%8D%95)，自动使用[各类音源](https://github.com/UnblockNeteaseMusic/server#%E9%9F%B3%E6%BA%90%E6%B8%85%E5%8D%95)替换变灰歌曲链接 （网页版不支持）
+    - 「各类音源」指默认启用的音源。
+    - YouTube 音源需自行安装 `yt-dlp`。
+- 每日自动签到（手机端和电脑端同时签到）
+- Light/Dark Mode 自动切换
+- 支持 Touch Bar
+- 支持 PWA，可在 Chrome/Edge 里点击地址栏右边的 ➕ 安装到电脑
+- 支持 Last.fm Scrobble
+- 自定义快捷键和全局快捷键
+- 支持 Mpris
+- 更多特性...
+
+## Spotube
+
+![music-spotube_banner](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250708_music-spotube_banner.png)
+
+> 开源跨平台的音乐客户端，可以听 Spotify 和 Youtube 的音乐。
+
+- Github： <https://github.com/KRTirtho/spotube>
+
+特点：
+
+- 跨平台：macOS/Linux/Windows
+- 没有广告
+- 可以下载音乐
+- 跨平台支持
+- 更小的资源使用
+- 本地性能比较好
+- 没有数据监控
+- 开源
+- ...
+
+## Youtube Music
+
+![music-youtube](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250708_music-youtube.png)
+
+> 一个可以使用自己定义的插件的 Youtube Music 的桌面客户端的封装。
+
+- Github：<https://github.com/th-ch/youtube-music>
+- 官网：<https://th-ch.github.io/youtube-music/>
+- 安装：
+	```sh
+	# macOS
+	brew install th-ch/youtube-music/youtube-music
+	```
+
+支持的插件很多，列举几个我使用的：
+
+- **Ad Blocker**: Block all ads and tracking out of the box
+- **Album Actions**: Adds Undislike, Dislike, Like, and Unlike buttons to apply this to all songs in a playlist or album
+- **Album Color Theme**: Applies a dynamic theme and visual effects based on the album color palette
+- **Ambient Mode**: Applies a lighting effect by casting gentle colors from the video, into your screen’s background
+- **Bypass Age Restrictions**: bypass YouTube's age verification
+- - **Downloader**: downloads MP3 [directly from the interface](https://user-images.githubusercontent.com/61631665/129977677-83a7d067-c192-45e1-98ae-b5a4927393be.png) [(youtube-dl)](https://github.com/ytdl-org/youtube-dl)
+- **Scrobbler**: Adds scrobbling support for [Last.fm](https://www.last.fm/) and [ListenBrainz](https://listenbrainz.org/)
+- **No Google Login**: Remove Google login buttons and links from the interface
+- **Picture-in-picture**: allows to switch the app to picture-in-picture mode
+- **Playback Speed**: Listen fast, listen slow! [Adds a slider that controls song speed](https://user-images.githubusercontent.com/61631665/129976003-e55db5ba-bf42-448c-a059-26a009775e68.png)
+- [**SponsorBlock**](https://github.com/ajayyy/SponsorBlock): Automatically Skips non-music parts like intro/outro or parts of music videos where the song isn't playing
+- **TouchBar**: 自定义 TouchBar 布局
+- ...

@@ -1,0 +1,24 @@
+---
+title: 使用阿里云盘半年的感受
+description: 使用阿里云盘有半年了，自己的感受如下：
+slug: 5l255so6zi6yem5lqr55uy5y2k5bm055qe5osf5yx
+date: 2023-07-02 16:46:37+0000
+image: cover.jpg
+tags:
+    - cloud-storage
+weight: 1
+---
+
+
+使用阿里云盘有半年了，自己的感受如下：
+
+- 优势：速度很不错，价格不贵（两年 250元左右，8T 空间）
+- 缺点：不适合存储私人文件，因为会扫描这些文件，然后可能有些文件就下载不了。
+
+> 自己的主要用途：视频存储网盘。
+
+GitHub 地址: [https://github.com/toolinbox/iPic](https://github.com/toolinbox/iPic)
+
+![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2023/07/adrive-faq-00.png)
+
+![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2023/07/adrive-faq-01.png)
