@@ -1,6 +1,6 @@
 ---
 title: 工具推荐：Telegram
-description: '> 主要收集 Telegram 相关的一些工具。'
+description: '主要收集 Telegram 相关的一些工具。'
 slug: telegram
 date: 2025-07-08 03:52:56+0000
 image: cover.jpg

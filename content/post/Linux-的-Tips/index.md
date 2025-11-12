@@ -1,6 +1,6 @@
 ---
 title: 'Linux 的 Tips'
-description: '> Linux 使用过程中的一些技巧整理。'
+description: 'Linux 使用过程中的一些技巧整理。'
 slug: linux-tips
 date: 2022-05-16 05:46:47+0000
 image: cover.jpg

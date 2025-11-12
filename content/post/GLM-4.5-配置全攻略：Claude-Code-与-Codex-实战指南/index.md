@@ -18,7 +18,7 @@ weight: 1
 本文将介绍 GLM 4.5 在 **Claude Code** 和 **Codex** 中的配置方法，帮助你快速上手。
 目前智谱还推出了一个 **“编程套餐” GLM Coding Plan**，有限时优惠，基础版本 3 个月仅需 60 元，我也入手体验了一下。
 
-![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250927_GLM4.5-Coding-Plan.png)
+![GLM4.5-Coding-Plan](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250927_GLM4.5-Coding-Plan.png)
 
 在使用 Claude Code 和 Codex 前，需要先安装 **Node.js**。
 

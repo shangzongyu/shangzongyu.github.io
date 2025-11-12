@@ -1,6 +1,6 @@
 ---
 title: 工具推荐：浏览器和浏览器插件
-description: '> 主要收集自己使用的浏览器和插件。'
+description: '主要收集自己使用的浏览器和插件。'
 slug: 5bel5yw35o6o6i2q77ya5rwp6kei5zmo5os5lu2
 date: 2025-07-08 02:30:14+0000
 tags:

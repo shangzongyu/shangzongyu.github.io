@@ -1,6 +1,6 @@
 ---
 title: 工具推荐：Wakapi
-description: '> 之前使用 Wakatime 记录自己日常编程时间消耗，支持各种不同的编辑器，包括 VSCode 系列、Vim、Emacs 以及 JetBrains 系列。'
+description: '之前使用 Wakatime 记录自己日常编程时间消耗，支持各种不同的编辑器，包括 VSCode 系列、Vim、Emacs 以及 JetBrains 系列。'
 slug: wakapi
 date: 2025-08-30 08:44:46+0000
 tags:

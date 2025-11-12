@@ -1,6 +1,6 @@
 ---
 title: 'Linux 下编译和使用 APUE 源码'
-description: '> 介绍如何在 Linux 下 Linux 下编译和使用 APUE 源码。'
+description: '介绍如何在 Linux 下 Linux 下编译和使用 APUE 源码。'
 slug: linux-config-apue
 date: 2022-05-02 16:00:00+0000
 tags:

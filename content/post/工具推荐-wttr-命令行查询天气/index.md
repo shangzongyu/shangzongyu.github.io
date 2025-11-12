@@ -1,6 +1,6 @@
 ---
 title: '工具推荐: wttr - 命令行查询天气'
-description: '> wttr.in 用于在命令行查询天气'
+description: 'wttr.in 用于在命令行查询天气'
 slug: wttr
 date: 2022-07-12 01:55:23+0000
 tags:

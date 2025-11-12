@@ -1,6 +1,6 @@
 ---
 title: 'Rust 交叉编译 macOS 为 Linux 和 Windows'
-description: '> Rust 支持交叉编译，可以 macOS 平台编译出 Linux 或者 Windows 可运行的程序，或者在 Linux 平台编译 macOS 或者 Windows 可运行的程序。'
+description: 'Rust 支持交叉编译，可以 macOS 平台编译出 Linux 或者 Windows 可运行的程序，或者在 Linux 平台编译 macOS 或者 Windows 可运行的程序。'
 slug: rust-macos-linux-windows
 date: 2022-05-15 06:23:27+0000
 image: cover.jpg
