@@ -1,14 +1,13 @@
 ---
-title: 'Kvm 使用介绍'
+title: 'KVM 使用介绍'
 description: '自己在公司中有一台 Linux 主机，以及一台 Mac 电脑，两个电脑系统不同，使用起来需要我来回在不同的设备上进行切换，有些麻烦，因此就找到 KVM Switch 这个方案。'
-slug: kvm
+slug: KVM
 date: 2024-11-05 06:49:19+0000
 image: cover.jpg
 tags:
     - tools
 weight: 1
 ---
-
 
 ## 为什么要使用 KVM
 
