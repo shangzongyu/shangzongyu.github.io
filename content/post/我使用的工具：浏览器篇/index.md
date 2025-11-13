@@ -1,5 +1,5 @@
 ---
-title: "'我使用的工具：浏览器篇'"
+title: '我使用的工具：浏览器篇'
 description: 主要收集自己使用的浏览器和插件。
 slug: 浏览器和浏览器插件
 date: 2025-07-08 02:30:14+0000
@@ -8,7 +8,6 @@ tags:
   - browsers
 weight: 1
 ---
-
 
 > 主要收集自己使用的浏览器和插件。
 
@@ -20,10 +19,10 @@ weight: 1
 
 - **Arc Browser**  
   Chrome 内核重新设计，主打多空间、多配置和隐私保护，非常适合多任务场景。  
-  官网：[Arc Browser](https://arc.net/) 
+  官网：[Arc Browser](https://arc.net/)
   特色功能包括 “Spaces”、“Profiles”、“Split View”，以及贴心的隐私保护。[1]
 
-- **Comet (AI 浏览器)** 
+- **Comet (AI 浏览器)**
   Perplexity 推出的新型 AI 浏览器，集成智能助手，具备智能分类、自动整理、快速邮件回复等能力。让你在处理繁杂信息时更加轻松高效。[2]
   官网：[Comet](https://www.perplexity.ai/comet)
 
@@ -36,7 +35,7 @@ weight: 1
 - 介绍：实现 Youtube 同时显示双语字幕，适合英语听力或外语学习爱好者。
 - 插件地址：<https://chromewebstore.google.com/detail/youtube-dual-subtitles/hkbdddpiemdeibjoknnofflfgbgnebcm>
 
-![YouTube™ Dual Subtitles](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_youtube-dual-subtitles.png)
+![YouTube™ Dual Subtitles](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-youtube-dual-subtitles.png)
 
 #### AdShield - Ultimate Ad Blocker for YouTube
 
@@ -77,7 +76,7 @@ weight: 1
 
 ### B 站
 
-####  Bilibili 批量拉黑助手
+#### Bilibili 批量拉黑助手
 
 - 介绍：Bilibili 批量拉黑助手 - 快速拉黑神人号、擦边号、广告号。Chrome 扩展，完全本地运行。
 - 插件地址：<https://github.com/Nothing1024/bilibili-block-extension>
