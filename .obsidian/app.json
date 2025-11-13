@@ -1,1 +1,6 @@
-{}
+{
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "./"
+}
