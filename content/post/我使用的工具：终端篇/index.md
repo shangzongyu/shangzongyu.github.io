@@ -1,11 +1,13 @@
 ---
 title: 我使用的工具：终端篇
-description: '作为一名开发者，终端（Terminal）是我们日常工作中接触最频繁的工具之一。它不仅是与操作系统交互的窗口，更是一个可以高度定制、提升效率的利器。在过去的几年里，我尝试了市面上许多主流和新兴的终端应用，从追求性能的 GPU 加速终端，到集成'
-slug: 5oir5l255so55qe5bel5yw377ya57ui56uv56h
+description: '介绍我使用过的总管工具'
+slug: '终端工具'
 date: 2025-09-13 08:40:49+0000
 weight: 1
+tags:
+  - terminal
+  - tools
 ---
-
 
 作为一名开发者，终端 (Terminal) 是我们日常工作中接触最频繁的工具之一。它不仅是与操作系统交互的窗口，更是一个可以高度定制、提升效率的利器。在过去的几年里，我尝试了市面上许多主流和新兴的终端应用，从追求性能的 GPU 加速终端，到集成 AI 的新时代终端，各有千秋。
 
@@ -50,7 +52,7 @@ weight: 1
 
 ## WezTerm
 
-![WezTerm](/Users/tomshine/Code/github-shine/task/learn/01%20blog/hash-node/assets/wezterm-vday-screenshot.png)
+![WezTerm](wezterm-vday-screenshot.png)
 
 - **官网**：<https://wezterm.org/>
 - **Github**：<https://github.com/wezterm/wezterm>
@@ -77,12 +79,12 @@ weight: 1
 
 ## Tabby
 
-![Tabby](/Users/tomshine/Code/github-shine/task/learn/01%20blog/hash-node/assets/tabby.png)
+![Tabby](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_tabby.png)
 
 - **官网**：<https://tabby.sh/>
 - **Github**：<https://github.com/eugeny/tabby>
 - **平台**：macOS / Linux / Windows
-- **特点**：
+- **特点**：%%  %%
     - 开源
     - 功能丰富
     - 可自定义扩展
@@ -101,7 +103,7 @@ weight: 1
 
 ## Warp
 
-![Warp](./assets/warp.png)
+![Warp](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_warp.png)
 
 - **官网**：<https://www.warp.dev/>
 - **平台**：macOS / Linux / Windows
@@ -111,7 +113,7 @@ weight: 1
 
 ## WaveTerm
 
-![WaveTerm](./assets/waveterm.webp)
+![WaveTerm](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_waveterm.png)
 
 - **官网**：<https://www.waveterm.dev/>
 - **Github**：<https://github.com/wavetermdev/waveterm>
