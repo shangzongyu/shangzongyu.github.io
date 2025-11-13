@@ -18,7 +18,7 @@ weight: 1
 
 Github： &lt;[https://github.com/YiNNx/cmd-wrapped](https://github.com/YiNNx/cmd-wrapped)\&gt;
 
-```plaintext
+```sh
 # 使用 cargo
 cargo install cmd-wrapped
 

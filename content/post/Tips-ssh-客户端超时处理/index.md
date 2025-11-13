@@ -1,16 +1,15 @@
 ---
-title: 'Tips: ssh 客户端超时处理'
-description: 'SSH 客户端连接 SSH 服务器，如果长时间不操作，那么 SSH 就会自动断线，在日常开发中遇到这种情况让人很抓狂。 这篇文章就是为了解决这个问题，如果使用 ZOC 这种图形化工具，比较容易解决做个简单的配置就可以，Mac/Linux'
+title: "Tips: ssh 客户端超时处理"
+description: "''"
 slug: ssh
 date: 2023-10-14 10:47:46+0000
 image: cover.jpg
 tags:
-    - tips
-    - ssh
-    - faq
+  - tips
+  - ssh
+  - faq
 weight: 1
 ---
-
 
 > SSH 客户端连接 SSH 服务器，如果长时间不操作，那么 SSH 就会自动断线，在日常开发中遇到这种情况让人很抓狂。这篇文章就是为了解决这个问题，如果使用 ZOC 这种图形化工具，比较容易解决做个简单的配置就可以，Mac/Linux 需要做其他的处理。
 

@@ -1,13 +1,12 @@
 ---
 title: '拥抱 Conventional Commits：让你的代码提交信息更有价值'
-description: '在日常的编码过程中，版本控制软件是我们不可或缺的伙伴。每一次的代码提交，都像是为项目留下一个重要的“时间戳”，记录着我们在上线或其他关键操作时所做的修改。然而，当项目团队不断壮大，或者项目本身变得日益庞大复杂时，随意编写的 Commit 信'
+description: '写更有价值的 Git Commit 信息'
 slug: conventional-commits
 date: 2025-09-13 07:31:11+0000
 tags:
     - git-tips
 weight: 1
 ---
-
 
 在日常的编码过程中，版本控制软件是我们不可或缺的伙伴。每一次的代码提交，都像是为项目留下一个重要的 “时间戳”，记录着我们在上线或其他关键操作时所做的修改。然而，当项目团队不断壮大，或者项目本身变得日益庞大复杂时，随意编写的 Commit 信息，哪怕在自己看来清晰明了，也可能给团队协作带来不便。
 
@@ -17,7 +16,7 @@ weight: 1
 
 Conventional Commits 规范为每次提交定义了如下的标准结构：
 
-```
+```sh
 <type>[optional scope]: <description>
 
 [optional body]
@@ -79,10 +78,10 @@ Conventional Commits 规范为每次提交定义了如下的标准结构：
 
     ```
     chore(release)!!: prepare for 1.0.0 stable release
-
+    
     Finalized documentation, updated dependencies, and ran comprehensive
     end-to-end tests to ensure stability for the first major release.
-
+    
     BREAKING CHANGE: The project is now considered stable for production use.
     ```
 

@@ -1,5 +1,5 @@
 ---
-title: 工具推荐：Telegram
+title: 工具推荐：Telegram 相关
 description: '主要收集 Telegram 相关的一些工具。'
 slug: telegram
 date: 2025-07-08 03:52:56+0000
@@ -43,3 +43,25 @@ podman-compose up -d
 > PS：需要修改配置文件 `config.yml`
 > 1。`database.host` 的值为数据库容器的服务名称 “pgvector”
 > 2。修改 `api.telegram.apiKey` 为自己的 Open API Key。
+
+## 第三方客户端
+
+### AyuGram
+
+- Github：<https://github.com/AyuGram/AyuGramDesktop>
+- 平台：macOS/Linux/Winodws
+- 开源
+
+特点：
+
+
+
+### Swiftgram
+
+- 官网：<https://swiftgram.app/>
+- 开源，但是有付费功能
+
+特点：
+
+- 快速格式化
+- 

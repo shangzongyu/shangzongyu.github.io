@@ -1,14 +1,13 @@
 ---
 title: 常用字体设置
 description: '在常用的软件中设置自己常用的字体。'
-slug: 5bi455so5a2x5l2t6k6572u
+slug: 常用字体设置
 date: 2024-01-07 10:33:52+0000
 tags:
     - fonts
     - tips
 weight: 1
 ---
-
 
 > 在常用的软件中设置自己常用的字体。
 
@@ -27,7 +26,7 @@ weight: 1
 
 在 `Settings-> General -> Custom theme -> Edit custom.css` 添加如下内容
 
-```
+```json
 @font-face {
   font-family: "FiraCode Nerd Font Mono";
   font-weight: 200 900;

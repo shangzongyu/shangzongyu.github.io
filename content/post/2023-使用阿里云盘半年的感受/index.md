@@ -1,7 +1,7 @@
 ---
-title: 使用阿里云盘半年的感受
-description: 使用阿里云盘有半年了，自己的感受如下：
-slug: 5l255so6zi6yem5lqr55uy5y2k5bm055qe5osf5yx
+title: '使用阿里云盘半年的感受'
+description: '使用阿里云盘有半年了，自己的感受'
+slug: 阿里云盘半年的感受
 date: 2023-07-02 16:46:37+0000
 image: cover.jpg
 tags:

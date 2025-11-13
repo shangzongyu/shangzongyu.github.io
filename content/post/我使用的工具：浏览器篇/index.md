@@ -1,10 +1,10 @@
 ---
-title: 工具推荐：浏览器和浏览器插件
-description: '主要收集自己使用的浏览器和插件。'
-slug: 5bel5yw35o6o6i2q77ya5rwp6kei5zmo5os5lu2
+title: "'我使用的工具：浏览器篇'"
+description: 主要收集自己使用的浏览器和插件。
+slug: 浏览器和浏览器插件
 date: 2025-07-08 02:30:14+0000
 tags:
-    - browsers
+  - browsers
 weight: 1
 ---
 
@@ -128,7 +128,6 @@ weight: 1
 - 插件地址：<https://chromewebstore.google.com/detail/reddit-enhancement-suite/kbmfpngjjgdllneeigpgjifpgocmfgmb>
 
 ![Reddit Enhancement Suite](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-youtube-enhancer-for-youtube.png)
-
 
 #### 维基百科美化：Wikiwand
 
