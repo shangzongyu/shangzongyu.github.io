@@ -3,6 +3,7 @@ title: 我使用的工具：终端篇
 description: '介绍我使用过的总管工具'
 slug: '终端工具'
 date: 2025-09-13 08:40:49+0000
+image: cover.jpg
 weight: 1
 tags:
   - terminal

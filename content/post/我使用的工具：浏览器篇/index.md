@@ -3,6 +3,7 @@ title: "'我使用的工具：浏览器篇'"
 description: 主要收集自己使用的浏览器和插件。
 slug: 浏览器和浏览器插件
 date: 2025-07-08 02:30:14+0000
+image: cover.jpg
 tags:
   - browsers
 weight: 1
