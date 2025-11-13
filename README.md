@@ -1,3 +1,7 @@
 # README
 
-我的 Hugo Blog。
+This is my blog.
+
+- Server: Hugo
+- Editor: Typora
+- Images: upgit
