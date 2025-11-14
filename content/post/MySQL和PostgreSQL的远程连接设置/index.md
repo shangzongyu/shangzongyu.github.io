@@ -1,16 +1,14 @@
 ---
-title: 'MySQL 和 PostgreSQL 的远程连接设置'
-description: '本文介绍 MySQL 和 PostgreSQL 数据库如何设置远程连接。'
+title: MySQL 和 PostgreSQL 的远程连接设置
+description: 本文介绍 MySQL 和 PostgreSQL 数据库如何设置远程连接。
 slug: mysql-postgresql
 date: 2024-12-02 02:41:53+0000
-image: cover.jpg
+image:
 tags:
-    - postgresql
-    - mysql
+  - postgresql
+  - mysql
 weight: 1
 ---
-
-
 本文介绍 MySQL 和 PostgreSQL 数据库如何设置远程连接。
 
 我的环境如下：

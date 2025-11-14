@@ -1,0 +1,154 @@
+---
+title: "我使用的工具：美化篇"
+description: 
+date: 2025-11-14T11:24:27+08:00
+image: 
+math: 
+license: 
+hidden: false
+comments: true
+draft: true
+---
+
+<https://gitfyel.vercel.app/>
+
+## 美化 GitHub 个人首页：beautify-github-profile
+
+![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_beautify-github-profile.webp)
+
+该项目收集了一系列美化 GitHub 个人首页的工具和教程，包括徽章、小部件和各种个性化的元素，打造个性化且美观的 GitHub 个人首页。
+
+GitHub 地址: <https://github.com/rzashakeri/beautify-github-profile>
+
+## 字体
+
+###  zenbones-mono
+
+Github 地址：<https://github.com/zenbones-theme/zenbones-mono>
+
+### Font sensei
+
+- 地址：https://fontsensei.com/zh-cn
+- 谷歌字体选择器，按照标签选择字体，包含中日韩字体。
+
+## 编辑器
+
+### VSCode
+
+#### Kanagawa theme
+
+Github: <https://github.com/rebelot/kanagawa.nvim>
+
+> 从那张出名的浮世绘 神奈川冲浪里获取的配色和灵感。
+
+### 好看的 VS Code 主题 Github
+
+[https://github.com/nabinkhair42/vtheme] 它的主页也是 VS Code 主题风格，有点意思。
+
+[https://vthemes.nabinkhair.com.np]
+
+### Obsisdian
+
+#### Notebook Navigator
+
+Obsidian 笔记本导航插件 Notebook Navigator 号称融合了 Apple Notes 的流畅速度、Bear 的优雅美感、Evernote 的高效生产力，同时引入了众多传统笔记应用所缺乏的创新功能。
+
+<https://github.com/johansan/notebook-navigator>
+
+![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_notebook-navigator.webp)
+
+#### baseline
+
+### NVim
+
+### NVim 的主题
+
+An update is now available for pixel.nvim, the Neovim theme based on terminal ANSI colors. → Perfection of the lualine theme → Selected line text is now visible An example using the Omarchy monokai theme.
+
+https://github.com/bjarneo/pixel.nvim
+
+![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_theme-pixel-nvim.webp)
+
+## 浏览器
+
+### FireFox
+
+### 漂亮的 Firefox 浏览器主题
+
+[GitHub - cyp3rr/firefox-lab: testing experimental css firefox themes](https://github.com/cyp3rr/firefox-lab)
+
+## 字体
+
+
+> 在常用的软件中设置自己常用的字体。
+
+- 中文使用[霞鹜文楷](https://github.com/lxgw/LxgwWenKai)，很好看的中文字体题。
+- 英文使用 [FiraCode](https://github.com/tonsky/FiraCode)
+
+## VS Code 设置
+
+打开 VSCode 的配置，修改配置：
+
+```json
+ "editor.fontFamily": "'FiraCode Nerd Font Mono', 'LXGW WenKai Mono'"
+```
+
+## Logseq 设置
+
+在 `Settings-> General -> Custom theme -> Edit custom.css` 添加如下内容
+
+```json
+@font-face {
+  font-family: "FiraCode Nerd Font Mono";
+  font-weight: 200 900;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("https://letui-game-res.oss-cn-shenzhen.aliyuncs.com/tmp/RobotoMono.ttf");
+}
+
+@font-face {
+  font-family: "LXGW WenKai Mono";
+  font-weight: 200 900;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("https://letui-game-res.oss-cn-shenzhen.aliyuncs.com/tmp/LXGWWenKaiMono-Regular.ttf");
+}
+
+:root {
+  --ct-text-size: 20px;
+  --ct-line-height: 1.6;
+  --ls-font-family: FiraCode Nerd Font Mono, "Only Emoji", "LXGW WenKai Mono";
+  --ct-page-title-font-family: var(--ls-font-family);
+  --ct-code-font-family: FiraCode Nerd Font Mono,"LXGW WenKai Mono", monospace;
+}
+.CodeMirror {
+  font-family: FiraCode Nerd Font Mono,"LXGW WenKai Mono", monospace;
+}
+:not(pre)>code {
+  font-family: FiraCode Nerd Font Mono,"LXGW WenKai Mono", monospace;
+}
+```
+
+为了统一性，统一使用 `src` 设置字体路径。
+
+> 上面设置的配置在手机上会正常展示。
+
+## iTerm2
+
+打开配置 `Preferences -> Profiles -> Default -> Font`：
+
+- `Font` 设置为 `Fira Code Nerd Font`
+- `Non-ASCIIFont` 设置为 `LXGW WenKai Mono`
+
+## Typroa
+
+在 Typora 的主题文件夹下，创建 `base.user.css`，里面写上如下内容：
+
+```json
+body {
+    font-family: 'FiraCode Nerd Font Mono', "LXGW WenKai Mono";
+    --monospace: 'FiraCode Nerd Font Mono', "LXGW WenKai Mono"; 
+}
+```
+
+然后重启 Typora 就可以看到字体修改成功了。

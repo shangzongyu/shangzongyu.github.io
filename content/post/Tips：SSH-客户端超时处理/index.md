@@ -3,7 +3,7 @@ title: "Tips: SSH 客户端超时处理"
 description: "''"
 slug: ssh
 date: 2023-10-14 10:47:46+0000
-image: cover.jpg
+image:
 tags:
   - tips
   - ssh

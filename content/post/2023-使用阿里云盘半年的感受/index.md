@@ -1,11 +1,11 @@
 ---
-title: '使用阿里云盘半年的感受'
-description: '使用阿里云盘有半年了，自己的感受'
+title: 使用阿里云盘半年的感受
+description: 使用阿里云盘有半年了，自己的感受
 slug: 阿里云盘半年的感受
 date: 2023-07-02 16:46:37+0000
-image: cover.jpg
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2023-使用阿里云盘半年的感受.webp
 tags:
-    - cloud-storage
+  - cloud-storage
 weight: 1
 ---
 

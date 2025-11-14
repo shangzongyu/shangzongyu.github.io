@@ -1,11 +1,11 @@
 ---
-title: "'不用使用 QQ 空间存储重要图片'"
+title: 不用使用 QQ 空间存储重要图片
 description: 国内有很多朋友使用 QQ 空间存储自己真贵的照片
 slug: QQ
 date: 2023-08-25 11:53:31+0000
 weight: 1
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2023-不用使用-QQ-空间存储重要图片.webp
 ---
-
 国内有很多朋友使用 QQ 空间存储自己真贵的照片，但是 QQ 空间存储图片有以下两个问题：
 
 1. 存储的图片会压缩，这样一方面照片的元信息就会丢失，比如拍拍摄时间、拍摄位置等，另一方面照片质量大大降低。

@@ -1,12 +1,12 @@
 ---
 title: 各种源的修改整理
-description: '由于国内网络众所周知的原导导致下载国外的包时，网络会很慢或者更本就下载不了，因此我们需要切换相应的源。'
+description: 由于国内网络众所周知的原导导致下载国外的包时，网络会很慢或者更本就下载不了，因此我们需要切换相应的源。
 slug: 源的修改整理
 date: 2022-08-01 06:38:13+0000
-image: cover.jpg
+image:
 tags:
-    - developer
-    - tips
+  - developer
+  - tips
 weight: 1
 ---
 

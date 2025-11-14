@@ -1,15 +1,13 @@
 ---
-title: 'Tips: Obsidian 中图片分列显示'
-description: 'Obsidian 默认的情况下一行显示一张，如果想要照片排列成类似九宫格的样式，需要做一些额外的处理。具体的做法就是使用自定义 CSS 代码片段。'
+title: "Tips: Obsidian 中图片分列显示"
+description: Obsidian 默认的情况下一行显示一张，如果想要照片排列成类似九宫格的样式，需要做一些额外的处理。具体的做法就是使用自定义 CSS 代码片段。
 slug: tips-obsidian
 date: 2023-03-13 06:34:23+0000
-image: cover.jpg
+image:
 tags:
-    - obsidian
+  - obsidian
 weight: 1
 ---
-
-
 Obsidian 默认的情况下一行显示一张，如果想要照片排列成类似九宫格的样式，需要做一些额外的处理。具体的做法就是使用自定义 CSS 代码片段。
 
 实现方式如下。

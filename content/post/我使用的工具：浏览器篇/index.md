@@ -1,9 +1,9 @@
 ---
-title: '我使用的工具：浏览器篇'
+title: 我使用的工具：浏览器篇
 description: 主要收集自己使用的浏览器和插件。
 slug: 浏览器和浏览器插件
 date: 2025-07-08 02:30:14+0000
-image: cover.jpg
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_我使用的工具：浏览器篇.webp
 tags:
   - browsers
 weight: 1

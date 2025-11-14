@@ -1,15 +1,14 @@
 ---
 title: 我使用的工具：终端篇
-description: '介绍我使用过的总管工具'
-slug: '终端工具'
+description: 介绍我使用过的总管工具
+slug: 终端工具
 date: 2025-09-13 08:40:49+0000
-image: cover.jpg
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_我使用的工具：终端篇.webp
 weight: 1
 tags:
   - terminal
   - tools
 ---
-
 作为一名开发者，终端 (Terminal) 是我们日常工作中接触最频繁的工具之一。它不仅是与操作系统交互的窗口，更是一个可以高度定制、提升效率的利器。在过去的几年里，我尝试了市面上许多主流和新兴的终端应用，从追求性能的 GPU 加速终端，到集成 AI 的新时代终端，各有千秋。
 
 在这里，我想分享一下我个人使用过的终端工具，以及它们各自的特点和我的主观看法。

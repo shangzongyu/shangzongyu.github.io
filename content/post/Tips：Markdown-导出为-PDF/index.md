@@ -1,12 +1,12 @@
 ---
-title: 'Tips: Markdown 导出为 PDF'
-description: '我现在写文档使用 Markdown 进行编写，有时候需要文档发送给其他人，如果对方是程序员还好，如果不是他们不懂 Markdown，如果文档里面包含图片，对他们就相当于用不了。'
+title: "Tips: Markdown 导出为 PDF"
+description: 我现在写文档使用 Markdown 进行编写，有时候需要文档发送给其他人，如果对方是程序员还好，如果不是他们不懂 Markdown，如果文档里面包含图片，对他们就相当于用不了。
 slug: markdown-pdf
 date: 2024-01-08 10:07:22+0000
-image: cover.jpg
+image:
 tags:
-    - markdown
-    - pdf
+  - markdown
+  - pdf
 weight: 1
 ---
 
