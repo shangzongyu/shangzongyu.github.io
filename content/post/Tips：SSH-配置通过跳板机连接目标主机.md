@@ -6,6 +6,7 @@ date: 2024-12-11 12:06:52+0000
 image:
 weight: 1
 ---
+
 ## 前言
 
 - 跳板机
@@ -17,7 +18,7 @@ weight: 1
 
 ## 使用 SSH Config
 
-```
+```ini
 Host jumper-server
     HostName 8.217.228.125
     User ecs-user

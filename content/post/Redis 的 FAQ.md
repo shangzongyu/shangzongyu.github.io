@@ -9,7 +9,6 @@ tags:
 weight: 1
 ---
 
-
 Redis 安装之后，默认不允许使用 DEBUG 这个命令，我们只需要修改一些配置文件就可以了。
 
 修改配置文件 `/etc/redis/redis.conf`，修改 `enable-debug-command no`，修改为 `enable-debug-command yes`，并且解开注释，然后重启。

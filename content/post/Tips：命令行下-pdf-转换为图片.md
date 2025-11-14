@@ -14,8 +14,6 @@ weight: 1
 ```bash
 # macOS
 brew install poppler
-# Debian/Ubuntu
-sudo apt install poppler-utils
 
 # Arch
 sudo pacman -S poppler
