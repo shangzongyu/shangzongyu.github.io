@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Command-Line on 我的世界</title><link>https://shangzongyu.github.io/tags/command-line/</link><description>Recent content in Command-Line on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 10 Jul 2025 07:56:48 +0000</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/command-line/index.xml" rel="self" type="application/rss+xml"/><item><title>我使用的工具：fetch 工具</title><link>https://shangzongyu.github.io/p/fetch/</link><pubDate>Thu, 10 Jul 2025 07:56:48 +0000</pubDate><guid>https://shangzongyu.github.io/p/fetch/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_我使用的工具_fetch-工具.webp" alt="Featured image of post 我使用的工具：fetch 工具" /&gt;&lt;blockquote&gt;
+&lt;p&gt;自己使用的各种 &lt;code&gt;fetch&lt;/code&gt; 工具。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;neofetch&lt;/code&gt; ：用于获取系统信息，使用 Shell 实现
+&lt;ul&gt;
+&lt;li&gt;Github: &lt;a class="link" href="https://github.com/dylanaraps/neofetch" target="_blank" rel="noopener"
+&gt;https://github.com/dylanaraps/neofetch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fastfetch&lt;/code&gt; ：用于获取系统信息，C 实现比 &lt;code&gt;neofetch&lt;/code&gt; 快很多。neofetch 停止更新，现在使用 fastfetch
+&lt;ul&gt;
+&lt;li&gt;Github: &lt;a class="link" href="https://github.com/fastfetch-cli/fastfetch" target="_blank" rel="noopener"
+&gt;https://github.com/fastfetch-cli/fastfetch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cpufetch&lt;/code&gt; ：获取 CPU 信息
+&lt;ul&gt;
+&lt;li&gt;Github: &lt;a class="link" href="https://github.com/Dr-Noob/cpufetch" target="_blank" rel="noopener"
+&gt;https://github.com/Dr-Noob/cpufetch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;onefetch&lt;/code&gt; ：获取 Git 项目信息信息
+&lt;ul&gt;
+&lt;li&gt;Github: &lt;a class="link" href="https://github.com/o2sh/onefetch" target="_blank" rel="noopener"
+&gt;https://github.com/o2sh/onefetch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;下面是我的各种 &lt;code&gt;fetch&lt;/code&gt; 工具的图。&lt;/p&gt;
+&lt;h2 id="neofetch"&gt;neofetch
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250710_tools-neofetch.png"
+loading="lazy"
+alt="tools-neofetch"
+&gt;&lt;/p&gt;
+&lt;h2 id="fastfech"&gt;fastfech
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250710_tools-fastfetch.png"
+loading="lazy"
+alt="tools-fastfetch"
+&gt;&lt;/p&gt;
+&lt;h2 id="cpufetch"&gt;cpufetch
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250710_tools-cpufetch.png"
+loading="lazy"
+alt="tools-cpufetch"
+&gt;&lt;/p&gt;
+&lt;h2 id="onefetch"&gt;onefetch
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250710_tools-onefetch.png"
+loading="lazy"
+alt="tools-onefetch"
+&gt;&lt;/p&gt;</description></item><item><title>工具推荐: wttr - 命令行查询天气</title><link>https://shangzongyu.github.io/p/wttr/</link><pubDate>Tue, 12 Jul 2022 01:55:23 +0000</pubDate><guid>https://shangzongyu.github.io/p/wttr/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2022-工具推荐_wttr-命令行查询天气.webp" alt="Featured image of post 工具推荐: wttr - 命令行查询天气" /&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a class="link" href="https://github.com/chubin/wttr.in" target="_blank" rel="noopener"
+&gt;wttr.in&lt;/a&gt; 用于在命令行查询天气&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 使用方法&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl wttr.in/你要查询的城市
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 例如查询深圳天气&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl wttr.in/shenzhen
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 想以中文方式显示的话只要改为&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl zh.wttr.in
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 例如查询深圳天气&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl zh.wttr.in/shenzhen
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 更多使用方法可以输入&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl wttr.in/:help
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;示例：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;span class="lnt"&gt;16
+&lt;/span&gt;&lt;span class="lnt"&gt;17
+&lt;/span&gt;&lt;span class="lnt"&gt;18
+&lt;/span&gt;&lt;span class="lnt"&gt;19
+&lt;/span&gt;&lt;span class="lnt"&gt;20
+&lt;/span&gt;&lt;span class="lnt"&gt;21
+&lt;/span&gt;&lt;span class="lnt"&gt;22
+&lt;/span&gt;&lt;span class="lnt"&gt;23
+&lt;/span&gt;&lt;span class="lnt"&gt;24
+&lt;/span&gt;&lt;span class="lnt"&gt;25
+&lt;/span&gt;&lt;span class="lnt"&gt;26
+&lt;/span&gt;&lt;span class="lnt"&gt;27
+&lt;/span&gt;&lt;span class="lnt"&gt;28
+&lt;/span&gt;&lt;span class="lnt"&gt;29
+&lt;/span&gt;&lt;span class="lnt"&gt;30
+&lt;/span&gt;&lt;span class="lnt"&gt;31
+&lt;/span&gt;&lt;span class="lnt"&gt;32
+&lt;/span&gt;&lt;span class="lnt"&gt;33
+&lt;/span&gt;&lt;span class="lnt"&gt;34
+&lt;/span&gt;&lt;span class="lnt"&gt;35
+&lt;/span&gt;&lt;span class="lnt"&gt;36
+&lt;/span&gt;&lt;span class="lnt"&gt;37
+&lt;/span&gt;&lt;span class="lnt"&gt;38
+&lt;/span&gt;&lt;span class="lnt"&gt;39
+&lt;/span&gt;&lt;span class="lnt"&gt;40
+&lt;/span&gt;&lt;span class="lnt"&gt;41
+&lt;/span&gt;&lt;span class="lnt"&gt;42
+&lt;/span&gt;&lt;span class="lnt"&gt;43
+&lt;/span&gt;&lt;span class="lnt"&gt;44
+&lt;/span&gt;&lt;span class="lnt"&gt;45
+&lt;/span&gt;&lt;span class="lnt"&gt;46
+&lt;/span&gt;&lt;span class="lnt"&gt;47
+&lt;/span&gt;&lt;span class="lnt"&gt;48
+&lt;/span&gt;&lt;span class="lnt"&gt;49
+&lt;/span&gt;&lt;span class="lnt"&gt;50
+&lt;/span&gt;&lt;span class="lnt"&gt;51
+&lt;/span&gt;&lt;span class="lnt"&gt;52
+&lt;/span&gt;&lt;span class="lnt"&gt;53
+&lt;/span&gt;&lt;span class="lnt"&gt;54
+&lt;/span&gt;&lt;span class="lnt"&gt;55
+&lt;/span&gt;&lt;span class="lnt"&gt;56
+&lt;/span&gt;&lt;span class="lnt"&gt;57
+&lt;/span&gt;&lt;span class="lnt"&gt;58
+&lt;/span&gt;&lt;span class="lnt"&gt;59
+&lt;/span&gt;&lt;span class="lnt"&gt;60
+&lt;/span&gt;&lt;span class="lnt"&gt;61
+&lt;/span&gt;&lt;span class="lnt"&gt;62
+&lt;/span&gt;&lt;span class="lnt"&gt;63
+&lt;/span&gt;&lt;span class="lnt"&gt;64
+&lt;/span&gt;&lt;span class="lnt"&gt;65
+&lt;/span&gt;&lt;span class="lnt"&gt;66
+&lt;/span&gt;&lt;span class="lnt"&gt;67
+&lt;/span&gt;&lt;span class="lnt"&gt;68
+&lt;/span&gt;&lt;span class="lnt"&gt;69
+&lt;/span&gt;&lt;span class="lnt"&gt;70
+&lt;/span&gt;&lt;span class="lnt"&gt;71
+&lt;/span&gt;&lt;span class="lnt"&gt;72
+&lt;/span&gt;&lt;span class="lnt"&gt;73
+&lt;/span&gt;&lt;span class="lnt"&gt;74
+&lt;/span&gt;&lt;span class="lnt"&gt;75
+&lt;/span&gt;&lt;span class="lnt"&gt;76
+&lt;/span&gt;&lt;span class="lnt"&gt;77
+&lt;/span&gt;&lt;span class="lnt"&gt;78
+&lt;/span&gt;&lt;span class="lnt"&gt;79
+&lt;/span&gt;&lt;span class="lnt"&gt;80
+&lt;/span&gt;&lt;span class="lnt"&gt;81
+&lt;/span&gt;&lt;span class="lnt"&gt;82
+&lt;/span&gt;&lt;span class="lnt"&gt;83
+&lt;/span&gt;&lt;span class="lnt"&gt;84
+&lt;/span&gt;&lt;span class="lnt"&gt;85
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 查询深圳天气&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ curl wttr.in/shenzhen
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Weather report: shenzhen
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; .-. +29&lt;span class="o"&gt;(&lt;/span&gt;36&lt;span class="o"&gt;)&lt;/span&gt; °C
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↙ &lt;span class="m"&gt;4&lt;/span&gt; km/h
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ┌─────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;┌──────────────────────────────┬───────────────────────┤ Tue &lt;span class="m"&gt;12&lt;/span&gt; Jul ├───────────────────────┬──────────────────────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ Morning │ Noon └──────┬──────┘ Evening │ Night │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny │ &lt;span class="se"&gt;\ &lt;/span&gt; / Partly cloudy │ &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny │ &lt;span class="se"&gt;\ &lt;/span&gt; / Clear │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ .-. +30&lt;span class="o"&gt;(&lt;/span&gt;35&lt;span class="o"&gt;)&lt;/span&gt; °C │ _ /&lt;span class="s2"&gt;&amp;#34;&amp;#34;&lt;/span&gt;.-. +33&lt;span class="o"&gt;(&lt;/span&gt;41&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +33&lt;span class="o"&gt;(&lt;/span&gt;40&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +29&lt;span class="o"&gt;(&lt;/span&gt;33&lt;span class="o"&gt;)&lt;/span&gt; °C │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ← 4-5 km/h │ &lt;span class="se"&gt;\_&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt;. ↖ 9-11 km/h │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 13-15 km/h │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 11-15 km/h │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │ /&lt;span class="o"&gt;(&lt;/span&gt;___&lt;span class="o"&gt;(&lt;/span&gt;__&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="m"&gt;10&lt;/span&gt; km │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ┌─────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;┌──────────────────────────────┬───────────────────────┤ Wed &lt;span class="m"&gt;13&lt;/span&gt; Jul ├───────────────────────┬──────────────────────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ Morning │ Noon └──────┬──────┘ Evening │ Night │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny │ &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny │ &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny │ &lt;span class="se"&gt;\ &lt;/span&gt; / Clear │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ .-. +30&lt;span class="o"&gt;(&lt;/span&gt;34&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +35&lt;span class="o"&gt;(&lt;/span&gt;44&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +33&lt;span class="o"&gt;(&lt;/span&gt;40&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +29&lt;span class="o"&gt;(&lt;/span&gt;33&lt;span class="o"&gt;)&lt;/span&gt; °C │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↙ 7-8 km/h │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↑ 8-9 km/h │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 12-14 km/h │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 10-13 km/h │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ┌─────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;┌──────────────────────────────┬───────────────────────┤ Thu &lt;span class="m"&gt;14&lt;/span&gt; Jul ├───────────────────────┬──────────────────────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ Morning │ Noon └──────┬──────┘ Evening │ Night │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny │ &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny │ &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny │ &lt;span class="se"&gt;\ &lt;/span&gt; / Clear │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ .-. +30&lt;span class="o"&gt;(&lt;/span&gt;34&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +35&lt;span class="o"&gt;(&lt;/span&gt;43&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +33&lt;span class="o"&gt;(&lt;/span&gt;41&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +29&lt;span class="o"&gt;(&lt;/span&gt;34&lt;span class="o"&gt;)&lt;/span&gt; °C │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ← 5-6 km/h │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↑ 9-10 km/h │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 12-14 km/h │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 11-15 km/h │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Location: 深圳市, 福田区 &lt;span class="o"&gt;(&lt;/span&gt;Futian&lt;span class="o"&gt;)&lt;/span&gt;, 深圳市 / Shenzhen, 广东省, 518000, 中国 &lt;span class="o"&gt;[&lt;/span&gt;22.5442673,114.0545327&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Follow @igor_chubin &lt;span class="k"&gt;for&lt;/span&gt; wttr.in updates
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 以中文查询&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ curl zh.wttr.in/shenzhen
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;天气预报： shenzhen
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="se"&gt;\ &lt;/span&gt; / 局部多云
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; _ /&lt;span class="s2"&gt;&amp;#34;&amp;#34;&lt;/span&gt;.-. +30&lt;span class="o"&gt;(&lt;/span&gt;36&lt;span class="o"&gt;)&lt;/span&gt; °C
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="se"&gt;\_&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt;. ↗ &lt;span class="m"&gt;7&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; /&lt;span class="o"&gt;(&lt;/span&gt;___&lt;span class="o"&gt;(&lt;/span&gt;__&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="m"&gt;10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; 0.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ┌─────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;┌──────────────────────────────┬───────────────────────┤7月12日星期二├───────────────────────┬──────────────────────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ 早上 │ 中午 └──────┬──────┘ 傍晚 │ 夜间 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴天 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 局部多云 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴天 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴朗 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ .-. +30&lt;span class="o"&gt;(&lt;/span&gt;35&lt;span class="o"&gt;)&lt;/span&gt; °C │ _ /&lt;span class="s2"&gt;&amp;#34;&amp;#34;&lt;/span&gt;.-. +33&lt;span class="o"&gt;(&lt;/span&gt;41&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +33&lt;span class="o"&gt;(&lt;/span&gt;40&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +29&lt;span class="o"&gt;(&lt;/span&gt;33&lt;span class="o"&gt;)&lt;/span&gt; °C │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ← 4-5 │ &lt;span class="se"&gt;\_&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt;. ↖ 9-11 │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 13-15 │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 11-15 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │ /&lt;span class="o"&gt;(&lt;/span&gt;___&lt;span class="o"&gt;(&lt;/span&gt;__&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="m"&gt;10&lt;/span&gt; │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ┌─────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;┌──────────────────────────────┬───────────────────────┤7月13日星期三├───────────────────────┬──────────────────────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ 早上 │ 中午 └──────┬──────┘ 傍晚 │ 夜间 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴天 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴天 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴天 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴朗 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ .-. +30&lt;span class="o"&gt;(&lt;/span&gt;34&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +35&lt;span class="o"&gt;(&lt;/span&gt;44&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +33&lt;span class="o"&gt;(&lt;/span&gt;40&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +29&lt;span class="o"&gt;(&lt;/span&gt;33&lt;span class="o"&gt;)&lt;/span&gt; °C │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↙ 7-8 │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↑ 8-9 │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 12-14 │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 10-13 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ┌─────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;┌──────────────────────────────┬───────────────────────┤7月14日星期四├───────────────────────┬──────────────────────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ 早上 │ 中午 └──────┬──────┘ 傍晚 │ 夜间 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴天 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴天 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴天 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴朗 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ .-. +30&lt;span class="o"&gt;(&lt;/span&gt;34&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +35&lt;span class="o"&gt;(&lt;/span&gt;43&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +33&lt;span class="o"&gt;(&lt;/span&gt;41&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +29&lt;span class="o"&gt;(&lt;/span&gt;34&lt;span class="o"&gt;)&lt;/span&gt; °C │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ← 5-6 │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↑ 9-10 │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 12-14 │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 11-15 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;地点: 深圳市, 福田区 &lt;span class="o"&gt;(&lt;/span&gt;Futian&lt;span class="o"&gt;)&lt;/span&gt;, 深圳市 / Shenzhen, 广东省, 518000, 中国 &lt;span class="o"&gt;[&lt;/span&gt;22.5442673,114.0545327&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;关注 @igor_chubin 获取 wttr.in 动态
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item></channel></rss>
