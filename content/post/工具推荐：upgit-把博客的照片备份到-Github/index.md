@@ -1,17 +1,15 @@
 ---
-title: '工具推荐: upgit - 把博客的照片备份到 Github'
-description: '- Github：<https://github.com/pluveto/upgit>'
+title: "工具推荐: upgit - 把博客的照片备份到 Github"
+description:
 slug: upgit-github
 date: 2023-07-26 10:39:57+0000
 image: cover.jpg
 tags:
-    - blogging
-    - github
-    - tools
+  - blogging
+  - github
+  - tools
 weight: 1
 ---
-
-
 ## 介绍
 
 - Github：<https://github.com/pluveto/upgit>
@@ -35,6 +33,7 @@ upgit 可以快捷地将文件上传到 Github 仓库并得到其直链。简洁
 - Gitee
 - 七牛云 Kodo
 - 又拍云
+- ...
 
 ## 安装
 
@@ -74,6 +73,6 @@ https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgi
 
 配置很简单，只需要指定 `upgit` 所在的目录即可。
 
-![](<https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20231102_upgit-typora.png>)
+![upgit-typora](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20231102_upgit-typora.png)
 
 参考 [https://support.typora.io/Upload-Image/#image-uploaders](https://support.typora.io/Upload-Image/#image-uploaders)

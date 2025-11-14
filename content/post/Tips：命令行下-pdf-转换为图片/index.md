@@ -1,12 +1,11 @@
 ---
 title: 'Tips: 命令行下 pdf 转换为图片'
-description: '使用工具 poppler ，它是基于 xpdf-3.0，可以把 PDF 文档转换为图片，除此之外还可以指定分辨率、缩放以及裁剪。'
+description: '使用工具 poppler 把 PDF 文档转换为图片，'
 slug: pdf
 date: 2023-07-26 08:03:08+0000
 image: cover.jpg
 weight: 1
 ---
-
 
 使用工具 [poppler](https://poppler.freedesktop.org)，它是基于 [xpdf-3.0](http://www.foolabs.com/xpdf/)，可以把 PDF 文档转换为图片，除此之外还可以指定分辨率、缩放以及裁剪。
 

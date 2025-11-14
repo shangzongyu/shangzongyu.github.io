@@ -3,12 +3,12 @@ title: 'GLM 4.5 配置全攻略：Claude Code 与 Codex 实战指南'
 description: '智谱最新推出的 **GLM 4.5** 是一款面向编程和智能应用的通用大模型，相比前一代在**代码生成、复杂推理、对话体验**等方面有了显著提升。'
 slug: glm-45-claude-code-codex
 date: 2025-09-27 08:22:56+0000
+image: GLM-Coding.png
 tags:
     - ai
     - tools
 weight: 1
 ---
-
 
 ## 简介
 

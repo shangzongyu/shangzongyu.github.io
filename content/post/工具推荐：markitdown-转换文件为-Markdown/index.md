@@ -5,9 +5,13 @@ slug: markitdown-markdown
 date: 2024-12-21 06:56:21+0000
 tags:
     - tools
+image: neofetch.jpg
 weight: 1
 ---
 
+> 一个 Python 工具转换文件为 Markdown，方便自己使用 Markdown 成为的笔记。
+
+<!--more-->
 
 ## 介绍
 
@@ -15,26 +19,17 @@ weight: 1
 
 支持的文件格式如下：
 
-* PDF
-    
+* PDF  
 * PowerPoint
-    
 * Word
-    
 * Excel
-    
 * Images (EXIF metadata and OCR)
-    
 * Audio (EXIF metadata and speech transcription)
-    
 * HTML
-    
 * Text-based formats (CSV，JSON，XML)
-    
 * ZIP files (iterates over contents)
-    
-
-> Github：[https://github.com/microsoft/markitdown](https://github.com/microsoft/markitdown)
+  
+> Github：<https://github.com/microsoft/markitdown>
 
 ## 使用
 

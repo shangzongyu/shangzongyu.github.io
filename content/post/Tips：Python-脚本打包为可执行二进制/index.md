@@ -10,9 +10,6 @@ tags:
 weight: 1
 ---
 
-
-
-
 > 前言：最近需要使用 Python 写一个脚本，但是我不想在所在机器安装 Python 环境，因此就在想有没有可以把 Python 脚本打包为可执行的二进制程序，找到了 Nuitka，一个强大的 Python 编译器，可以将 Python 代码编译为 C 代码，并生成高效的可执行文件。除了之外还有其他的，选择 Nuitka 是因为它的性能比较好。
 
 ## 环境
@@ -21,7 +18,7 @@ OS：Ubuntu 24.04 LTS
 
 需要装安装包：
 
-``` sh
+```sh
 sudo apt-get install build-essential python3
 
 pip install nuitka

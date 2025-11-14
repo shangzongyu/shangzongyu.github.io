@@ -1,5 +1,5 @@
 ---
-title: "Tips: ssh 客户端超时处理"
+title: "Tips: SSH 客户端超时处理"
 description: "''"
 slug: ssh
 date: 2023-10-14 10:47:46+0000
@@ -17,7 +17,7 @@ weight: 1
 
 在 Windows 上有主要是图形化工具。
 
-1. WinSCP
+###  WinSCP
 
 可以找到主机的连接超时时间设置更改，打开 keepalive 选项，每隔一段时间给连接发送一个 SSH 空包或哑命令以保持连接不断开，keepalive 的间隔秒数要设置少于超时等待的时候，如设置成 10 秒，确认重新连接即可。设置项如图：
 
@@ -37,9 +37,9 @@ weight: 1
 
 SSH Client 会从以下途径获取配置参数：
 
-* SSH 命令行参数
-* 用户配置文件 `~/.ssh/config`
-* 系统配置文件 `/etc/ssh/ssh_config`
+- SSH 命令行参数
+0- 用户配置文件 `~/.ssh/config`
+- 系统配置文件 `/etc/ssh/ssh_config`
 
 ### 命令行参数
 

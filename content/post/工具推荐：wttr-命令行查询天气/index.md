@@ -3,12 +3,12 @@ title: '工具推荐: wttr - 命令行查询天气'
 description: 'wttr.in 用于在命令行查询天气'
 slug: wttr
 date: 2022-07-12 01:55:23+0000
+image: wttr.png
 tags:
     - tools
     - command-line
 weight: 1
 ---
-
 
 > [wttr.in](https://github.com/chubin/wttr.in) 用于在命令行查询天气
 
@@ -26,7 +26,7 @@ curl zh.wttr.in
 curl zh.wttr.in/shenzhen
 
 # 更多使用方法可以输入
-curl wttr.in/:help 
+curl wttr.in/:help
 ```
 
 示例：

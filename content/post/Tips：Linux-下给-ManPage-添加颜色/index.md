@@ -1,11 +1,12 @@
 ---
-title: 'Linux 下给 ManPage 添加颜色'
-description: 'Linux 下使用 `man` 命令的时候没有一些颜色，看起来不输入，因此可以添加一些颜色。'
+title: Tips：Linux 下给 ManPage 添加颜色
+description: Linux 下使用 `man` 命令的时候没有一些颜色，看起来不输入，因此可以添加一些颜色。
 slug: linux-manpage
 date: 2023-10-14 11:51:30+0000
 image: cover.jpg
 tags:
-    - linux
+  - linux
+  - tips
 weight: 1
 ---
 
