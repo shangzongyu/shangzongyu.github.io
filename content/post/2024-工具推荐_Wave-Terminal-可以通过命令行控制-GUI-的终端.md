@@ -4,8 +4,8 @@ description: ''
 slug: wave-terminal-gui
 date: 2024-12-16 06:51:58+0000
 tags:
-    - terminal
-    - tools
+  - terminal
+  - tools
 weight: 1
 ---
 

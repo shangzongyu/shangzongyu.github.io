@@ -1,15 +1,17 @@
 ---
 title: 工具推荐：Wakapi
-description: '之前使用 Wakatime 记录自己日常编程时间消耗，支持各种不同的编辑器，包括 VSCode 系列、Vim、Emacs 以及 JetBrains 系列。'
+description: ''
 slug: wakapi
 date: 2025-08-30 08:44:46+0000
 tags:
-    - tools
+  - tools
 weight: 1
 ---
 
 > 之前使用 [Wakatime](https://wakatime.com/) 记录自己日常编程时间消耗，支持各种不同的编辑器，包括 VSCode 系列、Vim、Emacs 以及 JetBrains 系列。
->
+
+![wakatime](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_wakatime.webp)
+
 > 有些不好的点是：
 >
 > 1. 数据存储在别人的服务器；
@@ -21,7 +23,7 @@ weight: 1
 
 Wakapi 是一个完全开源、自我托管的 WakaTime 兼容后端服务，它可以统计和展示开发者的编程活动。
 
-![screenshot](https://wakapi.dev/assets/images/screenshot.webp)
+![Wakapi](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_wakapi.webp)
 
 官网：<https://wakapi.dev/>
 

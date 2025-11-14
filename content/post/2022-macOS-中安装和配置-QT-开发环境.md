@@ -1,6 +1,6 @@
 ---
 title: macOS 中安装和配置 Qt 开发环境
-description: 介绍如何在 macOS 下使用 Qt Creator + Qt 进行开发。
+description: 
 slug: macos-config-qt
 date: 2022-05-02 06:37:50+0000
 image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2022-macOS-中安装和配置-QT-开发环境.webp
@@ -9,7 +9,6 @@ tags:
   - qt
 weight: 1
 ---
-
 
 > 介绍如何在 macOS 下使用 Qt Creator + Qt 进行开发。
 

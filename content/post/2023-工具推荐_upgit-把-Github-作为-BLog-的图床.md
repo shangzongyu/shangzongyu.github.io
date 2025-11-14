@@ -1,20 +1,21 @@
 ---
-title: "工具推荐: upgit - 把博客的照片备份到 Github"
+title: "工具推荐: upgit - 把 Github 作为 Blog 的图床"
 description:
 slug: upgit-github
 date: 2023-07-26 10:39:57+0000
-image:
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_upgit-cover.webp
 tags:
-  - blogging
+  - blog
   - github
   - tools
 weight: 1
 ---
+
 ## 介绍
 
 - Github：<https://github.com/pluveto/upgit>
 
-upgit 可以快捷地将文件上传到 Github 仓库并得到其直链。简洁跨平台，不常驻内存。
+upgit 可以快捷地将文件上传到 Github 仓库并得到其链接。简洁跨平台，不常驻内存。
 
 **特点**：
 

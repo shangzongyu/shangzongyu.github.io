@@ -1,13 +1,15 @@
 ---
 title: Arch Linux 中安装和配置 QT5 的开发环境
-description: 环境如下：
+description: 
 slug: arch-linux-qt5
 date: 2024-11-09 08:43:09+0000
 image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2024-Arch-Linux-中安装和配置-QT5-的开发环境.webp
 tags:
   - development
+  - QT
 weight: 1
 ---
+
 环境如下：
 
 - OS：EndeavourOS x86_64

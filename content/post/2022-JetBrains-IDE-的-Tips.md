@@ -1,6 +1,6 @@
 ---
 title: JetBrains IDE 的 Tips
-description: 介绍使用 JetBrains IDE 过程的的一些 Tips。
+description: 
 slug: jetbrains-ide-tips
 date: 2022-10-27 15:13:25+0000
 image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2022-JetBrains-IDE-的-Tips.webp

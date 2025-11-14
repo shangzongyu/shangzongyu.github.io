@@ -9,6 +9,8 @@ weight: 1
 
 使用工具 [poppler](https://poppler.freedesktop.org)，它是基于 [xpdf-3.0](http://www.foolabs.com/xpdf/)，可以把 PDF 文档转换为图片，除此之外还可以指定分辨率、缩放以及裁剪。
 
+<!--more-->
+
 ## 安装
 
 ```bash

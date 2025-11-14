@@ -4,6 +4,8 @@ description: "- 跳板机"
 slug: tipsssh
 date: 2024-12-11 12:06:52+0000
 image:
+tags:
+  - SSH
 weight: 1
 ---
 

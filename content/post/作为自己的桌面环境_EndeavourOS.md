@@ -5,9 +5,11 @@ slug: endeavouros-pamac
 date: 2022-12-12 03:10:05+0000
 image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_作为自己的桌面环境_EndeavourOS.webp
 tags:
-  - package-manager
+  - OS
 weight: 1
+drfats: true
 ---
+
 ## 介绍
 
 [Pamac][Pamac] 是 Manjaro 一款基于 [libalpm][libalpm] 的 GUI 包管理工具，[libalpm][libalpm] 支持 AppStream、[AUR][AUR]、[Flatpak][Flatpak] 以及 [Snaps][Snaps]，可以很方便帮助我们安装和卸载软件。
