@@ -13,30 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/我使用的工具：终端篇/index.md",
+                "file": "00-drafts/工具推荐：binsider.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "f5db3355fd679816",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/post/我使用的工具：终端篇/index.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "index"
+              "title": "工具推荐：binsider"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "cover",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 486.5
   },
   "right": {
     "id": "153a8f3768138360",
@@ -104,31 +90,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4e302d2270f853a1",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "content/post/我使用的工具：终端篇/index.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for index"
-            }
-          },
-          {
             "id": "a3052d44fa3075e3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/post/我使用的工具：终端篇/index.md",
+                "file": "content/post/Tips-SSH-客户端超时处理/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -171,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/post/我使用的工具：终端篇/index.md",
+                "file": "content/post/Tips-SSH-客户端超时处理/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -191,28 +158,58 @@
     "hiddenItems": {
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false
     }
   },
-  "active": "f5db3355fd679816",
+  "active": "e6a88fe6776df66a",
   "lastOpenFiles": [
-    "content/post/我使用的工具：终端篇/index~.md",
-    "content/post/我使用的工具：终端篇/waveterm.png",
-    "content/post/我使用的工具：终端篇/index.md",
-    "content/post/我使用的工具：终端篇/tabby.png",
-    "content/post/我使用的工具：终端篇/wezterm-vday-screenshot.png",
-    "content/post/我使用的工具：终端篇/warp.png",
-    "content/post/Tips-SSH-客户端超时处理/index.md",
-    "content/post/我使用的工具：浏览器篇/index.md",
-    "content/post/工具推荐：Wakapi/index.md",
-    "content/post/2025-代码阅读/index.md",
-    "content/post/2025-my-hugo-blog/index.md",
-    "content/post/Arch-Linux-中安装和配置-QT5-的开发环境/index.md",
-    "content/post/2023-不用使用-QQ-空间存储重要图片/index.md",
-    "README.md"
+    "00-drafts/工具推荐： 终端测试.md",
+    "00-drafts/工具推荐： ssh 相关.md",
+    "00-drafts/工具推荐： Claude Code 学习笔记.md",
+    "00-drafts/在用笔记管理工具.md",
+    "00-drafts/TODO-作工具-EasyCV.md",
+    "content/post/我使用的工具：美化篇/index.md",
+    "content/post/我使用的工具：美化篇/beautify-github-profile.png",
+    "content/post/工具推荐：Telegram 相关/index.md",
+    "00-drafts/工具推荐：美化.md",
+    "content/post/常用字体设置/index.md",
+    "content/post/我使用的工具：美化篇/theme-pixel-nvim.png",
+    "content/post/我使用的工具：美化篇/notebook-navigator.png",
+    "content/post/我使用的工具：美化篇/index~.md",
+    "content/post/我使用的工具：美化篇",
+    "content/post/我使用的工具：浏览",
+    "content/post/Untitled Folder",
+    "00-drafts/工具推荐：使用过的数据库工具.md",
+    "00-drafts/工具推荐：信息收集.md",
+    "00-drafts/工具推荐：备份.md",
+    "00-drafts/工具推荐： 下载工具.md",
+    "00-drafts/工具推荐： 浏览器使用.md",
+    "00-drafts/工具推荐：atuin.md",
+    "00-drafts/macOS - mack-server use.md",
+    "00-drafts/MacOS Software.md",
+    "00-drafts/macOS 使用的软件推荐.md",
+    "00-drafts/FAQ-Linux Setting Master 3X.md",
+    "00-drafts/Git GUI 之  GitButler.md",
+    "00-drafts/费曼学习法.md",
+    "00-drafts/Jujutsu - Git .md",
+    "00-drafts/文科生的 macOS 使用指南.md",
+    "00-drafts/我的使用过 Markdown 工具.md",
+    "00-drafts/我的 macOS 使用的软件.md",
+    "content/post/我使用的工具：fetch 工具",
+    "content/post/工具推荐：piclist-把博客的照片备份到-Github/cover.jpg",
+    "content/post/工具推荐：piclist-把博客的照片备份到-Github",
+    "content/post/00-drafts/assets/theme-pixel-nvim.png",
+    "content/post/00-drafts/assets/notebook-navigator.png",
+    "content/post/00-drafts/assets/fdf5b717-33bd-4473-9f97-21ed9afa072d.jpg",
+    "content/post/00-drafts/assets/claude-skills-03.png",
+    "content/post/00-drafts/assets/claude-skills-02.png",
+    "content/post/00-drafts/assets/claude-skills-01.png",
+    "content/post/00-drafts/assets",
+    "content/post/00-drafts",
+    "content/post/drafts/assets",
+    "content/post/drafts",
+    "content/post/untitled folder"
   ]
 }
