@@ -1,6 +1,6 @@
 ---
 title: 'macOS 分应用音量控制最佳实践：免费开源工具 Background Music 推荐'
-description: 'Mac 用户常常遇到这样的问题：不同 App 的音量需求差异很大，有的需要放大，有的希望静音，但 macOS 并没有原生多应用音量控制功能。这一需求，可以通过开源工具 background-music 轻松解决。[1]'
+description: 'M'
 slug: macos-background-music
 date: 2025-10-06 04:31:13+0000
 tags:

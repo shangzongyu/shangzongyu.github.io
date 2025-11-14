@@ -3,7 +3,7 @@ title: "工具推荐s: git-switcher - 切换 git 配置"
 description: 切换不同的 Git 配置
 slug: tips-git-switcher-git
 date: 2024-01-06 09:54:08+0000
-image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2024-工具推荐：git-switcher-切换-git-配置-cover.webp
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2024-工具推荐_git-switcher-切换-git-配置-cover.webp
 tags:
   - tools
   - git

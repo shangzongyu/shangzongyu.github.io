@@ -3,7 +3,7 @@ title: "工具推荐: git-commits-visualizer -  本地 Git 仓库可视化贡献
 description: git-commits-visualizer 可以帮助用户通过图形化查看仓库的贡献度。
 slug: git-commits-visualizer-git
 date: 2023-07-28 02:25:18+0000
-image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2023-工具推荐：git-commits-visualizer-本地-Git-仓库可视化贡献图.webp
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2023-工具推荐_git-commits-visualizer-本地-Git-仓库可视化贡献图.webp
 tags:
   - tools
   - git

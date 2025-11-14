@@ -3,7 +3,7 @@ title: 'Tips: 命令行下 pdf 转换为图片'
 description: '使用工具 poppler 把 PDF 文档转换为图片，'
 slug: pdf
 date: 2023-07-26 08:03:08+0000
-image: cover.jpg
+image: 
 weight: 1
 ---
 

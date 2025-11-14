@@ -3,7 +3,7 @@ title: 作为自己的桌面环境：EndeavourOS
 description:
 slug: endeavouros-pamac
 date: 2022-12-12 03:10:05+0000
-image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_作为自己的桌面环境：EndeavourOS.webp
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_作为自己的桌面环境_EndeavourOS.webp
 tags:
   - package-manager
 weight: 1

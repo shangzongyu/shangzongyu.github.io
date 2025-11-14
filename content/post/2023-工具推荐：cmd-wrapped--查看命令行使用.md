@@ -3,7 +3,7 @@ title: 工具推荐：cmd-wrapped - 查看 Shell 记录
 description: 使用 Rust 实现的用户查看自己命令行的使用。
 slug: cmd-wrapped
 date: 2023-12-20 16:00:00+0000
-image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2023-工具推荐：cmd-wrapped--查看命令行使用.webp
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2023-工具推荐_cmd-wrapped--查看命令行使用.webp
 tags:
   - tools
 weight: 1

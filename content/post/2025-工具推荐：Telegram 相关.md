@@ -3,7 +3,7 @@ title: 工具推荐：Telegram 相关
 description: 主要收集 Telegram 相关的一些工具。
 slug: telegram
 date: 2025-07-08 03:52:56+0000
-image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2025-工具推荐：Telegram 相关.webp
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2025-工具推荐_Telegram-相关.webp
 weight: 1
 ---
 > 主要收集 Telegram 相关的一些工具。
@@ -62,4 +62,4 @@ podman-compose up -d
 特点：
 
 - 快速格式化
-- 
+-

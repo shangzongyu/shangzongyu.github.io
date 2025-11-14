@@ -3,7 +3,7 @@ title: '工具推荐: Darling - 在 Linux 运行 macOS 的软件'
 description: '可以帮助用户在非 mac 平台运行 mac 平台的软件。'
 slug: darling-linux-macos
 date: 2023-07-28 10:43:11+0000
-image: cover.jpg
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_工具推荐_Darling-在-Linux-运行-macOS-的软件.webp
 tags:
     - macos
 weight: 1

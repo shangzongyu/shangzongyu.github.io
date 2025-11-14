@@ -3,7 +3,7 @@ title: "工具推荐: goji - 使用 Emoji 提交 Commit 信息"
 description:
 slug: goji-emoji-commit
 date: 2024-11-14 10:32:19+0000
-image: "!https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2024-工具推荐：goji-使用-Emoji-提交-Commit-信息.webp"
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2024-工具推荐_goji-使用-Emoji-提交-Commit-信息.webp
 tags:
   - tools
   - git

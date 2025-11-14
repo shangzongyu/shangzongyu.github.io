@@ -5,7 +5,6 @@ slug: markitdown-markdown
 date: 2024-12-21 06:56:21+0000
 tags:
     - tools
-image: neofetch.jpg
 weight: 1
 ---
 

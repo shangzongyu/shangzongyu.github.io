@@ -30,4 +30,3 @@ sudo pacman -S qtcreator
 安装好之后，就可以打开 qtcreator 进行开发了。
 
 在 Linux 上安装比 macOS 上方便一些。
-

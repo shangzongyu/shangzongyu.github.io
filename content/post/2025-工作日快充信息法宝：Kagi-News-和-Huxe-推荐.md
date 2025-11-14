@@ -3,14 +3,13 @@ title: 工作日快充信息法宝：Kagi News 和 Huxe 推荐
 description: 最近用了一下两个新出的信息工具，体验下来感受挺不一样，整理一下分享给大家：如何用更高效、更智能的方式，每天花极少时间就能掌握需要的信息。
 slug: kagi-news-huxe
 date: 2025-09-27 08:49:32+0000
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2025-工作日快充信息法宝_Kagi-News-和-Huxe-推荐.webp
 tags:
   - ai
   - news
   - tools
 weight: 1
-"": https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_工具推荐：Darling-在-Linux-运行-macOS-的软件.webp
 ---
-
 
 > 最近用了一下两个新出的信息工具，体验下来感受挺不一样，整理一下分享给大家：如何用更高效、更智能的方式，每天花极少时间就能掌握需要的信息。
 
@@ -18,7 +17,7 @@ weight: 1
 
 ### Kagi News
 
-![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250927_upgit_20250927_kagi-news-app-store.png)
+![kagi-news](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250927_upgit_20250927_kagi-news-app-store.png)
 
 Kagi News 是一个主打高效的新闻工具。每天只需要花几分钟，就能快速浏览全球范围内的关键新闻，而且每条内容都带有不同观点和来源。
 - App Store：<https://apps.apple.com/us/app/kagi-news/id6748314243>  
