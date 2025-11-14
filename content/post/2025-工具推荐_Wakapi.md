@@ -3,6 +3,7 @@ title: 工具推荐：Wakapi
 description: ''
 slug: wakapi
 date: 2025-08-30 08:44:46+0000
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_wakapi-cover.webp
 tags:
   - tools
 weight: 1

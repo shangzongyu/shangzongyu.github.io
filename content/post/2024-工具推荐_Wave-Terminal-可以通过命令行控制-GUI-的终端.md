@@ -3,6 +3,7 @@ title: '工具推荐：Wave Terminal - 可以通过命令行控制 GUI 的终端
 description: ''
 slug: wave-terminal-gui
 date: 2024-12-16 06:51:58+0000
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_wave-cover.webp
 tags:
   - terminal
   - tools

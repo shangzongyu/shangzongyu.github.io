@@ -1,8 +1,9 @@
 ---
-title: '拥抱 Conventional Commits：让你的代码提交信息更有价值'
+title: '拥抱 ：让你的代码提交信息更有价值'
 description: '写更有价值的 Git Commit 信息'
 slug: conventional-commits
 date: 2025-09-13 07:31:11+0000
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_Conventiona-Commits-cover.webp
 tags:
   - git-tips
 weight: 1

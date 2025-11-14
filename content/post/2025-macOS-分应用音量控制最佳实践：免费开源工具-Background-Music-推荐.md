@@ -4,16 +4,18 @@ description: 'M'
 slug: macos-background-music
 date: 2025-10-06 04:31:13+0000
 tags:
-    - tools
-    - macos
+  - tools
+  - macos
 weight: 1
 ---
 
 Mac 用户常常遇到这样的问题：不同 App 的音量需求差异很大，有的需要放大，有的希望静音，但 macOS 并没有原生多应用音量控制功能。这一需求，可以通过开源工具 background-music 轻松解决。[1]
 
+Github: <https://github.com/kyleneideck/BackgroundMusic>
+
 ### 工具介绍
 
-![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_tools-backgroud-music.png)
+![tools-backgroud-music](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_tools-backgroud-music.png)
 
 background-music 是一款 macOS 下的开源音频控制工具，它支持为每个应用单独设置音量，还能自动在有新音频播放时暂停当前音乐播放器，并在音频结束时继续播放，非常贴合多任务的场景需求。除了分应用音量调节，background-music 还提供系统音频录制等功能，基本覆盖了日常对音频控制的要求。[1]
 
