@@ -16,18 +16,19 @@ weight: 1
 
 ## 安装
 
-Github： <https://github.com/YiNNx/cmd-wrapped>
+Github：<https://github.com/YiNNx/cmd-wrapped>
 
 ```sh
 # 使用 cargo
 cargo install cmd-wrapped
 
-# ArchLinux
+# Arch Linux
 yay -S cmd-wrapped
 
 # 自己编译使用
 git clone git@github.com:YiNNx/cmd-wrapped.git
 cd cmd-wrapped
+
 ## 生成 2023年
 cargo run -- 2023
 ## 或者

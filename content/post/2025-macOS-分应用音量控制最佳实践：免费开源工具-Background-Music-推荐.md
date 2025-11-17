@@ -11,7 +11,7 @@ weight: 1
 
 Mac 用户常常遇到这样的问题：不同 App 的音量需求差异很大，有的需要放大，有的希望静音，但 macOS 并没有原生多应用音量控制功能。这一需求，可以通过开源工具 background-music 轻松解决。[1]
 
-Github: <https://github.com/kyleneideck/BackgroundMusic>
+Github：<https://github.com/kyleneideck/BackgroundMusic>
 
 ### 工具介绍
 

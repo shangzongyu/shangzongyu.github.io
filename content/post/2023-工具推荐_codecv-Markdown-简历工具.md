@@ -1,6 +1,6 @@
 ---
 title: "工具推荐: codecv - Markdown 简历工具"
-description: 自己很喜欢 Markdown 这个文本格式，因此写简历的时候就想到 Markdown 了，自己就去找符合自己需求的工具，当然最后还是需要把 Markdown 转换为 PDF，因为使用的时候需要打印出来。
+description: ''
 slug: codecv-markdown
 date: 2023-07-28 03:00:09+0000
 image:
@@ -9,7 +9,6 @@ tags:
   - resume
 weight: 1
 ---
-
 
 ## 介绍
 

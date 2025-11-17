@@ -1,6 +1,6 @@
 ---
 title: "工具推荐: git-commits-visualizer -  本地 Git 仓库可视化贡献图"
-description: git-commits-visualizer 可以帮助用户通过图形化查看仓库的贡献度。
+description: '帮助用户通过图形化查看仓库的贡献度'
 slug: git-commits-visualizer-git
 date: 2023-07-28 02:25:18+0000
 image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2023-工具推荐_git-commits-visualizer-本地-Git-仓库可视化贡献图.webp
@@ -9,6 +9,7 @@ tags:
   - git
 weight: 1
 ---
+
 [git-commits-visualizer](https://github.com/abdullah-alaadine/git-commits-visualizer) 可以帮助用户通过图形化查看仓库的贡献度。
 
 特点：
@@ -17,7 +18,7 @@ weight: 1
 - 支持 Github 以及 Gitlab 服务
 - 离线工作，哪怕链接不上远程服务不影响使用
 
-# 安装
+## 安装
 
 ```sh
 go install github.com/abdullah-alaadine/git-commits-visualizer@latest
@@ -31,4 +32,4 @@ go install github.com/abdullah-alaadine/git-commits-visualizer@latest
 
 以我自己的一个项目来看看，如下图：
 
-![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230728_git-commits-visualizer.png)
+![git-commits-visualizer](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230728_git-commits-visualizer.png)

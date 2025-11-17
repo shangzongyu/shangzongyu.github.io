@@ -18,7 +18,7 @@ weight: 1
 
 支持的文件格式如下：
 
-* PDF  
+* PDF
 * PowerPoint
 * Word
 * Excel
