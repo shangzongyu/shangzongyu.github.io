@@ -1,16 +1,13 @@
 ---
 title: "2025 工具推荐：stormy 命令行查询天气"
-description: 
+description:
 date: 2025-11-17T14:28:42+08:00
 image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251117_stormy-cover.webp
 tags:
   - weather
   - command-line
   - tools
-math: 
-license: 
-hidden: false
-comments: true
+weight: 1
 ---
 
 之前介绍过一个通过命令找查询天气的工具[工具推荐：wttr-命令行查询天气。]({{< relref "post/2022-工具推荐_wttr-命令行查询天气.md" >}})，这次主要介绍另外一款命令行查询工具 [stormy](https://github.com/ashish0kumar/stormy)。
@@ -78,16 +75,16 @@ wttr.in 和 stormy 都是命令行天气查询工具，但它们在功能、数�
 
 ### 功能对比
 
-| 项目       | wttr.in                                            | stormy                                                   |
-|------------|----------------------------------------------------|----------------------------------------------------------|
-| 数据来源   | 自有 API（聚合多源），支持机场编码、特殊地名等查询  | OpenMeteo（默认、免 API Key）、OpenWeatherMap（需 API Key）|
-| 输出格式   | ANSI、纯文本、HTML、PNG、JSON、Prometheus、地图等   | 纯文本、ASCII 艺术、Neofetch 风格                        |
-| 展示内容   | 当前天气、预测、多地查询、月相、地图、天文信息       | 当前天气（温度、风速、湿度、降水）、ASCII 图标展示        |
-| 国际化     | 多语言支持（54种）、自动选择单位/语言               | 主要基于英文，单位可选                                   |
-| 集成方式   | shell、tmux、conky、IRC、Web、小组件等               | 本地 CLI，配置文件管理                                   |
-| 定制/扩展  | 支持参数自定义格式、单位、显示内容                  | 可选数据源、城市、单位、展示格式，支持 config 文件        |
-| 技术实现   | Python、Go 等                                      | Go                                                       |
-| 用户基数   | 日查询量 2200万~2700万，用户约18万~21万             | 社区较小，约130星（2025.7），轻量个人项目                |
+| 项目      | wttr.in                                            | stormy                                                      |
+| --------- | -------------------------------------------------- | ----------------------------------------------------------- |
+| 数据来源  | 自有 API（聚合多源），支持机场编码、特殊地名等查询 | OpenMeteo（默认、免 API Key）、OpenWeatherMap（需 API Key） |
+| 输出格式  | ANSI、纯文本、HTML、PNG、JSON、Prometheus、地图等  | 纯文本、ASCII 艺术、Neofetch 风格                           |
+| 展示内容  | 当前天气、预测、多地查询、月相、地图、天文信息     | 当前天气（温度、风速、湿度、降水）、ASCII 图标展示          |
+| 国际化    | 多语言支持（54种）、自动选择单位/语言              | 主要基于英文，单位可选                                      |
+| 集成方式  | shell、tmux、conky、IRC、Web、小组件等             | 本地 CLI，配置文件管理                                      |
+| 定制/扩展 | 支持参数自定义格式、单位、显示内容                 | 可选数据源、城市、单位、展示格式，支持 config 文件          |
+| 技术实现  | Python、Go 等                                      | Go                                                          |
+| 用户基数  | 日查询量 2200万~2700万，用户约18万~21万            | 社区较小，约130星（2025.7），轻量个人项目                   |
 
 ### 核心差异解析
 
@@ -120,3 +117,4 @@ wttr.in 和 stormy 都是命令行天气查询工具，但它们在功能、数�
 
 [1](https://github.com/chubin/wttr.in)
 [2](https://github.com/ashish0kumar/stormy)
+
