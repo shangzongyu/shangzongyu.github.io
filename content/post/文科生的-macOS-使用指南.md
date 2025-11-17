@@ -1,3 +1,15 @@
+---
+title: "文科生使用的工具"
+description: 
+date: 2025-11-14T11:24:27+08:00
+image: 
+math: 
+license: 
+hidden: true
+comments: true
+draft: true
+---
+
 ## 浏览器 Comet
 
 ## Markdown 编辑器妙言
@@ -21,4 +33,5 @@ GitHub：<http://github.com/sbarex/SourceCodeSyntaxHighlight>
 - 提供命令行工具，支持批量转换代码文件为 HTML 或 RTF 格式；
 - 可处理无扩展名的纯文本文件，智能识别文件类型。
   
+
 下载应用后拖到 Applications 文件夹，首次运行需在系统偏好设置中启用 Quick Look 扩展即可使用。
