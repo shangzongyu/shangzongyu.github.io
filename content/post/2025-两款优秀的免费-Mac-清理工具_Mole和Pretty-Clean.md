@@ -6,6 +6,7 @@ date: 2025-10-05 15:10:35+0000
 tags:
   - toosl
   - clean
+  - macOS
 weight: 1
 ---
 

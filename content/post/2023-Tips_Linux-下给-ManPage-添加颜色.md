@@ -61,13 +61,16 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 # Debian/Ubuntu
 sudo apt install most   
 
+# Arch
+sudo pacman -S most
+
 # macOS
 brew install most
 ```
 
 配置：
 
-然后在 `.bashrc` 或者 `.zshrc` 添加如下配置：
+在 `.bashrc` 或者 `.zshrc` 添加如下配置：
 
 ```sh
 export PAGER="most"

@@ -1,5 +1,5 @@
 ---
-title: "2025 工具推荐：stormy 命令行查询天气"
+title: "工具推荐：stormy 命令行查询天气"
 description:
 date: 2025-11-17T14:28:42+08:00
 image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251117_stormy-cover.webp

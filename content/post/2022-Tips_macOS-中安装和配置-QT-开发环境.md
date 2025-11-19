@@ -1,16 +1,19 @@
 ---
-title: macOS 中安装和配置 Qt 开发环境
+title: Tips：macOS 中安装和配置 Qt 开发环境
 description: 
 slug: macos-config-qt
 date: 2022-05-02 06:37:50+0000
-image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2022-macOS-中安装和配置-QT-开发环境.webp
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2022-macOS-中安装和配置-QT-开发环境-cover.webp
 tags:
+  - tips
   - macos
   - qt
 weight: 1
 ---
 
 > 介绍如何在 macOS 下使用 Qt Creator + Qt 进行开发。
+
+<!--more-->
 
 ## 环境
 
@@ -39,7 +42,7 @@ export CPPFLAGS="-I/usr/local/opt/qt@5/include"
 export PKG_CONFIG_PATH="/usr/local/opt/qt@5/lib/pkgconfig"
 ```
 
-> 如果使用的是 Bash，那么把上述配置写入到 `~/.bashrc` 文件中。
+> 如果使用的是 Bash，那么把上面的配置写入 `~/.bashrc` 文件中。
 
 ## 配置 Qt Version
 

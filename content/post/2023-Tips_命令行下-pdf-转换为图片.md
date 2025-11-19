@@ -1,9 +1,12 @@
 ---
 title: 'Tips: 命令行下 pdf 转换为图片'
-description: '使用工具 poppler 把 PDF 文档转换为图片，'
+description: '使用工具 poppler 把 PDF 文档转换为图片'
 slug: pdf
 date: 2023-07-26 08:03:08+0000
 image: 
+tags:
+  - command-line
+  - tools
 weight: 1
 ---
 
@@ -54,7 +57,8 @@ pdftoppm -<image_format> -f N -l N <pdf_filename> <image_name>
 
 * `-f N`：PDF 的起始页码
 * `-l N`：PDF 的结束码
-    
+  
+
 比如我们需要把第 2 页到第 5 页转为图片：
 
 ```bash

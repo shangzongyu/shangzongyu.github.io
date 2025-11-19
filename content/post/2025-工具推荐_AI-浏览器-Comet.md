@@ -2,8 +2,9 @@
 title: "工具推荐：AI 浏览器 Comet"
 description: 
 date: 2025-11-19T10:41:46+08:00
-image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-cover.webp
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-cover.png
 comments: true
+weight: 1
 tags:
   - Broswer
   - AI
@@ -16,6 +17,12 @@ tags:
 <!--more-->
 
 ## 我自己常用的功能
+
+### 直接使用 perplexity 进行搜索
+
+在下图：
+
+![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-search-example.webp) 
 
 ### 使用搜索栏直接搜索
 
@@ -35,18 +42,15 @@ tags:
 
 #### 小技巧2: 使用非 Google 和 Perplexit 搜索
 
-例如现在要使用 `bing`，在搜索栏中输入 `bing.com` 点击空格或者 TAB，就会出现如下图，这时候在搜索栏搜索自己想要搜索的内容，他就会使用 `bing` 进行搜索。
+例如现在要使用 `bing`，在搜索栏中输入 `bing.com` 点击空格或者 TAB，就会出现如下图，这时候在搜索栏搜索自己想要搜索的内容，它就会使用 `bing` 进行搜索。
 
 ![Bing Search](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-search-example-02.webp)
-
-其他的搜索引擎，类似例如 `baidu.com`
-
 
 ### 使用 Comet 总结视频
 
 点击右上角有个 “Assistant”，会从右边弹出一个框，当鼠标放到 “Ask Anything...” 的时候出现下图：
 
-![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-video-0.webp)
+![perplexity-video](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-video-0.webp)
 
 AI 已经准备了几个常用的提示词，当然我们可以自己写提示词，使用系统的提示词，给出回答是英文的如下图 1，如果想要中文的使用中文的提示词，总结这篇文章，结果如图 2。
 
@@ -80,9 +84,7 @@ AI 已经准备了几个常用的提示词，当然我们可以自己写提示�
 
 ![labs](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-mode-labs.webp)
 
-高级功能，支持项目开发、数据可视化和互动式成果展示。可以协助用户完成从问题定义到实际产出的复杂任务，如开发交互网页应用、数据仪表盘，或整合多信息源生成详细报告。此模式依托多代理系统，模拟专业团队协作自动交付成果。
-
-###
+Labs 是高级功能，支持项目开发、数据可视化和互动式成果展示。可以协助用户完成从问题定义到实际产出的复杂任务，如开发交互网页应用、数据仪表盘，或整合多信息源生成详细报告。此模式依托多代理系统，模拟专业团队协作自动交付成果。
 
 ## FAQ
 
@@ -91,20 +93,16 @@ AI 已经准备了几个常用的提示词，当然我们可以自己写提示�
 
 ### 是否有必要购买 Pro
 
-在 Pro 版和非 Pro 版的使用区别主要体现在功能权限和使用限制上：
+免费版和 Pro 版的使用区别主要体现在功能权限和使用限制上：
 
-搜索模式：
-- 非 Pro 版用户可使用基本的搜索功能，且每天有次数限制 (例如每天 5 次 Pro 搜索额度)。
-- Pro 版用户享有无限次搜索，且可使用更深入、更精准的 “Pro 搜索” 模式，支持多轮追问和更客制化答案。
+Pro 版相较非 Pro 版主要在功能权限与使用限制上有区别：
 
-研究模式：
-- 非 Pro 版用户只能使用系统默认模型，无法切换 AI 模型。
-- Pro 版用户可自由切换多种先进 AI 模型 (如 GPT-4 系列、Claude 系列等)，支持更复杂、深度的研究和分析。
+| 功能        | Free                          | Pro                                |
+|-------------|---------------------------------|-------------------------------------|
+| 搜索模式    | 基本搜索，次数有限（每日约5次）  | 无限搜索，支持更精准的“Pro搜索”      |
+| 研究模式    | 固定模型，不支持模型切换          | 支持多模型切换，如 GPT-4、Claude 系列 |
+| 实验室模式  | 无法使用                       | 支持文件上传、复杂数据分析、交互展示   |
+| 其他高级功能 | 无                           | 图像生成、多语言支持、API 额度等       |
 
-实验室模式：
-- 仅 Pro 版及企业版用户可访问此高级功能，支持文件上传 (如 Excel、PDF、Word)、复杂数据分析、交互式成果展示等。
-- 非 Pro 版用户无法使用实验室模式。
+总结：免费版本适合一般搜索与轻度查询，Pro 用户能全面发挥三种模式优势，完成更复杂研究及高级任务。
 
-此外，Pro 版用户还享有更多高级功能，如图像生成、多语言支持、API 额度等，而非 Pro 版受到功能和使用量的限制。
-
-总结：非 Pro 用户适合日常轻度搜索和简单查询，Pro 用户则能发挥三种模式的全部潜能，进行更复杂的资料分析、模型切换与高级任务处理。[1][2][3][4]
