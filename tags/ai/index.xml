@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on 我的世界</title><link>https://shangzongyu.github.io/tags/ai/</link><description>Recent content in AI on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 19 Nov 2025 10:41:46 +0800</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>工具推荐：AI 浏览器 Comet</title><link>https://shangzongyu.github.io/p/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90ai-%E6%B5%8F%E8%A7%88%E5%99%A8-comet/</link><pubDate>Wed, 19 Nov 2025 10:41:46 +0800</pubDate><guid>https://shangzongyu.github.io/p/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90ai-%E6%B5%8F%E8%A7%88%E5%99%A8-comet/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-cover.png" alt="Featured image of post 工具推荐：AI 浏览器 Comet" /&gt;&lt;p&gt;今年有好几家公司都出了 AI 浏览器，自己也尝试了一款 AI 浏览器器 &lt;a class="link" href="https://www.perplexity.ai/comet" target="_blank" rel="noopener"
+&gt;Comet&lt;/a&gt;，它是 Perplexiy 推出的浏览器，集成自己 AI Perplexiy。
+我使用了有一个多月了，感觉再也回不去之前的浏览器的。&lt;/p&gt;
+&lt;h2 id="我自己常用的功能"&gt;我自己常用的功能
+&lt;/h2&gt;&lt;h3 id="直接使用-perplexity-进行搜索"&gt;直接使用 perplexity 进行搜索
+&lt;/h3&gt;&lt;p&gt;在下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-search-example.webp"
+loading="lazy"
+&gt;&lt;/p&gt;
+&lt;h3 id="使用搜索栏直接搜索"&gt;使用搜索栏直接搜索
+&lt;/h3&gt;&lt;p&gt;如果我想要搜索 “how to register telegram”，在搜索栏目输入这个，会出下下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-search-example-00.webp"
+loading="lazy"
+alt="perplexity-search-example"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;后面标有 Google 的表示使用 Google 搜索&lt;/li&gt;
+&lt;li&gt;后面标有 Perplexity 的表示使用 Perplexity 搜索&lt;/li&gt;
+&lt;li&gt;其他的没有标识的使用默认搜索，也就是 Perplexity 搜索。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="小技巧1add-to-follow-up持续追问"&gt;小技巧1：“Add To Follow Up”，持续追问
+&lt;/h4&gt;&lt;p&gt;这个功能可以让我们对我们不懂得那个一直追问，如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-search-example-01.webp"
+loading="lazy"
+alt="Perplexity Follow up"
+&gt;&lt;/p&gt;
+&lt;h4 id="小技巧2-使用非-google-和-perplexit-搜索"&gt;小技巧2: 使用非 Google 和 Perplexit 搜索
+&lt;/h4&gt;&lt;p&gt;例如现在要使用 &lt;code&gt;bing&lt;/code&gt;，在搜索栏中输入 &lt;code&gt;bing.com&lt;/code&gt; 点击空格或者 TAB，就会出现如下图，这时候在搜索栏搜索自己想要搜索的内容，它就会使用 &lt;code&gt;bing&lt;/code&gt; 进行搜索。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-search-example-02.webp"
+loading="lazy"
+alt="Bing Search"
+&gt;&lt;/p&gt;
+&lt;h3 id="使用-comet-总结视频"&gt;使用 Comet 总结视频
+&lt;/h3&gt;&lt;p&gt;点击右上角有个 “Assistant”，会从右边弹出一个框，当鼠标放到 “Ask Anything&amp;hellip;” 的时候出现下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-video-0.webp"
+loading="lazy"
+alt="perplexity-video"
+&gt;&lt;/p&gt;
+&lt;p&gt;AI 已经准备了几个常用的提示词，当然我们可以自己写提示词，使用系统的提示词，给出回答是英文的如下图 1，如果想要中文的使用中文的提示词，总结这篇文章，结果如图 2。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-video-1.webp"
+loading="lazy"
+alt="图1"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-video-2.webp"
+loading="lazy"
+alt="图2"
+&gt;&lt;/p&gt;
+&lt;h3 id="使用-comet-总结文章"&gt;使用 Comet 总结文章
+&lt;/h3&gt;&lt;p&gt;文章和视频有些类似，依旧通过右上角有个 “Assistant”，打开一个 SideBar，然后在 Sidebar 中询问一些问题，例如：总结文章/提取要点等等。&lt;/p&gt;
+&lt;h2 id="perplexity-的三种搜索模式"&gt;Perplexity 的三种搜索模式
+&lt;/h2&gt;&lt;p&gt;在使用 Comet 之前还是要了解下 Perplexity 的三种搜索模式，这样可以更好帮助我们更快和准确的完成任务。&lt;/p&gt;
+&lt;p&gt;三种模式分别是：Search、Research、Labs，下面详细介绍下：&lt;/p&gt;
+&lt;h3 id="search-模式"&gt;Search 模式
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-mode-search.webp"
+loading="lazy"
+alt="search"
+&gt;&lt;/p&gt;
+&lt;p&gt;适合快速获取&lt;strong&gt;事实性答案&lt;/strong&gt;和&lt;strong&gt;处理日常信息查询&lt;/strong&gt;，比如天气预报、名人生日、词汇定义等。此模式优势是速度快、答案简洁准确，适合短期问题解决。&lt;/p&gt;
+&lt;h3 id="research-模式"&gt;Research 模式
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-mode-research.webp"
+loading="lazy"
+alt="research"
+&gt;&lt;/p&gt;
+&lt;p&gt;适用于&lt;strong&gt;深入探讨特定主题&lt;/strong&gt;，整理多个信息来源，形成分析结论。适合撰写研究报告、市场调研、行业趋势分析等，能系统收集、整理资料并自动生成引文和参考文献，提高研究效率。&lt;/p&gt;
+&lt;h3 id="labs-模式"&gt;Labs 模式
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-mode-labs.webp"
+loading="lazy"
+alt="labs"
+&gt;&lt;/p&gt;
+&lt;p&gt;Labs 是高级功能，支持项目开发、数据可视化和互动式成果展示。可以协助用户完成从问题定义到实际产出的复杂任务，如开发交互网页应用、数据仪表盘，或整合多信息源生成详细报告。此模式依托多代理系统，模拟专业团队协作自动交付成果。&lt;/p&gt;
+&lt;h2 id="faq"&gt;FAQ
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;如果使用了代理还是用了，需要开启 TUN 模式&lt;/li&gt;
+&lt;li&gt;Perplexity 免费可以用，但是付费用户可以有更多，不用在官网买找万能的 TAOBAO 就可以，一年不到 100 块 RMB，比官方便宜不少&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="是否有必要购买-pro"&gt;是否有必要购买 Pro
+&lt;/h3&gt;&lt;p&gt;免费版和 Pro 版的使用区别主要体现在功能权限和使用限制上：&lt;/p&gt;
+&lt;p&gt;Pro 版相较非 Pro 版主要在功能权限与使用限制上有区别：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;th&gt;Free&lt;/th&gt;
+&lt;th&gt;Pro&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;搜索模式&lt;/td&gt;
+&lt;td&gt;基本搜索，次数有限（每日约5次）&lt;/td&gt;
+&lt;td&gt;无限搜索，支持更精准的“Pro搜索”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;研究模式&lt;/td&gt;
+&lt;td&gt;固定模型，不支持模型切换&lt;/td&gt;
+&lt;td&gt;支持多模型切换，如 GPT-4、Claude 系列&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;实验室模式&lt;/td&gt;
+&lt;td&gt;无法使用&lt;/td&gt;
+&lt;td&gt;支持文件上传、复杂数据分析、交互展示&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;其他高级功能&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;图像生成、多语言支持、API 额度等&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;总结：免费版本适合一般搜索与轻度查询，Pro 用户能全面发挥三种模式优势，完成更复杂研究及高级任务。&lt;/p&gt;</description></item><item><title>GLM 4.5 配置全攻略：Claude Code 与 Codex 实战指南</title><link>https://shangzongyu.github.io/p/glm-45-claude-code-codex/</link><pubDate>Sat, 27 Sep 2025 08:22:56 +0000</pubDate><guid>https://shangzongyu.github.io/p/glm-45-claude-code-codex/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_GLM-Coding.webp" alt="Featured image of post GLM 4.5 配置全攻略：Claude Code 与 Codex 实战指南" /&gt;&lt;h2 id="简介"&gt;简介
+&lt;/h2&gt;&lt;p&gt;智谱最新推出的 &lt;strong&gt;GLM 4.5&lt;/strong&gt; 是一款面向编程和智能应用的通用大模型，相比前一代在&lt;strong&gt;代码生成、复杂推理、对话体验&lt;/strong&gt;等方面有了显著提升。
+它不仅支持在交互式编程中作为助手使用，还可以集成到 &lt;strong&gt;Claude Code&lt;/strong&gt; 和 &lt;strong&gt;Codex&lt;/strong&gt; 工具中，帮助开发者更高效地完成编码、调试和文档处理等任务。&lt;/p&gt;
+&lt;p&gt;本文将介绍 GLM 4.5 在 &lt;strong&gt;Claude Code&lt;/strong&gt; 和 &lt;strong&gt;Codex&lt;/strong&gt; 中的配置方法，帮助你快速上手。
+目前智谱还推出了一个 &lt;strong&gt;“编程套餐” GLM Coding Plan&lt;/strong&gt;，有限时优惠，基础版本 3 个月仅需 60 元，我也入手体验了一下。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250927_GLM4.5-Coding-Plan.png"
+loading="lazy"
+alt="GLM4.5-Coding-Plan"
+&gt;&lt;/p&gt;
+&lt;p&gt;在使用 Claude Code 和 Codex 前，需要先安装 &lt;strong&gt;Node.js&lt;/strong&gt;。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 安装 Node.js&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install node@22
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="claude-code"&gt;Claude Code
+&lt;/h2&gt;&lt;p&gt;官网文档地址：&lt;a class="link" href="https://docs.bigmodel.cn/cn/coding-plan/tool/claude" target="_blank" rel="noopener"
+&gt;https://docs.bigmodel.cn/cn/coding-plan/tool/claude&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="安装"&gt;安装
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;npm install -g @anthropic-ai/claude-code
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="配置"&gt;配置
+&lt;/h3&gt;&lt;p&gt;通过环境变量进行配置：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;ANTHROPIC_BASE_URL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;https://open.bigmodel.cn/api/coding/paas/v4&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;ANTHROPIC_AUTH_TOKEN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;your Zhipu API key&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;API Key 可在&lt;a class="link" href="https://open.bigmodel.cn/usercenter/proj-mgmt/apikeys" target="_blank" rel="noopener"
+&gt;这里&lt;/a&gt;获取。
+注意：&lt;code&gt;ANTHROPIC_BASE_URL&lt;/code&gt; 必须设置为 &lt;a class="link" href="https://open.bigmodel.cn/api/coding/paas/v4%ef%bc%8c%e8%bf%99%e6%98%af%e6%99%ba%e8%b0%b1%e4%b8%93%e9%97%a8%e4%b8%ba%e7%bc%96%e7%a8%8b%e6%8f%90%e4%be%9b%e7%9a%84%e7%ab%af%e7%82%b9%e3%80%82" target="_blank" rel="noopener"
+&gt;&lt;code&gt;https://open.bigmodel.cn/api/coding/paas/v4&lt;/code&gt;，这是智谱专门为编程提供的端点。&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;配置完成后即可使用：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250927_GLM4.5-Claude-Code.png"
+loading="lazy"
+&gt;&lt;/p&gt;
+&lt;h3 id="faq"&gt;FAQ
+&lt;/h3&gt;&lt;h4 id="1错误处理-api-error"&gt;1、错误处理 &lt;code&gt;API Error&lt;/code&gt;
+&lt;/h4&gt;&lt;p&gt;若出现类似 &lt;strong&gt;“API Error 401”&lt;/strong&gt; 的报错，只需删除旧的 API Key，重新生成一个新的即可解决。&lt;/p&gt;
+&lt;p&gt;错误如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250927_SCR-20250922-orcl.png"
+loading="lazy"
+&gt;&lt;/p&gt;
+&lt;h4 id="2模型选择"&gt;2、模型选择
+&lt;/h4&gt;&lt;p&gt;Claude Code 内置了两个模型环境变量：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ANTHROPIC_MODEL&lt;/code&gt;：使用 &lt;code&gt;GLM-4.5&lt;/code&gt; (适用于对话、规划、代码编写、复杂推理等场景)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ANTHROPIC_SMALL_FAST_MODEL&lt;/code&gt;：使用 &lt;code&gt;GLM-4.5-Air&lt;/code&gt; (适用于文件搜索、语法检查等辅助场景)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;该组合在性能与速度之间取得了较好的平衡，也是官方推荐的默认方案。
+目前不支持其他模型 (如 &lt;code&gt;GLM-4.5-X&lt;/code&gt;、&lt;code&gt;GLM-4.5-AirX&lt;/code&gt;、&lt;code&gt;GLM-4.5-Flash&lt;/code&gt;)。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="codex"&gt;Codex
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;在撰写本文时，智谱官方尚未提供 Codex 的完整配置方案。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="安装-1"&gt;安装
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;npm install -g @openai/codex@latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="配置-1"&gt;配置
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 设置环境变量&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;GLM_API_KEY&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;your Zhipu API key&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 编辑配置文件 ~/.codex/config.toml（若不存在则新建），内容如下：&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;model_provider&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;glm&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;model&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;glm-4.5&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;[&lt;/span&gt;model_providers.glm&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;zai&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;base_url&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;https://open.bigmodel.cn/api/coding/paas/v4&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;env_key&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;GLM_API_KEY&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;提示&lt;/strong&gt;：&lt;code&gt;env_key&lt;/code&gt; 必须与之前设置的环境变量 &lt;code&gt;GLM_API_KEY&lt;/code&gt; 一致。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;配置完成后即可使用：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250927_GLM4.5-Codex.png"
+loading="lazy"
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="总结"&gt;总结
+&lt;/h2&gt;&lt;p&gt;GLM 4.5 在&lt;strong&gt;编程辅助&lt;/strong&gt;、&lt;strong&gt;复杂推理&lt;/strong&gt;和&lt;strong&gt;高效交互&lt;/strong&gt;等方面展现了强大的能力。通过结合 &lt;strong&gt;Claude Code&lt;/strong&gt; 与 &lt;strong&gt;Codex&lt;/strong&gt;，开发者可以快速将其集成到工作流中，提升开发效率和体验。&lt;/p&gt;
+&lt;p&gt;随着 GLM 在更多工具和生态中的支持不断完善，它将不仅是一个&lt;strong&gt;编程助手&lt;/strong&gt;，更可能成为未来&lt;strong&gt;智能开发环境&lt;/strong&gt;的核心组成部分。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="后记"&gt;后记
+&lt;/h2&gt;&lt;p&gt;本文由我原创撰写，并通过 AI 辅助进行了语言润色与排版优化，以提升可读性和表达效果。核心内容与观点均为本人所有。&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Redis on 我的世界</title><link>https://shangzongyu.github.io/tags/redis/</link><description>Recent content in Redis on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 26 Jul 2023 10:24:40 +0000</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml"/><item><title>Redis 的 FAQ</title><link>https://shangzongyu.github.io/p/redis-error-err-debug-command-not-allowed/</link><pubDate>Wed, 26 Jul 2023 10:24:40 +0000</pubDate><guid>https://shangzongyu.github.io/p/redis-error-err-debug-command-not-allowed/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_redis.webp" alt="Featured image of post Redis 的 FAQ" /&gt;&lt;h2 id="redis-errorerr-debug-command-not-allowed"&gt;Redis Error：“ERR DEBUG command not allowed。
+&lt;/h2&gt;&lt;p&gt;Redis 安装之后，默认不允许使用 DEBUG 这个命令，我们只需要修改一些配置文件就可以了。&lt;/p&gt;
+&lt;p&gt;修改配置文件 &lt;code&gt;/etc/redis/redis.conf&lt;/code&gt;，修改 &lt;code&gt;enable-debug-command no&lt;/code&gt;，修改为 &lt;code&gt;enable-debug-command yes&lt;/code&gt;，并且解开注释，然后重启。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_redis-faq-0000.png"
+loading="lazy"
+alt="redis-config"
+&gt;&lt;/p&gt;
+&lt;p&gt;重启服务：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo systemctl restart redis-server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item></channel></rss>

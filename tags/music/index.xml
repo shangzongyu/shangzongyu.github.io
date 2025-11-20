@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Music on 我的世界</title><link>https://shangzongyu.github.io/tags/music/</link><description>Recent content in Music on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 08 Jul 2025 16:00:57 +0000</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/music/index.xml" rel="self" type="application/rss+xml"/><item><title>工具推荐：音乐</title><link>https://shangzongyu.github.io/p/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90%E9%9F%B3%E4%B9%90/</link><pubDate>Tue, 08 Jul 2025 16:00:57 +0000</pubDate><guid>https://shangzongyu.github.io/p/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90%E9%9F%B3%E4%B9%90/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251117_music.webp" alt="Featured image of post 工具推荐：音乐" /&gt;&lt;h2 id="网易云"&gt;网易云
+&lt;/h2&gt;&lt;h3 id="algermusicplayer"&gt;AlgerMusicPlayer
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250708_music-algerkong.png"
+loading="lazy"
+alt="music-algerkong"
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;网易云第三方音乐播放器、本地服务、桌面歌词、音乐下载、最高音质。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Github：&lt;a class="link" href="https://github.com/algerkong/AlgerMusicPlayerw" target="_blank" rel="noopener"
+&gt;https://github.com/algerkong/AlgerMusicPlayerw&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;主要功能如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;音乐推荐&lt;/li&gt;
+&lt;li&gt;网易云账号登录与同步&lt;/li&gt;
+&lt;li&gt;功能
+&lt;ul&gt;
+&lt;li&gt;播放历史记录&lt;/li&gt;
+&lt;li&gt;歌曲收藏管理&lt;/li&gt;
+&lt;li&gt;歌单 MV 排行榜每日推荐&lt;/li&gt;
+&lt;li&gt;自定义快捷键配置 (全局或应用内)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;界面与交互
+&lt;ul&gt;
+&lt;li&gt;沉浸式歌词显示 (点击左下角封面进入)&lt;/li&gt;
+&lt;li&gt;独立桌面歌词窗口&lt;/li&gt;
+&lt;li&gt;明暗主题切换&lt;/li&gt;
+&lt;li&gt;迷你模式&lt;/li&gt;
+&lt;li&gt;状态栏控制&lt;/li&gt;
+&lt;li&gt;多语言支持&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;音乐功能
+&lt;ul&gt;
+&lt;li&gt;支持歌单、MV、专辑等完整音乐服务&lt;/li&gt;
+&lt;li&gt;音乐资源解&lt;/li&gt;
+&lt;li&gt;EQ 均衡器&lt;/li&gt;
+&lt;li&gt;定时播放远程控制播放倍速播放&lt;/li&gt;
+&lt;li&gt;高品质音乐&lt;/li&gt;
+&lt;li&gt;音乐文件下载&lt;/li&gt;
+&lt;li&gt;搜索 MV、音乐、专辑、歌单、bilibili&lt;/li&gt;
+&lt;li&gt;音乐单独选择音源解析&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;技术特性
+&lt;ul&gt;
+&lt;li&gt;本地化服务，无需依赖在线 API&lt;/li&gt;
+&lt;li&gt;全平台适配 (Desktop &amp;amp; Web &amp;amp; Mobile Web &amp;amp; Android&amp;lt;测试&amp;gt; &amp;amp; ios&amp;lt;后续&amp;gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="yesplaymusic"&gt;YesPlayMusic
+&lt;/h3&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250708_music-YesPlayMusic.png" alt="music-YesPlayMusic" style="zoom:85%;" /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;高颜值的第三方网易云播放器，跨平台支持 Windows / macOS / Linux。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Github：&lt;a class="link" href="https://github.com/qier222/YesPlayMusic" target="_blank" rel="noopener"
+&gt;https://github.com/qier222/YesPlayMusic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;官网：&lt;a class="link" href="https://music.qier222.com/" target="_blank" rel="noopener"
+&gt;https://music.qier222.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;安装：
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# macOS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install --cask yesplaymusic
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;特性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;网易云账号登录 (扫码/手机/邮箱登录)&lt;/li&gt;
+&lt;li&gt;支持 MV 播放&lt;/li&gt;
+&lt;li&gt;支持歌词显示&lt;/li&gt;
+&lt;li&gt;支持私人 FM / 每日推荐歌曲&lt;/li&gt;
+&lt;li&gt;无任何社交功能&lt;/li&gt;
+&lt;li&gt;海外用户可直接播放 (需要登录网易云账号)&lt;/li&gt;
+&lt;li&gt;支持 &lt;a class="link" href="https://github.com/UnblockNeteaseMusic/server#%E9%9F%B3%E6%BA%90%E6%B8%85%E5%8D%95" target="_blank" rel="noopener"
+&gt;UnblockNeteaseMusic&lt;/a&gt;，自动使用&lt;a class="link" href="https://github.com/UnblockNeteaseMusic/server#%E9%9F%B3%E6%BA%90%E6%B8%85%E5%8D%95" target="_blank" rel="noopener"
+&gt;各类音源&lt;/a&gt;替换变灰歌曲链接 (网页版不支持)
+&lt;ul&gt;
+&lt;li&gt;“各类音源” 指默认启用的音源。&lt;/li&gt;
+&lt;li&gt;YouTube 音源需自行安装 &lt;code&gt;yt-dlp&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;每日自动签到 (手机端和电脑端同时签到)&lt;/li&gt;
+&lt;li&gt;Light/Dark Mode 自动切换&lt;/li&gt;
+&lt;li&gt;支持 Touch Bar&lt;/li&gt;
+&lt;li&gt;支持 PWA，可在 Chrome/Edge 里点击地址栏右边的 ➕ 安装到电脑&lt;/li&gt;
+&lt;li&gt;支持 Last.fm Scrobble&lt;/li&gt;
+&lt;li&gt;自定义快捷键和全局快捷键&lt;/li&gt;
+&lt;li&gt;支持 Mpris&lt;/li&gt;
+&lt;li&gt;更多特性&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="spotube"&gt;Spotube
+&lt;/h2&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250708_music-spotube_banner.png" alt="music-spotube_banner" style="zoom:50%;" /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;开源跨平台的音乐客户端，可以听 Spotify 和 Youtube 的音乐。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Github：&lt;a class="link" href="https://github.com/KRTirtho/spotube" target="_blank" rel="noopener"
+&gt;https://github.com/KRTirtho/spotube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;特点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;跨平台：macOS/Linux/Windows&lt;/li&gt;
+&lt;li&gt;没有广告&lt;/li&gt;
+&lt;li&gt;可以下载音乐&lt;/li&gt;
+&lt;li&gt;跨平台支持&lt;/li&gt;
+&lt;li&gt;更小的资源使用&lt;/li&gt;
+&lt;li&gt;本地性能比较好&lt;/li&gt;
+&lt;li&gt;没有数据监控&lt;/li&gt;
+&lt;li&gt;开源&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="youtube-music"&gt;Youtube Music
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250708_music-youtube.png"
+loading="lazy"
+alt="music-youtube"
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一个可以使用自己定义的插件的 Youtube Music 的桌面客户端的封装。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Github：&lt;a class="link" href="https://github.com/th-ch/youtube-music" target="_blank" rel="noopener"
+&gt;https://github.com/th-ch/youtube-music&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;官网：&lt;a class="link" href="https://th-ch.github.io/youtube-music/" target="_blank" rel="noopener"
+&gt;https://th-ch.github.io/youtube-music/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;安装：
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# macOS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install th-ch/youtube-music/youtube-music
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;支持的插件很多，列举几个我使用的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ad Blocker&lt;/strong&gt;：Block all ads and tracking out of the box&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Album Actions&lt;/strong&gt;：Adds Undislike，Dislike，Like，and Unlike buttons to apply this to all songs in a playlist or album&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Album Color Theme&lt;/strong&gt;：Applies a dynamic theme and visual effects based on the album color palette&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ambient Mode&lt;/strong&gt;：Applies a lighting effect by casting gentle colors from the video，into your screen’s background&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bypass Age Restrictions&lt;/strong&gt;：bypass YouTube&amp;rsquo;s age verification&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Downloader&lt;/strong&gt;：downloads MP3 &lt;a class="link" href="https://user-images.githubusercontent.com/61631665/129977677-83a7d067-c192-45e1-98ae-b5a4927393be.png" target="_blank" rel="noopener"
+&gt;directly from the interface&lt;/a&gt; &lt;a class="link" href="https://github.com/ytdl-org/youtube-dl" target="_blank" rel="noopener"
+&gt;(youtube-dl)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scrobbler&lt;/strong&gt;：Adds scrobbling support for &lt;a class="link" href="https://www.last.fm/" target="_blank" rel="noopener"
+&gt;Last.fm&lt;/a&gt; and &lt;a class="link" href="https://listenbrainz.org/" target="_blank" rel="noopener"
+&gt;ListenBrainz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;No Google Login&lt;/strong&gt;：Remove Google login buttons and links from the interface&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Picture-in-picture&lt;/strong&gt;：allows to switch the app to picture-in-picture mode&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Playback Speed&lt;/strong&gt;：Listen fast，listen slow！&lt;a class="link" href="https://user-images.githubusercontent.com/61631665/129976003-e55db5ba-bf42-448c-a059-26a009775e68.png" target="_blank" rel="noopener"
+&gt;Adds a slider that controls song speed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://github.com/ajayyy/SponsorBlock" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;SponsorBlock&lt;/strong&gt;&lt;/a&gt;：Automatically Skips non-music parts like intro/outro or parts of music videos where the song isn&amp;rsquo;t playing&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TouchBar&lt;/strong&gt;：自定义 TouchBar 布局&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
