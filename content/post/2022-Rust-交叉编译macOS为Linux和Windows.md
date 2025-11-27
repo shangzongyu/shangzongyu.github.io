@@ -12,8 +12,10 @@ weight: 1
 ---
 
 > Rust 支持交叉编译，可以 macOS 平台编译出 Linux 或者 Windows 可运行的程序，或者在 Linux 平台编译 macOS 或者 Windows 可运行的程序。
-> 
+>
 > 这篇文章主要讲解 Mac 平台编译为其他平台的二进制程序。
+
+<!--more-->
 
 想要实现跨平台编译并且可运行的程序，那么我们就需要静态链接，这样生成程序才不会因为动态链接库的原因运行失败。
 
@@ -31,7 +33,7 @@ weight: 1
   - rustc：`rustc 1.60.0 (7737e0b5c 2022-04-04)`
   - rustup：`rustup 1.24.3 (ce5817a94 2021-05-31)`
 
-> 首先需要安装 Rust，使用命令 `` 。
+> 首先需要安装 Rust，这个这里就不要说了。
 
 ## 示例准备
 
@@ -43,7 +45,7 @@ cargo new --bin hello
 
 文件 `main.rs`：
 
-```rust
+```rs
 fn main() {
   println!("Hello World!\n");
 }
@@ -53,12 +55,12 @@ fn main() {
 
 ### 编译为 Linux 平台
 
-> 要实现 Linux 平台可以运行的程序，那么需要使用 [musl] 来替代 `glibc`，[musl] 实现了 `Linux libc`。
+> 要实现 Linux 平台可以运行的程序，那么需要使用 [musl] 来替代 `glibc`，[musl][musl] 实现了 `Linux libc`。
 
 [musl] 在 macOS 上使用 musl-cross，musl-cross 是用来专门编译到 Linux 的工具链，下面进行安装：
 
 ```sh
-brew install FiloSottile/musl-cross/musl-cross    
+brew install FiloSottile/musl-cross/musl-cross
 ```
 
 还需要创建 `musl-gcc`：
@@ -92,7 +94,7 @@ cargo build --release --target x86_64-unknown-linux-musl
 结果：
 
 ```sh
-$ tree -L 2 target/x86_64-unknown-linux-musl 
+$ tree -L 2 target/x86_64-unknown-linux-musl
 target/x86_64-unknown-linux-musl
 ├── CACHEDIR.TAG
 └── debug
@@ -113,7 +115,7 @@ target/x86_64-unknown-linux-musl/debug/hello: ELF 64-bit LSB pie executable, x86
 `mingw-w64` 是用来编译到 Windows 的工具链，使用如下命令进行安装：
 
 ```sh
-brew install mingw-w64  
+brew install mingw-w64
 ```
 
 接下来添加 `mingw-64` 对应的 Target，只需要执行一次就可以了：
@@ -160,9 +162,9 @@ target/x86_64-pc-windows-gnu/debug/hello.exe: PE32+ executable (console) x86-64,
 
 ### 编译为 macOS 平台
 
-在 Linux 编译 macOS 平台使用 [osxcross]。[osxcross] 可以在 Linux/FreeBSD/OpenBSD 以及 Android (Termux) 交叉编译 macOS 平台的工具。
+在 Linux 编译 macOS 平台使用 [osxcross][osxcross]。[osxcross][osxcross] 可以在 Linux/FreeBSD/OpenBSD 以及 Android (Termux) 交叉编译 macOS 平台的工具。
 
-我看了下 [osxcross] 编译为 macOS 平台真的还是挺麻烦的，我决定不编译为 macOS 版本，何必为难自己呢，何况自己有 Mac 电脑呢 😂。
+我看了下 [osxcross][osxcross] 编译为 macOS 平台真的还是挺麻烦的，我决定不编译为 macOS 版本，何必为难自己呢，何况自己有 Mac 电脑呢 😂。
 
 ### 编译为 Windows 平台
 
@@ -189,18 +191,20 @@ error[E0463]: can't find crate for `std`
 error: requires `sized` lang_item
 ```
 
-那么怎么解决的呢，我发现自己之前使用 [Homebrew] 安装过 `rust`，而且还使用官方命令 `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` 再次进行安装，导致 rust 工具链对不上，只需要做如下操作就可以了：
+那么怎么解决的呢，我发现自己之前使用 [Homebrew][homebrew] 安装过 `rust`，而且还使用官方命令 `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` 再次进行安装，导致 rust 工具链对不上，只需要做如下操作就可以了：
 
 1. 先完全卸载
-  ```sh
-  $ brew uninstall rust
-  $ rustup self uninstall
-  ```
+
+```sh
+$ brew uninstall rust
+$ rustup self uninstall
+```
 
 2. 重新安装：
-  ```sh
-  $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-  ```
+
+```sh
+$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
 
 ### error：linking with `cc` failed：exit status：1
 
@@ -227,7 +231,10 @@ error: requires `sized` lang_item
 - [Everything you need to know about cross compiling Rust programs](https://rustrepo.com/repo/japaric-rust-cross-rust-embedded#cross-compiling-with-rustc)
 - [Cross-compiling Rust from ARM to x86-64](https://burgers.io/cross-compile-rust-from-arm-to-x86-64)
 - [Cross compiling Rust from Linux to macOS](https://wapl.es/rust/2019/02/17/rust-cross-compile-linux-to-macos.html)
-- [musl]: https://musl.libc.org/
-- [EndeavourOS]: https://endeavouros.com/
-- [Homebrew]: https://brew.sh/
-- [osxcross]: https://github.com/tpoechtrager/osxcross
+
+---
+
+[musl]: https://musl.libc.org/
+[endeavouros]: https://endeavouros.com/
+[homebrew]: https://brew.sh/
+[osxcross]: https://github.com/tpoechtrager/osxcross
