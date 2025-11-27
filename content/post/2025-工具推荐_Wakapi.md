@@ -1,5 +1,5 @@
 ---
-title: 工具推荐：Wakapi
+title: '工具推荐：Wakapi'
 description: ''
 slug: wakapi
 date: 2025-08-30 08:44:46+0000
