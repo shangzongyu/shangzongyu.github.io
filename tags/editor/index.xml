@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Editor on 我的世界</title><link>https://shangzongyu.github.io/tags/editor/</link><description>Recent content in Editor on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 27 Oct 2022 15:13:25 +0000</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/editor/index.xml" rel="self" type="application/rss+xml"/><item><title>JetBrains IDE 的 Tips</title><link>https://shangzongyu.github.io/p/jetbrains-ide-tips/</link><pubDate>Thu, 27 Oct 2022 15:13:25 +0000</pubDate><guid>https://shangzongyu.github.io/p/jetbrains-ide-tips/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2022-JetBrains-IDE-的-Tips.webp" alt="Featured image of post JetBrains IDE 的 Tips" /&gt;&lt;blockquote&gt;
+&lt;p&gt;介绍使用 JetBrains IDE 过程的的一些 Tips。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="goland-tips"&gt;Goland Tips
+&lt;/h2&gt;&lt;h3 id="行排序"&gt;行排序
+&lt;/h3&gt;&lt;p&gt;通过 &lt;code&gt;⌘ ⇧ A&lt;/code&gt; (macOS) / &lt;code&gt;Ctrl+Shift+A&lt;/code&gt; (Windows/Linux) 打开 Actions，搜索 &lt;code&gt;Sort Lines&lt;/code&gt; 进行排序。&lt;/p&gt;
+&lt;h3 id="open-blank-diff-window"&gt;Open Blank Diff Window
+&lt;/h3&gt;&lt;p&gt;通过 &lt;code&gt;⌘ ⇧ A&lt;/code&gt; (macOS) / &lt;code&gt;Ctrl+Shift+A&lt;/code&gt; (Windows/Linux) 打开 Actions，搜索 &lt;code&gt;Blank Diff Window&lt;/code&gt; 会打开左右里两个用户 differ 的窗口。&lt;/p&gt;
+&lt;h3 id="scratch-files"&gt;Scratch files
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;Scratch file 不仅仅是纯文本，它语法高亮、代码不全以及和文件类型相关的特性。
+Scratch file 随着 IDE 存在，没有和某个项目绑定。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;操作：&lt;code&gt;Select File | New | Scratch File&lt;/code&gt;，或者如下快捷键&lt;/p&gt;
+&lt;p&gt;or press on macOS or Windows/Linux。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS：&lt;code&gt;⇧ ⌘ N&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Windows/Linux：&lt;code&gt;Ctrl+Alt+Shift+Insert&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="多光标"&gt;多光标
+&lt;/h3&gt;&lt;p&gt;启动方式 1：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;启动多光标：按两次 &lt;code&gt;⌥&lt;/code&gt; (macOS)/ &lt;code&gt;Ctrl&lt;/code&gt; (Windows/Linux)，并且不释放它&lt;/li&gt;
+&lt;li&gt;接着按向上箭头或者向下箭头进行选择&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;启动方式 2：&lt;/p&gt;
+&lt;p&gt;按住 &lt;code&gt;⌥⇧&lt;/code&gt; macOS）/ &lt;code&gt;Shift+Alt&lt;/code&gt; (Windows/Linux) 然后使用光标进行选择&lt;/p&gt;
+&lt;p&gt;启动方式 3：&lt;/p&gt;
+&lt;p&gt;按着 &lt;code&gt;⌥&lt;/code&gt; (macOS)/ &lt;code&gt;Alt&lt;/code&gt; (Windows/Linux) 使用鼠标进行选择多光标的操作。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;删除所有的按 &lt;code&gt;Escape&lt;/code&gt; 键值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="折叠所有--展开所有"&gt;折叠所有 / 展开所有
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;macOS：&lt;code&gt;⇧⌘-&lt;/code&gt; / &lt;code&gt;⇧⌘+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Windows/Linux：Ctrl + Shift + NumPad + / Ctrl + Shift + NumPad –&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;上面的快捷键关于折叠和展开文件，如果有选择一部分，那么会折叠和展开的部分。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;折叠当前段：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS：&lt;code&gt;⌥⌘-&lt;/code&gt; / &lt;code&gt;⌥⌘&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Windows/Linux：&lt;code&gt;Ctrl+Alt+NumPad&lt;/code&gt; + / &lt;code&gt;Ctrl+Alt+NumPad –&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="最近打开的文件和位置"&gt;最近打开的文件和位置
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;最近打开的文件
+&lt;ul&gt;
+&lt;li&gt;macOS：&lt;code&gt;⌘E&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Windows/Linux：&lt;code&gt;Ctrl+E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;最近打开的位置
+&lt;ul&gt;
+&lt;li&gt;macOS：&lt;code&gt;⌘⇧E&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Windows/Linux：&lt;code&gt;Ctrl+Shift+E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
