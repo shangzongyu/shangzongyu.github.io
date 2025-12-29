@@ -1,0 +1,12 @@
+---
+title: "2025：My Github Insight"
+description: 
+date: 2025-12-29T11:59:38+08:00
+slug: 2025-my-github-insight
+hidden: false
+comments: true
+---
+
+我的 Github Insight
+
+![shangzongyu_2025_yearly_report](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251229_shangzongyu_2025_yearly_report.png)
