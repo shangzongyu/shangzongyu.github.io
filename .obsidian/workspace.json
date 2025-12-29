@@ -21,8 +21,24 @@
               "icon": "lucide-file",
               "title": "00 - Linux 程序后台运行"
             }
+          },
+          {
+            "id": "34cc0e00f0d490db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-drafts/费曼学习法.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "费曼学习法"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -164,11 +180,20 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "c8aebc07a9fdcb4c",
+  "active": "34cc0e00f0d490db",
   "lastOpenFiles": [
-    "00-drafts/00 - Shell 程序并运行.md",
+    "00-drafts/简历制作-EasyCV.md",
+    "00-drafts/更好的理解带代码.md",
+    "00-drafts/我的使用过 Markdown 工具.md",
+    "00-drafts/工具推荐：ffWorks.md",
+    "00-drafts/Tips：iPhone-实用-Tips/index.md",
+    "00-drafts/Tips：iPhone-实用-Tips/cover.jpg",
+    "00-drafts/Tips-如何在本地调试 Github Action.md",
+    "00-drafts/Tips-Linux 下配置 UNP 的学习环境.md",
+    "00-drafts/分布式 Git tangled.md",
+    "工具推荐- Andronix：在 Andorid 机器上运行 Linux.md",
     "00-drafts/00 - Linux 程序后台运行.md",
-    "00-drafts/工具推荐：ffWorks/index.md",
+    "00-drafts/00 - Shell 程序并运行.md",
     "00-drafts/SPD - 基于规范编程.md",
     "00-drafts/AI - 我使用过的 AI 记录.md",
     "00-drafts/简历制作工作-Typst 制作.md",
@@ -176,22 +201,14 @@
     "00-drafts/简历工具-EasyCV.md",
     "00-drafts/通过 .Git 目录学习 .md",
     "00-drafts/工具推荐：pass - 密码管理.md",
-    "00-drafts/Tips-Linux 下配置 UNP 的学习环境.md",
     "00-drafts/在用笔记管理工具.md",
     "00-drafts/Git GUI 之  GitButler.md",
     "00-drafts/KVM 使用介绍.md",
     "00-drafts/2025-代码阅读.md",
     "00-drafts/macOS 使用的软件推荐.md",
-    "00-drafts/分布式 Git tangled.md",
     "content/post/文科生的-macOS-使用指南.md",
     "content/post/我使用的工具_美化篇.md",
     "content/post/我使用的工具_浏览器篇.md",
-    "content/post/我使用的工具_fetch 工具.md",
-    "content/post/各种源的修改整理.md",
-    "content/post/作为自己的桌面环境_EndeavourOS.md",
-    "content/post/Redis 的 FAQ.md",
-    "content/post/2025-拥抱-Conventional-Commits_让你的代码提交信息更有价值.md",
-    "content/post/2025-工具推荐_音乐.md",
     "public/post/assets/piclist_20251114_工具推荐：Darling-在-Linux-运行-macOS-的软件.webp",
     "public/post/assets/piclist_20251114_2022-Rust-交叉编译macOS为Linux和Windows.webp",
     "public/post/assets/piclist_20251114_2022-macOS-中安装和配置-QT-开发环境.webp",
@@ -206,7 +223,6 @@
     "content/post/工具推荐：piclist-把博客的照片备份到-Github",
     "content/post/00-drafts/assets/theme-pixel-nvim.png",
     "content/post/00-drafts/assets/notebook-navigator.png",
-    "content/post/00-drafts/assets/fdf5b717-33bd-4473-9f97-21ed9afa072d.jpg",
     "content/post/00-drafts/assets",
     "content/post/00-drafts",
     "content/post/drafts/assets",
