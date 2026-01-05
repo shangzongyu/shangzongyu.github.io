@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Terminal on 我的世界</title><link>https://shangzongyu.github.io/tags/terminal/</link><description>Recent content in Terminal on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 29 Dec 2025 11:59:38 +0800</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/terminal/index.xml" rel="self" type="application/rss+xml"/><item><title>2025：My Github Insight</title><link>https://shangzongyu.github.io/p/2025-my-github-insight/</link><pubDate>Mon, 29 Dec 2025 11:59:38 +0800</pubDate><guid>https://shangzongyu.github.io/p/2025-my-github-insight/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251229_shangzongyu_2025_yearly_report-cover.webp" alt="Featured image of post 2025：My Github Insight" /&gt;&lt;p&gt;我的 Github Insight。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251229_shangzongyu_2025_yearly_report.png"
+loading="lazy"
+alt="shangzongyu_2025_yearly_report"
+&gt;&lt;/p&gt;</description></item><item><title>我使用的工具：终端篇</title><link>https://shangzongyu.github.io/p/%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7/</link><pubDate>Sat, 13 Sep 2025 08:40:49 +0000</pubDate><guid>https://shangzongyu.github.io/p/%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_我使用的工具_终端篇.webp" alt="Featured image of post 我使用的工具：终端篇" /&gt;&lt;p&gt;作为一名开发者，终端 (Terminal) 是我们日常工作中接触最频繁的工具之一。它不仅是与操作系统交互的窗口，更是一个可以高度定制、提升效率的利器。在过去的几年里，我尝试了市面上许多主流和新兴的终端应用，从追求性能的 GPU 加速终端，到集成 AI 的新时代终端，各有千秋。&lt;/p&gt;
+&lt;p&gt;在这里，我想分享一下我个人使用过的终端工具，以及它们各自的特点和我的主观看法。&lt;/p&gt;
+&lt;h2 id="iterm2"&gt;iTerm2
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_iterm2.png"
+loading="lazy"
+alt="iTerm2"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://iterm2.com/" target="_blank" rel="noopener"
+&gt;https://iterm2.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：免费、开源&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**我接触 Mac 后使用时间最长的终端。整体体验很好，配置简单，功能中规中矩，是原生 Terminal 的绝佳替代品。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="ghostty"&gt;Ghostty
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_ghostty.png"
+loading="lazy"
+alt="Ghostty"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://ghostty.org/" target="_blank" rel="noopener"
+&gt;https://ghostty.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Github&lt;/strong&gt;：&lt;a class="link" href="https://github.com/ghostty-org/ghostty" target="_blank" rel="noopener"
+&gt;https://github.com/ghostty-org/ghostty&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS / Linux&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;开源&lt;/li&gt;
+&lt;li&gt;GPU 加速&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**它的定位是 iTerm2 的替代品。经过一段时间的使用，我感觉不错，但最大的缺点是配置相对有些麻烦。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="kitty"&gt;Kitty
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_kitty.png"
+loading="lazy"
+alt="Kitty"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://sw.kovidgoyal.net/kitty/" target="_blank" rel="noopener"
+&gt;https://sw.kovidgoyal.net/kitty/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Github&lt;/strong&gt;：&lt;a class="link" href="https://github.com/kovidgoyal/kitty" target="_blank" rel="noopener"
+&gt;https://github.com/kovidgoyal/kitty&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS / Linux / Windows&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;开源&lt;/li&gt;
+&lt;li&gt;GPU 加速&lt;/li&gt;
+&lt;li&gt;功能丰富&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**速度确实很快，功能也很丰富，内置了对标签页 (Tabs) 和分屏 (Splits) 的良好支持。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="wezterm"&gt;WezTerm
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://shangzongyu.github.io/wezterm-vday-screenshot.png"
+loading="lazy"
+alt="WezTerm"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://wezterm.org/" target="_blank" rel="noopener"
+&gt;https://wezterm.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Github&lt;/strong&gt;：&lt;a class="link" href="https://github.com/wezterm/wezterm" target="_blank" rel="noopener"
+&gt;https://github.com/wezterm/wezterm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS / Linux / Windows&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;开源&lt;/li&gt;
+&lt;li&gt;GPU 加速&lt;/li&gt;
+&lt;li&gt;功能丰富&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**同样以速度快、功能丰富著称，内置标签页和分屏管理。它的一大特色是使用 Lua 进行配置，这提供了极高的灵活性。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="alacritty"&gt;Alacritty
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_alacritty_example.png"
+loading="lazy"
+alt="Alacritty"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://alacritty.org/" target="_blank" rel="noopener"
+&gt;https://alacritty.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Github&lt;/strong&gt;：&lt;a class="link" href="https://github.com/alacritty/alacritty" target="_blank" rel="noopener"
+&gt;https://github.com/alacritty/alacritty&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS / Linux / Windows&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;开源&lt;/li&gt;
+&lt;li&gt;GPU 加速&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**虽然在我的日常使用中，其速度与 Kitty 的体感差异不大，但 Alacritty 确实以性能为核心卖点。值得一提的是，早期版本还不支持标签页，但现在这个功能也已经加上了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="tabby"&gt;Tabby
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_tabby.png"
+loading="lazy"
+alt="Tabby"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://tabby.sh/" target="_blank" rel="noopener"
+&gt;https://tabby.sh/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Github&lt;/strong&gt;：&lt;a class="link" href="https://github.com/eugeny/tabby" target="_blank" rel="noopener"
+&gt;https://github.com/eugeny/tabby&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS / Linux / Windows&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;开源&lt;/li&gt;
+&lt;li&gt;功能丰富&lt;/li&gt;
+&lt;li&gt;可自定义扩展&lt;/li&gt;
+&lt;li&gt;强大的 SSH 管理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**这款终端我个人使用得比较少。但它内置了强大的 SSH 管理功能，对于不想手动配置 SSH 连接的场景 (尤其是在 Windows 上) 来说非常方便。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="zoc-terminal"&gt;Zoc Terminal
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_zocscreen_small_us_osx.webp"
+loading="lazy"
+alt="ZOC Terminal"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://www.emtec.com/zoc/index.html" target="_blank" rel="noopener"
+&gt;https://www.emtec.com/zoc/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS / Windows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**这是一款付费软件，我用得不多。最初吸引我的是它对 &lt;code&gt;rz/sz&lt;/code&gt; 的原生支持，无需额外配置，而 iTerm2/Ghostty 等终端则需要手动设置。不过，自从我发现了 &lt;code&gt;zssh&lt;/code&gt; 这个工具后，Zoc 的使用频率就更低了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="warp"&gt;Warp
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_warp.png"
+loading="lazy"
+alt="Warp"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://www.warp.dev/" target="_blank" rel="noopener"
+&gt;https://www.warp.dev/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS / Linux / Windows&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：可免费使用，提供 AI 功能订阅&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**Warp 主打 AI 相关功能，号称 “下一代终端”。但就我个人而言，感觉它的功能有些过于复杂，整体设计风格也不太符合我的审美。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="waveterm"&gt;WaveTerm
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_waveterm.png"
+loading="lazy"
+alt="WaveTerm"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://www.waveterm.dev/" target="_blank" rel="noopener"
+&gt;https://www.waveterm.dev/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Github&lt;/strong&gt;：&lt;a class="link" href="https://github.com/wavetermdev/waveterm" target="_blank" rel="noopener"
+&gt;https://github.com/wavetermdev/waveterm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS / Linux / Windows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**这款终端我非常喜欢的一点是它可以在内部直接渲染网页。它同样集成了 AI 功能，但相比 Warp 感觉更为克制。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="功能特性横向对比"&gt;功能特性横向对比
+&lt;/h2&gt;&lt;p&gt;为了更直观地展示这些终端的差异，我整理了以下对比表格。需要注意的是，某些特性 (如 “内置 SSH 客户端”) 的实现程度不同，这里只做概要性归纳。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;特性 / 终端&lt;/th&gt;
+&lt;th style="text-align: center"&gt;iTerm2&lt;/th&gt;
+&lt;th style="text-align: center"&gt;Ghostty&lt;/th&gt;
+&lt;th style="text-align: center"&gt;Kitty&lt;/th&gt;
+&lt;th style="text-align: center"&gt;WezTerm&lt;/th&gt;
+&lt;th style="text-align: center"&gt;Alacritty&lt;/th&gt;
+&lt;th style="text-align: center"&gt;Tabby&lt;/th&gt;
+&lt;th style="text-align: center"&gt;Zoc&lt;/th&gt;
+&lt;th style="text-align: center"&gt;Warp&lt;/th&gt;
+&lt;th style="text-align: center"&gt;WaveTerm&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;平台支持&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: center"&gt;Mac&lt;/td&gt;
+&lt;td style="text-align: center"&gt;Mac/Linux&lt;/td&gt;
+&lt;td style="text-align: center"&gt;全平台&lt;/td&gt;
+&lt;td style="text-align: center"&gt;全平台&lt;/td&gt;
+&lt;td style="text-align: center"&gt;全平台&lt;/td&gt;
+&lt;td style="text-align: center"&gt;全平台&lt;/td&gt;
+&lt;td style="text-align: center"&gt;Mac/Win&lt;/td&gt;
+&lt;td style="text-align: center"&gt;全平台&lt;/td&gt;
+&lt;td style="text-align: center"&gt;全平台&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;性能核心&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: center"&gt;CPU&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GPU&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GPU&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GPU&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GPU&lt;/td&gt;
+&lt;td style="text-align: center"&gt;CPU&lt;/td&gt;
+&lt;td style="text-align: center"&gt;CPU&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GPU&lt;/td&gt;
+&lt;td style="text-align: center"&gt;CPU&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;配置方式&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GUI/Plist&lt;/td&gt;
+&lt;td style="text-align: center"&gt;Lua (计划)&lt;/td&gt;
+&lt;td style="text-align: center"&gt;配置文件&lt;/td&gt;
+&lt;td style="text-align: center"&gt;Lua&lt;/td&gt;
+&lt;td style="text-align: center"&gt;YAML/TOML&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GUI/YAML&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GUI&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GUI/云同步&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GUI/YAML&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;标签页/分屏&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;🟡¹&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;内置 SSH&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;🟡²&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;AI 功能&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;授权/价格&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: center"&gt;开源免费&lt;/td&gt;
+&lt;td style="text-align: center"&gt;开源免费&lt;/td&gt;
+&lt;td style="text-align: center"&gt;开源免费&lt;/td&gt;
+&lt;td style="text-align: center"&gt;开源免费&lt;/td&gt;
+&lt;td style="text-align: center"&gt;开源免费&lt;/td&gt;
+&lt;td style="text-align: center"&gt;开源免费&lt;/td&gt;
+&lt;td style="text-align: center"&gt;付费&lt;/td&gt;
+&lt;td style="text-align: center"&gt;免费增值&lt;/td&gt;
+&lt;td style="text-align: center"&gt;开源免费&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;表格注释：&lt;/strong&gt;
+¹ &lt;strong&gt;Warp&lt;/strong&gt;：使用独特的 “块” (Blocks) 和工作流来组织命令，而非传统的分屏。
+² &lt;strong&gt;Warp&lt;/strong&gt;：通过其工作流功能简化了 SSH 连接，但不是一个传统的、带主机列表的 SSH 客户端。&lt;/p&gt;
+&lt;h2 id="对比分析"&gt;对比分析
+&lt;/h2&gt;&lt;p&gt;从表格中，我们可以将这些终端大致归为几个流派：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;追求极致性能与定制 (Performance &amp;amp; Customization)：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;代表：&lt;/strong&gt;&lt;code&gt;Kitty&lt;/code&gt;，&lt;code&gt;WezTerm&lt;/code&gt;，&lt;code&gt;Alacritty&lt;/code&gt;，&lt;code&gt;Ghostty&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;**共同点：**都采用 GPU 加速，响应速度和滚动流畅度是第一梯队。它们通常需要通过编写配置文件 (如 Lua，TOML) 来进行深度定制，为高级用户提供了极大的灵活性。&lt;/li&gt;
+&lt;li&gt;**选择建议：**如果你热衷于用代码配置环境、追求零延迟的输入体验，并且不介意花时间打磨配置，这几款是你的不二之选。&lt;code&gt;WezTerm&lt;/code&gt; 以其内置的 Multiplexer 功能脱颖而出，而 &lt;code&gt;Kitty&lt;/code&gt; 则以强大的 &lt;code&gt;kitten&lt;/code&gt; 脚本生态见长。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;macOS 平台的全能选手 (The All-Rounder for macOS)：&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;代表：&lt;/strong&gt;&lt;code&gt;iTerm2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;**共同点：**虽然基于 CPU 渲染，但在现代 Mac 上的性能已足够优秀。它最大的优势是功能全面且拥有成熟的图形化配置界面，几乎所有功能都可以通过鼠标点击完成，开箱即用。&lt;/li&gt;
+&lt;li&gt;**选择建议：**如果你是 Mac 用户，想要一款功能强大、稳定且无需折腾配置的终端，iTerm2 依然是黄金标准。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;&lt;strong&gt;现代 AI 与革新体验 (Modern AI &amp;amp; Innovative Experience)：&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;代表：&lt;/strong&gt;&lt;code&gt;Warp&lt;/code&gt;，&lt;code&gt;WaveTerm&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;**共同点：**它们重新思考了终端的交互模式。&lt;code&gt;Warp&lt;/code&gt; 的命令块和 AI 集成彻底改变了命令的输入输出体验。&lt;code&gt;WaveTerm&lt;/code&gt; 则将 Markdown 和网页渲染能力引入终端，并提供了相对克制的 AI 辅助。&lt;/li&gt;
+&lt;li&gt;**选择建议：**如果你对 AI 辅助编程充满兴趣，或者希望终端能提供超越传统文本界面的现代化、富文本体验，那么这两款产品值得一试。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start="4"&gt;
+&lt;li&gt;&lt;strong&gt;强大的连接管理 (Powerful Connection Management)：&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;代表：&lt;/strong&gt;&lt;code&gt;Tabby&lt;/code&gt;，&lt;code&gt;Zoc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;**共同点：**它们的核心优势在于对远程连接 (特别是 SSH 和串口) 的强大管理能力。提供了直观的主机管理器、密码保存、便捷的文件传输等功能。&lt;/li&gt;
+&lt;li&gt;**选择建议：**如果你的日常工作需要频繁连接和管理大量远程服务器 (尤其是 Windows 用户)，&lt;code&gt;Tabby&lt;/code&gt; 的现代化界面和 &lt;code&gt;Zoc&lt;/code&gt; 的老牌稳定性与 &lt;code&gt;rz/sz&lt;/code&gt; 支持会是极大的效率提升工具。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="总结"&gt;总结
+&lt;/h2&gt;&lt;p&gt;体验了这么多款终端，让我对它们的特点有了更深的理解。许多终端都提供了强大的命令行工具，例如 Kitty 的 &lt;code&gt;kitten&lt;/code&gt; 工具集和 WezTerm 自带的 &lt;code&gt;wezterm&lt;/code&gt; 命令行工具，都隐藏着许多值得发掘的强大功能。&lt;/p&gt;
+&lt;p&gt;接下来的计划是，每两个月深度体验一款终端，并分享一篇详细的使用感受。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PS：&lt;strong&gt;功能对比&lt;/strong&gt;和&lt;strong&gt;对比分析&lt;/strong&gt;都是 AI 帮助我生成的。&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>工具推荐：Wave Terminal - 可以通过命令行控制 GUI 的终端</title><link>https://shangzongyu.github.io/p/wave-terminal-gui/</link><pubDate>Mon, 16 Dec 2024 06:51:58 +0000</pubDate><guid>https://shangzongyu.github.io/p/wave-terminal-gui/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_wave-cover.webp" alt="Featured image of post 工具推荐：Wave Terminal - 可以通过命令行控制 GUI 的终端" /&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2024/upgit_20241216_wave-terminal-00.png"
+loading="lazy"
+alt="wave-terminal"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;官网：&lt;a class="link" href="https://www.waveterm.dev/" target="_blank" rel="noopener"
+&gt;https://www.waveterm.dev/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github：&lt;a class="link" href="https://github.com/wavetermdev/waveterm" target="_blank" rel="noopener"
+&gt;https://github.com/wavetermdev/waveterm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="介绍"&gt;介绍
+&lt;/h2&gt;&lt;p&gt;这个终端的有意思的是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可以在终端预览文件/照片/视频等 (不借助其他的工具)&lt;/li&gt;
+&lt;li&gt;可以直接在可视化看到系统的监控 (不借助其他的工具)&lt;/li&gt;
+&lt;li&gt;内置浏览器，可以在终端看 Youtube 等&lt;/li&gt;
+&lt;li&gt;提供类似 VSCode 的编辑器可以远程编辑文件&lt;/li&gt;
+&lt;li&gt;集成 AI (这个在2024年的终端中，当前的不算什么太大的优势)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我现在正在尝试使用这个终端，有一个问题就是他不支持直接 &lt;code&gt;lrzsz&lt;/code&gt; 命令 (也就是 &lt;code&gt;zmodem&lt;/code&gt; 协议，安装 &lt;code&gt;lrzsz&lt;/code&gt; 命令也不可以)，这样远程 SSH 连接文件上传和下载文件就比较难了。其他的功能我还在摸索中，这个 BLOG 还会继续更新。&lt;/p&gt;
+&lt;/blockquote&gt;</description></item></channel></rss>

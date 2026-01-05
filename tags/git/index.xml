@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on 我的世界</title><link>https://shangzongyu.github.io/tags/git/</link><description>Recent content in Git on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 14 Nov 2024 10:32:19 +0000</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>工具推荐: goji - 使用 Emoji 提交 Commit 信息</title><link>https://shangzongyu.github.io/p/goji-emoji-commit/</link><pubDate>Thu, 14 Nov 2024 10:32:19 +0000</pubDate><guid>https://shangzongyu.github.io/p/goji-emoji-commit/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2024-工具推荐_goji-使用-Emoji-提交-Commit-信息.webp" alt="Featured image of post 工具推荐: goji - 使用 Emoji 提交 Commit 信息" /&gt;&lt;h2 id="介绍"&gt;介绍
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Github：&lt;a class="link" href="https://github.com/muandane/goji" target="_blank" rel="noopener"
+&gt;https://github.com/muandane/goji&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使用 Emoji 提交 Commit 信息。&lt;/p&gt;
+&lt;h2 id="安装"&gt;安装
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# macOS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install muandane/tap/goji
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Linux&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;VERSION&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;curl --silent &lt;span class="s2"&gt;&amp;#34;https://api.github.com/repos/muandane/goji/releases/latest&amp;#34;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; jq .tag_name -r&lt;span class="k"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl -Lso goji.tar.gz https://github.com/muandane/goji/releases/download/&lt;span class="nv"&gt;$VERSION&lt;/span&gt;/goji_&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VERSION&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;_Linux_x86_64.tar.gz
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;tar -xvzf goji.tar.gz
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;chmod +x ./goji
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# optionnal&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo mv ./goji /usr/local/bin/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="使用"&gt;使用
+&lt;/h2&gt;&lt;p&gt;简单运行 &lt;code&gt;goji&lt;/code&gt; 就可以开始交付模式：&lt;/p&gt;
+&lt;p&gt;官方示例：&lt;img src="https://raw.githubusercontent.com/muandane/goji/refs/heads/main/public/goji-demo.gif"
+loading="lazy"
+&gt;&lt;/p&gt;
+&lt;p&gt;goji 可以通过配置文件做一些配置：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 在特定 repo 中指定配置，下面命令会在当前目录下生成 .goji 文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;goji init --repo
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 全局的配置，下面命令会在 $HOME 下生成 .goji 文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;goji init --global
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;配置文件的详细配置参考&lt;a class="link" href="https://github.com/muandane/goji" target="_blank" rel="noopener"
+&gt;官方文档&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>工具推荐s: git-switcher - 切换 git 配置</title><link>https://shangzongyu.github.io/p/tips-git-switcher-git/</link><pubDate>Sat, 06 Jan 2024 09:54:08 +0000</pubDate><guid>https://shangzongyu.github.io/p/tips-git-switcher-git/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2024-工具推荐_git-switcher-切换-git-配置-cover.webp" alt="Featured image of post 工具推荐s: git-switcher - 切换 git 配置" /&gt;&lt;h2 id="为什么推荐这个工具"&gt;为什么推荐这个工具？
+&lt;/h2&gt;&lt;p&gt;我在公司使用自己的电脑，因此使用 git 提交代码的时候经常使用自己的个人的 Git 信息提交代码，我在想要是有个可以切换 Git 配置的工具好了，现在这个工具找到了。&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://github.com/TheYkk/git-switcher" target="_blank" rel="noopener"
+&gt;git-switcher&lt;/a&gt; 这个工具很简单，就是帮助我们切换 git 的配置。&lt;/p&gt;
+&lt;h2 id="安装"&gt;安装
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install theykk/tap/git-switcher
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="使用"&gt;使用
+&lt;/h2&gt;&lt;p&gt;使用起来很简单：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 切换&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git-switcher
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 新建&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git-switcher create
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 删除&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git-switcher delete
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 重命名&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git-switcher rename
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="配置"&gt;配置
+&lt;/h2&gt;&lt;p&gt;使用这个工具之后，它只是帮助我们修改 &lt;code&gt;user.name&lt;/code&gt; 这个变量，但是我们提交代码的时候还有一个关联的变量 &lt;code&gt;user.email&lt;/code&gt; 这个需要我们自己修改，这个需要注意。&lt;/p&gt;
+&lt;p&gt;不过我们也可以通过配置文件进行修改，配置文件在 &lt;code&gt;~/.config/gitconfigs&lt;/code&gt;。&lt;/p&gt;</description></item><item><title>工具推荐: git-commits-visualizer - 本地 Git 仓库可视化贡献图</title><link>https://shangzongyu.github.io/p/git-commits-visualizer-git/</link><pubDate>Fri, 28 Jul 2023 02:25:18 +0000</pubDate><guid>https://shangzongyu.github.io/p/git-commits-visualizer-git/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2023-工具推荐_git-commits-visualizer-本地-Git-仓库可视化贡献图.webp" alt="Featured image of post 工具推荐: git-commits-visualizer - 本地 Git 仓库可视化贡献图" /&gt;&lt;p&gt;&lt;a class="link" href="https://github.com/abdullah-alaadine/git-commits-visualizer" target="_blank" rel="noopener"
+&gt;git-commits-visualizer&lt;/a&gt; 可以帮助用户通过图形化查看仓库的贡献度。&lt;/p&gt;
+&lt;p&gt;特点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;扫描本地仓库，并且生成一个贡献图&lt;/li&gt;
+&lt;li&gt;支持 Github 以及 Gitlab 服务&lt;/li&gt;
+&lt;li&gt;离线工作，哪怕链接不上远程服务不影响使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="安装"&gt;安装
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;go install github.com/abdullah-alaadine/git-commits-visualizer@latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;PS：&lt;code&gt;go install&lt;/code&gt; 会把二进制安装到 &lt;code&gt;go env&lt;/code&gt; 中 &lt;code&gt;GO_BIN&lt;/code&gt; 指定的目录中。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="使用"&gt;使用
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;git-commits-visualizer 支持两种显示模式：表和图。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;以我自己的一个项目来看看，如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230728_git-commits-visualizer.png"
+loading="lazy"
+alt="git-commits-visualizer"
+&gt;&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>QT on 我的世界</title><link>https://shangzongyu.github.io/tags/qt/</link><description>Recent content in QT on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 09 Nov 2024 08:43:09 +0000</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/qt/index.xml" rel="self" type="application/rss+xml"/><item><title>Arch Linux 中安装和配置 QT5 的开发环境</title><link>https://shangzongyu.github.io/p/arch-linux-qt5/</link><pubDate>Sat, 09 Nov 2024 08:43:09 +0000</pubDate><guid>https://shangzongyu.github.io/p/arch-linux-qt5/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2024-Arch-Linux-中安装和配置-QT5-的开发环境.webp" alt="Featured image of post Arch Linux 中安装和配置 QT5 的开发环境" /&gt;&lt;p&gt;环境如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OS：EndeavourOS x86_64&lt;/li&gt;
+&lt;li&gt;QT 版本：QT5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 更新系统&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo pacman -Syu
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 安装基本 QT 基本包&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo pacman -S qt5-base
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 安装 QT 开发工具，包含：Qt Assistant/Qt Linguist/Qt Designer 等 &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo pacman -S qt5-tools
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 安装 Qt 的编辑器 qtcreator&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo pacman -S qtcreator
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;安装好之后，就可以打开 qtcreator 进行开发了。&lt;/p&gt;
+&lt;p&gt;在 Linux 上安装比 macOS 上方便一些。&lt;/p&gt;</description></item><item><title>Tips：macOS 中安装和配置 Qt 开发环境</title><link>https://shangzongyu.github.io/p/macos-config-qt/</link><pubDate>Mon, 02 May 2022 06:37:50 +0000</pubDate><guid>https://shangzongyu.github.io/p/macos-config-qt/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2022-macOS-中安装和配置-QT-开发环境-cover.webp" alt="Featured image of post Tips：macOS 中安装和配置 Qt 开发环境" /&gt;&lt;blockquote&gt;
+&lt;p&gt;介绍如何在 macOS 下使用 Qt Creator + Qt 进行开发。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="环境"&gt;环境
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;macOS 版本：macOS 12.3.1&lt;/li&gt;
+&lt;li&gt;Qt 版本：Qt 5&lt;/li&gt;
+&lt;li&gt;Shell 版本：Zsh&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="安装相应工具"&gt;安装相应工具
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 安装 Qt Creator&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install --cask qt-creator
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 这里安装 Qt5，如果想要安装最新版本的 Qt 使用 qt 替换 qt@5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install qt@5
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="配置-zsh"&gt;配置 Zsh
+&lt;/h2&gt;&lt;p&gt;在 &lt;code&gt;~/.zshrc&lt;/code&gt; 中添加如下配置：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;/usr/local/opt/qt@5/bin:&lt;/span&gt;&lt;span class="nv"&gt;$PATH&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LDFLAGS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;-L/usr/local/opt/qt@5/lib&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;CPPFLAGS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;-I/usr/local/opt/qt@5/include&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PKG_CONFIG_PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;/usr/local/opt/qt@5/lib/pkgconfig&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;如果使用的是 Bash，那么把上面的配置写入 &lt;code&gt;~/.bashrc&lt;/code&gt; 文件中。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="配置-qt-version"&gt;配置 Qt Version
+&lt;/h2&gt;&lt;p&gt;在 &lt;code&gt;Qt Creator -&amp;gt; Preferences -&amp;gt; Kits -&amp;gt; Qt Versions -&amp;gt; Add&lt;/code&gt; 添加 &lt;code&gt;qmake&lt;/code&gt; 的位置，可以通过搜索 &lt;code&gt;qmake&lt;/code&gt; 的位置。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PS：这个吐槽下 Qt Creator 的设计，不能让用户自己直接通过 Add 输入路径，非要通过搜索才可以。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;![macos-config-qt-00] (&lt;a class="link" href="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_macos-config-qt-00.png" target="_blank" rel="noopener"
+&gt;https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_macos-config-qt-00.png&lt;/a&gt; align=“center”)&lt;/p&gt;
+&lt;p&gt;配置完 Qt Versions 后，在 &lt;code&gt;Qt Creator -&amp;gt; Preferences -&amp;gt; Kits -&amp;gt; Kits&lt;/code&gt; 配置 Qt 的版本，如下图：&lt;/p&gt;
+&lt;p&gt;![macos-config-qt-01] (&lt;a class="link" href="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_macos-config-qt-01.png" target="_blank" rel="noopener"
+&gt;https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_macos-config-qt-01.png&lt;/a&gt; align=“center”)&lt;/p&gt;
+&lt;h2 id="总结"&gt;总结
+&lt;/h2&gt;&lt;p&gt;macOS 需要安装 &lt;a class="link" href="https://www.qt.io/" target="_blank" rel="noopener"
+&gt;Qt&lt;/a&gt; 和 &lt;a class="link" href="https://www.qt.io/product/development-tools" target="_blank" rel="noopener"
+&gt;Qt Creator&lt;/a&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Qt - 提供相应的 GUI 框架。&lt;/li&gt;
+&lt;li&gt;Qt Creator - 一个跨平台的 IDE 而已，理论上可以使用其他任意 IDE，但是为了方便还是使用这个。&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

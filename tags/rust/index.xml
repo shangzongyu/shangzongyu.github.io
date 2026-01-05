@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rust on 我的世界</title><link>https://shangzongyu.github.io/tags/rust/</link><description>Recent content in Rust on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 15 May 2022 06:23:27 +0000</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml"/><item><title>Rust 交叉编译 macOS 为 Linux 和 Windows</title><link>https://shangzongyu.github.io/p/rust-macos-linux-windows/</link><pubDate>Sun, 15 May 2022 06:23:27 +0000</pubDate><guid>https://shangzongyu.github.io/p/rust-macos-linux-windows/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2022-Rust-交叉编译macOS为Linux和Windows.webp" alt="Featured image of post Rust 交叉编译 macOS 为 Linux 和 Windows" /&gt;&lt;blockquote&gt;
+&lt;p&gt;Rust 支持交叉编译，可以 macOS 平台编译出 Linux 或者 Windows 可运行的程序，或者在 Linux 平台编译 macOS 或者 Windows 可运行的程序。&lt;/p&gt;
+&lt;p&gt;这篇文章主要讲解 Mac 平台编译为其他平台的二进制程序。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;想要实现跨平台编译并且可运行的程序，那么我们就需要静态链接，这样生成程序才不会因为动态链接库的原因运行失败。&lt;/p&gt;
+&lt;p&gt;在默认情况下，Rust 静态连接所有 Rust 代码。如果程序中使用了标准库，Rust 会连接到系统的 &lt;code&gt;libc&lt;/code&gt; 实现。&lt;/p&gt;
+&lt;h2 id="环境"&gt;环境
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;macOS：
+&lt;ul&gt;
+&lt;li&gt;OS：&lt;code&gt;macOS 12.3.1 21E258 x86_64&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;rustc：&lt;code&gt;rustc 1.60.0 (7737e0b5c 2022-04-04)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;rustup：&lt;code&gt;rustup 1.24.3 (ce5817a94 2021-05-31)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Linux：
+&lt;ul&gt;
+&lt;li&gt;OS：&lt;code&gt;EndeavourOS Linux x86_64&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;kernel：&lt;code&gt;5.17.1-arch1-1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;rustc：&lt;code&gt;rustc 1.60.0 (7737e0b5c 2022-04-04)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;rustup：&lt;code&gt;rustup 1.24.3 (ce5817a94 2021-05-31)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;首先需要安装 Rust，这个这里就不要说了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="示例准备"&gt;示例准备
+&lt;/h2&gt;&lt;p&gt;使用 &lt;code&gt;Cargo&lt;/code&gt; 新建二进制项目：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;cargo new --bin hello
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;文件 &lt;code&gt;main.rs&lt;/code&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-rs" data-lang="rs"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;fn&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="fm"&gt;println!&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;Hello World!&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="macos-编译为-linux-和-windows-可用二进制程序"&gt;macOS 编译为 Linux 和 Windows 可用二进制程序
+&lt;/h2&gt;&lt;h3 id="编译为-linux-平台"&gt;编译为 Linux 平台
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;要实现 Linux 平台可以运行的程序，那么需要使用 &lt;a class="link" href="https://musl.libc.org/" target="_blank" rel="noopener"
+&gt;musl&lt;/a&gt; 来替代 &lt;code&gt;glibc&lt;/code&gt;，&lt;a class="link" href="https://musl.libc.org/" target="_blank" rel="noopener"
+&gt;musl&lt;/a&gt; 实现了 &lt;code&gt;Linux libc&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a class="link" href="https://musl.libc.org/" target="_blank" rel="noopener"
+&gt;musl&lt;/a&gt; 在 macOS 上使用 musl-cross，musl-cross 是用来专门编译到 Linux 的工具链，下面进行安装：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install FiloSottile/musl-cross/musl-cross
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;还需要创建 &lt;code&gt;musl-gcc&lt;/code&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ln -s /usr/local/bin/x86_64-linux-musl-gcc /usr/local/bin/musl-gcc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;添加对应的 Target，只需要执行一次就可以了：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;rustup target add x86_64-unknown-linux-musl
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;修改配置文件 &lt;code&gt;~/.cargo/config&lt;/code&gt; (如果没有可以新建)，添加如下内容：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;[target.x86_64-unknown-linux-musl]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;linker&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#34;x86_64-linux-musl-gcc&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;也可在项目根目录下创建 &lt;code&gt;.cargo/config&lt;/code&gt; 文件，只对当前项目生效&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;编译：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 使用&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;cargo build --release --target x86_64-unknown-linux-musl
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;结果：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ tree -L &lt;span class="m"&gt;2&lt;/span&gt; target/x86_64-unknown-linux-musl
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;target/x86_64-unknown-linux-musl
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├── CACHEDIR.TAG
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;└── debug
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ├── build
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ├── deps
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ├── examples
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ├── hello
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ├── hello.d
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; └── incremental
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="m"&gt;5&lt;/span&gt; directories, &lt;span class="m"&gt;3&lt;/span&gt; files
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ file target/x86_64-unknown-linux-musl/debug/hello
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;target/x86_64-unknown-linux-musl/debug/hello: ELF 64-bit LSB pie executable, x86-64, version &lt;span class="m"&gt;1&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;SYSV&lt;span class="o"&gt;)&lt;/span&gt;, static-pie linked, with debug_info, not stripped
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="编译为-windows-平台"&gt;编译为 Windows 平台
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;mingw-w64&lt;/code&gt; 是用来编译到 Windows 的工具链，使用如下命令进行安装：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install mingw-w64
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;接下来添加 &lt;code&gt;mingw-64&lt;/code&gt; 对应的 Target，只需要执行一次就可以了：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ rustup target add x86_64-pc-windows-gnu
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;修改配置文件 &lt;code&gt;~/.cargo/config&lt;/code&gt; (如果没有可以新建)，设置 Linker，添加如下内容：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;[&lt;/span&gt;target.x86_64-pc-windows-gnu&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;linker&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;x86_64-w64-mingw32-gcc&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;ar&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;x86_64-w64-mingw32-gcc-ar&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;编译：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 使用&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ cargo build --release --target x86_64-unknown-linux-musl
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;结果：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ tree -L &lt;span class="m"&gt;2&lt;/span&gt; target/x86_64-pc-windows-gnu
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;target/x86_64-pc-windows-gnu
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├── CACHEDIR.TAG
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;└── debug
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ├── build
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ├── deps
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ├── examples
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ├── hello.d
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ├── hello.exe
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; └── incremental
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="m"&gt;5&lt;/span&gt; directories, &lt;span class="m"&gt;3&lt;/span&gt; files
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ file target/x86_64-pc-windows-gnu/debug/hello.exe
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;target/x86_64-pc-windows-gnu/debug/hello.exe: PE32+ executable &lt;span class="o"&gt;(&lt;/span&gt;console&lt;span class="o"&gt;)&lt;/span&gt; x86-64, &lt;span class="k"&gt;for&lt;/span&gt; MS Windows
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="在-linux-编译为-macos-和-windows"&gt;在 Linux 编译为 macOS 和 Windows
+&lt;/h2&gt;&lt;h3 id="编译为-macos-平台"&gt;编译为 macOS 平台
+&lt;/h3&gt;&lt;p&gt;在 Linux 编译 macOS 平台使用 &lt;a class="link" href="https://github.com/tpoechtrager/osxcross" target="_blank" rel="noopener"
+&gt;osxcross&lt;/a&gt;。&lt;a class="link" href="https://github.com/tpoechtrager/osxcross" target="_blank" rel="noopener"
+&gt;osxcross&lt;/a&gt; 可以在 Linux/FreeBSD/OpenBSD 以及 Android (Termux) 交叉编译 macOS 平台的工具。&lt;/p&gt;
+&lt;p&gt;我看了下 &lt;a class="link" href="https://github.com/tpoechtrager/osxcross" target="_blank" rel="noopener"
+&gt;osxcross&lt;/a&gt; 编译为 macOS 平台真的还是挺麻烦的，我决定不编译为 macOS 版本，何必为难自己呢，何况自己有 Mac 电脑呢 😂。&lt;/p&gt;
+&lt;h3 id="编译为-windows-平台-1"&gt;编译为 Windows 平台
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;mingw-w64&lt;/code&gt; 是用来编译到 Windows 的工具链，Arch 对应的包为 &lt;a class="link" href="https://archlinux.org/packages/community/x86_64/mingw-w64-gcc/" target="_blank" rel="noopener"
+&gt;mingw-w64-gcc&lt;/a&gt;，接下来进行安装：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo pacman -S mingw-w64-gcc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;接下来就容易了，和 “macOS 编译为 Linux 和 Windows” 一样了，就是添加 Target，修改配置文件，然后编译就可以了。&lt;/p&gt;
+&lt;h2 id="faq"&gt;FAQ
+&lt;/h2&gt;&lt;h3 id="x86_64-unknown-freebsd-target-may-not-be-installed"&gt;&lt;code&gt;x86_64-unknown-freebsd&lt;/code&gt; target may not be installed
+&lt;/h3&gt;&lt;p&gt;自己在 Mac 平台的时候，把上述所有的操作都做了，但是还是包如下错误：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;error&lt;span class="o"&gt;[&lt;/span&gt;E0463&lt;span class="o"&gt;]&lt;/span&gt;: can&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;t find crate &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="sb"&gt;`&lt;/span&gt;std&lt;span class="sb"&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;|&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="o"&gt;=&lt;/span&gt; note: the &lt;span class="sb"&gt;`&lt;/span&gt;x86_64-unknown-freebsd&lt;span class="sb"&gt;`&lt;/span&gt; target may not be &lt;span class="nv"&gt;installed&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="o"&gt;=&lt;/span&gt; help: consider downloading the target with &lt;span class="sb"&gt;`&lt;/span&gt;rustup target add x86_64-unknown-freebsd&lt;span class="sb"&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;error: requires &lt;span class="sb"&gt;`&lt;/span&gt;sized&lt;span class="sb"&gt;`&lt;/span&gt; lang_item
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;那么怎么解决的呢，我发现自己之前使用 &lt;a class="link" href="https://brew.sh/" target="_blank" rel="noopener"
+&gt;Homebrew&lt;/a&gt; 安装过 &lt;code&gt;rust&lt;/code&gt;，而且还使用官方命令 &lt;code&gt;curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh&lt;/code&gt; 再次进行安装，导致 rust 工具链对不上，只需要做如下操作就可以了：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;先完全卸载&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ brew uninstall rust
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ rustup self uninstall
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start="2"&gt;
+&lt;li&gt;重新安装：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ curl --proto &lt;span class="s1"&gt;&amp;#39;=https&amp;#39;&lt;/span&gt; --tlsv1.2 -sSf https://sh.rustup.rs &lt;span class="p"&gt;|&lt;/span&gt; sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="errorlinking-with-cc-failedexit-status1"&gt;error：linking with &lt;code&gt;cc&lt;/code&gt; failed：exit status：1
+&lt;/h3&gt;&lt;p&gt;配置 &lt;code&gt;~/.cargo/config&lt;/code&gt; 或者在项目内 &lt;code&gt;.cargo/config&lt;/code&gt; 文件就可以解决这个问题。&lt;/p&gt;
+&lt;h2 id="总结"&gt;总结
+&lt;/h2&gt;&lt;p&gt;介绍了在 macOS 编译为 Linux/Windows 以及 Linux 平台编译为 macOS/Windows，其实就两个三个步骤：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;添加相应的 Target&lt;/li&gt;
+&lt;li&gt;安装对应的 Linker&lt;/li&gt;
+&lt;li&gt;修改配置文件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;从 macOS 编译其他的平台，其实是比较容易的，从其他平台编译为 macOS 平台却不那么简单，最终自己放弃了。&lt;/p&gt;
+&lt;h2 id="reference"&gt;Reference
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://rustwiki.org/zh-CN/edition-guide/rust-2018/platform-and-target-support/musl-support-for-fully-static-binaries.html#musl-%E6%94%AF%E6%8C%81%E5%AE%8C%E5%85%A8%E9%9D%99%E6%80%81%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6" target="_blank" rel="noopener"
+&gt;MUSL 支持完全静态二进制文件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://rendered-obsolete.github.io/2019/03/19/rust_lambda.html" target="_blank" rel="noopener"
+&gt;Rust on Lambda&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.andrew-thorburn.com/cross-compiling-a-simple-rust-web-app/" target="_blank" rel="noopener"
+&gt;Cross-compiling a simple Rust web app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://stackoverflow.com/questions/57797695/how-to-cross-compile-from-mac-to-linux-on-rust" target="_blank" rel="noopener"
+&gt;How to Cross-Compile from Mac to Linux on Rust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://doc.rust-lang.org/edition-guide/rust-2018/platform-and-target-support/musl-support-for-fully-static-binaries.html" target="_blank" rel="noopener"
+&gt;MUSL support for fully static binaries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chr4.org/blog/2017/03/15/cross-compile-and-link-a-static-binary-on-macos-for-linux-with-cargo-and-rust/" target="_blank" rel="noopener"
+&gt;Cross-compile and link a static binary on macOS for Linux with cargo and rust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://rustrepo.com/repo/japaric-rust-cross-rust-embedded#cross-compiling-with-rustc" target="_blank" rel="noopener"
+&gt;Everything you need to know about cross compiling Rust programs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://burgers.io/cross-compile-rust-from-arm-to-x86-64" target="_blank" rel="noopener"
+&gt;Cross-compiling Rust from ARM to x86-64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://wapl.es/rust/2019/02/17/rust-cross-compile-linux-to-macos.html" target="_blank" rel="noopener"
+&gt;Cross compiling Rust from Linux to macOS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</description></item></channel></rss>
