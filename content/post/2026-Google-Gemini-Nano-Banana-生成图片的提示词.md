@@ -1,16 +1,17 @@
 ---
-title: "2026 Nano 生成图片的提示词"
+title: "Google Gemini Nano Banana 生成图片的提示词"
 description: 
 date: 2026-01-05T09:42:57+08:00
-image: 
+image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260105_2026-Google-Gemini-Nano-Banana-%E7%94%9F%E6%88%90%E5%9B%BE%E7%89%87%E7%9A%84%E6%8F%90%E7%A4%BA%E8%AF%8D-cover.webp
 math: 
 license: 
 hidden: false
 comments: true
-draft: true
+tags:
+  - AI
+  - Prompt
+weight: 1
 ---
-
-
 
 >  主要收集一些生成图片的 Prompt。
 
@@ -52,15 +53,11 @@ draft: true
 }
 ```
 
-
-
 使用原图为：
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260105_nano-banana-00.webp)
 
 生成图片为：
-
-
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260105_Gemini_Generated_Image_a0d80la0d80la0d8.webp)
 
@@ -161,12 +158,10 @@ draft: true
 }
 ```
 
-
-
 使用原图为：
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260105_nano-banana-01.webp)
 
 生成图片为：
 
-![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260105_nano-banana-01.webp)
+![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260105_Gemini_Generated_Image_9vukjs9vukjs9vuk.webp)
