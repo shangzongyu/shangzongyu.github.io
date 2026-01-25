@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tips on 我的世界</title><link>https://shangzongyu.github.io/tags/tips/</link><description>Recent content in Tips on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 18 Nov 2025 19:17:00 +0800</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/tips/index.xml" rel="self" type="application/rss+xml"/><item><title>Tips: Python 脚本打包为可执行二进制</title><link>https://shangzongyu.github.io/p/tips-python/</link><pubDate>Tue, 27 May 2025 09:32:08 +0000</pubDate><guid>https://shangzongyu.github.io/p/tips-python/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;前言：最近需要使用 Python 写一个脚本，但是我不想在所在机器安装 Python 环境，因此就在想有没有可以把 Python 脚本打包为可执行的二进制程序，找到了 Nuitka，一个强大的 Python 编译器，可以将 Python 代码编译为 C 代码，并生成高效的可执行文件。除了之外还有其他的，选择 Nuitka 是因为它的性能比较好。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="环境"&gt;环境
+&lt;/h2&gt;&lt;p&gt;OS：Ubuntu 24.04 LTS&lt;/p&gt;
+&lt;p&gt;需要装安装包：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo apt-get install build-essential python3
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install nuitka
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="实践"&gt;实践
+&lt;/h2&gt;&lt;h3 id="hello-world"&gt;Hello World
+&lt;/h3&gt;&lt;p&gt;先来一个比较简单的程序，文件名为 &lt;code&gt;hello_world.py&lt;/code&gt;，主要内容如下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;Hello from Nuitka on MacBook!&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;Arguments:&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;argv&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;__main__&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;写完后，然后进行打包为二进制程序，使用如下命令：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;python -m nuitka --standalone --onefile --follow-imports --show-progress --output-dir&lt;span class="o"&gt;=&lt;/span&gt;dist hello_world.py
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 执行成功后，会在 dist 目录下生成 hello_world.bin，这个就是可执行文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;./file hello_world.bin
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hello_world.bin: ELF 64-bit LSB pie executable, x86-64, version &lt;span class="m"&gt;1&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;SYSV&lt;span class="o"&gt;)&lt;/span&gt;, dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID&lt;span class="o"&gt;[&lt;/span&gt;sha1&lt;span class="o"&gt;]=&lt;/span&gt;56ba24bccfa917e6ce9009223e4e83924f616d46, &lt;span class="k"&gt;for&lt;/span&gt; GNU/Linux 3.2.0, stripped
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;参数说明：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;--standalone&lt;/code&gt;：生成包含所有依赖的独立目录。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--onefile&lt;/code&gt;：将结果打包为单个可执行文件。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--follow-imports&lt;/code&gt;：自动包含所有导入的模块。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--show-progress&lt;/code&gt;：显示编译进度。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--output-dir=dist&lt;/code&gt;：指定输出目录。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="一个更加复杂的示例fastapi-提供简单的-webserver"&gt;一个更加复杂的示例：FastAPI 提供简单的 WebServer
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;span class="lnt"&gt;16
+&lt;/span&gt;&lt;span class="lnt"&gt;17
+&lt;/span&gt;&lt;span class="lnt"&gt;18
+&lt;/span&gt;&lt;span class="lnt"&gt;19
+&lt;/span&gt;&lt;span class="lnt"&gt;20
+&lt;/span&gt;&lt;span class="lnt"&gt;21
+&lt;/span&gt;&lt;span class="lnt"&gt;22
+&lt;/span&gt;&lt;span class="lnt"&gt;23
+&lt;/span&gt;&lt;span class="lnt"&gt;24
+&lt;/span&gt;&lt;span class="lnt"&gt;25
+&lt;/span&gt;&lt;span class="lnt"&gt;26
+&lt;/span&gt;&lt;span class="lnt"&gt;27
+&lt;/span&gt;&lt;span class="lnt"&gt;28
+&lt;/span&gt;&lt;span class="lnt"&gt;29
+&lt;/span&gt;&lt;span class="lnt"&gt;30
+&lt;/span&gt;&lt;span class="lnt"&gt;31
+&lt;/span&gt;&lt;span class="lnt"&gt;32
+&lt;/span&gt;&lt;span class="lnt"&gt;33
+&lt;/span&gt;&lt;span class="lnt"&gt;34
+&lt;/span&gt;&lt;span class="lnt"&gt;35
+&lt;/span&gt;&lt;span class="lnt"&gt;36
+&lt;/span&gt;&lt;span class="lnt"&gt;37
+&lt;/span&gt;&lt;span class="lnt"&gt;38
+&lt;/span&gt;&lt;span class="lnt"&gt;39
+&lt;/span&gt;&lt;span class="lnt"&gt;40
+&lt;/span&gt;&lt;span class="lnt"&gt;41
+&lt;/span&gt;&lt;span class="lnt"&gt;42
+&lt;/span&gt;&lt;span class="lnt"&gt;43
+&lt;/span&gt;&lt;span class="lnt"&gt;44
+&lt;/span&gt;&lt;span class="lnt"&gt;45
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;fastapi&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;FastAPI&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;HTTPException&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Query&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pydantic&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;BaseModel&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Field&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;typing&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Dict&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;List&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Optional&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;logging&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;app&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FastAPI&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;Simple Inventory API&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;description&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;A simple CRUD API with in-memory storage&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 配置日志&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;logging&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;basicConfig&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;level&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;logging&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;INFO&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;logger&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;logging&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getLogger&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="vm"&gt;__name__&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 创建物品&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nd"&gt;@app.post&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;/items/&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;response_model&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;async&lt;/span&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;create_item&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;item&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Item&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;pass&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 读取单个物品&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nd"&gt;@app.get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;/items/&lt;/span&gt;&lt;span class="si"&gt;{item_id}&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;response_model&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;Item&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;async&lt;/span&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;read_item&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;item_id&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;pass&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 获取物品列表（支持分页）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nd"&gt;@app.get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;/items/&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;response_model&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;List&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Item&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;async&lt;/span&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;list_items&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;pass&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 更新物品&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nd"&gt;@app.put&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;/items/&lt;/span&gt;&lt;span class="si"&gt;{item_id}&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;response_model&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;async&lt;/span&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;update_item&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;item_id&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Item&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;pass&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 删除物品&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nd"&gt;@app.delete&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;/items/&lt;/span&gt;&lt;span class="si"&gt;{item_id}&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;response_model&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;async&lt;/span&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;delete_item&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;item_id&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;pass&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 启动应用&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;__main__&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;uvicorn&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;uvicorn&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;host&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;0.0.0.0&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;port&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;8000&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;生成二进制文件和上面那个类似，不过有一点需要注意的是，在打包之前需要把需要的包装好了，然后才能打包。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;完整的示例参考：&lt;a class="link" href="https://raw.githubusercontent.com/shangzongyu/experiments/refs/heads/master/python-nuitka/fastapi_example.py" target="_blank" rel="noopener"
+&gt;https://raw.githubusercontent.com/shangzongyu/experiments/refs/heads/master/python-nuitka/fastapi_example.py&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="faq"&gt;FAQ
+&lt;/h2&gt;&lt;h3 id="aptdnfyum-install-patchelf-first"&gt;&lt;code&gt;apt/dnf/yum install patchelf' first.&lt;/code&gt;
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;详细错误如下：
+python -m nuitka &amp;ndash;standalone &amp;ndash;onefile &amp;ndash;follow-imports &amp;ndash;show-progress &amp;ndash;output-dir=dist hello_world.py
+Nuitka-Options：Used command line options：
+Nuitka-Options： &amp;ndash;standalone &amp;ndash;onefile &amp;ndash;follow-imports &amp;ndash;show-progress &amp;ndash;output-dir=dist hello_world.py
+FATAL：Error，standalone mode on Linux requires ‘patchelf’ to be installed。Use ‘apt/dnf/yum install patchelf’ first。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;解决方法如下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo apt install patchelf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Tips:查询 Linux 系统安装时间</title><link>https://shangzongyu.github.io/p/tips-linux/</link><pubDate>Sun, 14 Jan 2024 03:20:54 +0000</pubDate><guid>https://shangzongyu.github.io/p/tips-linux/</guid><description>&lt;h2 id="通用方法"&gt;通用方法
+&lt;/h2&gt;&lt;p&gt;Linux 系统安装之后，&lt;code&gt;root&lt;/code&gt; 路径的创建时间是不会变更，因此可以通过做个特性来查找。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ stat / &lt;span class="p"&gt;|&lt;/span&gt; awk &lt;span class="s1"&gt;&amp;#39;/Birth: /{print $2 &amp;#34; &amp;#34; substr($3,1,5)}&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2023-07-28 11:19
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;可以看到我的系统是：2023-07-28 11:19 时间安装的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这样方法有些麻烦，仔细看这串代码，其实就是使用 &lt;code&gt;stat&lt;/code&gt; 命令获取时间，然后使用 &lt;code&gt;awk&lt;/code&gt; 和 &lt;code&gt;substr&lt;/code&gt; 进行选取 &lt;code&gt;Birth&lt;/code&gt; 字段，其实可以直接使用 &lt;code&gt;stat /&lt;/code&gt; 查看：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;span class="lnt"&gt;8
+&lt;/span&gt;&lt;span class="lnt"&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ stat /
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; File: /
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Size: &lt;span class="m"&gt;230&lt;/span&gt; Blocks: &lt;span class="m"&gt;0&lt;/span&gt; IO Block: &lt;span class="m"&gt;4096&lt;/span&gt; directory
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Device: 22h/34d Inode: &lt;span class="m"&gt;210115&lt;/span&gt; Links: &lt;span class="m"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Access: &lt;span class="o"&gt;(&lt;/span&gt;0755/drwxr-xr-x&lt;span class="o"&gt;)&lt;/span&gt; Uid: &lt;span class="o"&gt;(&lt;/span&gt; 0/ root&lt;span class="o"&gt;)&lt;/span&gt; Gid: &lt;span class="o"&gt;(&lt;/span&gt; 0/ root&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Access: 2023-07-28 05:52:36.000000000 +0800
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Modify: 2024-01-14 10:23:24.184641738 +0800
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Change: 2024-01-14 10:23:24.184641738 +0800
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Birth: 2023-07-28 11:19:08.063247240 +0800
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;stat&lt;/code&gt; 的 &lt;a class="link" href="https://man7.org/linux/man-pages/man1/stat.1.html" target="_blank" rel="noopener"
+&gt;man page&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;还有一个通用的方法如下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ tune2fs: Bad magic number in super-block &lt;span class="k"&gt;while&lt;/span&gt; trying to open /dev/vdb1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;PS：有可能报错，推荐第一种方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="debian-系列"&gt;Debian 系列
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;包括：Debian/Ubuntu/Mint 等。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ sudo head -n1 /var/log/installer/syslog
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;PS：虚拟机或者容器安装有可能会报错：没有 syslog 文件。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="rhel-系列"&gt;RHEL 系列
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;包括：CentOS/Fedora/Rocky 等。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ sudo rpm -qi basesystem &lt;span class="p"&gt;|&lt;/span&gt; grep -i &lt;span class="s2"&gt;&amp;#34;install date&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Install Date: Sat &lt;span class="m"&gt;13&lt;/span&gt; Jan &lt;span class="m"&gt;2024&lt;/span&gt; 10:09:22 AM CST
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="arch-系列"&gt;Arch 系列
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;包括：Manjaro/EndeavourOS 等&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ head -n1 /var/log/pacman.log
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;[&lt;/span&gt;2023-12-11T04:18:36+0000&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;PACMAN&lt;span class="o"&gt;]&lt;/span&gt; Running &lt;span class="s1"&gt;&amp;#39;pacman -Sy --needed --noconfirm archlinux-keyring&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="参考资料"&gt;参考资料
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://linuxiac.com/how-to-find-linux-os-installation-date/" target="_blank" rel="noopener"
+&gt;Linux Installation Date：How to Discover Your System’s Age&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Tips：Linux 下给 ManPage 添加颜色</title><link>https://shangzongyu.github.io/p/linux-manpage/</link><pubDate>Sat, 14 Oct 2023 11:51:30 +0000</pubDate><guid>https://shangzongyu.github.io/p/linux-manpage/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;Linux 下使用 &lt;code&gt;man&lt;/code&gt; 命令的时候没有一些颜色，看起来不输入，因此可以添加一些颜色。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="oh-my-zsh"&gt;oh-my-zsh
+&lt;/h2&gt;&lt;p&gt;如果使用的是 &lt;code&gt;on-my-zhs&lt;/code&gt;，可以通过添加插件 &lt;code&gt;colored-man-pages&lt;/code&gt; 就可实现 man page 带有颜色。&lt;/p&gt;
+&lt;h2 id="bash"&gt;bash
+&lt;/h2&gt;&lt;p&gt;如果使用 bash 在 &lt;code&gt;.bashrc&lt;/code&gt; 中添加如下设置：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LESS_TERMCAP_mb&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;\e[1;32m&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LESS_TERMCAP_md&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;\e[1;32m&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LESS_TERMCAP_me&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;\e[0m&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LESS_TERMCAP_se&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;\e[0m&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LESS_TERMCAP_so&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;\e[01;33m&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LESS_TERMCAP_ue&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;\e[0m&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LESS_TERMCAP_us&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;\e[1;4;31m&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;上面的配置的颜色：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;31&lt;/strong&gt; &amp;ndash; red&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;32&lt;/strong&gt; &amp;ndash; green&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;33&lt;/strong&gt; &amp;ndash; yellow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;上面的使用的 &lt;code&gt;escape codes&lt;/code&gt; 的含义：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;0&lt;/strong&gt; &amp;ndash; reset/normal&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;1&lt;/strong&gt; &amp;ndash; bold&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;4&lt;/strong&gt; &amp;ndash; underlined&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="更加通的解决方法"&gt;更加通的解决方法
+&lt;/h2&gt;&lt;p&gt;使用 &lt;a class="link" href="http://www.jedsoft.org/most/" target="_blank" rel="noopener"
+&gt;most&lt;/a&gt; 是一个分页应用程序。&lt;/p&gt;
+&lt;p&gt;特点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;跨平台，支持 Unix，VMS，MSDOS 以及 win32 systems&lt;/li&gt;
+&lt;li&gt;支持多窗口&lt;/li&gt;
+&lt;li&gt;只是方向键&lt;/li&gt;
+&lt;li&gt;使用空格进行向下滚动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;安装：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;span class="lnt"&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Debian/Ubuntu&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo apt install most
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Arch&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo pacman -S most
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# macOS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install most
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;配置：&lt;/p&gt;
+&lt;p&gt;在 &lt;code&gt;.bashrc&lt;/code&gt; 或者 &lt;code&gt;.zshrc&lt;/code&gt; 添加如下配置：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PAGER&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;most&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;PS：自己认为不好用，应为 &lt;code&gt;most&lt;/code&gt; 的操作方式和之前的操作方式不同，有种使用割裂感觉，不好用。&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>Tips: SSH 客户端超时处理</title><link>https://shangzongyu.github.io/p/ssh/</link><pubDate>Sat, 14 Oct 2023 10:47:46 +0000</pubDate><guid>https://shangzongyu.github.io/p/ssh/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;SSH 客户端连接 SSH 服务器，如果长时间不操作，那么 SSH 就会自动断线，在日常开发中遇到这种情况让人很抓狂。这篇文章就是为了解决这个问题，如果使用 ZOC 这种图形化工具，比较容易解决做个简单的配置就可以，Mac/Linux 需要做其他的处理。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="windows"&gt;Windows
+&lt;/h2&gt;&lt;p&gt;在 Windows 上有主要是图形化工具。&lt;/p&gt;
+&lt;h3 id="winscp"&gt;WinSCP
+&lt;/h3&gt;&lt;p&gt;可以找到主机的连接超时时间设置更改，打开 keepalive 选项，每隔一段时间给连接发送一个 SSH 空包或哑命令以保持连接不断开，keepalive 的间隔秒数要设置少于超时等待的时候，如设置成 10 秒，确认重新连接即可。设置项如图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230922_winscp-ssh-timeout.png"
+loading="lazy"
+alt="winscp-ssh-timeout"
+&gt;&lt;/p&gt;
+&lt;h3 id="zoc"&gt;ZOC
+&lt;/h3&gt;&lt;p&gt;在顶部 &lt;code&gt;Options -&amp;gt; Edtion session Profile -&amp;gt; Terminal -&amp;gt; Idle time&lt;/code&gt; 设置&lt;strong&gt;时长&lt;/strong&gt;就可以了。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230922_zoc-ssh-timeout-00.png"
+loading="lazy"
+alt="zoc-ssh-timeout-00"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230922_zoc-ssh-timeout-01.png"
+loading="lazy"
+alt="zoc-ssh-timeout-01"
+&gt;&lt;/p&gt;
+&lt;h2 id="maclinux"&gt;Mac/Linux
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;在 Mac/Linux 可以通过修改 SSH 客户端的配置达到这个目的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;SSH Client 会从以下途径获取配置参数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SSH 命令行参数&lt;/li&gt;
+&lt;li&gt;用户配置文件 &lt;code&gt;~/.ssh/config&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;系统配置文件 &lt;code&gt;/etc/ssh/ssh_config&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="命令行参数"&gt;命令行参数
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;使用命令行连接的时候设置参数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ssh -o &lt;span class="nv"&gt;ServerAliveInterval&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;60&lt;/span&gt; &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; -o &lt;span class="nv"&gt;ServerAliveCountMax&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;30&lt;/span&gt; &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; root@10.0.1.25 -p &lt;span class="m"&gt;22&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="修改用户配置文件"&gt;修改用户配置文件
+&lt;/h3&gt;&lt;p&gt;在 &lt;code&gt;~/.ssh/config&lt;/code&gt; 添加如下内容：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Host *
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ServerAliveInterval &lt;span class="m"&gt;60&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ServerAliveCountMax &lt;span class="m"&gt;30&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="修改系统配置文件"&gt;修改系统配置文件
+&lt;/h3&gt;&lt;p&gt;在 &lt;code&gt;Host *&lt;/code&gt; 下面添加：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Host *
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; SendEnv LANG LC_*
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ServerAliveInterval &lt;span class="m"&gt;60&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ServerAliveCountMax &lt;span class="m"&gt;30&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="总结"&gt;总结
+&lt;/h3&gt;&lt;p&gt;这样设置后 SSH Client 每隔 60s 向 Server 端发送 `keep-alive`` 包，如果发送 30 次，Server 端还无回应则断开连接。&lt;/p&gt;
+&lt;p&gt;如果以上都设置了，那么顺序是：&lt;strong&gt;命令&lt;/strong&gt; -&amp;gt; &lt;strong&gt;用户配置&lt;/strong&gt; -&amp;gt; &lt;strong&gt;系统配置&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id="服务端设置"&gt;服务端设置
+&lt;/h2&gt;&lt;p&gt;我们也可以通过修改 SSH Server 端口的配置，但是不建议这样做。&lt;/p&gt;
+&lt;p&gt;修改配置文件 &lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt;，然后找到下面两项，去掉注释：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ClientAliveInterval &lt;span class="m"&gt;60&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ClientAliveCountMax &lt;span class="m"&gt;30&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;说明：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ClientAliveInterval&lt;/code&gt;：SSH Server 与 SSH Client 的心跳超时时间，也就是说，如果客户端没有发送任何指令，SSH Server 间隔 &lt;code&gt;ClientAliveInterval&lt;/code&gt; 秒后，会发送一个空包来和客户都安保持心跳。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ClientAliveCountMax&lt;/code&gt;：表示重试的最大次数，我们设置为 30，也就是说，如果 Server 像 Client 发送了每隔 &lt;code&gt;ClientAliveInterval&lt;/code&gt; 秒后，发送了 &lt;code&gt;ClientAliveCountMax&lt;/code&gt; 次后，都失败了，那么就会断开这个来连接。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更多参考 &lt;a class="link" href="https://linux.die.net/man/5/ssh_config" target="_blank" rel="noopener"
+&gt;man ssh_config&lt;/a&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ServerAliveCountMax Sets the number of server alive messages &lt;span class="o"&gt;(&lt;/span&gt;see below&lt;span class="o"&gt;)&lt;/span&gt; which may be sent without ssh&lt;span class="o"&gt;(&lt;/span&gt;1&lt;span class="o"&gt;)&lt;/span&gt; receiving any messages back from the server. If this threshold is reached &lt;span class="k"&gt;while&lt;/span&gt; server alive messages are being sent, ssh will disconnect from the server, terminating the session. It is important to note that the use of server alive messages is very different from TCPKeepAlive &lt;span class="o"&gt;(&lt;/span&gt;below&lt;span class="o"&gt;)&lt;/span&gt;. The server alive messages are sent through the encrypted channel and therefore will not be spoofable. The TCP keepalive option enabled by TCPKeepAlive is spoofable. The server alive mechanism is valuable when the client or server depend on knowing when a connection has become inactive.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;The default value is 3. If, &lt;span class="k"&gt;for&lt;/span&gt; example, ServerAliveInterval &lt;span class="o"&gt;(&lt;/span&gt;see below&lt;span class="o"&gt;)&lt;/span&gt; is &lt;span class="nb"&gt;set&lt;/span&gt; to &lt;span class="m"&gt;15&lt;/span&gt; and ServerAliveCountMax is left at the default, &lt;span class="k"&gt;if&lt;/span&gt; the server becomes unresponsive, ssh will disconnect after approximately &lt;span class="m"&gt;45&lt;/span&gt; seconds. This option applies to protocol version &lt;span class="m"&gt;2&lt;/span&gt; only&lt;span class="p"&gt;;&lt;/span&gt; in protocol version &lt;span class="m"&gt;1&lt;/span&gt; there is no mechanism to request a response from the server to the server alive messages, so disconnection is the responsibility of the TCP stack.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ServerAliveInterval Sets a timeout interval in seconds after which &lt;span class="k"&gt;if&lt;/span&gt; no data has been received from the server, ssh&lt;span class="o"&gt;(&lt;/span&gt;1&lt;span class="o"&gt;)&lt;/span&gt; will send a message through the encrypted channel to request a response from the server. The default is 0, indicating that these messages will not be sent to the server, or &lt;span class="m"&gt;300&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; the BatchMode option is set. This option applies to protocol version &lt;span class="m"&gt;2&lt;/span&gt; only. ProtocolKeepAlives and SetupTimeOut are Debian-specific compatibility aliases &lt;span class="k"&gt;for&lt;/span&gt; this option.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>JetBrains IDE 的 Tips</title><link>https://shangzongyu.github.io/p/jetbrains-ide-tips/</link><pubDate>Thu, 27 Oct 2022 15:13:25 +0000</pubDate><guid>https://shangzongyu.github.io/p/jetbrains-ide-tips/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2022-JetBrains-IDE-的-Tips.webp" alt="Featured image of post JetBrains IDE 的 Tips" /&gt;&lt;blockquote&gt;
+&lt;p&gt;介绍使用 JetBrains IDE 过程的的一些 Tips。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="goland-tips"&gt;Goland Tips
+&lt;/h2&gt;&lt;h3 id="行排序"&gt;行排序
+&lt;/h3&gt;&lt;p&gt;通过 &lt;code&gt;⌘ ⇧ A&lt;/code&gt; (macOS) / &lt;code&gt;Ctrl+Shift+A&lt;/code&gt; (Windows/Linux) 打开 Actions，搜索 &lt;code&gt;Sort Lines&lt;/code&gt; 进行排序。&lt;/p&gt;
+&lt;h3 id="open-blank-diff-window"&gt;Open Blank Diff Window
+&lt;/h3&gt;&lt;p&gt;通过 &lt;code&gt;⌘ ⇧ A&lt;/code&gt; (macOS) / &lt;code&gt;Ctrl+Shift+A&lt;/code&gt; (Windows/Linux) 打开 Actions，搜索 &lt;code&gt;Blank Diff Window&lt;/code&gt; 会打开左右里两个用户 differ 的窗口。&lt;/p&gt;
+&lt;h3 id="scratch-files"&gt;Scratch files
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;Scratch file 不仅仅是纯文本，它语法高亮、代码不全以及和文件类型相关的特性。
+Scratch file 随着 IDE 存在，没有和某个项目绑定。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;操作：&lt;code&gt;Select File | New | Scratch File&lt;/code&gt;，或者如下快捷键&lt;/p&gt;
+&lt;p&gt;or press on macOS or Windows/Linux。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS：&lt;code&gt;⇧ ⌘ N&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Windows/Linux：&lt;code&gt;Ctrl+Alt+Shift+Insert&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="多光标"&gt;多光标
+&lt;/h3&gt;&lt;p&gt;启动方式 1：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;启动多光标：按两次 &lt;code&gt;⌥&lt;/code&gt; (macOS)/ &lt;code&gt;Ctrl&lt;/code&gt; (Windows/Linux)，并且不释放它&lt;/li&gt;
+&lt;li&gt;接着按向上箭头或者向下箭头进行选择&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;启动方式 2：&lt;/p&gt;
+&lt;p&gt;按住 &lt;code&gt;⌥⇧&lt;/code&gt; macOS）/ &lt;code&gt;Shift+Alt&lt;/code&gt; (Windows/Linux) 然后使用光标进行选择&lt;/p&gt;
+&lt;p&gt;启动方式 3：&lt;/p&gt;
+&lt;p&gt;按着 &lt;code&gt;⌥&lt;/code&gt; (macOS)/ &lt;code&gt;Alt&lt;/code&gt; (Windows/Linux) 使用鼠标进行选择多光标的操作。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;删除所有的按 &lt;code&gt;Escape&lt;/code&gt; 键值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="折叠所有--展开所有"&gt;折叠所有 / 展开所有
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;macOS：&lt;code&gt;⇧⌘-&lt;/code&gt; / &lt;code&gt;⇧⌘+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Windows/Linux：Ctrl + Shift + NumPad + / Ctrl + Shift + NumPad –&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;上面的快捷键关于折叠和展开文件，如果有选择一部分，那么会折叠和展开的部分。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;折叠当前段：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS：&lt;code&gt;⌥⌘-&lt;/code&gt; / &lt;code&gt;⌥⌘&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Windows/Linux：&lt;code&gt;Ctrl+Alt+NumPad&lt;/code&gt; + / &lt;code&gt;Ctrl+Alt+NumPad –&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="最近打开的文件和位置"&gt;最近打开的文件和位置
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;最近打开的文件
+&lt;ul&gt;
+&lt;li&gt;macOS：&lt;code&gt;⌘E&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Windows/Linux：&lt;code&gt;Ctrl+E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;最近打开的位置
+&lt;ul&gt;
+&lt;li&gt;macOS：&lt;code&gt;⌘⇧E&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Windows/Linux：&lt;code&gt;Ctrl+Shift+E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>各种源的修改整理</title><link>https://shangzongyu.github.io/p/%E6%BA%90%E7%9A%84%E4%BF%AE%E6%94%B9%E6%95%B4%E7%90%86/</link><pubDate>Mon, 01 Aug 2022 06:38:13 +0000</pubDate><guid>https://shangzongyu.github.io/p/%E6%BA%90%E7%9A%84%E4%BF%AE%E6%94%B9%E6%95%B4%E7%90%86/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;由于国内网络众所周知的原导导致下载国外的包时，网络会很慢或者更本就下载不了，因此我们需要切换相应的源。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这个会持续更。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="操作系统"&gt;操作系统
+&lt;/h2&gt;&lt;h3 id="ubuntu"&gt;Ubuntu
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;使用 USTC 的源，Ubuntu 的地址为：&lt;a class="link" href="https://mirrors.ustc.edu.cn/help/ubuntu.html" target="_blank" rel="noopener"
+&gt;https://mirrors.ustc.edu.cn/help/ubuntu.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;span class="lnt"&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 备份&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 替换源&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo sed -i &lt;span class="s1"&gt;&amp;#39;s/us.archive.ubuntu.com/mirrors.ustc.edu.cn/g&amp;#39;&lt;/span&gt; /etc/apt/sources.list
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 更新索引以生效&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo apt update
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;也可以使用别人 snullp 大叔开发的&lt;a class="link" href="https://mirrors.ustc.edu.cn/repogen" target="_blank" rel="noopener"
+&gt;配置生成器&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id="freebsd"&gt;FreeBSD
+&lt;/h3&gt;&lt;p&gt;FreeBSD &lt;code&gt;pkg&lt;/code&gt; 包管理器官方源配置是 &lt;code&gt;/etc/pkg/FreeBSD.conf&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;其中的 &lt;code&gt;url&lt;/code&gt; 参数配置了官方仓库的地址，我们需要把它替换为镜像站的地址。该配置文件是 FreeBSD 系统的一部分，请不要直接创建，而是创建 &lt;code&gt;/usr/local/etc/pkg/repos/FreeBSD.conf&lt;/code&gt; 覆盖配置，文件内容如下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir -p /usr/local/etc/pkg/repos/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;touch /usr/local/etc/pkg/repos/FreeBSD.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 新增如下内容&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;FreeBSD: {&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="na"&gt;url: &amp;#34;pkg+http://mirrors.ustc.edu.cn/freebsd-pkg/${ABI}/quarterly&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果要使用滚动更新的 &lt;code&gt;latest&lt;/code&gt; 仓库，把 &lt;code&gt;url&lt;/code&gt; 配置最后的 &lt;code&gt;quarterly&lt;/code&gt; 换成 &lt;code&gt;latest&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;p&gt;修改配置后，运行 &lt;code&gt;pkg update -f&lt;/code&gt; 更新索引。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;小技巧：使用 HTTPS 可以有效避免国内运营商的缓存劫持，但需要事先安 &lt;code&gt;security/ca_root_nss&lt;/code&gt; 软件包。参考这个 &lt;a class="link" href="https://mirrors.ustc.edu.cn/help/freebsd-pkg.html" target="_blank" rel="noopener"
+&gt;https://mirrors.ustc.edu.cn/help/freebsd-pkg.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="编程语言"&gt;编程语言
+&lt;/h2&gt;&lt;h3 id="python"&gt;Python
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;更换 pip 源，使用阿里云提供的镜像，创建 &lt;code&gt;$HOME/.pip/pip.conf&lt;/code&gt;，写入如下内容：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;[global]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;index-url&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.aliyun.com/pypi/simple/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;[install]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;trusted-host&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;mirrors.aliyun.com&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="go"&gt;Go
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;只需要设置 GOPROXY 即可。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PS：使用 &lt;a class="link" href="https://goproxy.cn" target="_blank" rel="noopener"
+&gt;https://goproxy.cn&lt;/a&gt; 为国内用户服务的 GOPROXY。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在 &lt;code&gt;$HOME/.bashrc&lt;/code&gt; 或者 &lt;code&gt;$HOME/.zshrc&lt;/code&gt; 添加如下内容：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;GOPROXY&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;https://goproxy.cn,direct
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;其他可用的 GOPROXY：&lt;a class="link" href="https://goproxy.io/zh" target="_blank" rel="noopener"
+&gt;https://goproxy.io/zh&lt;/a&gt; 一个全球代理为 Go 模块而生。&lt;/p&gt;
+&lt;h3 id="rust"&gt;Rust
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;.bashrc&lt;/code&gt; 或者 &lt;code&gt;.zshrc&lt;/code&gt; 中添加如下内容。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;中科大的源&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id="配置-rust-基础环境变量"&gt;配置 Rust 基础环境变量
+&lt;/h4&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 用于更新 toolchain&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;RUSTUP_DIST_SERVER&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;https://mirrors.ustc.edu.cn/rust-static
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 更新 rustup&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;RUSTUP_UPDATE_ROOT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;https://mirrors.ustc.edu.cn/rust-static/rustup
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;参考：&lt;a class="link" href="https://mirrors.ustc.edu.cn/help/rust-static.html" target="_blank" rel="noopener"
+&gt;Rust Toolchain 反向代理使用帮助&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id="配置-cargo-环境变量"&gt;配置 cargo 环境变量
+&lt;/h4&gt;&lt;p&gt;在 &lt;code&gt;$HOME/.cargo/config&lt;/code&gt; 中添加如下内容：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;[source.crates-io]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;replace-with&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;ustc&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;[source.ustc]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;registry&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#34;git://mirrors.ustc.edu.cn/crates.io-index&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果所处的环境中不允许使用 git 协议，可以把上述地址改为：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-makefile" data-lang="makefile"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;registry&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;https://mirrors.ustc.edu.cn/crates.io-index&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;参考：&lt;a class="link" href="https://mirrors.ustc.edu.cn/help/crates.io-index.html" target="_blank" rel="noopener"
+&gt;Rust Crates 源使用帮助&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="其他"&gt;其他
+&lt;/h2&gt;&lt;h3 id="homebrew"&gt;Homebrew
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;使用清华大学的源。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 设置环境变量&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;HOMEBREW_BREW_GIT_REMOTE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;HOMEBREW_CORE_GIT_REMOTE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;HOMEBREW_BOTTLE_DOMAIN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;参考：https://mirror.tuna.tsinghua.edu.cn/help/homebrew/&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>Tips：macOS 中安装和配置 Qt 开发环境</title><link>https://shangzongyu.github.io/p/macos-config-qt/</link><pubDate>Mon, 02 May 2022 06:37:50 +0000</pubDate><guid>https://shangzongyu.github.io/p/macos-config-qt/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2022-macOS-中安装和配置-QT-开发环境-cover.webp" alt="Featured image of post Tips：macOS 中安装和配置 Qt 开发环境" /&gt;&lt;blockquote&gt;
+&lt;p&gt;介绍如何在 macOS 下使用 Qt Creator + Qt 进行开发。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="环境"&gt;环境
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;macOS 版本：macOS 12.3.1&lt;/li&gt;
+&lt;li&gt;Qt 版本：Qt 5&lt;/li&gt;
+&lt;li&gt;Shell 版本：Zsh&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="安装相应工具"&gt;安装相应工具
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 安装 Qt Creator&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install --cask qt-creator
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 这里安装 Qt5，如果想要安装最新版本的 Qt 使用 qt 替换 qt@5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install qt@5
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="配置-zsh"&gt;配置 Zsh
+&lt;/h2&gt;&lt;p&gt;在 &lt;code&gt;~/.zshrc&lt;/code&gt; 中添加如下配置：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;/usr/local/opt/qt@5/bin:&lt;/span&gt;&lt;span class="nv"&gt;$PATH&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LDFLAGS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;-L/usr/local/opt/qt@5/lib&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;CPPFLAGS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;-I/usr/local/opt/qt@5/include&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PKG_CONFIG_PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;/usr/local/opt/qt@5/lib/pkgconfig&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;如果使用的是 Bash，那么把上面的配置写入 &lt;code&gt;~/.bashrc&lt;/code&gt; 文件中。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="配置-qt-version"&gt;配置 Qt Version
+&lt;/h2&gt;&lt;p&gt;在 &lt;code&gt;Qt Creator -&amp;gt; Preferences -&amp;gt; Kits -&amp;gt; Qt Versions -&amp;gt; Add&lt;/code&gt; 添加 &lt;code&gt;qmake&lt;/code&gt; 的位置，可以通过搜索 &lt;code&gt;qmake&lt;/code&gt; 的位置。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PS：这个吐槽下 Qt Creator 的设计，不能让用户自己直接通过 Add 输入路径，非要通过搜索才可以。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;![macos-config-qt-00] (&lt;a class="link" href="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_macos-config-qt-00.png" target="_blank" rel="noopener"
+&gt;https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_macos-config-qt-00.png&lt;/a&gt; align=“center”)&lt;/p&gt;
+&lt;p&gt;配置完 Qt Versions 后，在 &lt;code&gt;Qt Creator -&amp;gt; Preferences -&amp;gt; Kits -&amp;gt; Kits&lt;/code&gt; 配置 Qt 的版本，如下图：&lt;/p&gt;
+&lt;p&gt;![macos-config-qt-01] (&lt;a class="link" href="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_macos-config-qt-01.png" target="_blank" rel="noopener"
+&gt;https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_macos-config-qt-01.png&lt;/a&gt; align=“center”)&lt;/p&gt;
+&lt;h2 id="总结"&gt;总结
+&lt;/h2&gt;&lt;p&gt;macOS 需要安装 &lt;a class="link" href="https://www.qt.io/" target="_blank" rel="noopener"
+&gt;Qt&lt;/a&gt; 和 &lt;a class="link" href="https://www.qt.io/product/development-tools" target="_blank" rel="noopener"
+&gt;Qt Creator&lt;/a&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Qt - 提供相应的 GUI 框架。&lt;/li&gt;
+&lt;li&gt;Qt Creator - 一个跨平台的 IDE 而已，理论上可以使用其他任意 IDE，但是为了方便还是使用这个。&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Tips：MacBook VNC 连接 Omarchy Linux</title><link>https://shangzongyu.github.io/p/tipsmacbook-vnc-%E8%BF%9E%E6%8E%A5-omarchy-linux/</link><pubDate>Tue, 18 Nov 2025 19:17:00 +0800</pubDate><guid>https://shangzongyu.github.io/p/tipsmacbook-vnc-%E8%BF%9E%E6%8E%A5-omarchy-linux/</guid><description>&lt;h2 id="前言"&gt;前言
+&lt;/h2&gt;&lt;p&gt;换了一个新的办公环境，新的办公桌比之前小不少，导致我的两个显示器放不下（两个显示器一个被 Omarhcy 使用，一个被 MacBook 使用），MacBook 是我的主力机，因此就能把 Linux 的显示器去掉，Linux 我平常使用 SSH 直接连接的，但是偶尔使用 GUI，我想折腾下。&lt;/p&gt;
+&lt;p&gt;!&lt;/p&gt;
+&lt;p&gt;最初就是找到 &lt;a class="link" href="https://tigervnc.org/" target="_blank" rel="noopener"
+&gt;Tiger VNC&lt;/a&gt; ，使用 VNC Server 搭建一个服务器，然后通过 Mac 的 VNC Client 连接，但是执行过程有关问题：&lt;/p&gt;
+&lt;p&gt;TigerVNC 主要是基于 X11 的 VNC 服务器，但是 Omarchy Linux 使用的 Hyprland 是基于 Wayland 的窗口管理器，Wayland 与传统 X11 不兼容。这就很难搞了，就算配置了也有各种问题。&lt;/p&gt;
+&lt;p&gt;就需要换一个兼容 Wayland 的 VNC Server, 通过询问 AI 找到了 &lt;a class="link" href="https://github.com/any1/wayvnc" target="_blank" rel="noopener"
+&gt;wayvnc&lt;/a&gt;，WayVNC 专为无窗口管理器依赖的 Wayland 环境设计，刚好符合我们的场景。&lt;/p&gt;
+&lt;h2 id="安装"&gt;安装
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo pacman -S wayvnc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="启动"&gt;启动
+&lt;/h2&gt;&lt;p&gt;在启动之前需要简单配置下：&lt;/p&gt;
+&lt;p&gt;配置文件在 &lt;code&gt;~/.config/wayvnc/config&lt;/code&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;0.0.0.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;配置之后就可以通过：&lt;code&gt;wayvnc -C ~/.config/wayvnc/config&lt;/code&gt; 来启动了，不过每次都要手动启动很麻烦，而且 &lt;code&gt;wayvnc&lt;/code&gt; 不支持 daemon 模式，非常不方便，因此使用 &lt;code&gt;systemd&lt;/code&gt; 进行管理。&lt;/p&gt;
+&lt;p&gt;新建 wayvnc 的 service 文件 &lt;code&gt;~/.config/systemd/user/wayvnc.service&lt;/code&gt; 内容如下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;text&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;[Unit]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;Description&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;WayVNC Server&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;After&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;graphical-session.target&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;[Service]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 替换 with your username 路径&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;ExecStart&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;/usr/bin/wayvnc -C /home/shine/.config/wayvnc/config&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;Restart&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;always&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;Environment&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;WAYLAND_DISPLAY=wayland-0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;Environment&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;XDG_RUNTIME_DIR=/run/user/$(id -u)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;[Install]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;WantedBy&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;default.target&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;注意：&lt;code&gt;ExecStart&lt;/code&gt; 配置命令的的时候需要指定绝对路径。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;之后就可以：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;systemctl --user daemon-reload &lt;span class="c1"&gt;# 每次修改玩 serive 文件重新加载&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;systemctl --user &lt;span class="nb"&gt;enable&lt;/span&gt; --now wayvnc.service &lt;span class="c1"&gt;# 设置开机自启动&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;systemctl --user start wayvnc.service &lt;span class="c1"&gt;# 启动&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;systemctl --user stop wayvnc.service &lt;span class="c1"&gt;# 关闭&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;systemctl --user status wayvnc.service &lt;span class="c1"&gt;# 查看状态&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="配置"&gt;配置
+&lt;/h2&gt;&lt;p&gt;wayvnc 的基本配置主要通过配置文件 &lt;code&gt;~/.config/wayvnc/config&lt;/code&gt; ，关键配置项包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;address&lt;/code&gt;：监听地址，默认是 &lt;code&gt;127.0.0.1&lt;/code&gt;。设置为 &lt;code&gt;0.0.0.0&lt;/code&gt; 允许所有网络接口远程连接。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;port&lt;/code&gt;：监听的端口，默认是 &lt;code&gt;5900&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;enable_auth&lt;/code&gt;：是否启用身份认证（密码验证），默认 &lt;code&gt;false&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;username&lt;/code&gt;：用于登录的用户名（如果启用认证）。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;password&lt;/code&gt;：认证密码（需要使用 &lt;code&gt;vncpasswd&lt;/code&gt; 工具生成）。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;private_key_file&lt;/code&gt; 和 &lt;code&gt;certificate_file&lt;/code&gt;：用于启用 TLS 加密的私钥和证书文件路径。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;session&lt;/code&gt;：指定 Wayland 显示输出，如 &lt;code&gt;HEADLESS-1&lt;/code&gt;，多显示器环境可用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;always_shared&lt;/code&gt;：是否允许多个客户端共享同一会话。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;idle_autokill&lt;/code&gt;：空闲自动关闭时间（秒），避免长时间闲置浪费资源。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;clipboard&lt;/code&gt;：是否启用剪贴板同步。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;verbose&lt;/code&gt;：开启详细日志。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;示例配置文件内容：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;0.0.0.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;port&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;5900&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;enable_auth&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;username&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;jojo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;password&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;your_vnc_password_file_path&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;private_key_file&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;/path/to/private.pem&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;certificate_file&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;/path/to/cert.pem&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;session&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;HEADLESS-1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;always_shared&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;idle_autokill&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;600&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;clipboard&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;verbose&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这些配置允许你控制监听接口、安全认证、加密、会话管理等主要远程桌面参数。&lt;/p&gt;
+&lt;h2 id="连接-vnc-server-的客户端"&gt;连接 VNC Server 的客户端
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;我主要使用 MacBook 连接，因此选择支持 MacOS 的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="tigervnc"&gt;TigerVNC
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_tiger-vnc.webp"
+loading="lazy"
+alt="tiger-vnc"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://tigervnc.org/" target="_blank" rel="noopener"
+&gt;TigerVNC Viewer&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;优点： 支持多平台，性能好&lt;/li&gt;
+&lt;li&gt;缺点：界面比较丑(自认为的缺点)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="screens"&gt;Screens
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_screens.webp"
+loading="lazy"
+alt="screens"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://edovia.com/en/screens" target="_blank" rel="noopener"
+&gt;Screens&lt;/a&gt; - 一款跨苹果生态（iPhone、iPad、Mac、Vision Pro）远程桌面客户端应用，&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特点包括&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;提供流畅、直观的远控体验，支持多个连接和多显示器切换。&lt;/li&gt;
+&lt;li&gt;支持强加密和内置 SSH 隧道，确保连接安全，适合对安全要求高的使用场景。&lt;/li&gt;
+&lt;li&gt;支持苹果设备的硬件键盘、触控板、鼠标操作，交互自然顺畅。&lt;/li&gt;
+&lt;li&gt;独特的 Curtain Mode（屏幕遮蔽模式）保护远程会话的隐私。&lt;/li&gt;
+&lt;li&gt;支持文件拖拽传输，方便管理远程文件。&lt;/li&gt;
+&lt;li&gt;兼容多平台，包括控制 Mac、Linux、Raspberry Pi 和 Windows 电脑。&lt;/li&gt;
+&lt;li&gt;通过 Screens Connect 服务实现跨网络无复杂配置的远程连接。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;缺点&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;主要定位苹果设备生态，Windows 等 PC 端作为远程控制端支持有限。&lt;/li&gt;
+&lt;li&gt;远程 Windows/Linux 设备只能发送/接收文本和 URL，不支持声音传输。&lt;/li&gt;
+&lt;li&gt;需要远程设备安装并运行支持的 VNC Server（如 UltraVNC、TightVNC）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="faq"&gt;FAQ
+&lt;/h2&gt;&lt;p&gt;使用 &lt;code&gt;wayvnc 0.0.0.0&lt;/code&gt; 报错如下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ERROR: ../wayvnc/src/main.c: 540: WAYLAND_DISPLAY is not &lt;span class="nb"&gt;set&lt;/span&gt; in the environment
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ERROR: ../wayvnc/src/main.c: 2069: Failed to initialise wayland&lt;span class="sb"&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;原因：因为 SSH 会话没有继承到图形用户会话的 Wayland 环境变量，wayvnc 需要连接正在运行的 Wayland 会话才能工作，而 SSH 默认没有 Wayland 图形会话上下文。
+解决：登录图形终端然后执行 &lt;code&gt;wayvnc 0.0.0.0&lt;/code&gt;&lt;/p&gt;</description></item></channel></rss>

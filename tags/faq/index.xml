@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FAQ on 我的世界</title><link>https://shangzongyu.github.io/tags/faq/</link><description>Recent content in FAQ on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 14 Oct 2023 10:47:46 +0000</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/faq/index.xml" rel="self" type="application/rss+xml"/><item><title>Tips: SSH 客户端超时处理</title><link>https://shangzongyu.github.io/p/ssh/</link><pubDate>Sat, 14 Oct 2023 10:47:46 +0000</pubDate><guid>https://shangzongyu.github.io/p/ssh/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;SSH 客户端连接 SSH 服务器，如果长时间不操作，那么 SSH 就会自动断线，在日常开发中遇到这种情况让人很抓狂。这篇文章就是为了解决这个问题，如果使用 ZOC 这种图形化工具，比较容易解决做个简单的配置就可以，Mac/Linux 需要做其他的处理。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="windows"&gt;Windows
+&lt;/h2&gt;&lt;p&gt;在 Windows 上有主要是图形化工具。&lt;/p&gt;
+&lt;h3 id="winscp"&gt;WinSCP
+&lt;/h3&gt;&lt;p&gt;可以找到主机的连接超时时间设置更改，打开 keepalive 选项，每隔一段时间给连接发送一个 SSH 空包或哑命令以保持连接不断开，keepalive 的间隔秒数要设置少于超时等待的时候，如设置成 10 秒，确认重新连接即可。设置项如图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230922_winscp-ssh-timeout.png"
+loading="lazy"
+alt="winscp-ssh-timeout"
+&gt;&lt;/p&gt;
+&lt;h3 id="zoc"&gt;ZOC
+&lt;/h3&gt;&lt;p&gt;在顶部 &lt;code&gt;Options -&amp;gt; Edtion session Profile -&amp;gt; Terminal -&amp;gt; Idle time&lt;/code&gt; 设置&lt;strong&gt;时长&lt;/strong&gt;就可以了。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230922_zoc-ssh-timeout-00.png"
+loading="lazy"
+alt="zoc-ssh-timeout-00"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230922_zoc-ssh-timeout-01.png"
+loading="lazy"
+alt="zoc-ssh-timeout-01"
+&gt;&lt;/p&gt;
+&lt;h2 id="maclinux"&gt;Mac/Linux
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;在 Mac/Linux 可以通过修改 SSH 客户端的配置达到这个目的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;SSH Client 会从以下途径获取配置参数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SSH 命令行参数&lt;/li&gt;
+&lt;li&gt;用户配置文件 &lt;code&gt;~/.ssh/config&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;系统配置文件 &lt;code&gt;/etc/ssh/ssh_config&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="命令行参数"&gt;命令行参数
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;使用命令行连接的时候设置参数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ssh -o &lt;span class="nv"&gt;ServerAliveInterval&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;60&lt;/span&gt; &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; -o &lt;span class="nv"&gt;ServerAliveCountMax&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;30&lt;/span&gt; &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; root@10.0.1.25 -p &lt;span class="m"&gt;22&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="修改用户配置文件"&gt;修改用户配置文件
+&lt;/h3&gt;&lt;p&gt;在 &lt;code&gt;~/.ssh/config&lt;/code&gt; 添加如下内容：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Host *
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ServerAliveInterval &lt;span class="m"&gt;60&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ServerAliveCountMax &lt;span class="m"&gt;30&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="修改系统配置文件"&gt;修改系统配置文件
+&lt;/h3&gt;&lt;p&gt;在 &lt;code&gt;Host *&lt;/code&gt; 下面添加：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Host *
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; SendEnv LANG LC_*
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ServerAliveInterval &lt;span class="m"&gt;60&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ServerAliveCountMax &lt;span class="m"&gt;30&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="总结"&gt;总结
+&lt;/h3&gt;&lt;p&gt;这样设置后 SSH Client 每隔 60s 向 Server 端发送 `keep-alive`` 包，如果发送 30 次，Server 端还无回应则断开连接。&lt;/p&gt;
+&lt;p&gt;如果以上都设置了，那么顺序是：&lt;strong&gt;命令&lt;/strong&gt; -&amp;gt; &lt;strong&gt;用户配置&lt;/strong&gt; -&amp;gt; &lt;strong&gt;系统配置&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id="服务端设置"&gt;服务端设置
+&lt;/h2&gt;&lt;p&gt;我们也可以通过修改 SSH Server 端口的配置，但是不建议这样做。&lt;/p&gt;
+&lt;p&gt;修改配置文件 &lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt;，然后找到下面两项，去掉注释：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ClientAliveInterval &lt;span class="m"&gt;60&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ClientAliveCountMax &lt;span class="m"&gt;30&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;说明：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ClientAliveInterval&lt;/code&gt;：SSH Server 与 SSH Client 的心跳超时时间，也就是说，如果客户端没有发送任何指令，SSH Server 间隔 &lt;code&gt;ClientAliveInterval&lt;/code&gt; 秒后，会发送一个空包来和客户都安保持心跳。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ClientAliveCountMax&lt;/code&gt;：表示重试的最大次数，我们设置为 30，也就是说，如果 Server 像 Client 发送了每隔 &lt;code&gt;ClientAliveInterval&lt;/code&gt; 秒后，发送了 &lt;code&gt;ClientAliveCountMax&lt;/code&gt; 次后，都失败了，那么就会断开这个来连接。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更多参考 &lt;a class="link" href="https://linux.die.net/man/5/ssh_config" target="_blank" rel="noopener"
+&gt;man ssh_config&lt;/a&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ServerAliveCountMax Sets the number of server alive messages &lt;span class="o"&gt;(&lt;/span&gt;see below&lt;span class="o"&gt;)&lt;/span&gt; which may be sent without ssh&lt;span class="o"&gt;(&lt;/span&gt;1&lt;span class="o"&gt;)&lt;/span&gt; receiving any messages back from the server. If this threshold is reached &lt;span class="k"&gt;while&lt;/span&gt; server alive messages are being sent, ssh will disconnect from the server, terminating the session. It is important to note that the use of server alive messages is very different from TCPKeepAlive &lt;span class="o"&gt;(&lt;/span&gt;below&lt;span class="o"&gt;)&lt;/span&gt;. The server alive messages are sent through the encrypted channel and therefore will not be spoofable. The TCP keepalive option enabled by TCPKeepAlive is spoofable. The server alive mechanism is valuable when the client or server depend on knowing when a connection has become inactive.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;The default value is 3. If, &lt;span class="k"&gt;for&lt;/span&gt; example, ServerAliveInterval &lt;span class="o"&gt;(&lt;/span&gt;see below&lt;span class="o"&gt;)&lt;/span&gt; is &lt;span class="nb"&gt;set&lt;/span&gt; to &lt;span class="m"&gt;15&lt;/span&gt; and ServerAliveCountMax is left at the default, &lt;span class="k"&gt;if&lt;/span&gt; the server becomes unresponsive, ssh will disconnect after approximately &lt;span class="m"&gt;45&lt;/span&gt; seconds. This option applies to protocol version &lt;span class="m"&gt;2&lt;/span&gt; only&lt;span class="p"&gt;;&lt;/span&gt; in protocol version &lt;span class="m"&gt;1&lt;/span&gt; there is no mechanism to request a response from the server to the server alive messages, so disconnection is the responsibility of the TCP stack.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ServerAliveInterval Sets a timeout interval in seconds after which &lt;span class="k"&gt;if&lt;/span&gt; no data has been received from the server, ssh&lt;span class="o"&gt;(&lt;/span&gt;1&lt;span class="o"&gt;)&lt;/span&gt; will send a message through the encrypted channel to request a response from the server. The default is 0, indicating that these messages will not be sent to the server, or &lt;span class="m"&gt;300&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; the BatchMode option is set. This option applies to protocol version &lt;span class="m"&gt;2&lt;/span&gt; only. ProtocolKeepAlives and SetupTimeOut are Debian-specific compatibility aliases &lt;span class="k"&gt;for&lt;/span&gt; this option.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Redis 的 FAQ</title><link>https://shangzongyu.github.io/p/redis-error-err-debug-command-not-allowed/</link><pubDate>Wed, 26 Jul 2023 10:24:40 +0000</pubDate><guid>https://shangzongyu.github.io/p/redis-error-err-debug-command-not-allowed/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_redis.webp" alt="Featured image of post Redis 的 FAQ" /&gt;&lt;h2 id="redis-errorerr-debug-command-not-allowed"&gt;Redis Error：“ERR DEBUG command not allowed。
+&lt;/h2&gt;&lt;p&gt;Redis 安装之后，默认不允许使用 DEBUG 这个命令，我们只需要修改一些配置文件就可以了。&lt;/p&gt;
+&lt;p&gt;修改配置文件 &lt;code&gt;/etc/redis/redis.conf&lt;/code&gt;，修改 &lt;code&gt;enable-debug-command no&lt;/code&gt;，修改为 &lt;code&gt;enable-debug-command yes&lt;/code&gt;，并且解开注释，然后重启。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_redis-faq-0000.png"
+loading="lazy"
+alt="redis-config"
+&gt;&lt;/p&gt;
+&lt;p&gt;重启服务：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo systemctl restart redis-server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item></channel></rss>

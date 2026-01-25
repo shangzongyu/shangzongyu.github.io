@@ -1,0 +1,1646 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on 我的世界</title><link>https://shangzongyu.github.io/tags/tools/</link><description>Recent content in Tools on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 29 Dec 2025 11:59:38 +0800</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>2025：My Github Insight</title><link>https://shangzongyu.github.io/p/2025-my-github-insight/</link><pubDate>Mon, 29 Dec 2025 11:59:38 +0800</pubDate><guid>https://shangzongyu.github.io/p/2025-my-github-insight/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251229_shangzongyu_2025_yearly_report-cover.webp" alt="Featured image of post 2025：My Github Insight" /&gt;&lt;p&gt;我的 Github Insight。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251229_shangzongyu_2025_yearly_report.png"
+loading="lazy"
+alt="shangzongyu_2025_yearly_report"
+&gt;&lt;/p&gt;
+&lt;h2 id="generate-your-certificate"&gt;Generate your certificate
+&lt;/h2&gt;&lt;p&gt;&lt;a class="link" href="https://t.co/RW0tiZnPXq" target="_blank" rel="noopener"
+&gt;https://certificate.brendonmatos.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_Certificate-Github.webp"
+loading="lazy"
+&gt;&lt;/p&gt;</description></item><item><title>我使用的 Orgmode 工具</title><link>https://shangzongyu.github.io/p/%E6%88%91%E4%BD%BF%E7%94%A8%E7%9A%84-orgmode-%E5%B7%A5%E5%85%B7/</link><pubDate>Thu, 27 Nov 2025 10:51:26 +0800</pubDate><guid>https://shangzongyu.github.io/p/%E6%88%91%E4%BD%BF%E7%94%A8%E7%9A%84-orgmode-%E5%B7%A5%E5%85%B7/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_orgmode-cover.png" alt="Featured image of post 我使用的 Orgmode 工具" /&gt;&lt;h2 id="前言"&gt;前言
+&lt;/h2&gt;&lt;p&gt;2025 年这个时代，Markdown 文档盛行，大部分的技术文档都使用 Markdown 进行编写，现在的 AI 对 Markdown 的支持也很好。不过有一个文档格式 org 文档，我自己认为它比 Markdown 文档更好用。但是由于它通常被用在 Emacs，导致除 Emacs 用户之外的其他的很少接触这个更好的文档，今天不会介绍他的语法，说下我自己使用 Org 文档的几个工具。&lt;/p&gt;
+&lt;p&gt;Org Website : &lt;a class="link" href="https://orgmode.org/" target="_blank" rel="noopener"
+&gt;https://orgmode.org/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="工具"&gt;工具
+&lt;/h2&gt;&lt;p&gt;工具分为电脑端和手机端。&lt;/p&gt;
+&lt;h3 id="电脑端"&gt;电脑端
+&lt;/h3&gt;&lt;h4 id="emacs"&gt;Emacs
+&lt;/h4&gt;&lt;p&gt;毫无疑问就是 Emacs 自己了，但是 Emacs 的配置比较复杂一些，因此出现了一些社区驱动的 Emacs 发行版，这里主要说两个。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_spacemacs-00.png"
+loading="lazy"
+alt="spacemacs-00"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://www.spacemacs.org/" target="_blank" rel="noopener"
+&gt;SpaceEmacs&lt;/a&gt; - 对新手友好&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_doom-emacs-00.png"
+loading="lazy"
+alt="doom-emacs-00"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://doomemacs.org" target="_blank" rel="noopener"
+&gt;DoomEmacs&lt;/a&gt; - 功能和 SpaceEmacs 类似，但是性能更好一些。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PS: 我现在主要使用这个。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id="logseq"&gt;Logseq
+&lt;/h4&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_logseq-00.jpeg"
+loading="lazy"
+alt="logseq-00"
+&gt;&lt;/p&gt;
+&lt;p&gt;这个工具支持 Markdown 和 Org，我主要使用 Org 模式，这样就可以和我的其他使用 Org 的工具一起使用。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Website: &lt;a class="link" href="https://logseq.com/" target="_blank" rel="noopener"
+&gt;https://logseq.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="手机端"&gt;手机端
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;由于使用苹果手机，因此主要说苹果手机的软件。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="plain-org"&gt;Plain Org
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_plain-org-00.jpeg"
+loading="lazy"
+alt="plain-org-00"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AppStore: &lt;a class="link" href="https://apps.apple.com/us/app/plain-org/id1578965002" target="_blank" rel="noopener"
+&gt;https://apps.apple.com/us/app/plain-org/id1578965002&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;主要功能：使用 Org 管理任务。&lt;/p&gt;
+&lt;h3 id="flat-habits"&gt;Flat Habits
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_flat-habits-00.jpeg"
+loading="lazy"
+alt="flat-habits-00"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AppStore：&lt;a class="link" href="https://apps.apple.com/us/app/flat-habits/id1558358855" target="_blank" rel="noopener"
+&gt;https://apps.apple.com/us/app/flat-habits/id1558358855&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;主要功能: 习惯记录，只不过文本是 org。&lt;/p&gt;
+&lt;h3 id="scratch"&gt;&lt;em&gt;scratch&lt;/em&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_scrtatch-00.png"
+loading="lazy"
+alt="scrtatch-00"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AppStore：https://apps.apple.com/us/app/scratch/id1671420139&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;主要功能：主要记录临时的想法。&lt;/p&gt;
+&lt;h3 id="beorg"&gt;Beorg
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_beorg-00.jpeg"
+loading="lazy"
+alt="beorg-00"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AppStore：&lt;a class="link" href="https://apps.apple.com/us/app/beorg-to-do-list-agenda/id1238649962" target="_blank" rel="noopener"
+&gt;https://apps.apple.com/us/app/beorg-to-do-list-agenda/id1238649962&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;主要功能：使用 Org 管理任务，但是功能更丰富。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;支持 iCloud/OneDrive 等云盘&lt;/li&gt;
+&lt;li&gt;支持同步 Apple Reminder 到一个 Org 文档&lt;/li&gt;
+&lt;li&gt;支持同步 Apple Calender 到一个 Org 文档&lt;/li&gt;
+&lt;li&gt;等等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PS: 软件本身是免费的，不过一些功能需要购买。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id="logseq-1"&gt;Logseq
+&lt;/h5&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_logseq-00-4215978.jpeg"
+loading="lazy"
+alt="logseq-00"
+&gt;&lt;/p&gt;
+&lt;p&gt;Logseq 也有手机端，但是我自己使用过程中感觉他不好用，它是把电脑端的使用 UI 直接搬到手机端了，这样手机端使用不是很方便，但还是要说一些。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AppSotre: &lt;a class="link" href="https://apps.apple.com/us/app/logseq/id1601013908" target="_blank" rel="noopener"
+&gt;https://apps.apple.com/us/app/logseq/id1601013908&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="最后说明"&gt;最后说明
+&lt;/h2&gt;&lt;p&gt;由于 Org 文档很适合做任务管理，因此为主要用它做任务管理。&lt;/p&gt;</description></item><item><title>工具推荐：AI 浏览器 Comet</title><link>https://shangzongyu.github.io/p/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90ai-%E6%B5%8F%E8%A7%88%E5%99%A8-comet/</link><pubDate>Wed, 19 Nov 2025 10:41:46 +0800</pubDate><guid>https://shangzongyu.github.io/p/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90ai-%E6%B5%8F%E8%A7%88%E5%99%A8-comet/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-cover.png" alt="Featured image of post 工具推荐：AI 浏览器 Comet" /&gt;&lt;p&gt;今年有好几家公司都出了 AI 浏览器，自己也尝试了一款 AI 浏览器器 &lt;a class="link" href="https://www.perplexity.ai/comet" target="_blank" rel="noopener"
+&gt;Comet&lt;/a&gt;，它是 Perplexiy 推出的浏览器，集成自己 AI Perplexiy。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;下载地址: &lt;a class="link" href="https://www.perplexity.ai/download-comet" target="_blank" rel="noopener"
+&gt;https://www.perplexity.ai/download-comet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我使用了有一个多月了，感觉再也回不去之前的浏览器的。&lt;/p&gt;
+&lt;h2 id="我自己常用的功能"&gt;我自己常用的功能
+&lt;/h2&gt;&lt;h3 id="直接使用-perplexity-进行搜索"&gt;直接使用 perplexity 进行搜索
+&lt;/h3&gt;&lt;p&gt;在下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-search-example.webp"
+loading="lazy"
+alt="perplexity-search-example"
+&gt;&lt;/p&gt;
+&lt;h3 id="使用搜索栏直接搜索"&gt;使用搜索栏直接搜索
+&lt;/h3&gt;&lt;p&gt;如果我想要搜索 &lt;code&gt;how to register telegram&lt;/code&gt;，在搜索栏目输入这个，会出下下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-search-example-00.webp"
+loading="lazy"
+alt="perplexity-search-example"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;后面标有 Google 的表示使用 Google 搜索&lt;/li&gt;
+&lt;li&gt;后面标有 Perplexity 的表示使用 Perplexity 搜索&lt;/li&gt;
+&lt;li&gt;其他的没有标识的使用默认搜索，也就是 Perplexity 搜索。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="小技巧-1add-to-follow-up持续追问"&gt;小技巧 1：“Add To Follow Up”，持续追问
+&lt;/h4&gt;&lt;p&gt;这个功能可以让我们对我们不懂得那个一直追问，如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-search-example-01.webp"
+loading="lazy"
+alt="Perplexity Follow up"
+&gt;&lt;/p&gt;
+&lt;h4 id="小技巧-2-使用非-google-和-perplexit-搜索"&gt;小技巧 2: 使用非 Google 和 Perplexit 搜索
+&lt;/h4&gt;&lt;p&gt;例如现在要使用 &lt;code&gt;bing&lt;/code&gt;，在搜索栏中输入 &lt;code&gt;bing.com&lt;/code&gt; 点击空格或者 TAB，就会出现如下图，这时候在搜索栏搜索自己想要搜索的内容，它就会使用 &lt;code&gt;bing&lt;/code&gt; 进行搜索。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-search-example-02.webp"
+loading="lazy"
+alt="Bing Search"
+&gt;&lt;/p&gt;
+&lt;h3 id="使用-comet-总结视频"&gt;使用 Comet 总结视频
+&lt;/h3&gt;&lt;p&gt;点击右上角有个 &lt;strong&gt;“Assistant”&lt;/strong&gt; ，会从右边弹出一个框，当鼠标放到 &lt;strong&gt;“Ask Anything&amp;hellip;”&lt;/strong&gt; 的时候出现下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-video-0.webp"
+loading="lazy"
+alt="perplexity-video"
+&gt;&lt;/p&gt;
+&lt;p&gt;AI 已经准备了几个常用的提示词，当然我们可以自己写提示词，使用系统的提示词，给出回答是英文的如下图 1，如果想要中文的使用中文的提示词，总结这篇文章，结果如图 2。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-video-1.webp"
+loading="lazy"
+alt="图1"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-video-2.webp"
+loading="lazy"
+alt="图2"
+&gt;&lt;/p&gt;
+&lt;h3 id="使用-comet-总结文章"&gt;使用 Comet 总结文章
+&lt;/h3&gt;&lt;p&gt;文章和视频有些类似，依旧通过右上角有个 &lt;strong&gt;“Assistant”&lt;/strong&gt;，打开一个 SideBar，然后在 Sidebar 中询问一些问题，例如：总结文章/提取要点等等。&lt;/p&gt;
+&lt;h2 id="perplexity-的三种搜索模式"&gt;Perplexity 的三种搜索模式
+&lt;/h2&gt;&lt;p&gt;在使用 Comet 之前还是要了解下 Perplexity 的三种搜索模式，这样可以更好帮助我们更快和准确的完成任务。&lt;/p&gt;
+&lt;p&gt;三种模式分别是：&lt;strong&gt;Search&lt;/strong&gt;、&lt;strong&gt;Research&lt;/strong&gt;、&lt;strong&gt;Labs&lt;/strong&gt;，下面详细介绍下：&lt;/p&gt;
+&lt;h3 id="search-模式"&gt;Search 模式
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-mode-search.webp"
+loading="lazy"
+alt="Search Mode"
+&gt;&lt;/p&gt;
+&lt;p&gt;适合快速获取 &lt;strong&gt;事实性答案&lt;/strong&gt; 和 &lt;strong&gt;处理日常信息查询&lt;/strong&gt; ，比如天气预报、名人生日、词汇定义等。此模式优势是速度快、答案简洁准确，适合短期问题解决。&lt;/p&gt;
+&lt;h3 id="research-模式"&gt;Research 模式
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-mode-research.webp"
+loading="lazy"
+alt="Research Mode"
+&gt;&lt;/p&gt;
+&lt;p&gt;适用于 &lt;strong&gt;深入探讨特定主题&lt;/strong&gt;，整理多个信息来源，形成分析结论。适合撰写研究报告、市场调研、行业趋势分析等，能系统收集、整理资料并自动生成引文和参考文献，提高研究效率。&lt;/p&gt;
+&lt;h3 id="labs-模式"&gt;Labs 模式
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-mode-labs.webp"
+loading="lazy"
+alt="Labs Mode"
+&gt;&lt;/p&gt;
+&lt;p&gt;Labs 是高级功能，支持项目开发、数据可视化和互动式成果展示。可以协助用户完成从问题定义到实际产出的复杂任务，如开发交互网页应用、数据仪表盘，或整合多信息源生成详细报告。此模式依托多代理系统，模拟专业团队协作自动交付成果。&lt;/p&gt;
+&lt;h2 id="faq"&gt;FAQ
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;如果使用了代理还是用了，需要开启 TUN 模式&lt;/li&gt;
+&lt;li&gt;Perplexity 免费可以用，但是付费用户可以有更多，不用在官网买找万能的 TAOBAO 就可以，一年不到 100 块 RMB，比官方便宜不少&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="是否有必要购买-pro"&gt;是否有必要购买 Pro
+&lt;/h3&gt;&lt;p&gt;免费版和 Pro 版的使用区别主要体现在功能权限和使用限制上：&lt;/p&gt;
+&lt;p&gt;Pro 版相较非 Pro 版主要在功能权限与使用限制上有区别：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;th&gt;Free&lt;/th&gt;
+&lt;th&gt;Pro&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;搜索模式&lt;/td&gt;
+&lt;td&gt;基本搜索，次数有限（每日约 5 次）&lt;/td&gt;
+&lt;td&gt;无限搜索，支持更精准的“Pro 搜索”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;研究模式&lt;/td&gt;
+&lt;td&gt;固定模型，不支持模型切换&lt;/td&gt;
+&lt;td&gt;支持多模型切换，如 GPT-4、Claude 系列&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;实验室模式&lt;/td&gt;
+&lt;td&gt;无法使用&lt;/td&gt;
+&lt;td&gt;支持文件上传、复杂数据分析、交互展示&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;其他高级功能&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;图像生成、多语言支持、API 额度等&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;总结：免费版本适合一般搜索与轻度查询，Pro 用户能全面发挥三种模式优势，完成更复杂研究及高级任务。&lt;/p&gt;</description></item><item><title>工具推荐：stormy 命令行查询天气</title><link>https://shangzongyu.github.io/p/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90stormy-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%9F%A5%E8%AF%A2%E5%A4%A9%E6%B0%94/</link><pubDate>Mon, 17 Nov 2025 14:28:42 +0800</pubDate><guid>https://shangzongyu.github.io/p/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90stormy-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%9F%A5%E8%AF%A2%E5%A4%A9%E6%B0%94/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251117_stormy-cover.webp" alt="Featured image of post 工具推荐：stormy 命令行查询天气" /&gt;&lt;p&gt;之前介绍过一个通过命令找查询天气的工具&lt;a class="link" href="https://shangzongyu.github.io/p/wttr/" &gt;工具推荐：wttr-命令行查询天气。&lt;/a&gt;，这次主要介绍另外一款命令行查询工具 &lt;a class="link" href="https://github.com/ashish0kumar/stormy" target="_blank" rel="noopener"
+&gt;stormy&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;我自己感觉这个项目的好处就是给一个二进制的命令行执行进行查询，缺点就是只支持英文。&lt;/p&gt;
+&lt;h2 id="安装"&gt;安装
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;go install github.com/ashish0kumar/stormy@latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="基本使用"&gt;基本使用
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;span class="lnt"&gt;16
+&lt;/span&gt;&lt;span class="lnt"&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Basic usage&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;stormy
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Specify city via command line&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;stormy --city &lt;span class="s2"&gt;&amp;#34;New York&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Use imperial units&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;stormy --units imperial
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Use compact display mode&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;stormy --compact
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Show version&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;stormy --version
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Show help&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;stormy --help
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="实际使用"&gt;实际使用
+&lt;/h2&gt;&lt;p&gt;在第一次执行的时候会新建配置文件：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251117_stormy-01.webp"
+loading="lazy"
+alt="stormy-first"
+&gt;&lt;/p&gt;
+&lt;p&gt;然后接着使用：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251117_stormy.webp"
+loading="lazy"
+alt="stormy"
+&gt;&lt;/p&gt;
+&lt;p&gt;使用的时候发现问题，如果使用 “Shen Zhen” 这样查询不可以，但是查询其他非中文的类似 “New York” 的可以，中文使用类似这样的 “ShenZhen”。&lt;/p&gt;
+&lt;p&gt;我们还可以通过配置某一个城市，这样之后字节查询配置城市的，我的配置如下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;span class="lnt"&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;provider&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#34;OpenMeteo&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;api_key&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;city&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#34;ShenZhen&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;units&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#34;metric&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;showcityname&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;use_colors&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;live_mode&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;compact&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;PS: OpenMeteo 这个不用设置 API key，provider 还支持 &lt;a class="link" href="https://openweathermap.org/api" target="_blank" rel="noopener"
+&gt;OpenWeatherMap&lt;/a&gt; ，不过这个需要添加 API Key。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="wttrin-和-stormy-的比较"&gt;Wttr.in 和 Stormy 的比较
+&lt;/h2&gt;&lt;p&gt;wttr.in 和 stormy 都是命令行天气查询工具，但它们在功能、数据来源、定制性和实现语言等方面有显著差异。&lt;/p&gt;
+&lt;h3 id="功能对比"&gt;功能对比
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;项目&lt;/th&gt;
+&lt;th&gt;wttr.in&lt;/th&gt;
+&lt;th&gt;stormy&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;数据来源&lt;/td&gt;
+&lt;td&gt;自有 API（聚合多源），支持机场编码、特殊地名等查询&lt;/td&gt;
+&lt;td&gt;OpenMeteo（默认、免 API Key）、OpenWeatherMap（需 API Key）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;输出格式&lt;/td&gt;
+&lt;td&gt;ANSI、纯文本、HTML、PNG、JSON、Prometheus、地图等&lt;/td&gt;
+&lt;td&gt;纯文本、ASCII 艺术、Neofetch 风格&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;展示内容&lt;/td&gt;
+&lt;td&gt;当前天气、预测、多地查询、月相、地图、天文信息&lt;/td&gt;
+&lt;td&gt;当前天气（温度、风速、湿度、降水）、ASCII 图标展示&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;国际化&lt;/td&gt;
+&lt;td&gt;多语言支持（54种）、自动选择单位/语言&lt;/td&gt;
+&lt;td&gt;主要基于英文，单位可选&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;集成方式&lt;/td&gt;
+&lt;td&gt;shell、tmux、conky、IRC、Web、小组件等&lt;/td&gt;
+&lt;td&gt;本地 CLI，配置文件管理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;定制/扩展&lt;/td&gt;
+&lt;td&gt;支持参数自定义格式、单位、显示内容&lt;/td&gt;
+&lt;td&gt;可选数据源、城市、单位、展示格式，支持 config 文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;技术实现&lt;/td&gt;
+&lt;td&gt;Python、Go 等&lt;/td&gt;
+&lt;td&gt;Go&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;用户基数&lt;/td&gt;
+&lt;td&gt;日查询量 2200万&lt;del&gt;2700万，用户约18万&lt;/del&gt;21万&lt;/td&gt;
+&lt;td&gt;社区较小，约130星（2025.7），轻量个人项目&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="核心差异解析"&gt;核心差异解析
+&lt;/h3&gt;&lt;h4 id="数据源与配置灵活性"&gt;数据源与配置灵活性
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;wttr.in 集成多种数据源且无需配置 API Key，支持机场代码与特殊地名，适合需要高自由度和多样化查询场景。[1]&lt;/li&gt;
+&lt;li&gt;stormy 则强调本地化 (默认 OpenMeteo 免费、OpenWeatherMap 需 key)，配置灵活，适合希望自定义数据源、格式和信息展示的用户。[2]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="输出样式和集成方式"&gt;输出样式和集成方式
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;wttr.in 提供多种展示风格 (终端彩色、网页、图片、JSON、Prometheus)，并易于嵌入系统状态栏、tmux、网页小组件、IRC 等，适合自动化和多平台集成。[1]&lt;/li&gt;
+&lt;li&gt;stormy 灵感来源于 Neofetch，聚焦本地 CLI、简洁美观的终端 ASCII 图形，主要面向视觉美学和个性化定制。[2]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="国际化与扩展性"&gt;国际化与扩展性
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;wttr.in 支持 54 种语言，地名输入高度兼容 Unicode，用法极其灵活。[1]&lt;/li&gt;
+&lt;li&gt;stormy 目前主要英文说明，国际化支持有限，但配置较为简洁直接。[2]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="技术架构与社区"&gt;技术架构与社区
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;wttr.in 基于 Python 主体并集成 Go、Shell 等，稳定成熟，社区巨大、贡献者众多。[1]&lt;/li&gt;
+&lt;li&gt;stormy 纯 Go 实现，更轻量、代码简洁、适合快速自定义和二次开发，但社区较小。[2]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="适用建议"&gt;适用建议
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;需要多端集成、丰富格式、国际化支持，或对自动化脚本/网页嵌入有需求，可优先考虑 wttr.in。[1]&lt;/li&gt;
+&lt;li&gt;倾向本地纯 CLI、视觉美观、配置简单、可选天气源并对 Go 生态有偏好者可选 stormy。[2]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上对比涵盖两个项目的核心特性与定位区别。[2][1]&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://github.com/chubin/wttr.in" target="_blank" rel="noopener"
+&gt;1&lt;/a&gt;
+&lt;a class="link" href="https://github.com/ashish0kumar/stormy" target="_blank" rel="noopener"
+&gt;2&lt;/a&gt;&lt;/p&gt;</description></item><item><title>macOS 分应用音量控制最佳实践：免费开源工具 Background Music 推荐</title><link>https://shangzongyu.github.io/p/macos-background-music/</link><pubDate>Mon, 06 Oct 2025 04:31:13 +0000</pubDate><guid>https://shangzongyu.github.io/p/macos-background-music/</guid><description>&lt;p&gt;Mac 用户常常遇到这样的问题：不同 App 的音量需求差异很大，有的需要放大，有的希望静音，但 macOS 并没有原生多应用音量控制功能。这一需求，可以通过开源工具 background-music 轻松解决。[1]&lt;/p&gt;
+&lt;p&gt;Github：&lt;a class="link" href="https://github.com/kyleneideck/BackgroundMusic" target="_blank" rel="noopener"
+&gt;https://github.com/kyleneideck/BackgroundMusic&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="工具介绍"&gt;工具介绍
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_tools-backgroud-music.png"
+loading="lazy"
+alt="tools-backgroud-music"
+&gt;&lt;/p&gt;
+&lt;p&gt;background-music 是一款 macOS 下的开源音频控制工具，它支持为每个应用单独设置音量，还能自动在有新音频播放时暂停当前音乐播放器，并在音频结束时继续播放，非常贴合多任务的场景需求。除了分应用音量调节，background-music 还提供系统音频录制等功能，基本覆盖了日常对音频控制的要求。[1]&lt;/p&gt;
+&lt;h3 id="安装方式"&gt;安装方式
+&lt;/h3&gt;&lt;p&gt;在终端输入以下命令即可安装，无需重启系统，非常方便：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install background-music
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;安装后，直接运行 Background Music.app 即可，在 “系统设置 &amp;gt; 声音” 中会自动切换为默认输出设备。[1]&lt;/p&gt;
+&lt;h3 id="相似工具推荐"&gt;相似工具推荐
+&lt;/h3&gt;&lt;p&gt;除了 background-music，还有一些功能更丰富或界面更专业的付费选择——&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;工具名称&lt;/th&gt;
+&lt;th&gt;主要功能特点&lt;/th&gt;
+&lt;th&gt;是否付费&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Sound Control&lt;/td&gt;
+&lt;td&gt;分应用音量控制、均衡器调节、可自定义输出设备、快捷键支持，界面简洁&lt;/td&gt;
+&lt;td&gt;是（付费）[1]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SoundSource&lt;/td&gt;
+&lt;td&gt;专业级音频控制，可针对每个 App 单独调节音量/音质、均衡器、多设备输出，菜单栏便捷&lt;/td&gt;
+&lt;td&gt;是（付费）[1]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;如果只是需要最基础的分应用音量调节，background-music 足够满足日常需求，而且完全免费、开源，很适合 macOS 用户作为轻量级解决方案。[1]&lt;/p&gt;
+&lt;h3 id="结语"&gt;结语
+&lt;/h3&gt;&lt;p&gt;macOS 缺失的 “多应用音量管理” 功能，通过 background-music 这款免费小工具，可以轻松补齐。如果有更高阶需求，则可选择 Sound Control 或 SoundSource 这类专业软件辅助。[1]&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://github.com/kyleneideck/BackgroundMusic" target="_blank" rel="noopener"
+&gt;1&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="faq"&gt;FAQ
+&lt;/h2&gt;&lt;p&gt;使用这个工具后有个问题就是，Airpod 耳机的在电脑和手机之间自动切换的功能就用不了了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;特别感谢&lt;/strong&gt;&lt;br&gt;
+本文由作者与 AI 协同创作完成，内容融合了真实应用体验和前沿工具解读，希望为大家带来实用且高效的 Mac 使用参考。&lt;/p&gt;</description></item><item><title>GLM 4.5 配置全攻略：Claude Code 与 Codex 实战指南</title><link>https://shangzongyu.github.io/p/glm-45-claude-code-codex/</link><pubDate>Sat, 27 Sep 2025 08:22:56 +0000</pubDate><guid>https://shangzongyu.github.io/p/glm-45-claude-code-codex/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_GLM-Coding.webp" alt="Featured image of post GLM 4.5 配置全攻略：Claude Code 与 Codex 实战指南" /&gt;&lt;h2 id="简介"&gt;简介
+&lt;/h2&gt;&lt;p&gt;智谱最新推出的 &lt;strong&gt;GLM 4.5&lt;/strong&gt; 是一款面向编程和智能应用的通用大模型，相比前一代在&lt;strong&gt;代码生成、复杂推理、对话体验&lt;/strong&gt;等方面有了显著提升。
+它不仅支持在交互式编程中作为助手使用，还可以集成到 &lt;strong&gt;Claude Code&lt;/strong&gt; 和 &lt;strong&gt;Codex&lt;/strong&gt; 工具中，帮助开发者更高效地完成编码、调试和文档处理等任务。&lt;/p&gt;
+&lt;p&gt;本文将介绍 GLM 4.5 在 &lt;strong&gt;Claude Code&lt;/strong&gt; 和 &lt;strong&gt;Codex&lt;/strong&gt; 中的配置方法，帮助你快速上手。
+目前智谱还推出了一个 &lt;strong&gt;“编程套餐” GLM Coding Plan&lt;/strong&gt;，有限时优惠，基础版本 3 个月仅需 60 元，我也入手体验了一下。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250927_GLM4.5-Coding-Plan.png"
+loading="lazy"
+alt="GLM4.5-Coding-Plan"
+&gt;&lt;/p&gt;
+&lt;p&gt;在使用 Claude Code 和 Codex 前，需要先安装 &lt;strong&gt;Node.js&lt;/strong&gt;。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 安装 Node.js&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install node@22
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="claude-code"&gt;Claude Code
+&lt;/h2&gt;&lt;p&gt;官网文档地址：&lt;a class="link" href="https://docs.bigmodel.cn/cn/coding-plan/tool/claude" target="_blank" rel="noopener"
+&gt;https://docs.bigmodel.cn/cn/coding-plan/tool/claude&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="安装"&gt;安装
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;npm install -g @anthropic-ai/claude-code
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="配置"&gt;配置
+&lt;/h3&gt;&lt;p&gt;通过环境变量进行配置：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;ANTHROPIC_BASE_URL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;https://open.bigmodel.cn/api/coding/paas/v4&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;ANTHROPIC_AUTH_TOKEN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;your Zhipu API key&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;API Key 可在&lt;a class="link" href="https://open.bigmodel.cn/usercenter/proj-mgmt/apikeys" target="_blank" rel="noopener"
+&gt;这里&lt;/a&gt;获取。
+注意：&lt;code&gt;ANTHROPIC_BASE_URL&lt;/code&gt; 必须设置为 &lt;a class="link" href="https://open.bigmodel.cn/api/coding/paas/v4%ef%bc%8c%e8%bf%99%e6%98%af%e6%99%ba%e8%b0%b1%e4%b8%93%e9%97%a8%e4%b8%ba%e7%bc%96%e7%a8%8b%e6%8f%90%e4%be%9b%e7%9a%84%e7%ab%af%e7%82%b9%e3%80%82" target="_blank" rel="noopener"
+&gt;&lt;code&gt;https://open.bigmodel.cn/api/coding/paas/v4&lt;/code&gt;，这是智谱专门为编程提供的端点。&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;配置完成后即可使用：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250927_GLM4.5-Claude-Code.png"
+loading="lazy"
+&gt;&lt;/p&gt;
+&lt;h3 id="faq"&gt;FAQ
+&lt;/h3&gt;&lt;h4 id="1错误处理-api-error"&gt;1、错误处理 &lt;code&gt;API Error&lt;/code&gt;
+&lt;/h4&gt;&lt;p&gt;若出现类似 &lt;strong&gt;“API Error 401”&lt;/strong&gt; 的报错，只需删除旧的 API Key，重新生成一个新的即可解决。&lt;/p&gt;
+&lt;p&gt;错误如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250927_SCR-20250922-orcl.png"
+loading="lazy"
+&gt;&lt;/p&gt;
+&lt;h4 id="2模型选择"&gt;2、模型选择
+&lt;/h4&gt;&lt;p&gt;Claude Code 内置了两个模型环境变量：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ANTHROPIC_MODEL&lt;/code&gt;：使用 &lt;code&gt;GLM-4.5&lt;/code&gt; (适用于对话、规划、代码编写、复杂推理等场景)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ANTHROPIC_SMALL_FAST_MODEL&lt;/code&gt;：使用 &lt;code&gt;GLM-4.5-Air&lt;/code&gt; (适用于文件搜索、语法检查等辅助场景)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;该组合在性能与速度之间取得了较好的平衡，也是官方推荐的默认方案。
+目前不支持其他模型 (如 &lt;code&gt;GLM-4.5-X&lt;/code&gt;、&lt;code&gt;GLM-4.5-AirX&lt;/code&gt;、&lt;code&gt;GLM-4.5-Flash&lt;/code&gt;)。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="codex"&gt;Codex
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;在撰写本文时，智谱官方尚未提供 Codex 的完整配置方案。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="安装-1"&gt;安装
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;npm install -g @openai/codex@latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="配置-1"&gt;配置
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 设置环境变量&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;GLM_API_KEY&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;your Zhipu API key&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 编辑配置文件 ~/.codex/config.toml（若不存在则新建），内容如下：&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;model_provider&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;glm&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;model&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;glm-4.5&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;[&lt;/span&gt;model_providers.glm&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;zai&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;base_url&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;https://open.bigmodel.cn/api/coding/paas/v4&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;env_key&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;GLM_API_KEY&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;提示&lt;/strong&gt;：&lt;code&gt;env_key&lt;/code&gt; 必须与之前设置的环境变量 &lt;code&gt;GLM_API_KEY&lt;/code&gt; 一致。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;配置完成后即可使用：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250927_GLM4.5-Codex.png"
+loading="lazy"
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="总结"&gt;总结
+&lt;/h2&gt;&lt;p&gt;GLM 4.5 在&lt;strong&gt;编程辅助&lt;/strong&gt;、&lt;strong&gt;复杂推理&lt;/strong&gt;和&lt;strong&gt;高效交互&lt;/strong&gt;等方面展现了强大的能力。通过结合 &lt;strong&gt;Claude Code&lt;/strong&gt; 与 &lt;strong&gt;Codex&lt;/strong&gt;，开发者可以快速将其集成到工作流中，提升开发效率和体验。&lt;/p&gt;
+&lt;p&gt;随着 GLM 在更多工具和生态中的支持不断完善，它将不仅是一个&lt;strong&gt;编程助手&lt;/strong&gt;，更可能成为未来&lt;strong&gt;智能开发环境&lt;/strong&gt;的核心组成部分。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="后记"&gt;后记
+&lt;/h2&gt;&lt;p&gt;本文由我原创撰写，并通过 AI 辅助进行了语言润色与排版优化，以提升可读性和表达效果。核心内容与观点均为本人所有。&lt;/p&gt;</description></item><item><title>我使用的工具：终端篇</title><link>https://shangzongyu.github.io/p/%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7/</link><pubDate>Sat, 13 Sep 2025 08:40:49 +0000</pubDate><guid>https://shangzongyu.github.io/p/%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_我使用的工具_终端篇.webp" alt="Featured image of post 我使用的工具：终端篇" /&gt;&lt;p&gt;作为一名开发者，终端 (Terminal) 是我们日常工作中接触最频繁的工具之一。它不仅是与操作系统交互的窗口，更是一个可以高度定制、提升效率的利器。在过去的几年里，我尝试了市面上许多主流和新兴的终端应用，从追求性能的 GPU 加速终端，到集成 AI 的新时代终端，各有千秋。&lt;/p&gt;
+&lt;p&gt;在这里，我想分享一下我个人使用过的终端工具，以及它们各自的特点和我的主观看法。&lt;/p&gt;
+&lt;h2 id="iterm2"&gt;iTerm2
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_iterm2.png"
+loading="lazy"
+alt="iTerm2"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://iterm2.com/" target="_blank" rel="noopener"
+&gt;https://iterm2.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：免费、开源&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**我接触 Mac 后使用时间最长的终端。整体体验很好，配置简单，功能中规中矩，是原生 Terminal 的绝佳替代品。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="ghostty"&gt;Ghostty
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_ghostty.png"
+loading="lazy"
+alt="Ghostty"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://ghostty.org/" target="_blank" rel="noopener"
+&gt;https://ghostty.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Github&lt;/strong&gt;：&lt;a class="link" href="https://github.com/ghostty-org/ghostty" target="_blank" rel="noopener"
+&gt;https://github.com/ghostty-org/ghostty&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS / Linux&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;开源&lt;/li&gt;
+&lt;li&gt;GPU 加速&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**它的定位是 iTerm2 的替代品。经过一段时间的使用，我感觉不错，但最大的缺点是配置相对有些麻烦。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="kitty"&gt;Kitty
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_kitty.png"
+loading="lazy"
+alt="Kitty"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://sw.kovidgoyal.net/kitty/" target="_blank" rel="noopener"
+&gt;https://sw.kovidgoyal.net/kitty/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Github&lt;/strong&gt;：&lt;a class="link" href="https://github.com/kovidgoyal/kitty" target="_blank" rel="noopener"
+&gt;https://github.com/kovidgoyal/kitty&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS / Linux / Windows&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;开源&lt;/li&gt;
+&lt;li&gt;GPU 加速&lt;/li&gt;
+&lt;li&gt;功能丰富&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**速度确实很快，功能也很丰富，内置了对标签页 (Tabs) 和分屏 (Splits) 的良好支持。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="wezterm"&gt;WezTerm
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://shangzongyu.github.io/wezterm-vday-screenshot.png"
+loading="lazy"
+alt="WezTerm"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://wezterm.org/" target="_blank" rel="noopener"
+&gt;https://wezterm.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Github&lt;/strong&gt;：&lt;a class="link" href="https://github.com/wezterm/wezterm" target="_blank" rel="noopener"
+&gt;https://github.com/wezterm/wezterm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS / Linux / Windows&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;开源&lt;/li&gt;
+&lt;li&gt;GPU 加速&lt;/li&gt;
+&lt;li&gt;功能丰富&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**同样以速度快、功能丰富著称，内置标签页和分屏管理。它的一大特色是使用 Lua 进行配置，这提供了极高的灵活性。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="alacritty"&gt;Alacritty
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_alacritty_example.png"
+loading="lazy"
+alt="Alacritty"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://alacritty.org/" target="_blank" rel="noopener"
+&gt;https://alacritty.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Github&lt;/strong&gt;：&lt;a class="link" href="https://github.com/alacritty/alacritty" target="_blank" rel="noopener"
+&gt;https://github.com/alacritty/alacritty&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS / Linux / Windows&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;开源&lt;/li&gt;
+&lt;li&gt;GPU 加速&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**虽然在我的日常使用中，其速度与 Kitty 的体感差异不大，但 Alacritty 确实以性能为核心卖点。值得一提的是，早期版本还不支持标签页，但现在这个功能也已经加上了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="tabby"&gt;Tabby
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_tabby.png"
+loading="lazy"
+alt="Tabby"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://tabby.sh/" target="_blank" rel="noopener"
+&gt;https://tabby.sh/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Github&lt;/strong&gt;：&lt;a class="link" href="https://github.com/eugeny/tabby" target="_blank" rel="noopener"
+&gt;https://github.com/eugeny/tabby&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS / Linux / Windows&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;开源&lt;/li&gt;
+&lt;li&gt;功能丰富&lt;/li&gt;
+&lt;li&gt;可自定义扩展&lt;/li&gt;
+&lt;li&gt;强大的 SSH 管理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**这款终端我个人使用得比较少。但它内置了强大的 SSH 管理功能，对于不想手动配置 SSH 连接的场景 (尤其是在 Windows 上) 来说非常方便。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="zoc-terminal"&gt;Zoc Terminal
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_zocscreen_small_us_osx.webp"
+loading="lazy"
+alt="ZOC Terminal"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://www.emtec.com/zoc/index.html" target="_blank" rel="noopener"
+&gt;https://www.emtec.com/zoc/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS / Windows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**这是一款付费软件，我用得不多。最初吸引我的是它对 &lt;code&gt;rz/sz&lt;/code&gt; 的原生支持，无需额外配置，而 iTerm2/Ghostty 等终端则需要手动设置。不过，自从我发现了 &lt;code&gt;zssh&lt;/code&gt; 这个工具后，Zoc 的使用频率就更低了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="warp"&gt;Warp
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_warp.png"
+loading="lazy"
+alt="Warp"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://www.warp.dev/" target="_blank" rel="noopener"
+&gt;https://www.warp.dev/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS / Linux / Windows&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：可免费使用，提供 AI 功能订阅&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**Warp 主打 AI 相关功能，号称 “下一代终端”。但就我个人而言，感觉它的功能有些过于复杂，整体设计风格也不太符合我的审美。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="waveterm"&gt;WaveTerm
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_waveterm.png"
+loading="lazy"
+alt="WaveTerm"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a class="link" href="https://www.waveterm.dev/" target="_blank" rel="noopener"
+&gt;https://www.waveterm.dev/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Github&lt;/strong&gt;：&lt;a class="link" href="https://github.com/wavetermdev/waveterm" target="_blank" rel="noopener"
+&gt;https://github.com/wavetermdev/waveterm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台&lt;/strong&gt;：macOS / Linux / Windows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**PS：**这款终端我非常喜欢的一点是它可以在内部直接渲染网页。它同样集成了 AI 功能，但相比 Warp 感觉更为克制。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="功能特性横向对比"&gt;功能特性横向对比
+&lt;/h2&gt;&lt;p&gt;为了更直观地展示这些终端的差异，我整理了以下对比表格。需要注意的是，某些特性 (如 “内置 SSH 客户端”) 的实现程度不同，这里只做概要性归纳。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;特性 / 终端&lt;/th&gt;
+&lt;th style="text-align: center"&gt;iTerm2&lt;/th&gt;
+&lt;th style="text-align: center"&gt;Ghostty&lt;/th&gt;
+&lt;th style="text-align: center"&gt;Kitty&lt;/th&gt;
+&lt;th style="text-align: center"&gt;WezTerm&lt;/th&gt;
+&lt;th style="text-align: center"&gt;Alacritty&lt;/th&gt;
+&lt;th style="text-align: center"&gt;Tabby&lt;/th&gt;
+&lt;th style="text-align: center"&gt;Zoc&lt;/th&gt;
+&lt;th style="text-align: center"&gt;Warp&lt;/th&gt;
+&lt;th style="text-align: center"&gt;WaveTerm&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;平台支持&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: center"&gt;Mac&lt;/td&gt;
+&lt;td style="text-align: center"&gt;Mac/Linux&lt;/td&gt;
+&lt;td style="text-align: center"&gt;全平台&lt;/td&gt;
+&lt;td style="text-align: center"&gt;全平台&lt;/td&gt;
+&lt;td style="text-align: center"&gt;全平台&lt;/td&gt;
+&lt;td style="text-align: center"&gt;全平台&lt;/td&gt;
+&lt;td style="text-align: center"&gt;Mac/Win&lt;/td&gt;
+&lt;td style="text-align: center"&gt;全平台&lt;/td&gt;
+&lt;td style="text-align: center"&gt;全平台&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;性能核心&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: center"&gt;CPU&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GPU&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GPU&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GPU&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GPU&lt;/td&gt;
+&lt;td style="text-align: center"&gt;CPU&lt;/td&gt;
+&lt;td style="text-align: center"&gt;CPU&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GPU&lt;/td&gt;
+&lt;td style="text-align: center"&gt;CPU&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;配置方式&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GUI/Plist&lt;/td&gt;
+&lt;td style="text-align: center"&gt;Lua (计划)&lt;/td&gt;
+&lt;td style="text-align: center"&gt;配置文件&lt;/td&gt;
+&lt;td style="text-align: center"&gt;Lua&lt;/td&gt;
+&lt;td style="text-align: center"&gt;YAML/TOML&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GUI/YAML&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GUI&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GUI/云同步&lt;/td&gt;
+&lt;td style="text-align: center"&gt;GUI/YAML&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;标签页/分屏&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;🟡¹&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;内置 SSH&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;🟡²&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;AI 功能&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;❌&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;td style="text-align: center"&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;授权/价格&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: center"&gt;开源免费&lt;/td&gt;
+&lt;td style="text-align: center"&gt;开源免费&lt;/td&gt;
+&lt;td style="text-align: center"&gt;开源免费&lt;/td&gt;
+&lt;td style="text-align: center"&gt;开源免费&lt;/td&gt;
+&lt;td style="text-align: center"&gt;开源免费&lt;/td&gt;
+&lt;td style="text-align: center"&gt;开源免费&lt;/td&gt;
+&lt;td style="text-align: center"&gt;付费&lt;/td&gt;
+&lt;td style="text-align: center"&gt;免费增值&lt;/td&gt;
+&lt;td style="text-align: center"&gt;开源免费&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;表格注释：&lt;/strong&gt;
+¹ &lt;strong&gt;Warp&lt;/strong&gt;：使用独特的 “块” (Blocks) 和工作流来组织命令，而非传统的分屏。
+² &lt;strong&gt;Warp&lt;/strong&gt;：通过其工作流功能简化了 SSH 连接，但不是一个传统的、带主机列表的 SSH 客户端。&lt;/p&gt;
+&lt;h2 id="对比分析"&gt;对比分析
+&lt;/h2&gt;&lt;p&gt;从表格中，我们可以将这些终端大致归为几个流派：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;追求极致性能与定制 (Performance &amp;amp; Customization)：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;代表：&lt;/strong&gt;&lt;code&gt;Kitty&lt;/code&gt;，&lt;code&gt;WezTerm&lt;/code&gt;，&lt;code&gt;Alacritty&lt;/code&gt;，&lt;code&gt;Ghostty&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;**共同点：**都采用 GPU 加速，响应速度和滚动流畅度是第一梯队。它们通常需要通过编写配置文件 (如 Lua，TOML) 来进行深度定制，为高级用户提供了极大的灵活性。&lt;/li&gt;
+&lt;li&gt;**选择建议：**如果你热衷于用代码配置环境、追求零延迟的输入体验，并且不介意花时间打磨配置，这几款是你的不二之选。&lt;code&gt;WezTerm&lt;/code&gt; 以其内置的 Multiplexer 功能脱颖而出，而 &lt;code&gt;Kitty&lt;/code&gt; 则以强大的 &lt;code&gt;kitten&lt;/code&gt; 脚本生态见长。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;macOS 平台的全能选手 (The All-Rounder for macOS)：&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;代表：&lt;/strong&gt;&lt;code&gt;iTerm2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;**共同点：**虽然基于 CPU 渲染，但在现代 Mac 上的性能已足够优秀。它最大的优势是功能全面且拥有成熟的图形化配置界面，几乎所有功能都可以通过鼠标点击完成，开箱即用。&lt;/li&gt;
+&lt;li&gt;**选择建议：**如果你是 Mac 用户，想要一款功能强大、稳定且无需折腾配置的终端，iTerm2 依然是黄金标准。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;&lt;strong&gt;现代 AI 与革新体验 (Modern AI &amp;amp; Innovative Experience)：&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;代表：&lt;/strong&gt;&lt;code&gt;Warp&lt;/code&gt;，&lt;code&gt;WaveTerm&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;**共同点：**它们重新思考了终端的交互模式。&lt;code&gt;Warp&lt;/code&gt; 的命令块和 AI 集成彻底改变了命令的输入输出体验。&lt;code&gt;WaveTerm&lt;/code&gt; 则将 Markdown 和网页渲染能力引入终端，并提供了相对克制的 AI 辅助。&lt;/li&gt;
+&lt;li&gt;**选择建议：**如果你对 AI 辅助编程充满兴趣，或者希望终端能提供超越传统文本界面的现代化、富文本体验，那么这两款产品值得一试。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start="4"&gt;
+&lt;li&gt;&lt;strong&gt;强大的连接管理 (Powerful Connection Management)：&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;代表：&lt;/strong&gt;&lt;code&gt;Tabby&lt;/code&gt;，&lt;code&gt;Zoc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;**共同点：**它们的核心优势在于对远程连接 (特别是 SSH 和串口) 的强大管理能力。提供了直观的主机管理器、密码保存、便捷的文件传输等功能。&lt;/li&gt;
+&lt;li&gt;**选择建议：**如果你的日常工作需要频繁连接和管理大量远程服务器 (尤其是 Windows 用户)，&lt;code&gt;Tabby&lt;/code&gt; 的现代化界面和 &lt;code&gt;Zoc&lt;/code&gt; 的老牌稳定性与 &lt;code&gt;rz/sz&lt;/code&gt; 支持会是极大的效率提升工具。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="总结"&gt;总结
+&lt;/h2&gt;&lt;p&gt;体验了这么多款终端，让我对它们的特点有了更深的理解。许多终端都提供了强大的命令行工具，例如 Kitty 的 &lt;code&gt;kitten&lt;/code&gt; 工具集和 WezTerm 自带的 &lt;code&gt;wezterm&lt;/code&gt; 命令行工具，都隐藏着许多值得发掘的强大功能。&lt;/p&gt;
+&lt;p&gt;接下来的计划是，每两个月深度体验一款终端，并分享一篇详细的使用感受。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PS：&lt;strong&gt;功能对比&lt;/strong&gt;和&lt;strong&gt;对比分析&lt;/strong&gt;都是 AI 帮助我生成的。&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>工具推荐：Wakapi</title><link>https://shangzongyu.github.io/p/wakapi/</link><pubDate>Sat, 30 Aug 2025 08:44:46 +0000</pubDate><guid>https://shangzongyu.github.io/p/wakapi/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_wakapi-cover.webp" alt="Featured image of post 工具推荐：Wakapi" /&gt;&lt;blockquote&gt;
+&lt;p&gt;之前使用 &lt;a class="link" href="https://wakatime.com/" target="_blank" rel="noopener"
+&gt;Wakatime&lt;/a&gt; 记录自己日常编程时间消耗，支持各种不同的编辑器，包括 VSCode 系列、Vim、Emacs 以及 JetBrains 系列。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_wakatime.webp"
+loading="lazy"
+alt="wakatime"
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有些不好的点是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;数据存储在别人的服务器；&lt;/li&gt;
+&lt;li&gt;虽然可以免费使用，但是一些功能需要付费。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;最后找到了一个兼容 &lt;a class="link" href="https://wakatime.com/" target="_blank" rel="noopener"
+&gt;Wakatime&lt;/a&gt; 的工具 Wakapi。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="介绍"&gt;介绍
+&lt;/h2&gt;&lt;p&gt;Wakapi 是一个完全开源、自我托管的 WakaTime 兼容后端服务，它可以统计和展示开发者的编程活动。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_wakapi.webp"
+loading="lazy"
+alt="Wakapi"
+&gt;&lt;/p&gt;
+&lt;p&gt;官网：&lt;a class="link" href="https://wakapi.dev/" target="_blank" rel="noopener"
+&gt;https://wakapi.dev/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="服务端"&gt;服务端
+&lt;/h2&gt;&lt;p&gt;安装 Wakapi 服务端相对较简单。启动的时候需要选择一个数据库，Wakapi 支持以下数据库：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SQLite (默认，易于设置)&lt;/li&gt;
+&lt;li&gt;MySQL (推荐，因为经过最广泛的测试)&lt;/li&gt;
+&lt;li&gt;MariaDB (开源，MySQL 的一个分支)&lt;/li&gt;
+&lt;li&gt;PostgreSQL (开源)&lt;/li&gt;
+&lt;li&gt;CockroachDB (云原生、分布式、PostgreSQL 兼容 API)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;虽然 Wakapi 支持多种数据库，但是 SQLite 是最简单的一种，我更喜欢使用 SQLite + Wakapi (二进制) 单体部署，因为方便，迁移更容易。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 安装二进制&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl -L https://wakapi.dev/get &lt;span class="p"&gt;|&lt;/span&gt; bash
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 通过配置文件指定&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;./wakapi --config config.yml
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="客户端"&gt;客户端
+&lt;/h2&gt;&lt;p&gt;Wakapi 支持所有 WakaTime 支持的客户端。可以在以下地址找到所有支持的客户端：&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://wakatime.com/plugins" target="_blank" rel="noopener"
+&gt;https://wakatime.com/plugins&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;配置客户端很简单。在机器上，打开 &lt;code&gt;~/.wakatime.cfg&lt;/code&gt; 文件，并添加以下内容：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;[settings]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Your Wakapi server URL or &amp;#39;&amp;lt;https://wakapi.dev/api&amp;gt;&amp;#39; when using the cloud server&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;api_url&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;lt;http://localhost:3000/api&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Your Wakapi API key (get it from the web interface after having created an account)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;api_key&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;406fe41f-6d69-4183-a4cc-121e0c524c2b&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>工具推荐：markitdown - 转换文件为 Markdown</title><link>https://shangzongyu.github.io/p/markitdown-markdown/</link><pubDate>Sat, 21 Dec 2024 06:56:21 +0000</pubDate><guid>https://shangzongyu.github.io/p/markitdown-markdown/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;一个 Python 工具转换文件为 Markdown，方便自己使用 Markdown 成为的笔记。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="介绍"&gt;介绍
+&lt;/h2&gt;&lt;p&gt;一个 Python 工具转换文件为 Markdown，方便自己使用 Markdown 成为的笔记。&lt;/p&gt;
+&lt;p&gt;支持的文件格式如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PDF&lt;/li&gt;
+&lt;li&gt;PowerPoint&lt;/li&gt;
+&lt;li&gt;Word&lt;/li&gt;
+&lt;li&gt;Excel&lt;/li&gt;
+&lt;li&gt;Images (EXIF metadata and OCR)&lt;/li&gt;
+&lt;li&gt;Audio (EXIF metadata and speech transcription)&lt;/li&gt;
+&lt;li&gt;HTML&lt;/li&gt;
+&lt;li&gt;Text-based formats (CSV，JSON，XML)&lt;/li&gt;
+&lt;li&gt;ZIP files (iterates over contents)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Github：&lt;a class="link" href="https://github.com/microsoft/markitdown" target="_blank" rel="noopener"
+&gt;https://github.com/microsoft/markitdown&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="使用"&gt;使用
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;工具支持多种使用方式：命令行，Python API 以及 Docker 等，下面以命令行为主介绍。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 安装&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install markitdown
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 转换 pdf&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;markitdown path-to-file.pdf &amp;gt; document.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;markitdown path-to-file.pdf -o document.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>工具推荐：Wave Terminal - 可以通过命令行控制 GUI 的终端</title><link>https://shangzongyu.github.io/p/wave-terminal-gui/</link><pubDate>Mon, 16 Dec 2024 06:51:58 +0000</pubDate><guid>https://shangzongyu.github.io/p/wave-terminal-gui/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_wave-cover.webp" alt="Featured image of post 工具推荐：Wave Terminal - 可以通过命令行控制 GUI 的终端" /&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2024/upgit_20241216_wave-terminal-00.png"
+loading="lazy"
+alt="wave-terminal"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;官网：&lt;a class="link" href="https://www.waveterm.dev/" target="_blank" rel="noopener"
+&gt;https://www.waveterm.dev/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github：&lt;a class="link" href="https://github.com/wavetermdev/waveterm" target="_blank" rel="noopener"
+&gt;https://github.com/wavetermdev/waveterm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="介绍"&gt;介绍
+&lt;/h2&gt;&lt;p&gt;这个终端的有意思的是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可以在终端预览文件/照片/视频等 (不借助其他的工具)&lt;/li&gt;
+&lt;li&gt;可以直接在可视化看到系统的监控 (不借助其他的工具)&lt;/li&gt;
+&lt;li&gt;内置浏览器，可以在终端看 Youtube 等&lt;/li&gt;
+&lt;li&gt;提供类似 VSCode 的编辑器可以远程编辑文件&lt;/li&gt;
+&lt;li&gt;集成 AI (这个在2024年的终端中，当前的不算什么太大的优势)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我现在正在尝试使用这个终端，有一个问题就是他不支持直接 &lt;code&gt;lrzsz&lt;/code&gt; 命令 (也就是 &lt;code&gt;zmodem&lt;/code&gt; 协议，安装 &lt;code&gt;lrzsz&lt;/code&gt; 命令也不可以)，这样远程 SSH 连接文件上传和下载文件就比较难了。其他的功能我还在摸索中，这个 BLOG 还会继续更新。&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>工具推荐: goji - 使用 Emoji 提交 Commit 信息</title><link>https://shangzongyu.github.io/p/goji-emoji-commit/</link><pubDate>Thu, 14 Nov 2024 10:32:19 +0000</pubDate><guid>https://shangzongyu.github.io/p/goji-emoji-commit/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2024-工具推荐_goji-使用-Emoji-提交-Commit-信息.webp" alt="Featured image of post 工具推荐: goji - 使用 Emoji 提交 Commit 信息" /&gt;&lt;h2 id="介绍"&gt;介绍
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Github：&lt;a class="link" href="https://github.com/muandane/goji" target="_blank" rel="noopener"
+&gt;https://github.com/muandane/goji&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使用 Emoji 提交 Commit 信息。&lt;/p&gt;
+&lt;h2 id="安装"&gt;安装
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# macOS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install muandane/tap/goji
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Linux&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;VERSION&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;curl --silent &lt;span class="s2"&gt;&amp;#34;https://api.github.com/repos/muandane/goji/releases/latest&amp;#34;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; jq .tag_name -r&lt;span class="k"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl -Lso goji.tar.gz https://github.com/muandane/goji/releases/download/&lt;span class="nv"&gt;$VERSION&lt;/span&gt;/goji_&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VERSION&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;_Linux_x86_64.tar.gz
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;tar -xvzf goji.tar.gz
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;chmod +x ./goji
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# optionnal&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo mv ./goji /usr/local/bin/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="使用"&gt;使用
+&lt;/h2&gt;&lt;p&gt;简单运行 &lt;code&gt;goji&lt;/code&gt; 就可以开始交付模式：&lt;/p&gt;
+&lt;p&gt;官方示例：&lt;img src="https://raw.githubusercontent.com/muandane/goji/refs/heads/main/public/goji-demo.gif"
+loading="lazy"
+&gt;&lt;/p&gt;
+&lt;p&gt;goji 可以通过配置文件做一些配置：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 在特定 repo 中指定配置，下面命令会在当前目录下生成 .goji 文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;goji init --repo
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 全局的配置，下面命令会在 $HOME 下生成 .goji 文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;goji init --global
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;配置文件的详细配置参考&lt;a class="link" href="https://github.com/muandane/goji" target="_blank" rel="noopener"
+&gt;官方文档&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>工具推荐s: git-switcher - 切换 git 配置</title><link>https://shangzongyu.github.io/p/tips-git-switcher-git/</link><pubDate>Sat, 06 Jan 2024 09:54:08 +0000</pubDate><guid>https://shangzongyu.github.io/p/tips-git-switcher-git/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2024-工具推荐_git-switcher-切换-git-配置-cover.webp" alt="Featured image of post 工具推荐s: git-switcher - 切换 git 配置" /&gt;&lt;h2 id="为什么推荐这个工具"&gt;为什么推荐这个工具？
+&lt;/h2&gt;&lt;p&gt;我在公司使用自己的电脑，因此使用 git 提交代码的时候经常使用自己的个人的 Git 信息提交代码，我在想要是有个可以切换 Git 配置的工具好了，现在这个工具找到了。&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://github.com/TheYkk/git-switcher" target="_blank" rel="noopener"
+&gt;git-switcher&lt;/a&gt; 这个工具很简单，就是帮助我们切换 git 的配置。&lt;/p&gt;
+&lt;h2 id="安装"&gt;安装
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install theykk/tap/git-switcher
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="使用"&gt;使用
+&lt;/h2&gt;&lt;p&gt;使用起来很简单：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 切换&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git-switcher
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 新建&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git-switcher create
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 删除&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git-switcher delete
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 重命名&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git-switcher rename
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="配置"&gt;配置
+&lt;/h2&gt;&lt;p&gt;使用这个工具之后，它只是帮助我们修改 &lt;code&gt;user.name&lt;/code&gt; 这个变量，但是我们提交代码的时候还有一个关联的变量 &lt;code&gt;user.email&lt;/code&gt; 这个需要我们自己修改，这个需要注意。&lt;/p&gt;
+&lt;p&gt;不过我们也可以通过配置文件进行修改，配置文件在 &lt;code&gt;~/.config/gitconfigs&lt;/code&gt;。&lt;/p&gt;</description></item><item><title>工具推荐：cmd-wrapped - 查看 Shell 历史记录</title><link>https://shangzongyu.github.io/p/cmd-wrapped/</link><pubDate>Wed, 20 Dec 2023 16:00:00 +0000</pubDate><guid>https://shangzongyu.github.io/p/cmd-wrapped/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2023-工具推荐_cmd-wrapped--查看命令行使用.webp" alt="Featured image of post 工具推荐：cmd-wrapped - 查看 Shell 历史记录" /&gt;&lt;h2 id="介绍"&gt;介绍
+&lt;/h2&gt;&lt;p&gt;使用 Rust 实现的用户查看自己命令行的使用。&lt;/p&gt;
+&lt;h2 id="安装"&gt;安装
+&lt;/h2&gt;&lt;p&gt;Github：&lt;a class="link" href="https://github.com/YiNNx/cmd-wrapped" target="_blank" rel="noopener"
+&gt;https://github.com/YiNNx/cmd-wrapped&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 使用 cargo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;cargo install cmd-wrapped
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Arch Linux&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;yay -S cmd-wrapped
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 自己编译使用&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git clone git@github.com:YiNNx/cmd-wrapped.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; cmd-wrapped
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;## 生成 2023年&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;cargo run -- &lt;span class="m"&gt;2023&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;## 或者&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;./target/debug/cmd-wrapped &lt;span class="m"&gt;2023&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="查看自己-2023-年命令使用"&gt;查看自己 2023 年命令使用
+&lt;/h2&gt;&lt;p&gt;我的运行结果如下图。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2024/upgit_20240106_cmd-wrapped-00.png"
+loading="lazy"
+alt="cmd-wrapped-00"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2024/upgit_20240106_cmd-wrapped-01.png"
+loading="lazy"
+alt="cmd-wrapped-01"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2024/upgit_20240106_cmd-wrapped-02.png"
+loading="lazy"
+alt="cmd-wrapped-02"
+&gt;&lt;/p&gt;
+&lt;h2 id="查看自己-2024-年命令使用"&gt;查看自己 2024 年命令使用
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2024/upgit_20241221_cmd-wrapped-2024.png"
+loading="lazy"
+alt="cmd-wrapped-2024"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2024/upgit_20241221_cmd-wrapped-2024-01.png"
+loading="lazy"
+alt="cmd-wrapped-2024-01"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2024/upgit_20241221_cmd-wrapped-2024-02.png"
+loading="lazy"
+alt="cmd-wrapped-2024-02"
+&gt;&lt;/p&gt;
+&lt;h2 id="查看自己-2025-年命令使用"&gt;查看自己 2025 年命令使用
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251231_cmd-wrapped-00.webp"
+loading="lazy"
+alt="cmd-wrapped-2025-00"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251231_cmd-wrapped-01.webp"
+loading="lazy"
+alt="cmd-wrapped-2025-01"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251231_cmd-wrapped-02.webp"
+loading="lazy"
+alt="cmd-wrapped-2025-02"
+&gt;&lt;/p&gt;</description></item><item><title>工具推荐: git-commits-visualizer - 本地 Git 仓库可视化贡献图</title><link>https://shangzongyu.github.io/p/git-commits-visualizer-git/</link><pubDate>Fri, 28 Jul 2023 02:25:18 +0000</pubDate><guid>https://shangzongyu.github.io/p/git-commits-visualizer-git/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2023-工具推荐_git-commits-visualizer-本地-Git-仓库可视化贡献图.webp" alt="Featured image of post 工具推荐: git-commits-visualizer - 本地 Git 仓库可视化贡献图" /&gt;&lt;p&gt;&lt;a class="link" href="https://github.com/abdullah-alaadine/git-commits-visualizer" target="_blank" rel="noopener"
+&gt;git-commits-visualizer&lt;/a&gt; 可以帮助用户通过图形化查看仓库的贡献度。&lt;/p&gt;
+&lt;p&gt;特点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;扫描本地仓库，并且生成一个贡献图&lt;/li&gt;
+&lt;li&gt;支持 Github 以及 Gitlab 服务&lt;/li&gt;
+&lt;li&gt;离线工作，哪怕链接不上远程服务不影响使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="安装"&gt;安装
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;go install github.com/abdullah-alaadine/git-commits-visualizer@latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;PS：&lt;code&gt;go install&lt;/code&gt; 会把二进制安装到 &lt;code&gt;go env&lt;/code&gt; 中 &lt;code&gt;GO_BIN&lt;/code&gt; 指定的目录中。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="使用"&gt;使用
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;git-commits-visualizer 支持两种显示模式：表和图。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;以我自己的一个项目来看看，如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230728_git-commits-visualizer.png"
+loading="lazy"
+alt="git-commits-visualizer"
+&gt;&lt;/p&gt;</description></item><item><title>工具推荐: upgit - 把 Github 作为 Blog 的图床</title><link>https://shangzongyu.github.io/p/upgit-github/</link><pubDate>Wed, 26 Jul 2023 10:39:57 +0000</pubDate><guid>https://shangzongyu.github.io/p/upgit-github/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_upgit-cover.webp" alt="Featured image of post 工具推荐: upgit - 把 Github 作为 Blog 的图床" /&gt;&lt;h2 id="介绍"&gt;介绍
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Github：&lt;a class="link" href="https://github.com/pluveto/upgit" target="_blank" rel="noopener"
+&gt;https://github.com/pluveto/upgit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;upgit 可以快捷地将文件上传到 Github 仓库并得到其链接。简洁跨平台，不常驻内存。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特点&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;支持多平台，包括 Linux、Windows 和 macOS&lt;/li&gt;
+&lt;li&gt;支持多种上传器&lt;/li&gt;
+&lt;li&gt;不限制文件类型&lt;/li&gt;
+&lt;li&gt;支持从剪贴板上传&lt;/li&gt;
+&lt;li&gt;自定义自动重命名规则 (包括路径)&lt;/li&gt;
+&lt;li&gt;可通过替换规则实现 CDN 加速&lt;/li&gt;
+&lt;li&gt;可通过环境变量配置&lt;/li&gt;
+&lt;li&gt;将 URL 输出到标准输出/剪贴板，支持 Markdown 格式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;支持平台&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Github&lt;/li&gt;
+&lt;li&gt;Gitee&lt;/li&gt;
+&lt;li&gt;七牛云 Kodo&lt;/li&gt;
+&lt;li&gt;又拍云&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="安装"&gt;安装
+&lt;/h2&gt;&lt;p&gt;从&lt;a class="link" href="https://github.com/pluveto/upgit/releases" target="_blank" rel="noopener"
+&gt;这里&lt;/a&gt;下载系统对应的二进制版本，这里以 macOS 为例。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;span class="lnt"&gt;16
+&lt;/span&gt;&lt;span class="lnt"&gt;17
+&lt;/span&gt;&lt;span class="lnt"&gt;18
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 新建目录&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir ~/.local/bin/upgit
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/.local/bin/ssupgit
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 下载 v0.2.18 版本&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wget --output-document upgit https://github.com/pluveto/upgit/releases/download/v0.2.18/upgit_macos_amd64
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 添加可执行权限&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;chmod a+x ./upgit
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 添加到 PATH 中&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;## bash&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;export PATH=&amp;#34;${PATH}:${HOME}/.local/bin/upgit&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc&lt;span class="s2"&gt;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt;## zsh
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt;echo &amp;#39;export PATH=&amp;#34;&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;:&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/.local/bin/upgit&lt;span class="s2"&gt;&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 新建配置文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;touch config.toml
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;配置文件 &lt;code&gt;config.toml&lt;/code&gt; 在程序的同目录下，配置参考&lt;a class="link" href="https://github.com/pluveto/upgit/blob/main/config.sample.zh-CN.toml" target="_blank" rel="noopener"
+&gt;这里&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="实例"&gt;实例
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ upgit ~/poe.png
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20231102_poe.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="和-typora-集成"&gt;和 Typora 集成
+&lt;/h2&gt;&lt;p&gt;配置很简单，只需要指定 &lt;code&gt;upgit&lt;/code&gt; 所在的目录即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20231102_upgit-typora.png"
+loading="lazy"
+alt="upgit-typora"
+&gt;&lt;/p&gt;
+&lt;p&gt;参考 &lt;a class="link" href="https://support.typora.io/Upload-Image/#image-uploaders" target="_blank" rel="noopener"
+&gt;https://support.typora.io/Upload-Image/#image-uploaders&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Tips: 命令行下 pdf 转换为图片</title><link>https://shangzongyu.github.io/p/pdf/</link><pubDate>Wed, 26 Jul 2023 08:03:08 +0000</pubDate><guid>https://shangzongyu.github.io/p/pdf/</guid><description>&lt;p&gt;使用工具 &lt;a class="link" href="https://poppler.freedesktop.org" target="_blank" rel="noopener"
+&gt;poppler&lt;/a&gt;，它是基于 &lt;a class="link" href="http://www.foolabs.com/xpdf/" target="_blank" rel="noopener"
+&gt;xpdf-3.0&lt;/a&gt;，可以把 PDF 文档转换为图片，除此之外还可以指定分辨率、缩放以及裁剪。&lt;/p&gt;
+&lt;h2 id="安装"&gt;安装
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# macOS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install poppler
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Arch&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo pacman -S poppler
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;安装成功后，会有一个可用的命令为 &lt;code&gt;pdftoppm&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id="使用"&gt;使用
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 语法&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pdftoppm &lt;span class="o"&gt;[&lt;/span&gt;options&lt;span class="o"&gt;]&lt;/span&gt; PDF-file PPM-root
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;使用实例如下。&lt;/p&gt;
+&lt;h3 id="转换整个文件"&gt;转换整个文件
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pdftoppm -&amp;lt;image_format&amp;gt; &amp;lt;pdf_filename&amp;gt; &amp;lt;image_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;加入转换的文件名为：&lt;code&gt;xxx.pdf&lt;/code&gt;，转换的图片格式为 &lt;code&gt;png&lt;/code&gt;。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pdftoppm -png xxx.pdf xxx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="只转换部分-pdf"&gt;只转换部分 PDF
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pdftoppm -&amp;lt;image_format&amp;gt; -f N -l N &amp;lt;pdf_filename&amp;gt; &amp;lt;image_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;参数解释：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-f N&lt;/code&gt;：PDF 的起始页码&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-l N&lt;/code&gt;：PDF 的结束码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;比如我们需要把第 2 页到第 5 页转为图片：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pdftoppm -png -f &lt;span class="m"&gt;2&lt;/span&gt; -l &lt;span class="m"&gt;5&lt;/span&gt; xxx.pdf xxx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="调整图片的质量"&gt;调整图片的质量
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;pdftoppm&lt;/code&gt; 默认的 DPI 为 150。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pdftoppm -png -rx &lt;span class="m"&gt;300&lt;/span&gt; -ry &lt;span class="m"&gt;300&lt;/span&gt; xxx.pdf xxx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="更多使用方法"&gt;更多使用方法
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pdftoppm --help
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;man pdftoppm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>工具推荐: wttr - 命令行查询天气</title><link>https://shangzongyu.github.io/p/wttr/</link><pubDate>Tue, 12 Jul 2022 01:55:23 +0000</pubDate><guid>https://shangzongyu.github.io/p/wttr/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2022-工具推荐_wttr-命令行查询天气.webp" alt="Featured image of post 工具推荐: wttr - 命令行查询天气" /&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a class="link" href="https://github.com/chubin/wttr.in" target="_blank" rel="noopener"
+&gt;wttr.in&lt;/a&gt; 用于在命令行查询天气&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 使用方法&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl wttr.in/你要查询的城市
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 例如查询深圳天气&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl wttr.in/shenzhen
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 想以中文方式显示的话只要改为&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl zh.wttr.in
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 例如查询深圳天气&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl zh.wttr.in/shenzhen
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 更多使用方法可以输入&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl wttr.in/:help
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;示例：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;span class="lnt"&gt;16
+&lt;/span&gt;&lt;span class="lnt"&gt;17
+&lt;/span&gt;&lt;span class="lnt"&gt;18
+&lt;/span&gt;&lt;span class="lnt"&gt;19
+&lt;/span&gt;&lt;span class="lnt"&gt;20
+&lt;/span&gt;&lt;span class="lnt"&gt;21
+&lt;/span&gt;&lt;span class="lnt"&gt;22
+&lt;/span&gt;&lt;span class="lnt"&gt;23
+&lt;/span&gt;&lt;span class="lnt"&gt;24
+&lt;/span&gt;&lt;span class="lnt"&gt;25
+&lt;/span&gt;&lt;span class="lnt"&gt;26
+&lt;/span&gt;&lt;span class="lnt"&gt;27
+&lt;/span&gt;&lt;span class="lnt"&gt;28
+&lt;/span&gt;&lt;span class="lnt"&gt;29
+&lt;/span&gt;&lt;span class="lnt"&gt;30
+&lt;/span&gt;&lt;span class="lnt"&gt;31
+&lt;/span&gt;&lt;span class="lnt"&gt;32
+&lt;/span&gt;&lt;span class="lnt"&gt;33
+&lt;/span&gt;&lt;span class="lnt"&gt;34
+&lt;/span&gt;&lt;span class="lnt"&gt;35
+&lt;/span&gt;&lt;span class="lnt"&gt;36
+&lt;/span&gt;&lt;span class="lnt"&gt;37
+&lt;/span&gt;&lt;span class="lnt"&gt;38
+&lt;/span&gt;&lt;span class="lnt"&gt;39
+&lt;/span&gt;&lt;span class="lnt"&gt;40
+&lt;/span&gt;&lt;span class="lnt"&gt;41
+&lt;/span&gt;&lt;span class="lnt"&gt;42
+&lt;/span&gt;&lt;span class="lnt"&gt;43
+&lt;/span&gt;&lt;span class="lnt"&gt;44
+&lt;/span&gt;&lt;span class="lnt"&gt;45
+&lt;/span&gt;&lt;span class="lnt"&gt;46
+&lt;/span&gt;&lt;span class="lnt"&gt;47
+&lt;/span&gt;&lt;span class="lnt"&gt;48
+&lt;/span&gt;&lt;span class="lnt"&gt;49
+&lt;/span&gt;&lt;span class="lnt"&gt;50
+&lt;/span&gt;&lt;span class="lnt"&gt;51
+&lt;/span&gt;&lt;span class="lnt"&gt;52
+&lt;/span&gt;&lt;span class="lnt"&gt;53
+&lt;/span&gt;&lt;span class="lnt"&gt;54
+&lt;/span&gt;&lt;span class="lnt"&gt;55
+&lt;/span&gt;&lt;span class="lnt"&gt;56
+&lt;/span&gt;&lt;span class="lnt"&gt;57
+&lt;/span&gt;&lt;span class="lnt"&gt;58
+&lt;/span&gt;&lt;span class="lnt"&gt;59
+&lt;/span&gt;&lt;span class="lnt"&gt;60
+&lt;/span&gt;&lt;span class="lnt"&gt;61
+&lt;/span&gt;&lt;span class="lnt"&gt;62
+&lt;/span&gt;&lt;span class="lnt"&gt;63
+&lt;/span&gt;&lt;span class="lnt"&gt;64
+&lt;/span&gt;&lt;span class="lnt"&gt;65
+&lt;/span&gt;&lt;span class="lnt"&gt;66
+&lt;/span&gt;&lt;span class="lnt"&gt;67
+&lt;/span&gt;&lt;span class="lnt"&gt;68
+&lt;/span&gt;&lt;span class="lnt"&gt;69
+&lt;/span&gt;&lt;span class="lnt"&gt;70
+&lt;/span&gt;&lt;span class="lnt"&gt;71
+&lt;/span&gt;&lt;span class="lnt"&gt;72
+&lt;/span&gt;&lt;span class="lnt"&gt;73
+&lt;/span&gt;&lt;span class="lnt"&gt;74
+&lt;/span&gt;&lt;span class="lnt"&gt;75
+&lt;/span&gt;&lt;span class="lnt"&gt;76
+&lt;/span&gt;&lt;span class="lnt"&gt;77
+&lt;/span&gt;&lt;span class="lnt"&gt;78
+&lt;/span&gt;&lt;span class="lnt"&gt;79
+&lt;/span&gt;&lt;span class="lnt"&gt;80
+&lt;/span&gt;&lt;span class="lnt"&gt;81
+&lt;/span&gt;&lt;span class="lnt"&gt;82
+&lt;/span&gt;&lt;span class="lnt"&gt;83
+&lt;/span&gt;&lt;span class="lnt"&gt;84
+&lt;/span&gt;&lt;span class="lnt"&gt;85
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 查询深圳天气&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ curl wttr.in/shenzhen
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Weather report: shenzhen
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; .-. +29&lt;span class="o"&gt;(&lt;/span&gt;36&lt;span class="o"&gt;)&lt;/span&gt; °C
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↙ &lt;span class="m"&gt;4&lt;/span&gt; km/h
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ┌─────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;┌──────────────────────────────┬───────────────────────┤ Tue &lt;span class="m"&gt;12&lt;/span&gt; Jul ├───────────────────────┬──────────────────────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ Morning │ Noon └──────┬──────┘ Evening │ Night │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny │ &lt;span class="se"&gt;\ &lt;/span&gt; / Partly cloudy │ &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny │ &lt;span class="se"&gt;\ &lt;/span&gt; / Clear │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ .-. +30&lt;span class="o"&gt;(&lt;/span&gt;35&lt;span class="o"&gt;)&lt;/span&gt; °C │ _ /&lt;span class="s2"&gt;&amp;#34;&amp;#34;&lt;/span&gt;.-. +33&lt;span class="o"&gt;(&lt;/span&gt;41&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +33&lt;span class="o"&gt;(&lt;/span&gt;40&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +29&lt;span class="o"&gt;(&lt;/span&gt;33&lt;span class="o"&gt;)&lt;/span&gt; °C │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ← 4-5 km/h │ &lt;span class="se"&gt;\_&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt;. ↖ 9-11 km/h │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 13-15 km/h │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 11-15 km/h │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │ /&lt;span class="o"&gt;(&lt;/span&gt;___&lt;span class="o"&gt;(&lt;/span&gt;__&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="m"&gt;10&lt;/span&gt; km │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ┌─────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;┌──────────────────────────────┬───────────────────────┤ Wed &lt;span class="m"&gt;13&lt;/span&gt; Jul ├───────────────────────┬──────────────────────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ Morning │ Noon └──────┬──────┘ Evening │ Night │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny │ &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny │ &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny │ &lt;span class="se"&gt;\ &lt;/span&gt; / Clear │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ .-. +30&lt;span class="o"&gt;(&lt;/span&gt;34&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +35&lt;span class="o"&gt;(&lt;/span&gt;44&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +33&lt;span class="o"&gt;(&lt;/span&gt;40&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +29&lt;span class="o"&gt;(&lt;/span&gt;33&lt;span class="o"&gt;)&lt;/span&gt; °C │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↙ 7-8 km/h │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↑ 8-9 km/h │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 12-14 km/h │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 10-13 km/h │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ┌─────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;┌──────────────────────────────┬───────────────────────┤ Thu &lt;span class="m"&gt;14&lt;/span&gt; Jul ├───────────────────────┬──────────────────────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ Morning │ Noon └──────┬──────┘ Evening │ Night │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny │ &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny │ &lt;span class="se"&gt;\ &lt;/span&gt; / Sunny │ &lt;span class="se"&gt;\ &lt;/span&gt; / Clear │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ .-. +30&lt;span class="o"&gt;(&lt;/span&gt;34&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +35&lt;span class="o"&gt;(&lt;/span&gt;43&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +33&lt;span class="o"&gt;(&lt;/span&gt;41&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +29&lt;span class="o"&gt;(&lt;/span&gt;34&lt;span class="o"&gt;)&lt;/span&gt; °C │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ← 5-6 km/h │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↑ 9-10 km/h │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 12-14 km/h │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 11-15 km/h │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; km │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 mm &lt;span class="p"&gt;|&lt;/span&gt; 0% │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Location: 深圳市, 福田区 &lt;span class="o"&gt;(&lt;/span&gt;Futian&lt;span class="o"&gt;)&lt;/span&gt;, 深圳市 / Shenzhen, 广东省, 518000, 中国 &lt;span class="o"&gt;[&lt;/span&gt;22.5442673,114.0545327&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Follow @igor_chubin &lt;span class="k"&gt;for&lt;/span&gt; wttr.in updates
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 以中文查询&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ curl zh.wttr.in/shenzhen
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;天气预报： shenzhen
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="se"&gt;\ &lt;/span&gt; / 局部多云
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; _ /&lt;span class="s2"&gt;&amp;#34;&amp;#34;&lt;/span&gt;.-. +30&lt;span class="o"&gt;(&lt;/span&gt;36&lt;span class="o"&gt;)&lt;/span&gt; °C
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="se"&gt;\_&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt;. ↗ &lt;span class="m"&gt;7&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; /&lt;span class="o"&gt;(&lt;/span&gt;___&lt;span class="o"&gt;(&lt;/span&gt;__&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="m"&gt;10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; 0.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ┌─────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;┌──────────────────────────────┬───────────────────────┤7月12日星期二├───────────────────────┬──────────────────────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ 早上 │ 中午 └──────┬──────┘ 傍晚 │ 夜间 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴天 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 局部多云 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴天 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴朗 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ .-. +30&lt;span class="o"&gt;(&lt;/span&gt;35&lt;span class="o"&gt;)&lt;/span&gt; °C │ _ /&lt;span class="s2"&gt;&amp;#34;&amp;#34;&lt;/span&gt;.-. +33&lt;span class="o"&gt;(&lt;/span&gt;41&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +33&lt;span class="o"&gt;(&lt;/span&gt;40&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +29&lt;span class="o"&gt;(&lt;/span&gt;33&lt;span class="o"&gt;)&lt;/span&gt; °C │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ← 4-5 │ &lt;span class="se"&gt;\_&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt;. ↖ 9-11 │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 13-15 │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 11-15 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │ /&lt;span class="o"&gt;(&lt;/span&gt;___&lt;span class="o"&gt;(&lt;/span&gt;__&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="m"&gt;10&lt;/span&gt; │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ┌─────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;┌──────────────────────────────┬───────────────────────┤7月13日星期三├───────────────────────┬──────────────────────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ 早上 │ 中午 └──────┬──────┘ 傍晚 │ 夜间 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴天 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴天 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴天 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴朗 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ .-. +30&lt;span class="o"&gt;(&lt;/span&gt;34&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +35&lt;span class="o"&gt;(&lt;/span&gt;44&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +33&lt;span class="o"&gt;(&lt;/span&gt;40&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +29&lt;span class="o"&gt;(&lt;/span&gt;33&lt;span class="o"&gt;)&lt;/span&gt; °C │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↙ 7-8 │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↑ 8-9 │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 12-14 │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 10-13 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ┌─────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;┌──────────────────────────────┬───────────────────────┤7月14日星期四├───────────────────────┬──────────────────────────────┐
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ 早上 │ 中午 └──────┬──────┘ 傍晚 │ 夜间 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴天 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴天 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴天 │ &lt;span class="se"&gt;\ &lt;/span&gt; / 晴朗 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ .-. +30&lt;span class="o"&gt;(&lt;/span&gt;34&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +35&lt;span class="o"&gt;(&lt;/span&gt;43&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +33&lt;span class="o"&gt;(&lt;/span&gt;41&lt;span class="o"&gt;)&lt;/span&gt; °C │ .-. +29&lt;span class="o"&gt;(&lt;/span&gt;34&lt;span class="o"&gt;)&lt;/span&gt; °C │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ← 5-6 │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↑ 9-10 │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 12-14 │ ― &lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt; ― ↖ 11-15 │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │ &lt;span class="sb"&gt;`&lt;/span&gt;-’ &lt;span class="m"&gt;10&lt;/span&gt; │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │ / &lt;span class="se"&gt;\ &lt;/span&gt; 0.0 &lt;span class="p"&gt;|&lt;/span&gt; 0% │
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;地点: 深圳市, 福田区 &lt;span class="o"&gt;(&lt;/span&gt;Futian&lt;span class="o"&gt;)&lt;/span&gt;, 深圳市 / Shenzhen, 广东省, 518000, 中国 &lt;span class="o"&gt;[&lt;/span&gt;22.5442673,114.0545327&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;关注 @igor_chubin 获取 wttr.in 动态
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item></channel></rss>
