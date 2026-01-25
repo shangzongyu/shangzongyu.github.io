@@ -1,5 +1,5 @@
 ---
-title: "Ohmarchy"
+title: "Omarchy"
 description: "Ohmarchy Linux Software"
 date: 2026-01-20T10:30:25+08:00
 image: 
