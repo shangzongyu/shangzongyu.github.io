@@ -53,10 +53,14 @@ Antigravity 是 Google 的 Editor。
 - **智能分级路由 (Tiered Routing)**: [新] 系统根据账号类型（Ultra/Pro/Free）和配额重置频率自动优先级排序，优先消耗高速重置账号，确保高频调用下的服务稳定性。
 - **后台任务静默降级**: [新] 自动识别 Claude CLI 等工具生成的后台请求（如标题生成），智能重定向至 Flash 模型，保护高级模型配额不被浪费。
 
-#### 5.  多模态与 Imagen 3 支持
+#### 5. 多模态与 Imagen 3 支持
 
 - **高级画质控制**: 支持通过 OpenAI `size` (如 `1024x1024`, `16:9`) 参数自动映射到 Imagen 3 的相应规格。
 - **超强 Body 支持**: 后端支持高达 **100MB** 的 Payload，处理 4K 高清图识别绰绰有余。
+
+#### 6. 其他
+
+- 详细介绍: <https://xiaohu.ai/c/a066c4/antigravity-manager-antigravity>
 
 ## OpenCode 中使用 antigravity
 
@@ -67,7 +71,5 @@ Antigravity 是 Google 的 Editor。
 ```sh
 Install the opencode-antigravity-auth plugin and add the Antigravity model definitions to ~/.config/opencode/opencode.json by following: https://raw.githubusercontent.com/NoeFabris/opencode-antigravity-auth/dev/README.md
 ```
-
-
 
 通过  `opencode auth login` 登录多个 Google 账号，插件会自动切换账号，当一个账号的被 limit 后。
