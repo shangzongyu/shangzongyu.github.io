@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VNC on 我的世界</title><link>https://shangzongyu.github.io/tags/vnc/</link><description>Recent content in VNC on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 18 Nov 2025 19:17:00 +0800</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/vnc/index.xml" rel="self" type="application/rss+xml"/><item><title>Tips：MacBook VNC 连接 Omarchy Linux</title><link>https://shangzongyu.github.io/p/tipsmacbook-vnc-%E8%BF%9E%E6%8E%A5-omarchy-linux/</link><pubDate>Tue, 18 Nov 2025 19:17:00 +0800</pubDate><guid>https://shangzongyu.github.io/p/tipsmacbook-vnc-%E8%BF%9E%E6%8E%A5-omarchy-linux/</guid><description>&lt;h2 id="前言"&gt;前言
+&lt;/h2&gt;&lt;p&gt;换了一个新的办公环境，新的办公桌比之前小不少，导致我的两个显示器放不下（两个显示器一个被 Omarhcy 使用，一个被 MacBook 使用），MacBook 是我的主力机，因此就能把 Linux 的显示器去掉，Linux 我平常使用 SSH 直接连接的，但是偶尔使用 GUI，我想折腾下。&lt;/p&gt;
+&lt;p&gt;!&lt;/p&gt;
+&lt;p&gt;最初就是找到 &lt;a class="link" href="https://tigervnc.org/" target="_blank" rel="noopener"
+&gt;Tiger VNC&lt;/a&gt; ，使用 VNC Server 搭建一个服务器，然后通过 Mac 的 VNC Client 连接，但是执行过程有关问题：&lt;/p&gt;
+&lt;p&gt;TigerVNC 主要是基于 X11 的 VNC 服务器，但是 Omarchy Linux 使用的 Hyprland 是基于 Wayland 的窗口管理器，Wayland 与传统 X11 不兼容。这就很难搞了，就算配置了也有各种问题。&lt;/p&gt;
+&lt;p&gt;就需要换一个兼容 Wayland 的 VNC Server, 通过询问 AI 找到了 &lt;a class="link" href="https://github.com/any1/wayvnc" target="_blank" rel="noopener"
+&gt;wayvnc&lt;/a&gt;，WayVNC 专为无窗口管理器依赖的 Wayland 环境设计，刚好符合我们的场景。&lt;/p&gt;
+&lt;h2 id="安装"&gt;安装
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo pacman -S wayvnc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="启动"&gt;启动
+&lt;/h2&gt;&lt;p&gt;在启动之前需要简单配置下：&lt;/p&gt;
+&lt;p&gt;配置文件在 &lt;code&gt;~/.config/wayvnc/config&lt;/code&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;0.0.0.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;配置之后就可以通过：&lt;code&gt;wayvnc -C ~/.config/wayvnc/config&lt;/code&gt; 来启动了，不过每次都要手动启动很麻烦，而且 &lt;code&gt;wayvnc&lt;/code&gt; 不支持 daemon 模式，非常不方便，因此使用 &lt;code&gt;systemd&lt;/code&gt; 进行管理。&lt;/p&gt;
+&lt;p&gt;新建 wayvnc 的 service 文件 &lt;code&gt;~/.config/systemd/user/wayvnc.service&lt;/code&gt; 内容如下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;text&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;[Unit]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;Description&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;WayVNC Server&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;After&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;graphical-session.target&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;[Service]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 替换 with your username 路径&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;ExecStart&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;/usr/bin/wayvnc -C /home/shine/.config/wayvnc/config&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;Restart&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;always&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;Environment&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;WAYLAND_DISPLAY=wayland-0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;Environment&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;XDG_RUNTIME_DIR=/run/user/$(id -u)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;[Install]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;WantedBy&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;default.target&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;注意：&lt;code&gt;ExecStart&lt;/code&gt; 配置命令的的时候需要指定绝对路径。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;之后就可以：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;systemctl --user daemon-reload &lt;span class="c1"&gt;# 每次修改玩 serive 文件重新加载&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;systemctl --user &lt;span class="nb"&gt;enable&lt;/span&gt; --now wayvnc.service &lt;span class="c1"&gt;# 设置开机自启动&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;systemctl --user start wayvnc.service &lt;span class="c1"&gt;# 启动&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;systemctl --user stop wayvnc.service &lt;span class="c1"&gt;# 关闭&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;systemctl --user status wayvnc.service &lt;span class="c1"&gt;# 查看状态&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="配置"&gt;配置
+&lt;/h2&gt;&lt;p&gt;wayvnc 的基本配置主要通过配置文件 &lt;code&gt;~/.config/wayvnc/config&lt;/code&gt; ，关键配置项包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;address&lt;/code&gt;：监听地址，默认是 &lt;code&gt;127.0.0.1&lt;/code&gt;。设置为 &lt;code&gt;0.0.0.0&lt;/code&gt; 允许所有网络接口远程连接。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;port&lt;/code&gt;：监听的端口，默认是 &lt;code&gt;5900&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;enable_auth&lt;/code&gt;：是否启用身份认证（密码验证），默认 &lt;code&gt;false&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;username&lt;/code&gt;：用于登录的用户名（如果启用认证）。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;password&lt;/code&gt;：认证密码（需要使用 &lt;code&gt;vncpasswd&lt;/code&gt; 工具生成）。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;private_key_file&lt;/code&gt; 和 &lt;code&gt;certificate_file&lt;/code&gt;：用于启用 TLS 加密的私钥和证书文件路径。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;session&lt;/code&gt;：指定 Wayland 显示输出，如 &lt;code&gt;HEADLESS-1&lt;/code&gt;，多显示器环境可用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;always_shared&lt;/code&gt;：是否允许多个客户端共享同一会话。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;idle_autokill&lt;/code&gt;：空闲自动关闭时间（秒），避免长时间闲置浪费资源。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;clipboard&lt;/code&gt;：是否启用剪贴板同步。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;verbose&lt;/code&gt;：开启详细日志。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;示例配置文件内容：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;0.0.0.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;port&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;5900&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;enable_auth&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;username&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;jojo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;password&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;your_vnc_password_file_path&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;private_key_file&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;/path/to/private.pem&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;certificate_file&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;/path/to/cert.pem&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;session&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;HEADLESS-1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;always_shared&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;idle_autokill&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;600&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;clipboard&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;verbose&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这些配置允许你控制监听接口、安全认证、加密、会话管理等主要远程桌面参数。&lt;/p&gt;
+&lt;h2 id="连接-vnc-server-的客户端"&gt;连接 VNC Server 的客户端
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;我主要使用 MacBook 连接，因此选择支持 MacOS 的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="tigervnc"&gt;TigerVNC
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_tiger-vnc.webp"
+loading="lazy"
+alt="tiger-vnc"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://tigervnc.org/" target="_blank" rel="noopener"
+&gt;TigerVNC Viewer&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;优点： 支持多平台，性能好&lt;/li&gt;
+&lt;li&gt;缺点：界面比较丑(自认为的缺点)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="screens"&gt;Screens
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_screens.webp"
+loading="lazy"
+alt="screens"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://edovia.com/en/screens" target="_blank" rel="noopener"
+&gt;Screens&lt;/a&gt; - 一款跨苹果生态（iPhone、iPad、Mac、Vision Pro）远程桌面客户端应用，&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特点包括&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;提供流畅、直观的远控体验，支持多个连接和多显示器切换。&lt;/li&gt;
+&lt;li&gt;支持强加密和内置 SSH 隧道，确保连接安全，适合对安全要求高的使用场景。&lt;/li&gt;
+&lt;li&gt;支持苹果设备的硬件键盘、触控板、鼠标操作，交互自然顺畅。&lt;/li&gt;
+&lt;li&gt;独特的 Curtain Mode（屏幕遮蔽模式）保护远程会话的隐私。&lt;/li&gt;
+&lt;li&gt;支持文件拖拽传输，方便管理远程文件。&lt;/li&gt;
+&lt;li&gt;兼容多平台，包括控制 Mac、Linux、Raspberry Pi 和 Windows 电脑。&lt;/li&gt;
+&lt;li&gt;通过 Screens Connect 服务实现跨网络无复杂配置的远程连接。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;缺点&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;主要定位苹果设备生态，Windows 等 PC 端作为远程控制端支持有限。&lt;/li&gt;
+&lt;li&gt;远程 Windows/Linux 设备只能发送/接收文本和 URL，不支持声音传输。&lt;/li&gt;
+&lt;li&gt;需要远程设备安装并运行支持的 VNC Server（如 UltraVNC、TightVNC）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="faq"&gt;FAQ
+&lt;/h2&gt;&lt;p&gt;使用 &lt;code&gt;wayvnc 0.0.0.0&lt;/code&gt; 报错如下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ERROR: ../wayvnc/src/main.c: 540: WAYLAND_DISPLAY is not &lt;span class="nb"&gt;set&lt;/span&gt; in the environment
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ERROR: ../wayvnc/src/main.c: 2069: Failed to initialise wayland&lt;span class="sb"&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;原因：因为 SSH 会话没有继承到图形用户会话的 Wayland 环境变量，wayvnc 需要连接正在运行的 Wayland 会话才能工作，而 SSH 默认没有 Wayland 图形会话上下文。
+解决：登录图形终端然后执行 &lt;code&gt;wayvnc 0.0.0.0&lt;/code&gt;&lt;/p&gt;</description></item></channel></rss>

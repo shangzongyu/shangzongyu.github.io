@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git-Tips on 我的世界</title><link>https://shangzongyu.github.io/tags/git-tips/</link><description>Recent content in Git-Tips on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 13 Sep 2025 07:31:11 +0000</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/git-tips/index.xml" rel="self" type="application/rss+xml"/><item><title>拥抱 ：让你的代码提交信息更有价值</title><link>https://shangzongyu.github.io/p/conventional-commits/</link><pubDate>Sat, 13 Sep 2025 07:31:11 +0000</pubDate><guid>https://shangzongyu.github.io/p/conventional-commits/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_Conventiona-Commits-cover.webp" alt="Featured image of post 拥抱 ：让你的代码提交信息更有价值" /&gt;&lt;p&gt;在日常的编码过程中，版本控制软件是我们不可或缺的伙伴。每一次的代码提交，都像是为项目留下一个重要的 “时间戳”，记录着我们在上线或其他关键操作时所做的修改。然而，当项目团队不断壮大，或者项目本身变得日益庞大复杂时，随意编写的 Commit 信息，哪怕在自己看来清晰明了，也可能给团队协作带来不便。&lt;/p&gt;
+&lt;p&gt;为了解决这一痛点，我接触到了一个非常有价值的规范——&lt;strong&gt;Conventional Commits (约定式提交)&lt;/strong&gt;。它提供了一套清晰、简洁的指引，旨在将每一次提交转化为有意义、结构化的信息单元，从而显著提升 Commit Log 的价值和可利用性。&lt;/p&gt;
+&lt;h2 id="conventional-commits-规范详解"&gt;Conventional Commits 规范详解
+&lt;/h2&gt;&lt;p&gt;Conventional Commits 规范为每次提交定义了如下的标准结构：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&amp;lt;type&amp;gt;&lt;span class="o"&gt;[&lt;/span&gt;optional scope&lt;span class="o"&gt;]&lt;/span&gt;: &amp;lt;description&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;[&lt;/span&gt;optional body&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;[&lt;/span&gt;optional footer&lt;span class="o"&gt;(&lt;/span&gt;s&lt;span class="o"&gt;)]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这个结构包含了几个关键要素：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Type&lt;/code&gt; (类型)**：&lt;strong&gt;必须遵循的指引&lt;/strong&gt;，表明提交的性质。规范定义了以下基础类型：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;fix&lt;/code&gt;：修复 Bug (对应 SemVer 的 PATCH 版本更新)。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;feat&lt;/code&gt;：引入新功能 (对应 SemVer 的 MINOR 版本更新)。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;鼓励扩展&lt;/strong&gt;：团队可以根据需要定义其他类型，如 &lt;code&gt;build&lt;/code&gt;、&lt;code&gt;chore&lt;/code&gt; (用于标记常规维护工作，如更新依赖项)、&lt;code&gt;ci&lt;/code&gt;、&lt;code&gt;docs&lt;/code&gt;、&lt;code&gt;style&lt;/code&gt;、&lt;code&gt;refactor&lt;/code&gt;、&lt;code&gt;perf&lt;/code&gt;、&lt;code&gt;test&lt;/code&gt; 等，以适应具体的工作流。这些扩展类型本身通常不直接影响版本号 (除非包含破坏性变更)。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Scope&lt;/code&gt; (范围)：&lt;strong&gt;可选但推荐的指引&lt;/strong&gt;，用于明确提交影响的代码区域或模块，用括号包裹，如 &lt;code&gt;feat(api):&lt;/code&gt; 或 &lt;code&gt;fix(tools):&lt;/code&gt;。这极大地增强了信息的可定位性。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Description&lt;/code&gt; (描述)：&lt;strong&gt;必须遵循的指引&lt;/strong&gt;，紧跟在冒号和空格之后，用简洁的语言 (推荐使用祈使句的现在时态) 概括本次提交的核心变更内容。这是提交信息的 “标题”。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Body&lt;/code&gt; (正文)：&lt;strong&gt;可选指引&lt;/strong&gt;，当简短描述不足以说明时，提供更详细的上下文、动机和实现细节。与 Description 之间需要空一行。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Footer(s)&lt;/code&gt; (脚注)：&lt;strong&gt;可选指引&lt;/strong&gt;，提供元数据，如关联的 &lt;code&gt;Issue&lt;/code&gt; (例如 &lt;code&gt;Refs: #123&lt;/code&gt;)。特别重要的两个脚注指引：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;BREAKING CHANGE&lt;/code&gt;：明确标示&lt;strong&gt;不兼容的 API 变更&lt;/strong&gt; (对应 SemVer 的 MAJOR 版本更新)。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;INITIAL STABLE RELEASE&lt;/code&gt;：标记项目从 &lt;code&gt;0.y.z&lt;/code&gt; 版本进入 &lt;code&gt;1.0.0&lt;/code&gt; 稳定版。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**强调重要变更的简化指引：**规范还提供了 &lt;code&gt;!&lt;/code&gt; (紧跟 type 或 scope 之后) 和 &lt;code&gt;!!&lt;/code&gt; 作为标记 &lt;code&gt;BREAKING CHANGE&lt;/code&gt; 和 &lt;code&gt;INITIAL STABLE RELEASE&lt;/code&gt; 的快捷方式，进一步简化了实践。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="示例展示"&gt;示例展示
+&lt;/h2&gt;&lt;p&gt;以下是一些遵循 Conventional Commits 规范的提交示例：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;修复简单的 BUG&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;fix: correct username validation logic
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;带有范围的新功能&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;feat(api): add user profile endpoint
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;使用 &lt;code&gt;!&lt;/code&gt; 标记破坏性变更&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;refactor!(auth): remove deprecated JWT authentication
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;包含详细正文和脚注的提交&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;span class="lnt"&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-gdscript3" data-lang="gdscript3"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;perf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;api&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; &lt;span class="n"&gt;improve&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt; &lt;span class="n"&gt;query&lt;/span&gt; &lt;span class="n"&gt;performance&lt;/span&gt; &lt;span class="n"&gt;significantly&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;Implemented&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;new&lt;/span&gt; &lt;span class="n"&gt;indexing&lt;/span&gt; &lt;span class="n"&gt;strategy&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;users&lt;/span&gt; &lt;span class="n"&gt;table&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;optimized&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;SQL&lt;/span&gt; &lt;span class="n"&gt;query&lt;/span&gt; &lt;span class="n"&gt;execution&lt;/span&gt; &lt;span class="n"&gt;plan&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="n"&gt;Initial&lt;/span&gt; &lt;span class="n"&gt;tests&lt;/span&gt; &lt;span class="n"&gt;show&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="n"&gt;reduction&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;average&lt;/span&gt; &lt;span class="n"&gt;query&lt;/span&gt; &lt;span class="n"&gt;latency&lt;/span&gt; &lt;span class="n"&gt;under&lt;/span&gt; &lt;span class="n"&gt;heavy&lt;/span&gt; &lt;span class="nb"&gt;load&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;Reviewed&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;by&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Alice&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;alice&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;example&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;Refs&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="c1"&gt;#456, #478&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;使用 &lt;code&gt;!!&lt;/code&gt; 标记首次稳定版发布&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;chore(release)!!: prepare for 1.0.0 stable release
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Finalized documentation, updated dependencies, and ran comprehensive
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;end-to-end tests to ensure stability for the first major release.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;BREAKING CHANGE: The project is now considered stable for production use.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;通过遵循上述规范，你的 Commit 信息将转化为清晰、信息丰富的记录。&lt;/p&gt;
+&lt;h2 id="遵循-conventional-commits-的收益"&gt;遵循 Conventional Commits 的收益
+&lt;/h2&gt;&lt;p&gt;采纳 Conventional Commits 规范，对日常开发和团队协作能带来诸多好处：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;提升可读性与理解性&lt;/strong&gt;：&lt;code&gt;Type&lt;/code&gt; 和 &lt;code&gt;Scope&lt;/code&gt; 能够让你快速筛选和定位信息，清晰的 &lt;code&gt;Description&lt;/code&gt; 和 &lt;code&gt;Body&lt;/code&gt; 阐述了变更的 “什么” 和 “为什么”。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;增强团队沟通与协作&lt;/strong&gt;：统一的格式减少了误解，提高了代码审查和协作效率，让每一次提交都成为清晰的沟通。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;简化历史追溯与问题排查&lt;/strong&gt;：结构化的日志便于查找特定功能引入、Bug 修复或破坏性变更的源头。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;驱动自动化流程&lt;/strong&gt;：有意义的提交日志是自动化工具的理想输入，能够驱动自动化生成 &lt;code&gt;CHANGELOG&lt;/code&gt;、自动判断 SemVer 版本，以及基于提交类型触发不同的 CI/CD 流程。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="conventional-commits-的最佳实践与洞察"&gt;Conventional Commits 的最佳实践与洞察
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;原子化提交&lt;/strong&gt;：鼓励将复杂的变更分解为多个逻辑上独立的、遵循单一 &lt;code&gt;type&lt;/code&gt; 的提交。这是良好的 Git 实践，Conventional Commits 进一步强化了这一点。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;选择最合适的 &lt;code&gt;Type&lt;/code&gt;&lt;/strong&gt;：当一次提交包含多种类型的变更时 (应尽量避免)，选择最能代表其核心意图的 &lt;code&gt;type&lt;/code&gt;，并在 &lt;code&gt;Body&lt;/code&gt; 中详述其他变更。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;使用祈使句现在时&lt;/strong&gt;：推荐使用如 “Add feature”、“Fix bug” 的风格撰写 &lt;code&gt;Description&lt;/code&gt;，简洁、直接，如同给代码库下达指令。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;善用工具辅助&lt;/strong&gt;：社区提供了丰富的工具 (如 &lt;a class="link" href="https://commitizen-tools.github.io/commitizen/" target="_blank" rel="noopener"
+&gt;Commitizen&lt;/a&gt;，&lt;a class="link" href="https://commitlint.js.org/" target="_blank" rel="noopener"
+&gt;commitlint&lt;/a&gt; 等) 来帮助开发者遵循规范格式，并在提交前进行校验，降低遵循规范的门槛。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;团队共识与逐步采纳&lt;/strong&gt;：引入规范需要团队达成共识。可以通过分享、讨论和使用工具逐步推广。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="强大的工具支持"&gt;强大的工具支持
+&lt;/h2&gt;&lt;p&gt;有了 Conventional Commits 规范，以下工具可以极大地提升开发效率：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Commitizen&lt;/strong&gt;：一款交互式命令行工具，引导用户创建符合规范的提交信息。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Commitlint&lt;/strong&gt;：用于校验提交信息是否符合规范，通常与 Git Hooks (如 husky) 集成。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IDE 插件&lt;/strong&gt;：主流 IDE (如 VS Code，JetBrains IDEs 等) 均有插件提供模板、补全和校验支持。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;自动化版本与 Changelog 工具&lt;/strong&gt;：如 &lt;a class="link" href="https://github.com/semantic-release/semantic-release" target="_blank" rel="noopener"
+&gt;semantic-release&lt;/a&gt;，&lt;a class="link" href="https://github.com/goreleaser/chglog" target="_blank" rel="noopener"
+&gt;goreleaser/chglog&lt;/a&gt; 等，它们能够消费符合规范的提交历史，实现自动化版本发布和 Changelog 生成。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;AI 赋能 Commit 信息生成&lt;/strong&gt;：近年来，AI 的飞速发展也为 Commit 信息生成带来了新的可能。不少编辑器和工具已经集成了 AI 功能，能够根据你的代码修改生成建议的 Commit 信息，这在我的使用体验中也相当不错。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="参考资料"&gt;参考资料
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.conventionalcommits.org/en/v1.0.0/#specification" target="_blank" rel="noopener"
+&gt;Conventional Commits v1.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="补充说明"&gt;补充说明
+&lt;/h2&gt;&lt;p&gt;上面的文章是我写的之后，AI 帮助我进行了润色。&lt;/p&gt;</description></item></channel></rss>

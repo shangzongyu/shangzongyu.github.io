@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Clean on 我的世界</title><link>https://shangzongyu.github.io/tags/clean/</link><description>Recent content in Clean on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 05 Oct 2025 15:10:35 +0000</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/clean/index.xml" rel="self" type="application/rss+xml"/><item><title>两款优秀的免费 Mac 清理工具：Mole 和 Pretty Clean</title><link>https://shangzongyu.github.io/p/mac-mole-pretty-clean/</link><pubDate>Sun, 05 Oct 2025 15:10:35 +0000</pubDate><guid>https://shangzongyu.github.io/p/mac-mole-pretty-clean/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;Mac 用久了，系统缓存、应用残留、各种临时文件会悄悄占据大量存储空间。动辄几十 GB 的 “其他” 文件让人头疼不已。今天为大家介绍两款完全免费、开源的 Mac 清理神器：命令行工具 Mole 和图形界面应用 Pretty Clean，帮你轻松回收宝贵的磁盘空间。[1][2]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="mole命令行里的清理专家"&gt;Mole：命令行里的清理专家
+&lt;/h2&gt;&lt;p&gt;Mole 是一款专为深度清理而生的命令行工具，如其名字所示，像鼹鼠一样深入挖掘系统的各个角落，清除那些隐藏的垃圾文件。[1]&lt;/p&gt;
+&lt;h3 id="核心特色"&gt;核心特色
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;🐦 深度系统清理&lt;/strong&gt;&lt;br&gt;
+Mole 能够扫描并清理 20+ 个系统隐藏位置，包括用户应用缓存、系统日志、浏览器缓存、开发工具缓存等。一次清理就能回收几十甚至上百 GB 空间。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;📦 彻底应用卸载&lt;/strong&gt;&lt;br&gt;
+相比普通卸载只删除应用本体，Mole 能清理 22 个以上相关目录的残留文件，包括偏好设置、支持文件、WebKit 存储、插件等，比 CleanMyMac 和 Lemon 清理得更彻底。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;📊 交互式磁盘分析&lt;/strong&gt;&lt;br&gt;
+内置磁盘分析器让你像使用文件管理器一样浏览目录结构，快速定位大文件和占用空间最多的文件夹。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;⚡️ 轻量高效&lt;/strong&gt;&lt;br&gt;
+基于 Shell 脚本开发，体积小巧，运行飞快，没有任何广告和冗余功能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🧹 安全机制&lt;/strong&gt;&lt;br&gt;
+支持 dry-run 预览模式和白名单保护，确保不会误删重要文件。&lt;/p&gt;
+&lt;h3 id="安装和使用"&gt;安装和使用
+&lt;/h3&gt;&lt;p&gt;安装非常简单，只需一行命令：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 通过 Homebrew 安装&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install tw93/tap/mole
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 或者直接下载安装脚本&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl -fsSL https://raw.githubusercontent.com/tw93/mole/main/install.sh &lt;span class="p"&gt;|&lt;/span&gt; bash
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;常用命令介绍：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mo &lt;span class="c1"&gt;# 打开交互式菜单&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mo clean &lt;span class="c1"&gt;# 开始系统清理&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mo clean --dry-run &lt;span class="c1"&gt;# 预览模式，查看会清理什么但不实际删除&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mo clean --whitelist &lt;span class="c1"&gt;# 管理保护清单，避免删除重要缓存&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mo uninstall &lt;span class="c1"&gt;# 深度卸载应用&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mo analyze &lt;span class="c1"&gt;# 磁盘空间分析&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mo update &lt;span class="c1"&gt;# 更新 Mole 到最新版本&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="实际使用体验"&gt;实际使用体验
+&lt;/h3&gt;&lt;p&gt;首次使用建议先执行 &lt;code&gt;mo clean --dry-run&lt;/code&gt; 查看清理预览。Mole 会详细列出即将清理的文件类型和大小，让你心中有数。比如：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-gdscript3" data-lang="gdscript3"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;▶&lt;/span&gt; &lt;span class="n"&gt;System&lt;/span&gt; &lt;span class="n"&gt;essentials&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="err"&gt;✓&lt;/span&gt; &lt;span class="n"&gt;User&lt;/span&gt; &lt;span class="n"&gt;app&lt;/span&gt; &lt;span class="n"&gt;cache&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;45.2&lt;/span&gt;&lt;span class="n"&gt;GB&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="err"&gt;✓&lt;/span&gt; &lt;span class="n"&gt;User&lt;/span&gt; &lt;span class="n"&gt;app&lt;/span&gt; &lt;span class="n"&gt;logs&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;2.1&lt;/span&gt;&lt;span class="n"&gt;GB&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="err"&gt;✓&lt;/span&gt; &lt;span class="n"&gt;Trash&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;12.3&lt;/span&gt;&lt;span class="n"&gt;GB&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;▶&lt;/span&gt; &lt;span class="n"&gt;Browser&lt;/span&gt; &lt;span class="n"&gt;cleanup&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="err"&gt;✓&lt;/span&gt; &lt;span class="n"&gt;Chrome&lt;/span&gt; &lt;span class="n"&gt;cache&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;8.4&lt;/span&gt;&lt;span class="n"&gt;GB&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="err"&gt;✓&lt;/span&gt; &lt;span class="n"&gt;Safari&lt;/span&gt; &lt;span class="n"&gt;cache&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;2.1&lt;/span&gt;&lt;span class="n"&gt;GB&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;▶&lt;/span&gt; &lt;span class="n"&gt;Developer&lt;/span&gt; &lt;span class="n"&gt;tools&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="err"&gt;✓&lt;/span&gt; &lt;span class="n"&gt;Xcode&lt;/span&gt; &lt;span class="n"&gt;derived&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;9.1&lt;/span&gt;&lt;span class="n"&gt;GB&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="err"&gt;✓&lt;/span&gt; &lt;span class="ne"&gt;Node&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;js&lt;/span&gt; &lt;span class="n"&gt;cache&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;14.2&lt;/span&gt;&lt;span class="n"&gt;GB&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果你是开发者，&lt;code&gt;mo clean --whitelist&lt;/code&gt; 功能特别实用，可以保护 HuggingFace 模型、Playwright 浏览器等特殊缓存不被清理。[1]&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="pretty-clean颜值与实力并存的-gui-清理工具"&gt;Pretty Clean：颜值与实力并存的 GUI 清理工具
+&lt;/h2&gt;&lt;p&gt;Pretty Clean 是一款界面美观、操作简单的图形化清理应用，非常适合喜欢可视化操作的用户。[2]&lt;/p&gt;
+&lt;h3 id="核心特色-1"&gt;核心特色
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;🎨 现代化界面设计&lt;/strong&gt;&lt;br&gt;
+采用符合 Apple 设计语言的现代界面，操作直观友好，与系统应用浑然一体。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🔍 多重扫描策略&lt;/strong&gt;&lt;br&gt;
+针对用户文件、系统缓存、应用数据、下载目录等采用不同扫描策略，最大化释放磁盘空间。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🛡️ 隐私安全保障&lt;/strong&gt;&lt;br&gt;
+所有扫描过程完全透明，可以清楚看到扫描的每个文件，承诺不上传任何信息，绝对保护用户隐私。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;👨‍💻 开发者模式&lt;/strong&gt;&lt;br&gt;
+支持扫描和清理各种开发工具留下的编译缓存，是市面上唯一支持开发者选项的磁盘清理工具。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;⚙️ 多芯片支持&lt;/strong&gt;&lt;br&gt;
+完美支持 Intel 和 Apple Silicon (M1/M2/M3) 芯片，充分发挥硬件性能，扫描速度极快。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;💾 小巧强大&lt;/strong&gt;&lt;br&gt;
+安装包不到 6MB，但功能毫不妥协。&lt;/p&gt;
+&lt;h3 id="安装和使用-1"&gt;安装和使用
+&lt;/h3&gt;&lt;p&gt;安装同样简单：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 通过 Homebrew 安装&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install --cask prettyclean
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 或者从官网下载 DMG 安装包&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# https://www.prettyclean.cc/en/download&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;安装完成后，直接从启动台打开 Pretty Clean，按照界面提示进行操作即可：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;点击 “开始扫描” 按钮&lt;/li&gt;
+&lt;li&gt;等待扫描完成，查看扫描结果&lt;/li&gt;
+&lt;li&gt;选择要清理的项目&lt;/li&gt;
+&lt;li&gt;点击 “清理” 按钮完成&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="新增功能亮点"&gt;新增功能亮点
+&lt;/h3&gt;&lt;p&gt;Pretty Clean 在最新版本中增加了应用卸载功能，能够扫描应用包内容、缓存等，执行完整的数据删除，让磁盘释放更多空间。[2]&lt;/p&gt;
+&lt;p&gt;忽略列表功能让你可以将特定应用或目录添加到保护清单，避免那些需要缓存加速的应用被误清理。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="使用建议"&gt;使用建议
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;对于命令行爱好者和开发者&lt;/strong&gt;&lt;br&gt;
+推荐使用 Mole，其深度清理能力和开发者友好的特性能让你的 Mac 保持最佳状态。dry-run 和白名单功能提供了极高的安全性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;对于普通用户和 GUI 偏好者&lt;/strong&gt;&lt;br&gt;
+Pretty Clean 是更好的选择，美观的界面和简单的操作流程让清理变得轻松愉快。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;清理频率建议&lt;/strong&gt;&lt;br&gt;
+建议每月清理一次，或者当磁盘空间不足时进行清理。两款工具都很安全，但首次使用时建议先备份重要数据。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;无论选择哪款工具，这两个免费开源的清理神器都能帮你有效管理 Mac 的存储空间，让系统重新变得轻盈快速。赶紧试试吧，相信你会爱上这种 “断舍离” 后的清爽感觉！&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;安装链接&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mole：&lt;code&gt;brew install tw93/tap/mole&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Pretty Clean：&lt;code&gt;brew install --cask prettyclean&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;特别感谢&lt;/strong&gt;&lt;br&gt;
+本文由作者与 AI 协同创作完成，内容融合了真实应用体验和前沿工具解读，希望为大家带来实用且高效的 Mac 使用参考。&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://github.com/tw93/Mole" target="_blank" rel="noopener"
+&gt;1&lt;/a&gt;
+&lt;a class="link" href="https://www.prettyclean.cc/en" target="_blank" rel="noopener"
+&gt;2&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

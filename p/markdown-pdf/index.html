@@ -1,0 +1,171 @@
+<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content="我现在写文档使用 Markdown 进行编写，有时候需要文档发送给其他人，如果对方是程序员还好，如果不是他们不懂 Markdown，如果文档里面包含图片，对他们就相当于用不了。"><title>Tips: Markdown 导出为 PDF</title><link rel=canonical href=https://shangzongyu.github.io/p/markdown-pdf/><link rel=stylesheet href=/scss/style.min.833d6eed45de56f48306bf57268d5b8cdfc8a60e8e7bdc99810464fcd033f7c6.css><meta property='og:title' content="Tips: Markdown 导出为 PDF"><meta property='og:description' content="我现在写文档使用 Markdown 进行编写，有时候需要文档发送给其他人，如果对方是程序员还好，如果不是他们不懂 Markdown，如果文档里面包含图片，对他们就相当于用不了。"><meta property='og:url' content='https://shangzongyu.github.io/p/markdown-pdf/'><meta property='og:site_name' content='我的世界'><meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='markdown'><meta property='article:tag' content='pdf'><meta property='article:published_time' content='2024-01-08T10:07:22+00:00'><meta property='article:modified_time' content='2024-01-08T10:07:22+00:00'><meta name=twitter:title content="Tips: Markdown 导出为 PDF"><meta name=twitter:description content="我现在写文档使用 Markdown 进行编写，有时候需要文档发送给其他人，如果对方是程序员还好，如果不是他们不懂 Markdown，如果文档里面包含图片，对他们就相当于用不了。"><link rel="shortcut icon" href=/favicon.png></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切换菜单>
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar_hu_2219dbbcf7b59ddb.png width=300 height=256 class=site-logo loading=lazy alt=Avatar></a></figure><div class=site-meta><h1 class=site-name><a href=/>我的世界</a></h1><h2 class=site-description>生命不熄，Coding 不止</h2></div></header><ol class=menu-social><li><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank title=GitHub rel=me><svg class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg>
+<span>Home</span></a></li><li><a href=/archives/><svg class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+<span>Archives</span></a></li><li><a href=/search/><svg class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+<span>Search</span></a></li><li><a href=/links/><svg class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg>
+<span>Links</span></a></li><li class=menu-bottom-section><ol class=menu><li id=dark-mode-toggle><svg class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<svg class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<span>暗色模式</span></li></ol></li></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目录</h2><div class=widget--toc><nav id=TableOfContents><ul><li><a href=#使用编辑器>使用编辑器</a></li><li><a href=#使用-pandoc>使用 pandoc</a><ul><li><a href=#分析问题>分析问题</a></li><li><a href=#解决问题>解决问题</a></li><li><a href=#技巧>技巧</a></li><li><a href=#如何批量转换>如何批量转换</a><ul><li><a href=#shell-脚本>Shell 脚本</a></li><li><a href=#python-脚本>Python 脚本</a></li></ul></li><li><a href=#文档添加标题作者等信息>文档添加标题、作者等信息</a></li><li><a href=#block-quotetable-以及-list-没有正确渲染>block quote、table 以及 list 没有正确渲染</a></li><li><a href=#block-code-添加-highlight>block code 添加 highlight</a></li><li><a href=#给-section-添加编号以及整个文档添加目录>给 section 添加编号以及整个文档添加目录</a></li></ul></li><li><a href=#faq>FAQ</a><ul><li><a href=#中文字体选择>中文字体选择</a></li><li><a href=#-latex-error-file--bookmarksty-not-found>``! LaTeX Error: File <code>bookmark.sty' not found.</code></a></li><li><a href=#如果使用-pandoc-的版本小于-20>如果使用 Pandoc 的版本小于 2.0</a></li></ul></li><li><a href=#参考文档>参考文档</a></li></ul></nav></div></section></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><div class=article-title-wrapper><h2 class=article-title><a href=/p/markdown-pdf/>Tips: Markdown 导出为 PDF</a></h2><h3 class=article-subtitle>我现在写文档使用 Markdown 进行编写，有时候需要文档发送给其他人，如果对方是程序员还好，如果不是他们不懂 Markdown，如果文档里面包含图片，对他们就相当于用不了。</h3></div><footer class=article-time><div><svg class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published datetime=2024-01-08T10:07:22Z>Jan 08, 2024</time></div><div><svg class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>阅读时长: 4 分钟</time></div></footer></div></header><section class=article-content><p>我现在写文档使用 Markdown 进行编写，有时候需要文档发送给其他人，如果对方是程序员还好，如果不是他们不懂 Markdown，如果文档里面包含图片，对他们就相当于用不了。</p><h2 id=使用编辑器>使用编辑器</h2><p>最简单的方式就是使用 Typora、VSCode 可以使用插件 <a class=link href="https://open-vsx.org/vscode/item?itemName=yzane.markdown-pdf" target=_blank rel=noopener>Markdown PDF</a> 这种编辑器直接进行导出就可了，当然还要有另外一种方法，使用命令行 <code>pandoc</code> 进行转换。</p><h2 id=使用-pandoc>使用 pandoc</h2><p>Pandoc 是一个进行文档转换的工具，可以转换很多种文档，当然也包括把 Markdown 转为 PDF，使用如下命令就可以把 Markdown 文档转换为 PDF 文档：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>pandoc -o output.pdf input.md
+</span></span></code></pre></td></tr></table></div></div><blockquote><p>PS：前提是已经安装了 Pandoc，如果没有安装使用 <code>brew install pandoc</code> 进行安装</p></blockquote><p>这样导出如果是英文没有任何问题，如果有中文则会报错，类似的报错内容如下：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Error producing PDF.
+</span></span><span class=line><span class=cl>! LaTeX Error: Unicode character 转 (U+8F6C)
+</span></span><span class=line><span class=cl>               not set up for use with LaTeX.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>See the LaTeX manual or LaTeX Companion for explanation.
+</span></span><span class=line><span class=cl>Type  H &lt;return&gt;  for immediate help.
+</span></span><span class=line><span class=cl> ...                                              
+</span></span><span class=line><span class=cl>                                                  
+</span></span><span class=line><span class=cl>l.97 Pdf}
+</span></span></code></pre></td></tr></table></div></div><h3 id=分析问题>分析问题</h3><p>Pandoc 把 Markdown 转为 PDF 文件，实际有两步：</p><ol><li>把 Markdown 文件转换为 Latex 文件</li><li>调用系统的 <code>pdflatex</code>，<code>xelatex</code> 或者其他 TeX 命令，将 <code>.tex</code> 文件转换为最终的 PDF 文件</li></ol><p>Pandoc 默认使用的 <code>pdflatex</code> 命令无法处理 Unicode 字符，如果要把包含中文、引用、表格或者其他比较复杂的格式的 Markdown 文件转为 PDF，在生成 PDF 的过程中会报错。</p><h3 id=解决问题>解决问题</h3><p>使用 <code>xelatex</code> 来处理中文，而且还需要使用 <code>CJKmainfont</code> 指定支持中文的字体。</p><p>可以使用以下的命令生成 PDF 文件：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>pandoc --pdf-engine<span class=o>=</span>xelatex -V <span class=nv>CJKmainfont</span><span class=o>=</span><span class=s2>&#34;LXGW WenKai Mono&#34;</span> test.md -o test1.pdf
+</span></span></code></pre></td></tr></table></div></div><p>如果直接执行上面的命令会报错，因为 <code>xelatex</code> 没有安装，接下来我们来安装 <code>xelatex</code>。</p><p><code>xelatex</code> 可以用各种 latex 集成包来安装使用，例如 texlive 等。这里使用 <a class=link href=https://yihui.org/tinytex/ target=_blank rel=noopener>tinytex</a> 这个包，这个包简单小巧。</p><blockquote><p>如果之前有安装过 textlive 相关的包，需要删除，不然会有冲突。</p></blockquote><p>安装：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>curl -sL <span class=s2>&#34;https://yihui.name/gh/tinytex/tools/install-unx.sh&#34;</span> <span class=p>|</span> sh
+</span></span></code></pre></td></tr></table></div></div><p>安装成功后，我们还需要安一些扩展，执行如下命令：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>tlmgr install unicode-math filehook xecjk xltxtra realscripts fancyhdr lastpage ctex ms cjk ulem environ trimspaces zhnumber collection-fontsrecommended bookmark
+</span></span></code></pre></td></tr></table></div></div><p>扩展安装成功后，执行命令就可以把 Markdown 文档转换为 PDF 文档了。</p><h3 id=技巧>技巧</h3><p>介绍一些小技巧。</p><h3 id=如何批量转换>如何批量转换</h3><p>介绍两个方法：</p><ol><li>使用 Shell 脚本</li><li>使用 Python 脚本</li></ol><h4 id=shell-脚本>Shell 脚本</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl><span class=cp>#!/usr/bin/env bash
+</span></span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>DIR</span><span class=o>=</span><span class=s2>&#34;.&#34;</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=o>[[</span> <span class=nv>$#</span> <span class=o>==</span> <span class=m>1</span> <span class=o>]]</span><span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>  <span class=nv>DIR</span><span class=o>=</span><span class=nv>$1</span>
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;Your Process Dir is: </span><span class=si>${</span><span class=nv>DIR</span><span class=si>}</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>FILES</span><span class=o>=</span><span class=k>$(</span>ls <span class=s2>&#34;</span><span class=si>${</span><span class=nv>DIR</span><span class=si>}</span><span class=s2>&#34;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>for</span> FILE in <span class=nv>$FILES</span><span class=p>;</span> <span class=k>do</span>
+</span></span><span class=line><span class=cl>  <span class=nv>FILENAME</span><span class=o>=</span><span class=k>$(</span>basename -- <span class=s2>&#34;</span><span class=nv>$FILE</span><span class=s2>&#34;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl>  <span class=nv>EXT</span><span class=o>=</span><span class=s2>&#34;</span><span class=si>${</span><span class=nv>FILENAME</span><span class=p>##*.</span><span class=si>}</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=nv>FILENAME</span><span class=o>=</span><span class=s2>&#34;</span><span class=si>${</span><span class=nv>FILENAME</span><span class=p>%.*</span><span class=si>}</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=o>[[</span> <span class=si>${</span><span class=nv>EXT</span><span class=si>}</span> <span class=o>==</span> <span class=s2>&#34;md&#34;</span> <span class=o>]]</span><span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;</span><span class=si>${</span><span class=nv>DIR</span><span class=si>}</span><span class=s2>/</span><span class=si>${</span><span class=nv>FILENAME</span><span class=si>}</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl>    pandoc --pdf-engine<span class=o>=</span>xelatex -V <span class=nv>mainfont</span><span class=o>=</span><span class=s1>&#39;LXGW WenKai Mono&#39;</span> <span class=s2>&#34;</span><span class=si>${</span><span class=nv>DIR</span><span class=si>}</span><span class=s2>/</span><span class=si>${</span><span class=nv>FILENAME</span><span class=si>}</span><span class=s2>&#34;</span>.md -o <span class=s2>&#34;</span><span class=si>${</span><span class=nv>DIR</span><span class=si>}</span><span class=s2>/</span><span class=si>${</span><span class=nv>FILENAME</span><span class=si>}</span><span class=s2>&#34;</span>.pdf
+</span></span><span class=line><span class=cl>  <span class=k>fi</span>
+</span></span><span class=line><span class=cl><span class=k>done</span>
+</span></span></code></pre></td></tr></table></div></div><h4 id=python-脚本>Python 脚本</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-py data-lang=py><span class=line><span class=cl><span class=kn>from</span> <span class=nn>pathlib</span> <span class=kn>import</span> <span class=n>Path</span>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>os</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>work_dir</span> <span class=o>=</span> <span class=n>Path</span><span class=o>.</span><span class=n>cwd</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>export_pdf_dir</span> <span class=o>=</span> <span class=n>work_dir</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=ow>not</span> <span class=n>export_pdf_dir</span><span class=o>.</span><span class=n>exists</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>export_pdf_dir</span><span class=o>.</span><span class=n>mkdir</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=n>md_file</span> <span class=ow>in</span> <span class=nb>list</span><span class=p>(</span><span class=n>work_dir</span><span class=o>.</span><span class=n>glob</span><span class=p>(</span><span class=s2>&#34;*.md&#34;</span><span class=p>)):</span>
+</span></span><span class=line><span class=cl>    <span class=n>md_file_name</span> <span class=o>=</span> <span class=n>md_file</span><span class=o>.</span><span class=n>name</span>
+</span></span><span class=line><span class=cl>    <span class=n>pdf_file_name</span> <span class=o>=</span> <span class=n>md_file_name</span><span class=o>.</span><span class=n>replace</span><span class=p>(</span><span class=s2>&#34;.md&#34;</span><span class=p>,</span> <span class=s2>&#34;.pdf&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>pdf_file</span> <span class=o>=</span> <span class=n>export_pdf_dir</span> <span class=o>/</span> <span class=n>pdf_file_name</span>
+</span></span><span class=line><span class=cl>    <span class=n>cmd</span> <span class=o>=</span> <span class=s2>&#34;pandoc &#39;</span><span class=si>{}</span><span class=s2>&#39; -o &#39;</span><span class=si>{}</span><span class=s2>&#39; --pdf-engine=xelatex -V mainfont=&#39;LXGW WenKai Mono&#39;&#34;</span><span class=o>.</span><span class=n>format</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>        <span class=n>md_file</span><span class=p>,</span> <span class=n>pdf_file</span>
+</span></span><span class=line><span class=cl>    <span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>os</span><span class=o>.</span><span class=n>system</span><span class=p>(</span><span class=n>cmd</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=文档添加标题作者等信息>文档添加标题、作者等信息</h3><p>Pandoc 支持 <a class=link href=https://pandoc.org/MANUAL.html#extension-yaml_metadata_block target=_blank rel=noopener>YAML</a> 格式的 Header，在文件的最前面添加 YAML 格式内容，如下：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl><span class=nn>---</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>title</span><span class=p>:</span><span class=w> </span><span class=l>我的中文文档</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>author</span><span class=p>:</span><span class=w> </span><span class=l>shine</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>date</span><span class=p>:</span><span class=w> </span><span class=ld>2024-01-08</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nn>---</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=block-quotetable-以及-list-没有正确渲染>block quote、table 以及 list 没有正确渲染</h3><p>Pandoc 渲染 block quote、table 以及 list 的时候，需要在它之前添加一个空行。</p><p>如果 block quote 中每一行渲染成 PDF 未能正确换行，所有行的文字都跑到了一行，可以通过强制在原 block quote 的每一行后面加上空格来解决这个。</p><h3 id=block-code-添加-highlight>block code 添加 highlight</h3><p>Pandoc 支持给 block code 加上背景高亮，并提供了不同的主题，而且支持了非常多的语言。要列出 Pandoc 提供的高亮方案，使用下面命令，</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl><span class=c1># 列出 Pandoc 提供的高亮方案</span>
+</span></span><span class=line><span class=cl>pandoc --list-highlight-styles
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 要列出所有支持的语言</span>
+</span></span><span class=line><span class=cl>pandoc --list-highlight-languages
+</span></span></code></pre></td></tr></table></div></div><p>要使用语法高亮，Markdown 文件中的 block code 必须指定语言，同时在命令行使用 <code>--highlight-style</code> 选项，例如：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>pandoc --pdf-engine<span class=o>=</span>xelatex --highlight-style zenburn test.md -o test.pdf
+</span></span></code></pre></td></tr></table></div></div><h3 id=给-section-添加编号以及整个文档添加目录>给 section 添加编号以及整个文档添加目录</h3><p>默认情况下，生成的 PDF 不含目录，同时各级标题不含编号，仅仅字体大小有变化。</p><ul><li><code>-N</code> 给各个 section 加上编号</li><li><code>--toc</code> 加上目录</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>pandoc --pdf-engine<span class=o>=</span>xelatex --toc -N -o test.pdf test.md
+</span></span></code></pre></td></tr></table></div></div><h2 id=faq>FAQ</h2><h3 id=中文字体选择>中文字体选择</h3><p><code>CJKmainfont</code> 后面跟的是支持中文的字体名称。如何找到支持中文的字体呢，</p><ul><li><p>首先，需要知道所使用的语言的 <code>language code</code>，例如，中文 (即 Chinese) 的 <code>language code</code> 是 zh</p></li><li><p>然后使用 <code>fc-list</code> 命令查看支持系统安装的中文字体</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>fc-list :lang<span class=o>=</span>zh <span class=c1># zh 是中文的 「language code」</span>
+</span></span></code></pre></td></tr></table></div></div></li></ul><h3 id=-latex-error-file--bookmarksty-not-found>``! LaTeX Error: File <code>bookmark.sty' not found.</code></h3><p>完整错误如下：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Error producing PDF.
+</span></span><span class=line><span class=cl>! LaTeX Error: File `bookmark.sty&#39; not found.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Type X to quit or &lt;RETURN&gt; to proceed,
+</span></span><span class=line><span class=cl>or enter new name. (Default extension: sty)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Enter file name: 
+</span></span><span class=line><span class=cl>! Emergency stop.
+</span></span><span class=line><span class=cl>&lt;read *&gt; 
+</span></span><span class=line><span class=cl>         
+</span></span><span class=line><span class=cl>l.94 \IfFileExists
+</span></span></code></pre></td></tr></table></div></div><p>使用 <code>tlmr</code> 安装缺失的 bookstyle，如下：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>lmgr install bookmark
+</span></span></code></pre></td></tr></table></div></div><h3 id=如果使用-pandoc-的版本小于-20>如果使用 Pandoc 的版本小于 2.0</h3><p>在 Pandoc 2.0 版本之后，原有的 <code>--pdf-engine</code> 被 <code>--latex-engine</code> 取代了，因此要使用如下命令：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>pandoc --latex-engine<span class=o>=</span>xelatex -V <span class=nv>mainfont</span><span class=o>=</span><span class=s1>&#39;LXGW WenKai Mono&#39;</span> test.md -o test.pdf
+</span></span></code></pre></td></tr></table></div></div><h2 id=参考文档>参考文档</h2><ul><li><a class=link href=https://jdhao.github.io/2017/12/10/pandoc-markdown-with-chinese/ target=_blank rel=noopener>纯文本做笔记 &mdash; 使用 Pandoc 把 Markdown 转为 PDF 文件</a></li><li><a class=link href=https://blog.kelu.org/tech/2022/03/09/pandoc-md-to-pdf-with-chinese-charator.html target=_blank rel=noopener>https://blog.kelu.org/tech/2022/03/09/pandoc-md-to-pdf-with-chinese-charator.html</a></li><li><a class=link href=https://sspai.com/post/47110 target=_blank rel=noopener>如何把 Markdown 文件批量转换为 PDF</a></li></ul></section><footer class=article-footer><section class=article-tags><a href=/tags/markdown/>Markdown</a>
+<a href=/tags/pdf/>Pdf</a></section><section class=article-copyright><svg class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
+<span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><div class=disqus-container><div id=disqus_thread></div><script>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//hugo-theme-stack.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><style>.disqus-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding)}</style><script>window.addEventListener("onColorSchemeChange",e=>{typeof DISQUS=="object"&&DISQUS.reset({reload:!0})})</script><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2026 我的世界</section><section class=powerby>使用 <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> 构建<br>主题 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.33.0>Stack</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 设计</section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js defer></script><script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>
