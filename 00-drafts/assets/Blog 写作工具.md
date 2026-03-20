@@ -1,3 +1,0 @@
-## MiaoYan
-
-## Typora

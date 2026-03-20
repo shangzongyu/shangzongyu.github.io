@@ -10,9 +10,9 @@ comments: true
 draft: true
 ---
 
-## 浏览器 Comet
+## AI 浏览器 - Comet
 
-## Markdown 编辑器妙言
+## Markdown 编辑器 - 妙言
 
 ## Mapple - Chrome 浏览器插件
 
@@ -32,6 +32,5 @@ GitHub：<http://github.com/sbarex/SourceCodeSyntaxHighlight>
 - 支持 Git 和 Mercurial 版本控制，能高亮显示代码变更；
 - 提供命令行工具，支持批量转换代码文件为 HTML 或 RTF 格式；
 - 可处理无扩展名的纯文本文件，智能识别文件类型。
-  
 
 下载应用后拖到 Applications 文件夹，首次运行需在系统偏好设置中启用 Quick Look 扩展即可使用。

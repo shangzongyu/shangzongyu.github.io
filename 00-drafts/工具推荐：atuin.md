@@ -1,1 +1,0 @@
-https://terminaltrove.com/atuin/
