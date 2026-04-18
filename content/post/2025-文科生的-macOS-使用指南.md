@@ -12,6 +12,8 @@ draft: true
 
 ## AI 浏览器 - Comet
 
+TODO 添加介绍，介绍在 2025-我使用的工具_浏览器篇.md 文件中，添加引用
+
 ## Markdown 编辑器 - 妙言
 
 ## Mapple - Chrome 浏览器插件
