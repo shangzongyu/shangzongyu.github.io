@@ -13,7 +13,7 @@ tags:
 weight: 1
 ---
 
->  主要收集一些生成图片的 Prompt。
+> 主要收集一些生成图片的 Prompt。
 
 ## 九宫格
 
@@ -33,7 +33,7 @@ Create a 3x3 grid of playful winter portraits featuring the person from the atta
 
 ### 九宫格 - 海马体精致写真
 
->  来源：<https://x.com/msjiaozhu/status/2004194584797315341?s=12>
+> 来源：[https://x.com/msjiaozhu/status/2004194584797315341?s=12](https://x.com/msjiaozhu/status/2004194584797315341?s=12)
 
 #### 女生版
 
@@ -225,7 +225,7 @@ Create a 3x3 grid of playful winter portraits featuring the person from the atta
 
 ## 茶系伪素颜
 
-> 来源：<https://x.com/VoxcatAI/status/2013124498627912188>
+> 来源：[https://x.com/VoxcatAI/status/2013124498627912188](https://x.com/VoxcatAI/status/2013124498627912188)
 
 当下流行的“茶系伪素颜”（Tea Style / No-Makeup Makeup）或“白开水妆容”（Clean Girl Aesthetic）。
 
@@ -235,32 +235,32 @@ Create a 3x3 grid of playful winter portraits featuring the person from the atta
 
 - 特点： 并不是完全的哑光，也不是油腻的水光，而是像陶瓷或刚剥壳鸡蛋一样的半哑光奶油肌。
 - 细节：
-	- 轻薄遮瑕： 保留了皮肤的一点点质感（甚至轻微的毛孔或痣），没有假面感。
-	- 高光点缀： 重点在面中、鼻尖、唇峰和眉骨处有明显的光泽感（Highlight），让面部立体饱满。
-	- 色调： 偏向中性或暖调的象牙白，与颈部肤色自然衔接。
+  - 轻薄遮瑕： 保留了皮肤的一点点质感（甚至轻微的毛孔或痣），没有假面感。
+  - 高光点缀： 重点在面中、鼻尖、唇峰和眉骨处有明显的光泽感（Highlight），让面部立体饱满。
+  - 色调： 偏向中性或暖调的象牙白，与颈部肤色自然衔接。
 
 ### 2. 眉妆：强调“毛流感” (野生眉)
 
 - 特点： 几张图中的眉毛都非常自然，没有生硬的边框。
 - 细节：
-    - 根根分明： 眉头部分的眉毛向上梳理，强调一根一根的真实毛发感（Wild Brows）。
-    - 颜色： 眉色比发色浅一号或保持一致（灰棕色为主），显得温柔不压抑。
-    - 形状： 顺着原本的眉骨走势，稍作延长，带有轻微的弧度，不刻意强调眉峰。
+  - 根根分明： 眉头部分的眉毛向上梳理，强调一根一根的真实毛发感（Wild Brows）。
+  - 颜色： 眉色比发色浅一号或保持一致（灰棕色为主），显得温柔不压抑。
+  - 形状： 顺着原本的眉骨走势，稍作延长，带有轻微的弧度，不刻意强调眉峰。
 
 ### 3. 眼妆：做减法，重神采
 
 - 特点： 弱化眼影颜色，强调睫毛和眼神光。
 - 细节：
-    - 眼影： 几乎看不出明显的眼影色块，主要使用低饱和度的大地色（杏色、奶茶色）大面积铺底，主要为了消肿和加深轮廓，而非显色。
-    - 眼线： 极细的内眼线（Tightline），通常只画到眼尾稍微拉出一点点，或者干脆只填充睫毛根部，让眼睛看起来有神即可。
-    - 睫毛： 强调“太阳花”效果，睫毛夹得很翘，根根分明，没有苍蝇腿，也没有浓密的假睫毛感。
+  - 眼影： 几乎看不出明显的眼影色块，主要使用低饱和度的大地色（杏色、奶茶色）大面积铺底，主要为了消肿和加深轮廓，而非显色。
+  - 眼线： 极细的内眼线（Tightline），通常只画到眼尾稍微拉出一点点，或者干脆只填充睫毛根部，让眼睛看起来有神即可。
+  - 睫毛： 强调“太阳花”效果，睫毛夹得很翘，根根分明，没有苍蝇腿，也没有浓密的假睫毛感。
 
 ### 4. 腮红与修容：营造“氛围感”
 
 - 特点： 腮红面积较大，与修容融合，打造自然好气色。
 - 细节：
-	- 色系： 主要是收敛色，如裸杏色、干枯玫瑰色、奶油橘色。
-	- 位置： 并没有打在苹果肌正中央，而是稍稍向侧面颧骨延伸。
+  - 色系： 主要是收敛色，如裸杏色、干枯玫瑰色、奶油橘色。
+  - 位置： 并没有打在苹果肌正中央，而是稍稍向侧面颧骨延伸。
 
 ### 5. 唇妆：主打“水光嘟嘟唇”
 
@@ -268,10 +268,9 @@ Create a 3x3 grid of playful winter portraits featuring the person from the atta
 - 颜色： 低饱和度色系，如肉桂色、裸米色、冰透茶色、浅豆沙色（MLBB - My Lips But Better）。
 - 模糊唇线： 唇周边缘晕染开，弱化唇峰的锐利感，看起来更加年轻、无辜且亲和力强。
 - 整体风格：
-
-    - 清冷感 (Cool/Detached): 表情管理配合妆容，带有一种疏离但高级的美感。
-    - 氧气感 (Oxygen/Fresh): 干净、通透，没有攻击性。
-    - 高级灰/低饱和 (Low Saturation): 全脸没有高亮度的色彩，色彩统一和谐。
+  - 清冷感 (Cool/Detached): 表情管理配合妆容，带有一种疏离但高级的美感。
+  - 氧气感 (Oxygen/Fresh): 干净、通透，没有攻击性。
+  - 高级灰/低饱和 (Low Saturation): 全脸没有高亮度的色彩，色彩统一和谐。
 - 适用场景：这种妆容非常适合日常通勤、约会、证件照以及时尚杂志的特写拍摄，因为它耐看且能最大程度凸显个人的五官底子。
 
 ### 典型的 Promot 如下
@@ -298,7 +297,7 @@ Camera: High-resolution photography, 85mm portrait lens, f/2.0.
 no heavy makeup, no sharp contouring, no thick eyeliner, no matte finish, no dark eyeshadow, no aggressive features.
 ```
 
-### Promot 
+### Promot
 
 ```json
 A hyper-realistic editorial portrait close-up of [贾静雯], . [青春]. The focus is sharply on facial features and pre-defined "pseudo-no-makeup" details:
@@ -322,7 +321,7 @@ Camera: High-resolution photography, 85mm portrait lens, f/2.0.
 no heavy makeup, no sharp contouring, no thick eyeliner, no matte finish, no dark eyeshadow, no aggressive features.
 ```
 
-## Ana de Armas in a unique style 
+## Ana de Armas in a unique style
 
 ```json
 {
@@ -428,7 +427,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 使用原图为：
 
-![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260105_nano-banana-00.webp
+![]([https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260105_nano-banana-00.webp](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260105_nano-banana-00.webp)
 
 ### 1
 
