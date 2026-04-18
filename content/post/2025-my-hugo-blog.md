@@ -14,7 +14,7 @@ draft: true
 
 - Typora
 - MiaoYan
--  Obsidian
+- Obsidian
 
 ## 工具
 
