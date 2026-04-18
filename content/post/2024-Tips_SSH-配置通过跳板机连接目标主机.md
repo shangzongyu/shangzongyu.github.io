@@ -12,11 +12,11 @@ weight: 1
 ## 前言
 
 - 跳板机
-    - private key：jumper-server.pem
-    - ip：8.217.228.125
+  - private key：jumper-server.pem
+  - ip：8.217.228.125
 - 目的主机
-    - private key：target-server.pem
-    - ip：192.168.2.9
+  - private key：target-server.pem
+  - ip：192.168.2.9
 
 ## 使用 SSH Config
 

@@ -117,7 +117,7 @@ verbose=false
 
 ![tiger-vnc](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_tiger-vnc.webp)
 
-[TigerVNC Viewer](https://tigervnc.org/) 
+[TigerVNC Viewer](https://tigervnc.org/)
 
 - 优点： 支持多平台，性能好
 - 缺点：界面比较丑(自认为的缺点)
@@ -155,3 +155,4 @@ ERROR: ../wayvnc/src/main.c: 2069: Failed to initialise wayland`
 
 原因：因为 SSH 会话没有继承到图形用户会话的 Wayland 环境变量，wayvnc 需要连接正在运行的 Wayland 会话才能工作，而 SSH 默认没有 Wayland 图形会话上下文。
 解决：登录图形终端然后执行 `wayvnc 0.0.0.0`
+

@@ -26,8 +26,8 @@ $ stat / | awk '/Birth: /{print $2 " " substr($3,1,5)}'
 ```sh
 $ stat /
  File: /
-  Size: 230       	Blocks: 0          IO Block: 4096   directory
-Device: 22h/34d	Inode: 210115      Links: 1
+  Size: 230        Blocks: 0          IO Block: 4096   directory
+Device: 22h/34d Inode: 210115      Links: 1
 Access: (0755/drwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
 Access: 2023-07-28 05:52:36.000000000 +0800
 Modify: 2024-01-14 10:23:24.184641738 +0800
@@ -40,7 +40,7 @@ Birth: 2023-07-28 11:19:08.063247240 +0800
 还有一个通用的方法如下：
 
 ```sh
-$ tune2fs: Bad magic number in super-block while trying to open /dev/vdb1
+tune2fs: Bad magic number in super-block while trying to open /dev/vdb1
 ```
 
 > PS：有可能报错，推荐第一种方法。
@@ -50,7 +50,7 @@ $ tune2fs: Bad magic number in super-block while trying to open /dev/vdb1
 > 包括：Debian/Ubuntu/Mint 等。
 
 ```sh
-$ sudo head -n1 /var/log/installer/syslog
+sudo head -n1 /var/log/installer/syslog
 ```
 
 > PS：虚拟机或者容器安装有可能会报错：没有 syslog 文件。

@@ -50,11 +50,11 @@ export PKG_CONFIG_PATH="/usr/local/opt/qt@5/lib/pkgconfig"
 
 > PS：这个吐槽下 Qt Creator 的设计，不能让用户自己直接通过 Add 输入路径，非要通过搜索才可以。
 
-![macos-config-qt-00] (https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_macos-config-qt-00.png align=“center”)
+![macos-config-qt-00] (<https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_macos-config-qt-00.png> align=“center”)
 
 配置完 Qt Versions 后，在 `Qt Creator -> Preferences -> Kits -> Kits` 配置 Qt 的版本，如下图：
 
-![macos-config-qt-01] (https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_macos-config-qt-01.png align=“center”)
+![macos-config-qt-01] (<https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_macos-config-qt-01.png> align=“center”)
 
 ## 总结
 

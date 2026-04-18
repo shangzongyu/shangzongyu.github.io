@@ -120,7 +120,7 @@ if __name__ == "__main__":
 ### `apt/dnf/yum install patchelf' first.`
 
 > 详细错误如下：
->  python -m nuitka --standalone --onefile --follow-imports --show-progress --output-dir=dist hello_world.py
+> python -m nuitka --standalone --onefile --follow-imports --show-progress --output-dir=dist hello_world.py
 Nuitka-Options：Used command line options：
 Nuitka-Options：   --standalone --onefile --follow-imports --show-progress --output-dir=dist hello_world.py
 FATAL：Error，standalone mode on Linux requires ‘patchelf’ to be installed。Use ‘apt/dnf/yum install patchelf’ first。

@@ -58,7 +58,6 @@ pdftoppm -<image_format> -f N -l N <pdf_filename> <image_name>
 * `-f N`：PDF 的起始页码
 * `-l N`：PDF 的结束码
   
-
 比如我们需要把第 2 页到第 5 页转为图片：
 
 ```bash

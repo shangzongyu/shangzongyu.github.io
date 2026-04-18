@@ -110,12 +110,12 @@ func main() {
 package main
 
 import (
-	"fmt"
-	"runtime"
+ "fmt"
+ "runtime"
 )
 
 func PrintOS() {
-	fmt.Println("OS is", runtime.GOOS)
+ fmt.Println("OS is", runtime.GOOS)
 }
 ````
 
@@ -127,20 +127,20 @@ func PrintOS() {
 package main
 
 import (
-	"fmt"
-	"runtime"
+ "fmt"
+ "runtime"
 )
 
 func PrintOS() {
-	fmt.Println("OS is", runtime.GOOS)
+ fmt.Println("OS is", runtime.GOOS)
 }
 ```
 
 编译：
 
 ```sh
-$ GOOS=linux go build -o darling-linux
-$ GOOS=darwin go build -o darling-darwin
+GOOS=linux go build -o darling-linux
+GOOS=darwin go build -o darling-darwin
 ```
 
 查看二进制的类型：

@@ -59,10 +59,10 @@ cssclass: img-grid
 
 - 安装主题 `Minimal Theme`
 - 在 `Minimal Theme Settings` 中开启 `Image grids` 选项
-    
+
 ## 最终效果如下
 
-![obsidian-css-grid] (https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_obsidian-css-grid.png align=“center”)
+![obsidian-css-grid] (<https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2023/upgit_20230726_obsidian-css-grid.png> align=“center”)
 
 ## 参考
 

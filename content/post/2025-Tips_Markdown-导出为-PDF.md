@@ -199,7 +199,7 @@ pandoc --pdf-engine=xelatex --toc -N -o test.pdf test.md
     fc-list :lang=zh # zh 是中文的 「language code」
     ```
 
-### ``! LaTeX Error: File ` bookmark.sty' not found.`
+### ``! LaTeX Error: File `bookmark.sty' not found.`
 
 完整错误如下：
 

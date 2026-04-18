@@ -121,7 +121,7 @@ brew install mingw-w64
 接下来添加 `mingw-64` 对应的 Target，只需要执行一次就可以了：
 
 ```sh
-$ rustup target add x86_64-pc-windows-gnu
+rustup target add x86_64-pc-windows-gnu
 ```
 
 修改配置文件 `~/.cargo/config` (如果没有可以新建)，设置 Linker，添加如下内容：
@@ -196,14 +196,14 @@ error: requires `sized` lang_item
 1. 先完全卸载
 
 ```sh
-$ brew uninstall rust
-$ rustup self uninstall
+brew uninstall rust
+rustup self uninstall
 ```
 
-2. 重新安装：
+1. 重新安装：
 
 ```sh
-$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 ### error：linking with `cc` failed：exit status：1
@@ -235,6 +235,5 @@ $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ---
 
 [musl]: https://musl.libc.org/
-[endeavouros]: https://endeavouros.com/
 [homebrew]: https://brew.sh/
 [osxcross]: https://github.com/tpoechtrager/osxcross

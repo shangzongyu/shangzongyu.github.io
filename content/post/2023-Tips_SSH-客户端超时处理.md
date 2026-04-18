@@ -19,7 +19,7 @@ weight: 1
 
 在 Windows 上有主要是图形化工具。
 
-###  WinSCP
+### WinSCP
 
 可以找到主机的连接超时时间设置更改，打开 keepalive 选项，每隔一段时间给连接发送一个 SSH 空包或哑命令以保持连接不断开，keepalive 的间隔秒数要设置少于超时等待的时候，如设置成 10 秒，确认重新连接即可。设置项如图：
 
@@ -93,8 +93,8 @@ ClientAliveCountMax 30
 
 说明：
 
-* `ClientAliveInterval`：SSH Server 与 SSH Client 的心跳超时时间，也就是说，如果客户端没有发送任何指令，SSH Server 间隔 `ClientAliveInterval` 秒后，会发送一个空包来和客户都安保持心跳。
-* `ClientAliveCountMax`：表示重试的最大次数，我们设置为 30，也就是说，如果 Server 像 Client 发送了每隔 `ClientAliveInterval` 秒后，发送了 `ClientAliveCountMax` 次后，都失败了，那么就会断开这个来连接。
+- `ClientAliveInterval`：SSH Server 与 SSH Client 的心跳超时时间，也就是说，如果客户端没有发送任何指令，SSH Server 间隔 `ClientAliveInterval` 秒后，会发送一个空包来和客户都安保持心跳。
+- `ClientAliveCountMax`：表示重试的最大次数，我们设置为 30，也就是说，如果 Server 像 Client 发送了每隔 `ClientAliveInterval` 秒后，发送了 `ClientAliveCountMax` 次后，都失败了，那么就会断开这个来连接。
 
 更多参考 [man ssh\_config](https://linux.die.net/man/5/ssh_config)：
 
