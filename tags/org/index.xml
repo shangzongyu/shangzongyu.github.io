@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Org on 我的世界</title><link>https://shangzongyu.github.io/tags/org/</link><description>Recent content in Org on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 27 Nov 2025 10:51:26 +0800</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/org/index.xml" rel="self" type="application/rss+xml"/><item><title>我使用的 Orgmode 工具</title><link>https://shangzongyu.github.io/p/%E6%88%91%E4%BD%BF%E7%94%A8%E7%9A%84-orgmode-%E5%B7%A5%E5%85%B7/</link><pubDate>Thu, 27 Nov 2025 10:51:26 +0800</pubDate><guid>https://shangzongyu.github.io/p/%E6%88%91%E4%BD%BF%E7%94%A8%E7%9A%84-orgmode-%E5%B7%A5%E5%85%B7/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_orgmode-cover.png" alt="Featured image of post 我使用的 Orgmode 工具" /&gt;&lt;h2 id="前言"&gt;前言
+&lt;/h2&gt;&lt;p&gt;2025 年这个时代，Markdown 文档盛行，大部分的技术文档都使用 Markdown 进行编写，现在的 AI 对 Markdown 的支持也很好。不过有一个文档格式 org 文档，我自己认为它比 Markdown 文档更好用。但是由于它通常被用在 Emacs，导致除 Emacs 用户之外的其他的很少接触这个更好的文档，今天不会介绍他的语法，说下我自己使用 Org 文档的几个工具。&lt;/p&gt;
+&lt;p&gt;Org Website : &lt;a class="link" href="https://orgmode.org/" target="_blank" rel="noopener"
+&gt;https://orgmode.org/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="工具"&gt;工具
+&lt;/h2&gt;&lt;p&gt;工具分为电脑端和手机端。&lt;/p&gt;
+&lt;h3 id="电脑端"&gt;电脑端
+&lt;/h3&gt;&lt;h4 id="emacs"&gt;Emacs
+&lt;/h4&gt;&lt;p&gt;毫无疑问就是 Emacs 自己了，但是 Emacs 的配置比较复杂一些，因此出现了一些社区驱动的 Emacs 发行版，这里主要说两个。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_spacemacs-00.png"
+loading="lazy"
+alt="spacemacs-00"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://www.spacemacs.org/" target="_blank" rel="noopener"
+&gt;SpaceEmacs&lt;/a&gt; - 对新手友好&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_doom-emacs-00.png"
+loading="lazy"
+alt="doom-emacs-00"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://doomemacs.org" target="_blank" rel="noopener"
+&gt;DoomEmacs&lt;/a&gt; - 功能和 SpaceEmacs 类似，但是性能更好一些。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PS: 我现在主要使用这个。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id="logseq"&gt;Logseq
+&lt;/h4&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_logseq-00.jpeg"
+loading="lazy"
+alt="logseq-00"
+&gt;&lt;/p&gt;
+&lt;p&gt;这个工具支持 Markdown 和 Org，我主要使用 Org 模式，这样就可以和我的其他使用 Org 的工具一起使用。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Website: &lt;a class="link" href="https://logseq.com/" target="_blank" rel="noopener"
+&gt;https://logseq.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="手机端"&gt;手机端
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;由于使用苹果手机，因此主要说苹果手机的软件。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="plain-org"&gt;Plain Org
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_plain-org-00.jpeg"
+loading="lazy"
+alt="plain-org-00"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AppStore: &lt;a class="link" href="https://apps.apple.com/us/app/plain-org/id1578965002" target="_blank" rel="noopener"
+&gt;https://apps.apple.com/us/app/plain-org/id1578965002&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;主要功能：使用 Org 管理任务。&lt;/p&gt;
+&lt;h3 id="flat-habits"&gt;Flat Habits
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_flat-habits-00.jpeg"
+loading="lazy"
+alt="flat-habits-00"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AppStore：&lt;a class="link" href="https://apps.apple.com/us/app/flat-habits/id1558358855" target="_blank" rel="noopener"
+&gt;https://apps.apple.com/us/app/flat-habits/id1558358855&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;主要功能: 习惯记录，只不过文本是 org。&lt;/p&gt;
+&lt;h3 id="scratch"&gt;&lt;em&gt;scratch&lt;/em&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_scrtatch-00.png"
+loading="lazy"
+alt="scrtatch-00"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AppStore：https://apps.apple.com/us/app/scratch/id1671420139&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;主要功能：主要记录临时的想法。&lt;/p&gt;
+&lt;h3 id="beorg"&gt;Beorg
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_beorg-00.jpeg"
+loading="lazy"
+alt="beorg-00"
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AppStore：&lt;a class="link" href="https://apps.apple.com/us/app/beorg-to-do-list-agenda/id1238649962" target="_blank" rel="noopener"
+&gt;https://apps.apple.com/us/app/beorg-to-do-list-agenda/id1238649962&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;主要功能：使用 Org 管理任务，但是功能更丰富。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;支持 iCloud/OneDrive 等云盘&lt;/li&gt;
+&lt;li&gt;支持同步 Apple Reminder 到一个 Org 文档&lt;/li&gt;
+&lt;li&gt;支持同步 Apple Calender 到一个 Org 文档&lt;/li&gt;
+&lt;li&gt;等等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PS: 软件本身是免费的，不过一些功能需要购买。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id="logseq-1"&gt;Logseq
+&lt;/h5&gt;&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_logseq-00-4215978.jpeg"
+loading="lazy"
+alt="logseq-00"
+&gt;&lt;/p&gt;
+&lt;p&gt;Logseq 也有手机端，但是我自己使用过程中感觉他不好用，它是把电脑端的使用 UI 直接搬到手机端了，这样手机端使用不是很方便，但还是要说一些。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AppSotre: &lt;a class="link" href="https://apps.apple.com/us/app/logseq/id1601013908" target="_blank" rel="noopener"
+&gt;https://apps.apple.com/us/app/logseq/id1601013908&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="最后说明"&gt;最后说明
+&lt;/h2&gt;&lt;p&gt;由于 Org 文档很适合做任务管理，因此为主要用它做任务管理。&lt;/p&gt;</description></item></channel></rss>

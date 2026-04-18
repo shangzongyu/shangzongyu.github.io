@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Editor on 我的世界</title><link>https://shangzongyu.github.io/tags/editor/</link><description>Recent content in Editor on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 31 Dec 2025 15:14:10 +0800</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/editor/index.xml" rel="self" type="application/rss+xml"/><item><title>2025 我使用的工具：AI 编辑器</title><link>https://shangzongyu.github.io/p/2025-%E6%88%91%E4%BD%BF%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7ai-%E7%BC%96%E8%BE%91%E5%99%A8/</link><pubDate>Wed, 31 Dec 2025 15:14:10 +0800</pubDate><guid>https://shangzongyu.github.io/p/2025-%E6%88%91%E4%BD%BF%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7ai-%E7%BC%96%E8%BE%91%E5%99%A8/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/2025-我使用的工具_AI-编辑器-cover.png" alt="Featured image of post 2025 我使用的工具：AI 编辑器" /&gt;&lt;blockquote&gt;
+&lt;p&gt;梳理一下自己在 2025 年使用过的 AI 编辑器，以及最后留下来的那几个。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2025 年对开发者来说基本是「AI IDE 元年」，从传统编辑器 + 插件到各种「Agent-first IDE」几乎是轮番轰炸。VSCode 体系、Cursor 系、国产工具，再加上 Zed 和 Antigravity，这一年下来，自己的主力开发环境大概换了不下五次。&lt;/p&gt;
+&lt;p&gt;这篇就当是一个个人向的小结：只记录自己真正在写代码时用过一段时间的编辑器，以及为什么最后只留下了 Zed 和 Antigravity。&lt;/p&gt;
+&lt;h2 id="vscode老朋友--ai-插件"&gt;VSCode：老朋友 + AI 插件
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://code.visualstudio.com/" target="_blank" rel="noopener"
+&gt;https://code.visualstudio.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;VSCode 作为「操作系统级应用」已经很多年了，今年的变化更多是 &lt;strong&gt;AI 能力往里塞&lt;/strong&gt;：GitHub Copilot、各种 LSP、再加上 Claude Code 之类的扩展，基本可以把它用成一个「拼装版 AI IDE」。&lt;/p&gt;
+&lt;p&gt;今年自己没有订阅 Copilot，而是主要用 Claude Code 这一类插件配合现有工作流。体验上更像是给原来的 VSCode 加了一个随叫随到的 Pair Programmer，而不是彻底改变工作方式。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;优缺点&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;优点是生态足够完整，Remote、容器开发、各种奇奇怪怪的插件都能搞定；&lt;/li&gt;
+&lt;li&gt;缺点也明显：装完一堆扩展之后，界面越来越臃肿，AI 功能分散在不同角落，很难形成一个统一的「Agent 体验」。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="cursor细节很好的-vscode-分支"&gt;Cursor：细节很好的 VSCode 分支
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://cursor.com" target="_blank" rel="noopener"
+&gt;https://cursor.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cursor 可以看作是一个「为 AI 重写交互的 VSCode 分支」，从补全到对话，再到整仓库改动，整体是一套完整的 AI 工作流，而不是几个散落的命令。&lt;/p&gt;
+&lt;p&gt;自己只真正用过两周左右，主要是因为支付莫名其妙失败，最终也没有成为长期订阅用户。短暂体验里印象比较深的是：界面细节打磨得非常精致，像自动补全、框选范围改动、多文件修改这些操作，都明显比拼插件的 VSCode 顺滑很多。&lt;/p&gt;
+&lt;p&gt;如果支付没问题，很大概率今年的主力会是 Cursor + 另一个轻量编辑器的组合。&lt;/p&gt;
+&lt;h2 id="windsurf性价比不错的-agent-ide"&gt;Windsurf：性价比不错的 Agent IDE
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://windsurf.com/editor" target="_blank" rel="noopener"
+&gt;https://windsurf.com/editor&lt;/a&gt;[^7]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Windsurf 原来叫 Codium / Codeium Pro，一开始就买了订阅，真正用了大概半年时间。 它走的是「Agent-first IDE」路线：在编辑器里从写代码、重构，到运行与预览，都尽量通过一个统一的 AI Agent 完成。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有类似 Cascade 的全栈 Agent，可以读完整项目、规划修改，再一口气改完并运行。&lt;/li&gt;
+&lt;li&gt;Supercomplete 和 Inline AI 让补全和局部修改都比较自然，像是一直有人在旁边帮忙敲代码。&lt;/li&gt;
+&lt;li&gt;内置调试、预览、部署一条龙，对全栈 / 前后端同写的场景比较友好。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对我来说，它的问题主要是：界面观感和交互细节不如 Cursor 精致，有时会有点「大型 Electron 应用」的重量感。不过价格很友好，在那个时间点是一个很稳的选择。&lt;/p&gt;
+&lt;h2 id="trae另一种-vscode-流派"&gt;Trae：另一种 VSCode 流派
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.trae.ai/" target="_blank" rel="noopener"
+&gt;https://www.trae.ai/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Trae 本质上还是 VSCode 体系，只是把 AI 做成了内建的一等公民：有 Builder Mode、可自定义 Agent，还有比较舒服的对话和代码补全体验。&lt;/p&gt;
+&lt;p&gt;自己用 Trae 持续了三个月左右，感受上和 Windsurf 有点像：都在尝试用 Agent 接管更多环节，从解释代码、写注释，到跨文件重构、搭项目脚手架。选择它的一个重要原因是——订阅便宜，可以比较没有压力地长期开着当备用 IDE。&lt;/p&gt;
+&lt;p&gt;如果已经习惯 VSCode 的布局，又想体验一体化的 AI IDE，Trae 会比手动装一堆插件简单很多。&lt;/p&gt;
+&lt;h2 id="qoder短暂试水"&gt;Qoder：短暂试水
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://qoder.com/" target="_blank" rel="noopener"
+&gt;https://qoder.com/&lt;/a&gt;[^3]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Qoder 这类新编辑器的特点也是 Agent + 对话，不过自己只做了非常短暂的一些尝试：打开项目、跑几个提示词、看它怎么改代码。&lt;/p&gt;
+&lt;p&gt;因为此时手里已经有 Windsurf / Trae 这类付费订阅，就没有动力再增加一个主力 IDE，最后也没形成肌肉记忆。对我个人来说，2025 年的编辑器试用已经进入「边际收益递减」阶段：再多换几家，带来的提升也不会有质的变化。&lt;/p&gt;
+&lt;h2 id="zed今年最喜欢的编辑器之一"&gt;Zed：今年最喜欢的编辑器之一
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://zed.dev/" target="_blank" rel="noopener"
+&gt;https://zed.dev/&lt;/a&gt;[^4]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Zed 对我来说算是今年最大的惊喜之一。它的关键字是两个字：&lt;strong&gt;快&lt;/strong&gt;。原生界面、极快的渲染和跳转、很轻盈的整体体验，让它很自然地成为一个「随手就会打开」的编辑器。&lt;/p&gt;
+&lt;p&gt;2025 年更有意思的是：Zed 也开始认真做 Agent 功能，可以直接在编辑器里接入 Claude Code、Codex 等服务，形成自己的 AI 工作流，而不仅仅是当一个纯编辑器。 对后端开发来说，Zed + 远程项目 / Docker 环境基本可以覆盖日常大部分需求。&lt;/p&gt;
+&lt;p&gt;目前在我的使用里，Zed 更像是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;日常写 Go / Python / TS/JS 代码的默认编辑器。&lt;/li&gt;
+&lt;li&gt;快速打开单文件、小项目的首选。&lt;/li&gt;
+&lt;li&gt;需要 AI 时，通过内置 Agent 能够直接接到自己习惯的模型服务。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="antigravity今年最喜欢的-editor-之二"&gt;Antigravity：今年最喜欢的 Editor 之二
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://antigravity.google/" target="_blank" rel="noopener"
+&gt;https://antigravity.google/&lt;/a&gt;[^5]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Google Antigravity 本质上是一个带 Agent 的 VSCode 分支，但这次 Google 把 Agent 做成了一套完整的平台：从需求理解、生成代码，到运行、调试、再迭代，全都可以交给 Agent 去做。&lt;/p&gt;
+&lt;p&gt;一些印象深的点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Plan 模式会先生成一个完整的计划，再逐步修改代码，适合复杂改动；Fast 模式则更接近传统的「直接改」。&lt;/li&gt;
+&lt;li&gt;Agent UI 做得比较克制，编辑器主体还是标准 VSCode 布局，切换成本很低。&lt;/li&gt;
+&lt;li&gt;对于 Web / 后端项目，写业务代码 + 让 Agent 补足样板、配置、测试，是挺自然的工作方式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;自从 Antigravity 出来之后，它基本替代了除 Zed 之外的其他编辑器：需要强 AI Agent、自动化程度高的时候用 Antigravity，需要速度和利落感的时候用 Zed。&lt;/p&gt;
+&lt;h2 id="现在的组合与一些感受"&gt;现在的组合与一些感受
+&lt;/h2&gt;&lt;p&gt;2025 年底自己固定下来的编辑器组合大概是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Zed&lt;/strong&gt;：主力 Editor，写代码、读代码、快速改动。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Antigravity&lt;/strong&gt;：主力 AI IDE，需要「交给 Agent 批量搞定一件事」的时候用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;VSCode 依然会偶尔出现（主要是某些插件生态绑定），Windsurf / Trae 之类则逐渐淡出视野，更多变成一次阶段性尝试的脚注。&lt;/p&gt;
+&lt;p&gt;如果用一句话来总结这一年：&lt;strong&gt;AI 编辑器已经从「玩具插件」升级成了真正的生产力工具，但最终留下来的，依然是那些既尊重开发者习惯，又在关键路径上做了减法的工具。&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>JetBrains IDE 的 Tips</title><link>https://shangzongyu.github.io/p/jetbrains-ide-tips/</link><pubDate>Thu, 27 Oct 2022 15:13:25 +0000</pubDate><guid>https://shangzongyu.github.io/p/jetbrains-ide-tips/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2022-JetBrains-IDE-的-Tips.webp" alt="Featured image of post JetBrains IDE 的 Tips" /&gt;&lt;blockquote&gt;
+&lt;p&gt;介绍使用 JetBrains IDE 过程的的一些 Tips。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="goland-tips"&gt;Goland Tips
+&lt;/h2&gt;&lt;h3 id="行排序"&gt;行排序
+&lt;/h3&gt;&lt;p&gt;通过 &lt;code&gt;⌘ ⇧ A&lt;/code&gt; (macOS) / &lt;code&gt;Ctrl+Shift+A&lt;/code&gt; (Windows/Linux) 打开 Actions，搜索 &lt;code&gt;Sort Lines&lt;/code&gt; 进行排序。&lt;/p&gt;
+&lt;h3 id="open-blank-diff-window"&gt;Open Blank Diff Window
+&lt;/h3&gt;&lt;p&gt;通过 &lt;code&gt;⌘ ⇧ A&lt;/code&gt; (macOS) / &lt;code&gt;Ctrl+Shift+A&lt;/code&gt; (Windows/Linux) 打开 Actions，搜索 &lt;code&gt;Blank Diff Window&lt;/code&gt; 会打开左右里两个用户 differ 的窗口。&lt;/p&gt;
+&lt;h3 id="scratch-files"&gt;Scratch files
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;Scratch file 不仅仅是纯文本，它语法高亮、代码不全以及和文件类型相关的特性。
+Scratch file 随着 IDE 存在，没有和某个项目绑定。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;操作：&lt;code&gt;Select File | New | Scratch File&lt;/code&gt;，或者如下快捷键&lt;/p&gt;
+&lt;p&gt;or press on macOS or Windows/Linux。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS：&lt;code&gt;⇧ ⌘ N&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Windows/Linux：&lt;code&gt;Ctrl+Alt+Shift+Insert&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="多光标"&gt;多光标
+&lt;/h3&gt;&lt;p&gt;启动方式 1：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;启动多光标：按两次 &lt;code&gt;⌥&lt;/code&gt; (macOS)/ &lt;code&gt;Ctrl&lt;/code&gt; (Windows/Linux)，并且不释放它&lt;/li&gt;
+&lt;li&gt;接着按向上箭头或者向下箭头进行选择&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;启动方式 2：&lt;/p&gt;
+&lt;p&gt;按住 &lt;code&gt;⌥⇧&lt;/code&gt; macOS）/ &lt;code&gt;Shift+Alt&lt;/code&gt; (Windows/Linux) 然后使用光标进行选择&lt;/p&gt;
+&lt;p&gt;启动方式 3：&lt;/p&gt;
+&lt;p&gt;按着 &lt;code&gt;⌥&lt;/code&gt; (macOS)/ &lt;code&gt;Alt&lt;/code&gt; (Windows/Linux) 使用鼠标进行选择多光标的操作。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;删除所有的按 &lt;code&gt;Escape&lt;/code&gt; 键值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="折叠所有--展开所有"&gt;折叠所有 / 展开所有
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;macOS：&lt;code&gt;⇧⌘-&lt;/code&gt; / &lt;code&gt;⇧⌘+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Windows/Linux：Ctrl + Shift + NumPad + / Ctrl + Shift + NumPad –&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;上面的快捷键关于折叠和展开文件，如果有选择一部分，那么会折叠和展开的部分。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;折叠当前段：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS：&lt;code&gt;⌥⌘-&lt;/code&gt; / &lt;code&gt;⌥⌘&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Windows/Linux：&lt;code&gt;Ctrl+Alt+NumPad&lt;/code&gt; + / &lt;code&gt;Ctrl+Alt+NumPad –&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="最近打开的文件和位置"&gt;最近打开的文件和位置
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;最近打开的文件
+&lt;ul&gt;
+&lt;li&gt;macOS：&lt;code&gt;⌘E&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Windows/Linux：&lt;code&gt;Ctrl+E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;最近打开的位置
+&lt;ul&gt;
+&lt;li&gt;macOS：&lt;code&gt;⌘⇧E&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Windows/Linux：&lt;code&gt;Ctrl+Shift+E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

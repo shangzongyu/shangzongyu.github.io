@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Browsers on 我的世界</title><link>https://shangzongyu.github.io/tags/browsers/</link><description>Recent content in Browsers on 我的世界</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 08 Jul 2025 02:30:14 +0000</lastBuildDate><atom:link href="https://shangzongyu.github.io/tags/browsers/index.xml" rel="self" type="application/rss+xml"/><item><title>我使用的工具：浏览器篇</title><link>https://shangzongyu.github.io/p/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%92%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</link><pubDate>Tue, 08 Jul 2025 02:30:14 +0000</pubDate><guid>https://shangzongyu.github.io/p/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%92%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</guid><description>&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_我使用的工具_浏览器篇.webp" alt="Featured image of post 我使用的工具：浏览器篇" /&gt;&lt;blockquote&gt;
+&lt;p&gt;主要收集自己使用的浏览器和插件。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="我的常用浏览器"&gt;我的常用浏览器
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Zen Browser&lt;/strong&gt;&lt;br&gt;
+基于 Firefox 的改造版本，主打简洁和定制化。适合喜欢自由折腾的用户。&lt;br&gt;
+官网：&lt;a class="link" href="https://www.zen-browser.app/" target="_blank" rel="noopener"
+&gt;Zen Browser&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Arc Browser&lt;/strong&gt;&lt;br&gt;
+Chrome 内核重新设计，主打多空间、多配置和隐私保护，非常适合多任务场景。&lt;br&gt;
+官网：&lt;a class="link" href="https://arc.net/" target="_blank" rel="noopener"
+&gt;Arc Browser&lt;/a&gt;
+特色功能包括 “Spaces”、“Profiles”、“Split View”，以及贴心的隐私保护。[1]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Comet (AI 浏览器)&lt;/strong&gt;
+Perplexity 推出的新型 AI 浏览器，集成智能助手，具备智能分类、自动整理、快速邮件回复等能力。让你在处理繁杂信息时更加轻松高效。[2]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;官网：&lt;a class="link" href="https://www.perplexity.ai/comet" target="_blank" rel="noopener"
+&gt;Comet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Helium&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;官网: &lt;a class="link" href="https://helium.computer" target="_blank" rel="noopener"
+&gt;Heliu&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;简洁，无冗余，安全，注重隐私，去除了各种 google 跟踪的东西，关键是没有 AI。资源占用低，不必忍受 Chrome 的内存占用，基于 ungoogled-chromium ，支持所有 Chrome 扩展，也支持导入书签。支持 split view 每次打开一个非常干净的界面就很舒服，我已经能做到大约一大半时间都在使用它了。 极力推荐各位极简爱好者使用一下。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="浏览器插件"&gt;浏览器插件
+&lt;/h2&gt;&lt;h3 id="youtube-相关"&gt;Youtube 相关
+&lt;/h3&gt;&lt;h4 id="youtube-dual-subtitles"&gt;YouTube™ Dual Subtitles
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;介绍：实现 Youtube 同时显示双语字幕，适合英语听力或外语学习爱好者。&lt;/li&gt;
+&lt;li&gt;插件地址：&lt;a class="link" href="https://chromewebstore.google.com/detail/youtube-dual-subtitles/hkbdddpiemdeibjoknnofflfgbgnebcm" target="_blank" rel="noopener"
+&gt;https://chromewebstore.google.com/detail/youtube-dual-subtitles/hkbdddpiemdeibjoknnofflfgbgnebcm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-youtube-dual-subtitles.png"
+loading="lazy"
+alt="YouTube™ Dual Subtitles"
+&gt;&lt;/p&gt;
+&lt;h4 id="adshield---ultimate-ad-blocker-for-youtube"&gt;AdShield - Ultimate Ad Blocker for YouTube
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;介绍：高效 Youtube 广告屏蔽插件，支持智能过滤与定制。&lt;/li&gt;
+&lt;li&gt;插件插件：&lt;a class="link" href="https://chromewebstore.google.com/detail/adshield-ultimate-ad-bloc/gmjaaefflbggfiacjihajgijemdlhkeb?hl=en" target="_blank" rel="noopener"
+&gt;https://chromewebstore.google.com/detail/adshield-ultimate-ad-bloc/gmjaaefflbggfiacjihajgijemdlhkeb?hl=en&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250708_broswer-plugin-AdShield.png"
+loading="lazy"
+alt="AdShield"
+&gt;&lt;/p&gt;
+&lt;h4 id="youtube-adblock"&gt;YouTube AdBlock
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;介绍：用加速广告原理，使广告段快速在 1-2 秒内自动跳过。&lt;/li&gt;
+&lt;li&gt;插件地址：&lt;a class="link" href="https://chromewebstore.google.com/detail/youtube-adblock-coffee-br/famhaodemcealnpfepcfbnofjjcccjap?utm_source=item-share-x&amp;amp;pli=1" target="_blank" rel="noopener"
+&gt;https://chromewebstore.google.com/detail/youtube-adblock-coffee-br/famhaodemcealnpfepcfbnofjjcccjap?utm_source=item-share-x&amp;pli=1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250708_broswer-plugin-youtube-adblock-skip.png"
+loading="lazy"
+alt="YouTube AdBlock"
+&gt;&lt;/p&gt;
+&lt;h4 id="enhancer-for-youtube"&gt;Enhancer for YouTube™
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;介绍：&lt;/li&gt;
+&lt;li&gt;插件地址：&lt;a class="link" href="https://chromewebstore.google.com/detail/enhancer-for-youtube/ponfpcnoihfmfllpaingbgckeeldkhle" target="_blank" rel="noopener"
+&gt;https://chromewebstore.google.com/detail/enhancer-for-youtube/ponfpcnoihfmfllpaingbgckeeldkhle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-youtube-enhancer-for-youtube.png"
+loading="lazy"
+alt="Enhancer for YouTube™"
+&gt;&lt;/p&gt;
+&lt;h3 id="onetab"&gt;OneTab
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;介绍：&lt;/li&gt;
+&lt;li&gt;插件地址：&lt;a class="link" href="https://chromewebstore.google.com/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall" target="_blank" rel="noopener"
+&gt;https://chromewebstore.google.com/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-onetab.jpg"
+loading="lazy"
+alt="OneTab"
+&gt;&lt;/p&gt;
+&lt;h3 id="tampermonkey-油猴脚本管理"&gt;Tampermonkey (油猴脚本管理)
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;油猴脚本&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;介绍：万能脚本管理插件，支持运行第三方 JS 脚本、自动化各种网页操作。&lt;/li&gt;
+&lt;li&gt;插件地址：&lt;a class="link" href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank" rel="noopener"
+&gt;https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-youtube-tampermonkey.png"
+loading="lazy"
+alt="Tampermonkey"
+&gt;&lt;/p&gt;
+&lt;h3 id="b-站"&gt;B 站
+&lt;/h3&gt;&lt;h4 id="bilibili-批量拉黑助手"&gt;Bilibili 批量拉黑助手
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;介绍：Bilibili 批量拉黑助手 - 快速拉黑神人号、擦边号、广告号。Chrome 扩展，完全本地运行。&lt;/li&gt;
+&lt;li&gt;插件地址：&lt;a class="link" href="https://github.com/Nothing1024/bilibili-block-extension" target="_blank" rel="noopener"
+&gt;https://github.com/Nothing1024/bilibili-block-extension&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://github.com/Nothing1024/bilibili-block-extension/blob/main/assets/index.png"
+loading="lazy"
+alt="bilibili-block-extension"
+&gt;&lt;/p&gt;
+&lt;h4 id="bilibli-美化---bewlybewly"&gt;Bilibli 美化 - BewlyBewly
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;介绍：B 站视觉风格大幅美化&lt;/li&gt;
+&lt;li&gt;插件地址：&lt;a class="link" href="https://chromewebstore.google.com/detail/bewlybewly/bbbiejemhfihiooipfcjmjmbfdmobobp" target="_blank" rel="noopener"
+&gt;https://chromewebstore.google.com/detail/bewlybewly/bbbiejemhfihiooipfcjmjmbfdmobobp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-bewlybewly.png"
+loading="lazy"
+alt="BewlyBewly"
+&gt;&lt;/p&gt;
+&lt;h4 id="bilibli-美化---biliplus"&gt;Bilibli 美化 - BiliPlus
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;介绍：增强 B 站体验，更多小功能。&lt;/li&gt;
+&lt;li&gt;插件地址：&lt;a class="link" href="https://chromewebstore.google.com/detail/biliplus-bilibili-%E5%8A%A0%E5%A4%A7%E6%9D%AF%EF%BC%8C%E7%BB%86%E8%8A%82%E4%BB%8E/liddcdcjkpeaiblhebgihpmcaknpgbgk" target="_blank" rel="noopener"
+&gt;https://chromewebstore.google.com/detail/biliplus-bilibili-%E5%8A%A0%E5%A4%A7%E6%9D%AF%EF%BC%8C%E7%BB%86%E8%8A%82%E4%BB%8E/liddcdcjkpeaiblhebgihpmcaknpgbgk&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-biliplus-bilibili.png"
+loading="lazy"
+alt="BiliPlus"
+&gt;&lt;/p&gt;
+&lt;h3 id="豆瓣"&gt;豆瓣
+&lt;/h3&gt;&lt;h4 id="阅读douban-book"&gt;阅读：Douban Book+
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;介绍：在豆瓣读书页面显示多个在线资源的链接，看到好书，想读就读，一键即达。&lt;/li&gt;
+&lt;li&gt;插件地址：&lt;a class="link" href="https://chromewebstore.google.com/detail/douban-book&amp;#43;/lkmnoeojcpmcpjlbhbjbilpmccfljdoj" target="_blank" rel="noopener"
+&gt;https://chromewebstore.google.com/detail/douban-book+/lkmnoeojcpmcpjlbhbjbilpmccfljdoj&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-douban-book&amp;#43;.png"
+loading="lazy"
+alt="Douban Book&amp;#43;"
+&gt;&lt;/p&gt;
+&lt;h4 id="豆伴豆瓣账号备份工具"&gt;豆伴：豆瓣账号备份工具
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;介绍：用于备份豆瓣网的用户数据及图片，并支持将备份数据导出到 Excel 文档&lt;/li&gt;
+&lt;li&gt;插件地址：&lt;a class="link" href="https://chromewebstore.google.com/detail/%E8%B1%86%E4%BC%B4%EF%BC%9A%E8%B1%86%E7%93%A3%E8%B4%A6%E5%8F%B7%E5%A4%87%E4%BB%BD%E5%B7%A5%E5%85%B7/ghppfgfeoafdcaebjoglabppkfmbcjdd" target="_blank" rel="noopener"
+&gt;https://chromewebstore.google.com/detail/%E8%B1%86%E4%BC%B4%EF%BC%9A%E8%B1%86%E7%93%A3%E8%B4%A6%E5%8F%B7%E5%A4%87%E4%BB%BD%E5%B7%A5%E5%85%B7/ghppfgfeoafdcaebjoglabppkfmbcjdd&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-douban.png"
+loading="lazy"
+alt="豆伴：豆瓣账号备份工具"
+&gt;&lt;/p&gt;
+&lt;h3 id="社区与内容美化"&gt;社区与内容美化
+&lt;/h3&gt;&lt;h4 id="v2ex-美化---v2ex-polish"&gt;V2EX 美化 - V2EX Polish
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;介绍：&lt;/li&gt;
+&lt;li&gt;插件地址：&lt;a class="link" href="https://chromewebstore.google.com/detail/v2ex-polish/onnepejgdiojhiflfoemillegpgpabdm" target="_blank" rel="noopener"
+&gt;https://chromewebstore.google.com/detail/v2ex-polish/onnepejgdiojhiflfoemillegpgpabdm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-v2ex-polish.png"
+loading="lazy"
+alt="V2EX Polish"
+&gt;&lt;/p&gt;
+&lt;h4 id="reddit-enhancement-suite"&gt;Reddit Enhancement Suite
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;介绍：增强 Reddit 社区的浏览和互动体验。&lt;/li&gt;
+&lt;li&gt;插件地址：&lt;a class="link" href="https://chromewebstore.google.com/detail/reddit-enhancement-suite/kbmfpngjjgdllneeigpgjifpgocmfgmb" target="_blank" rel="noopener"
+&gt;https://chromewebstore.google.com/detail/reddit-enhancement-suite/kbmfpngjjgdllneeigpgjifpgocmfgmb&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-youtube-enhancer-for-youtube.png"
+loading="lazy"
+alt="Reddit Enhancement Suite"
+&gt;&lt;/p&gt;
+&lt;h4 id="维基百科美化wikiwand"&gt;维基百科美化：Wikiwand
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;介绍：&lt;/li&gt;
+&lt;li&gt;插件地址：&lt;a class="link" href="https://chromewebstore.google.com/detail/wikiwand-elevate-wikipedi/emffkefkbkpkgpdeeooapgaicgmcbolj" target="_blank" rel="noopener"
+&gt;https://chromewebstore.google.com/detail/wikiwand-elevate-wikipedi/emffkefkbkpkgpdeeooapgaicgmcbolj&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-youtube-wikiwand.png"
+loading="lazy"
+alt="Wikiwand"
+&gt;&lt;/p&gt;
+&lt;h3 id="开发者相关"&gt;开发者相关
+&lt;/h3&gt;&lt;h4 id="websocket-devtools"&gt;WebSocket DevTools
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;介绍：强力 WebSocket 调试工具，适合前后端协同/数据流追踪。&lt;/li&gt;
+&lt;li&gt;插件地址：&lt;a class="link" href="https://chromewebstore.google.com/detail/websocket-devtools/fmnaobbfmjaaaebelkacpmmmpaaefbod" target="_blank" rel="noopener"
+&gt;https://chromewebstore.google.com/detail/websocket-devtools/fmnaobbfmjaaaebelkacpmmmpaaefbod&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-websocket-devtools.png"
+loading="lazy"
+alt="WebSocket DevTools"
+&gt;&lt;/p&gt;
+&lt;h4 id="save-all-resources"&gt;Save All Resources
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;介绍：一键保存网页所有静态资源，网盘备份、离线必备。&lt;/li&gt;
+&lt;li&gt;插件地址：&lt;a class="link" href="https://chromewebstore.google.com/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb" target="_blank" rel="noopener"
+&gt;https://chromewebstore.google.com/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-youtube-save-all-resources.jpg"
+loading="lazy"
+alt="Save All Resources"
+&gt;&lt;/p&gt;
+&lt;h4 id="网站分析wappalyzer"&gt;网站分析：wappalyzer
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;介绍：快速分析技术栈、第三方服务和网站架构，产品与技术调研必备。&lt;/li&gt;
+&lt;li&gt;插件地址：&lt;a class="link" href="https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg" target="_blank" rel="noopener"
+&gt;https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20251006_broswer-plugin-wappalyzer.png"
+loading="lazy"
+alt="wappalyzer"
+&gt;&lt;/p&gt;</description></item></channel></rss>
