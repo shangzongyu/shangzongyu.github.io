@@ -1,6 +1,18 @@
-https://skywind.me/blog/archives/3656
+---
+title: "Turbo Vision - 跨平台 Turbo C 开源实现"
+description: 基于 Turbo Vision 的跨平台 C++ TUI 框架，支持 Windows、Linux、macOS 等多平台
+date: 2026-04-18T00:00:00+08:00
+draft: true
+tags:
+  - 开发工具
+  - C++
+  - TUI
+categories: ["工具推荐"]
+---
 
-项目地址：https://github.com/magiblot/tvision
+[https://skywind.me/blog/archives/3656](https://skywind.me/blog/archives/3656)
+
+项目地址：[https://github.com/magiblot/tvision](https://github.com/magiblot/tvision)
 
 主要特性：
 
