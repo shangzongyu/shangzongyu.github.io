@@ -1,7 +1,7 @@
 ---
 title: "Google Gemini Nano Banana 生成图片的提示词"
 description: 
-date: 2026-01-05T09:42:57+08:00
+date: 2026-04-19T19:58:33+08:00
 image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260105_2026-Google-Gemini-Nano-Banana-%E7%94%9F%E6%88%90%E5%9B%BE%E7%89%87%E7%9A%84%E6%8F%90%E7%A4%BA%E8%AF%8D-cover.webp
 math: 
 license: 
