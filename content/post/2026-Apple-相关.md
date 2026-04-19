@@ -5,9 +5,12 @@ date: 2026-01-25T16:20:18+08:00
 image: 
 math: 
 license: 
+tags: ["Apple", "macOS"]
+categories: ["Apple"]
 hidden: false
 comments: true
 draft: true
+weight: 1
 ---
 
 > 主要收集 Apple 相关的。

@@ -1,5 +1,5 @@
 ---
-title: "2026 工具推荐: BetterDisplay"
+title: "工具推荐: BetterDisplay"
 description: macOS 外接显示器管理工具
 date: 2026-04-18T00:00:00+08:00
 draft: true
@@ -8,6 +8,7 @@ tags:
   - 显示器
   - 工具
 categories: ["工具推荐"]
+weight: 1
 ---
 
 - GitHub: [https://github.com/waydabber/BetterDisplay](https://github.com/waydabber/BetterDisplay)

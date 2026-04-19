@@ -8,6 +8,9 @@ license:
 hidden: false
 comments: true
 draft: true
+tags: []
+categories: []
+weight: 1
 ---
 
 ## 写作工作

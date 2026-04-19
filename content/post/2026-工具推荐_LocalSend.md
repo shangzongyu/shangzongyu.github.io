@@ -1,12 +1,13 @@
 ---
-title: "LocalSend 和 Blip 文件传输工具对比"
-description: 跨平台文件传输工具 LocalSend 和 Blip 的对比与使用体验
+title: "工具推荐：LocalSend"
+description: 跨平台文件传输工具 LocalSend
 date: 2026-04-18T20:07:13+08:00
 draft: true
 tags:
   - 工具
   - 文件传输
 categories: ["工具推荐"]
+weight: 1
 ---
 
 ## LocalSend

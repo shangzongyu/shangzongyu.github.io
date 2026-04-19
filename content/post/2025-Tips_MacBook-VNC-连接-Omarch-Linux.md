@@ -9,8 +9,10 @@ tags:
   - tips
   - Linux
   - VNC
+categories: ["Tips"]
 hidden: false
 comments: true
+weight: 1
 ---
 
 ## 前言

@@ -1,12 +1,15 @@
 ---
-title: "Diff Tools"
+title: "工具推荐: Diff Tools"
 description: 文件对比和 Git diff 美化工具
 date: 2026-04-18T20:07:20+08:00
 image:
 math:
 license:
+tags: ["工具", "diff", "Git"]
+categories: ["工具推荐"]
 hidden: false
 comments: true
+weight: 1
 ---
 
 ## Vim Diff

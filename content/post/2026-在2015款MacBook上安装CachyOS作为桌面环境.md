@@ -8,7 +8,8 @@ tags:
   - Linux
   - MacBook
 categories: ["折腾"]
-draft: false
+draft: true
+weight: 1
 ---
 
 ## 硬件信息

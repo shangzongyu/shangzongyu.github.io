@@ -1,11 +1,14 @@
 ---
-title: "2026 Antigravity 相关工具"
+title: "Antigravity 相关工具"
 description: 
 date: 2026-01-08T09:49:45+08:00
 image: 
 math: 
 license: 
+tags: ["Google", "编辑器", "AI工具"]
+categories: ["工具推荐"]
 hidden: false
+weight: 1
 ---
 
 > 主要介绍使用 Antigravity 相关的工具。

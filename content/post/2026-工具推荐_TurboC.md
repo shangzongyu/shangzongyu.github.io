@@ -1,5 +1,5 @@
 ---
-title: "Turbo Vision - 跨平台 Turbo C 开源实现"
+title: "工具推荐：Turbo Vision - 跨平台 Turbo C 开源实现"
 description: 基于 Turbo Vision 的跨平台 C++ TUI 框架，支持 Windows、Linux、macOS 等多平台
 date: 2026-04-18T19:55:46+08:00
 draft: true
@@ -8,6 +8,7 @@ tags:
   - C++
   - TUI
 categories: ["工具推荐"]
+weight: 1
 ---
 
 [https://skywind.me/blog/archives/3656](https://skywind.me/blog/archives/3656)
