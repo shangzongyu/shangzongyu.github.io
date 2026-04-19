@@ -17,6 +17,20 @@ weight: 1
 
 ## 九宫格
 
+## 如何创建经典企业头像
+
+```
+电影感、超现实的企业头像，基于参考图像中的同一个人。保留精确的面部特征、肤色和身份。风格：经典专业企业肖像。主体穿着剪裁合身的深色西装、熨帖的白衬衫和低调的领带。光线为柔和的定向工作室照明，带有轻柔阴影以增加深度。背景简约、模糊且中性色调（深灰或米色渐变）。使用高端全画幅相机搭配 85mm 镜头拍摄，浅景深，眼部锐利对焦，自然皮肤纹理和高动态范围。表情自信、平静且平易近人。超详细、8K 品质，逼真色彩分级
+```
+
+```
+cinematic, ultra-realistic corporate headshot of the same person from the reference image. Preserve exact facial features, skin tone, and identity. Style: classic professional corporate portrait. The subject is wearing a tailored dark suit, crisp white shirt, and subtle tie. Lighting is soft, directional studio lighting with gentle shadows for depth. Background is minimal, blurred, and neutral-toned (dark grey or beige gradient). Shot on a high-end full-frame camera with 85mm lens, shallow depth of field, sharp focus on the eyes, natural skin texture, and high dynamic range. Expression is confident, calm, and approachable. Ultra-detailed, 8K quality, realistic color grading
+```
+
+生成图片为：
+
+![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclists_20260419_HEQ9cpAaQAAP2Vd.webp)
+
 ### 冬日搞怪九宫格人像（同脸九连拍）
 
 ```json
