@@ -35,7 +35,7 @@ Org Website : <https://orgmode.org/>
 
 [DoomEmacs](https://doomemacs.org) - 功能和 SpaceEmacs 类似，但是性能更好一些。
 
-> PS: 我现在主要使用这个。
+> PS：我现在主要使用这个。
 
 #### Logseq
 
@@ -63,7 +63,7 @@ Org Website : <https://orgmode.org/>
 
 - AppStore：<https://apps.apple.com/us/app/flat-habits/id1558358855>
 
-主要功能: 习惯记录，只不过文本是 org。
+主要功能：习惯记录，只不过文本是 org。
 
 ### _scratch_
 
@@ -86,7 +86,7 @@ Org Website : <https://orgmode.org/>
 - 支持同步 Apple Calender 到一个 Org 文档
 - 等等
 
-> PS: 软件本身是免费的，不过一些功能需要购买。
+> PS：软件本身是免费的，不过一些功能需要购买。
 
 ##### Logseq
 

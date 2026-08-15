@@ -10,7 +10,7 @@ tags:
 weight: 1
 ---
 
-之前介绍过一个通过命令找查询天气的工具[工具推荐：wttr-命令行查询天气。]({{< relref "post/2022-工具推荐_wttr-命令行查询天气.md" >}})，这次主要介绍另外一款命令行查询工具 [stormy](https://github.com/ashish0kumar/stormy)。
+之前介绍过一个通过命令找查询天气的工具 [工具推荐：wttr-命令行查询天气。]({{< relref “post/2022-工具推荐 _wttr-命令行查询天气。md” >}})，这次主要介绍另外一款命令行查询工具 [stormy](https://github.com/ashish0kumar/stormy)。
 
 我自己感觉这个项目的好处就是给一个二进制的命令行执行进行查询，缺点就是只支持英文。
 
@@ -67,7 +67,7 @@ live_mode = false
 compact = false
 ```
 
-> PS: OpenMeteo 这个不用设置 API key，provider 还支持 [OpenWeatherMap](https://openweathermap.org/api) ，不过这个需要添加 API Key。
+> PS：OpenMeteo 这个不用设置 API key，provider 还支持 [OpenWeatherMap](https://openweathermap.org/api)，不过这个需要添加 API Key。
 
 ## Wttr.in 和 Stormy 的比较
 

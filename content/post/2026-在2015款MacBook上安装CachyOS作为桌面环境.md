@@ -14,8 +14,8 @@ weight: 1
 
 ## 硬件信息
 
-- **硬件**: MacBook Pro 2015 款 (8GB RAM + 512GB SSD)
-- **操作系统**: CachyOS
+- **硬件**：MacBook Pro 2015 款 (8GB RAM + 512GB SSD)
+- **操作系统**：CachyOS
 
 ## 安装经历
 
@@ -24,7 +24,7 @@ weight: 1
 1. **Omarchy Linux** - 安装过程顺利，但重启后无法输入密码，放弃
 2. **CachyOS** - 安装时无法连接 WiFi，虽然可解决但选择放弃
 3. **EndeavourOS** - 对硬件支持良好，支持离线安装，重启后，无法连接 WiFi
-4. PopOS - 硬件支持最好，还是 无法连接 WiFi
+4. PopOS - 硬件支持最好，还是无法连接 WiFi
 
 最终决定还是使用 CachyOS，因为 CachyOS 的性能最好，然后通过连接网线就有网络了，不用折腾 Wifi 了。
 
@@ -44,7 +44,7 @@ lspci | grep -i network
 lsmod | grep brcm
 ```
 
-#### 方法 1：安装 Broadcom 驱动（推荐）
+#### 方法 1：安装 Broadcom 驱动 (推荐)
 
 ```sh
 # 更新系统
@@ -265,7 +265,7 @@ sudo pacman -S yay
 yay -S pamac-aur
 ```
 
-#### 方法 2：从 Chaotic-AUR 安装（推荐）
+#### 方法 2：从 Chaotic-AUR 安装 (推荐)
 
 [Chaotic-AUR](https://aur.chaotic.cx/) 是一个由 [Garuda Linux](http://garudalinux.org/) 维护的仓库，仓库的包都是签名和可信任的，可以通过 Pacman 直接安装。
 
@@ -509,7 +509,7 @@ sudo pacman -S alacritty thunar
 # 在显示管理器中选择 i3 会话
 ```
 
-#### Hyprland 安装（Wayland 平铺）
+#### Hyprland 安装 (Wayland 平铺)
 
 ```sh
 # 从 AUR 安装 Hyprland

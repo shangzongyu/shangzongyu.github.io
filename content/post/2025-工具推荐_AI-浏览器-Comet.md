@@ -15,7 +15,7 @@ tags:
 
 <!--more-->
 
-- 下载地址: <https://www.perplexity.ai/download-comet>
+- 下载地址：<https://www.perplexity.ai/download-comet>
 
 我使用了有一个多月了，感觉再也回不去之前的浏览器的。
 
@@ -43,7 +43,7 @@ tags:
 
 ![Perplexity Follow up](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-search-example-01.webp)
 
-#### 小技巧 2: 使用非 Google 和 Perplexit 搜索
+#### 小技巧 2：使用非 Google 和 Perplexit 搜索
 
 例如现在要使用 `bing`，在搜索栏中输入 `bing.com` 点击空格或者 TAB，就会出现如下图，这时候在搜索栏搜索自己想要搜索的内容，它就会使用 `bing` 进行搜索。
 
@@ -51,7 +51,7 @@ tags:
 
 ### 使用 Comet 总结视频
 
-点击右上角有个 **“Assistant”** ，会从右边弹出一个框，当鼠标放到 **“Ask Anything...”** 的时候出现下图：
+点击右上角有个 **“Assistant”**，会从右边弹出一个框，当鼠标放到 **“Ask Anything...”** 的时候出现下图：
 
 ![perplexity-video](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-video-0.webp)
 
@@ -75,13 +75,13 @@ AI 已经准备了几个常用的提示词，当然我们可以自己写提示�
 
 ![Search Mode](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-mode-search.webp)
 
-适合快速获取 **事实性答案** 和 **处理日常信息查询** ，比如天气预报、名人生日、词汇定义等。此模式优势是速度快、答案简洁准确，适合短期问题解决。
+适合快速获取**事实性答案**和**处理日常信息查询**，比如天气预报、名人生日、词汇定义等。此模式优势是速度快、答案简洁准确，适合短期问题解决。
 
 ### Research 模式
 
 ![Research Mode](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-mode-research.webp)
 
-适用于 **深入探讨特定主题**，整理多个信息来源，形成分析结论。适合撰写研究报告、市场调研、行业趋势分析等，能系统收集、整理资料并自动生成引文和参考文献，提高研究效率。
+适用于**深入探讨特定主题**，整理多个信息来源，形成分析结论。适合撰写研究报告、市场调研、行业趋势分析等，能系统收集、整理资料并自动生成引文和参考文献，提高研究效率。
 
 ### Labs 模式
 

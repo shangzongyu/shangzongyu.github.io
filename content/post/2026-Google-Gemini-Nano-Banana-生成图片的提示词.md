@@ -31,7 +31,7 @@ cinematic, ultra-realistic corporate headshot of the same person from the refere
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclists_20260419_HEQ9cpAaQAAP2Vd.webp)
 
-### 冬日搞怪九宫格人像（同脸九连拍）
+### 冬日搞怪九宫格人像 (同脸九连拍)
 
 ```json
 Create a 3x3 grid of playful winter portraits featuring the person from the attached image in all nine frames. Each frame shows a different expression, hairstyle, and outfit — funny, awkward, joyful, bored, mischievous, over-the-top.  The vibe is childlike, spontaneous, and imperfect, like a creative winter photoshoot done just for fun. Solid winter-toned backgrounds (cool blue, grey, off-white, muted beige). Styling varies between frames: messy beanies, scarves, ear warmers, oversized coats, fuzzy sweaters, layered winter textures, quirky glasses, exaggerated bed-hair, slightly wet hair from snow. Some frames include tongue out, wide smile, surprised face, mock-serious look, squinting from cold. Lighting is soft studio with a cool-neutral tone, visible grain, slight texture, no polish. The grid feels cohesive but intentionally chaotic and playful — winter mood without holiday symbolism. The face must remain 100% identical in all 9 frames.
@@ -133,7 +133,7 @@ Create a 3x3 grid of playful winter portraits featuring the person from the atta
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260105_Gemini_Generated_Image_kdwlodkdwlodkdwl.webp)
 
-> PS: 生成图片不是分享有可能因为我给的图片分辨率不高。
+> PS：生成图片不是分享有可能因为我给的图片分辨率不高。
 
 #### 男生版 - 纯素版本
 
@@ -241,50 +241,50 @@ Create a 3x3 grid of playful winter portraits featuring the person from the atta
 
 > 来源：[https://x.com/VoxcatAI/status/2013124498627912188](https://x.com/VoxcatAI/status/2013124498627912188)
 
-当下流行的“茶系伪素颜”（Tea Style / No-Makeup Makeup）或“白开水妆容”（Clean Girl Aesthetic）。
+当下流行的 “茶系伪素颜” (Tea Style / No-Makeup Makeup) 或 “白开水妆容” (Clean Girl Aesthetic)。
 
-这种妆容的核心在于“原生感”和“通透感”，给人一种天生皮肤好、气色佳的错觉，看似清淡，实则在细节上非常考究。
+这种妆容的核心在于 “原生感” 和 “通透感”，给人一种天生皮肤好、气色佳的错觉，看似清淡，实则在细节上非常考究。
 
-### 1. 底妆：强调“微光泽”与“呼吸感”
+### 1。底妆：强调 “微光泽” 与 “呼吸感”
 
-- 特点： 并不是完全的哑光，也不是油腻的水光，而是像陶瓷或刚剥壳鸡蛋一样的半哑光奶油肌。
+- 特点：并不是完全的哑光，也不是油腻的水光，而是像陶瓷或刚剥壳鸡蛋一样的半哑光奶油肌。
 - 细节：
-  - 轻薄遮瑕： 保留了皮肤的一点点质感（甚至轻微的毛孔或痣），没有假面感。
-  - 高光点缀： 重点在面中、鼻尖、唇峰和眉骨处有明显的光泽感（Highlight），让面部立体饱满。
-  - 色调： 偏向中性或暖调的象牙白，与颈部肤色自然衔接。
+  - 轻薄遮瑕：保留了皮肤的一点点质感 (甚至轻微的毛孔或痣)，没有假面感。
+  - 高光点缀：重点在面中、鼻尖、唇峰和眉骨处有明显的光泽感 (Highlight)，让面部立体饱满。
+  - 色调：偏向中性或暖调的象牙白，与颈部肤色自然衔接。
 
-### 2. 眉妆：强调“毛流感” (野生眉)
+### 2。眉妆：强调 “毛流感” (野生眉)
 
-- 特点： 几张图中的眉毛都非常自然，没有生硬的边框。
+- 特点：几张图中的眉毛都非常自然，没有生硬的边框。
 - 细节：
-  - 根根分明： 眉头部分的眉毛向上梳理，强调一根一根的真实毛发感（Wild Brows）。
-  - 颜色： 眉色比发色浅一号或保持一致（灰棕色为主），显得温柔不压抑。
-  - 形状： 顺着原本的眉骨走势，稍作延长，带有轻微的弧度，不刻意强调眉峰。
+  - 根根分明：眉头部分的眉毛向上梳理，强调一根一根的真实毛发感 (Wild Brows)。
+  - 颜色：眉色比发色浅一号或保持一致 (灰棕色为主)，显得温柔不压抑。
+  - 形状：顺着原本的眉骨走势，稍作延长，带有轻微的弧度，不刻意强调眉峰。
 
-### 3. 眼妆：做减法，重神采
+### 3。眼妆：做减法，重神采
 
-- 特点： 弱化眼影颜色，强调睫毛和眼神光。
+- 特点：弱化眼影颜色，强调睫毛和眼神光。
 - 细节：
-  - 眼影： 几乎看不出明显的眼影色块，主要使用低饱和度的大地色（杏色、奶茶色）大面积铺底，主要为了消肿和加深轮廓，而非显色。
-  - 眼线： 极细的内眼线（Tightline），通常只画到眼尾稍微拉出一点点，或者干脆只填充睫毛根部，让眼睛看起来有神即可。
-  - 睫毛： 强调“太阳花”效果，睫毛夹得很翘，根根分明，没有苍蝇腿，也没有浓密的假睫毛感。
+  - 眼影：几乎看不出明显的眼影色块，主要使用低饱和度的大地色 (杏色、奶茶色) 大面积铺底，主要为了消肿和加深轮廓，而非显色。
+  - 眼线：极细的内眼线 (Tightline)，通常只画到眼尾稍微拉出一点点，或者干脆只填充睫毛根部，让眼睛看起来有神即可。
+  - 睫毛：强调 “太阳花” 效果，睫毛夹得很翘，根根分明，没有苍蝇腿，也没有浓密的假睫毛感。
 
-### 4. 腮红与修容：营造“氛围感”
+### 4。腮红与修容：营造 “氛围感”
 
-- 特点： 腮红面积较大，与修容融合，打造自然好气色。
+- 特点：腮红面积较大，与修容融合，打造自然好气色。
 - 细节：
-  - 色系： 主要是收敛色，如裸杏色、干枯玫瑰色、奶油橘色。
-  - 位置： 并没有打在苹果肌正中央，而是稍稍向侧面颧骨延伸。
+  - 色系：主要是收敛色，如裸杏色、干枯玫瑰色、奶油橘色。
+  - 位置：并没有打在苹果肌正中央，而是稍稍向侧面颧骨延伸。
 
-### 5. 唇妆：主打“水光嘟嘟唇”
+### 5。唇妆：主打 “水光嘟嘟唇”
 
-- 质地： 使用镜面唇釉、唇蜜或滋润型口红。
-- 颜色： 低饱和度色系，如肉桂色、裸米色、冰透茶色、浅豆沙色（MLBB - My Lips But Better）。
-- 模糊唇线： 唇周边缘晕染开，弱化唇峰的锐利感，看起来更加年轻、无辜且亲和力强。
+- 质地：使用镜面唇釉、唇蜜或滋润型口红。
+- 颜色：低饱和度色系，如肉桂色、裸米色、冰透茶色、浅豆沙色 (MLBB - My Lips But Better)。
+- 模糊唇线：唇周边缘晕染开，弱化唇峰的锐利感，看起来更加年轻、无辜且亲和力强。
 - 整体风格：
-  - 清冷感 (Cool/Detached): 表情管理配合妆容，带有一种疏离但高级的美感。
-  - 氧气感 (Oxygen/Fresh): 干净、通透，没有攻击性。
-  - 高级灰/低饱和 (Low Saturation): 全脸没有高亮度的色彩，色彩统一和谐。
+  - 清冷感 (Cool/Detached)：表情管理配合妆容，带有一种疏离但高级的美感。
+  - 氧气感 (Oxygen/Fresh)：干净、通透，没有攻击性。
+  - 高级灰/低饱和 (Low Saturation)：全脸没有高亮度的色彩，色彩统一和谐。
 - 适用场景：这种妆容非常适合日常通勤、约会、证件照以及时尚杂志的特写拍摄，因为它耐看且能最大程度凸显个人的五官底子。
 
 ### 典型的 Promot 如下
@@ -427,7 +427,7 @@ Create a high-quality 3D avatar of the person in the uploaded image with a cheer
 
 这个表情很有意思，它不是五官动作的简单叠加，而是一种情绪语义。
 
-最开始我用嘟嘴+皱眉+生气来描述，模型会往真生气/凶这个方向跑，但加上“对男朋友撒气、被拍烦了”的叙事，就把它拉回到“凶但可爱、带撒娇的对抗”这种feel，很微妙，希望对你有所启发。
+最开始我用嘟嘴+皱眉+生气来描述，模型会往真生气/凶这个方向跑，但加上 “对男朋友撒气、被拍烦了” 的叙事，就把它拉回到 “凶但可爱、带撒娇的对抗” 这种 feel，很微妙，希望对你有所启发。
 
 ```json
 Photorealistic edit using the input person photo as strict identity reference: keep the same face, facial features, skin tone, hairstyle (color/bangs/length/volume), outfit and accessories unchanged (no face swap, no new person, no hair/outfit change). Change only expression/pose/background: pouty lips and furrowed brows, slightly angry/annoyed, like she’s playfully mad at her boyfriend and saying “stop filming me”. Close wide-angle perspective (18–28mm), body slightly leaning forward, one hand reaching toward the lens as if grabbing the boyfriend’s phone / blocking the camera; huge foreground hand occupying 30–50% of the frame, palm facing camera, five natural fingers, realistic anatomy; face in the back in sharp focus. Replace background with a clean solid pink studio backdrop (seamless, no texture). No text, no watermark, no frame, no extra fingers, no deformed hands, no heavy blur, no style change.
