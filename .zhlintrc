@@ -1,0 +1,25 @@
+{
+  "preset": "default",
+  "hyperParsers": ["ignore", "markdown"],
+  "rules": {
+    "unifiedPunctuation": "simplified",
+    "noSinglePair": true,
+    "spaceBetweenHalfwidthContent": true,
+    "noSpaceBetweenFullwidthContent": true,
+    "spaceBetweenMixedwidthContent": true,
+    "noSpaceBeforePauseOrStop": true,
+    "spaceAfterHalfwidthPauseOrStop": true,
+    "noSpaceAfterFullwidthPauseOrStop": true,
+    "noSpaceInsideQuotation": true,
+    "spaceOutsideHalfwidthQuotation": true,
+    "noSpaceOutsideFullwidthQuotation": true,
+    "spaceOutsideHalfwidthBracket": true,
+    "noSpaceOutsideFullwidthBracket": true,
+    "noSpaceInsideBracket": true,
+    "spaceOutsideCode": true,
+    "noSpaceInsideHyperMark": true,
+    "trimSpace": true,
+    "skipZhUnits": "年月日天号时分秒",
+    "skipPureWestern": true
+  }
+}

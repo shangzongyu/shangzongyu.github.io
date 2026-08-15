@@ -1,0 +1,7 @@
+# 该文件包含 Hugo shortcode（{{< relref "..." >}}），zhlint 0.8.2 的 --fix 会将其破坏（全角引号、.md 变 。md），
+# 且 pre-commit 钩子会自动运行 zhlint --fix，因此整个文件跳过 zhlint 检查。
+content/post/2025-工具推荐_stormy-命令行查询天气.md
+
+# AI 配置文档，使用半角冒号等非 zhlint 风格排版，跳过以避免提交时被自动改写。
+AGENTS.md
+CLAUDE.md
