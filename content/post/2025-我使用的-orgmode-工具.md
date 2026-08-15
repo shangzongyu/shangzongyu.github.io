@@ -1,5 +1,5 @@
 ---
-title: "我使用的 Orgmode 工具"
+title: "2025 我使用的 Orgmode 工具"
 description: 
 date: 2025-11-27T10:51:26+08:00
 image: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_orgmode-cover.png
