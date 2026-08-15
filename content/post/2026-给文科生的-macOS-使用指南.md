@@ -7,30 +7,15 @@ math:
 license:
 hidden: false
 comments: true
-draft: false
+draft: true
 weight: 1
 ---
+
 本文记录了适合文科生使用的 macOS 工具和使用技巧，帮助提高日常工作效率。
 
-## AI 浏览器 - Comet
+## 浏览器 - Chrome/FireFox
 
-**官网**：[https://www.comet.com/](https://www.comet.com/)
-
-Comet 是一款基于 Arc 浏览器的 AI 浏览器，集成了多种 AI 功能，非常适合需要频繁使用 AI 辅助写作和研究的文科生。
-
-### 主要功能
-
-- AI 智能总结：自动总结网页内容，快速获取要点
-- 智能写作助手：内置 AI 写作助手，帮助润色文字
-- 多语言翻译：实时翻译网页内容
-- 智能搜索：AI 增强的搜索功能，提供更精准的搜索结果
-
-### 适用场景
-
-- 文献研究和资料收集
-- 多语言文献阅读
-- 写作辅助和内容润色
-- 快速信息检索
+> 这两个没有什么好说的，使用任何一个都可以的，但是如果有 Gemini 的会员，推荐使用 Chrome，因为 Chrome 有 `Ask Gemini` 功能
 
 ## Markdown 编辑器 - 妙言
 
@@ -75,11 +60,11 @@ TODO
 
 ## 截屏 - MacShot
 
-> 为什么不使用微信或QQ自带截图，因为他们不是很安全。
+> 为什么不使用微信或 QQ 自带截图，因为他们不是很安全。
 
 ## 压缩工具 -  小而美
 
-- 官网： <https://dinkyfiles.com/>
+- 官网：<https://dinkyfiles.com/>
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclists_20260421_dinky-00.webp)
 
@@ -137,9 +122,9 @@ Recordly 是一款开源的屏幕录制工具，可以创建漂亮的屏幕录�
 
 macOS 内置了强大的 OCR 功能，可用于图片文字识别：
 
-1. 打开"预览"应用
+1. 打开 “预览” 应用
 2. 打开包含文字的图片
-3. 点击"工具" > "显示标记工具栏"
+3. 点击 “工具” > “显示标记工具栏”
 4. 点击文本识别图标
 
 #### 第三方 OCR 工具
@@ -200,8 +185,4 @@ macOS 内置了强大的 OCR 功能，可用于图片文字识别：
 
 **系统自带**：macOS 系统自带的密码管理器
 
-
-
----
-
-这篇文章会持续更新，记录发现的新工具和使用技巧。
+## Pure Mac - 软件清理

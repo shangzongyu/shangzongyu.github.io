@@ -265,7 +265,7 @@ macOS 专业的 diff 和 merge 工具。
 
 ### Git
 
-在 Kaleidoscope 菜单中选择 "Integration…"，选择设为默认工具。
+在 Kaleidoscope 菜单中选择 “Integration…”，选择设为默认工具。
 
 或手动配置：
 
@@ -369,7 +369,7 @@ svn diff --diff-cmd meld
 
 ### Git
 
-安装扩展 "Meld Diff" 或其他 diff 扩展。
+安装扩展 “Meld Diff” 或其他 diff 扩展。
 
 ### SVN
 

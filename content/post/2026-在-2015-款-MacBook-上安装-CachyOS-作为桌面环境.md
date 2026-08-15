@@ -12,9 +12,9 @@ draft: true
 weight: 1
 ---
 
-## 硬件信息
+## 我的电脑信息
 
-- **硬件**：MacBook Pro 2015 款 (8GB RAM + 512GB SSD)
+- **电脑**：MacBook Pro 2015 款 (8GB RAM + 512GB SSD)
 - **操作系统**：CachyOS
 
 ## 安装经历

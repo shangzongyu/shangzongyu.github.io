@@ -441,7 +441,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 使用原图为：
 
-![]([https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260105_nano-banana-00.webp](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260105_nano-banana-00.webp)
+![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260105_nano-banana-00.webp)
 
 ### 1
 

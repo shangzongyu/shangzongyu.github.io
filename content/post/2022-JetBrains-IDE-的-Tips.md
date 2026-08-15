@@ -43,7 +43,7 @@ or press on macOS or Windows/Linux。
 
 启动方式 2：
 
-按住 `⌥⇧` macOS）/ `Shift+Alt` (Windows/Linux) 然后使用光标进行选择
+按住 `⌥⇧` (macOS) / `Shift+Alt` (Windows/Linux) 然后使用光标进行选择
 
 启动方式 3：
 
