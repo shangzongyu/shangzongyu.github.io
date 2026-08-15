@@ -1,7 +1,7 @@
 [project]
 name = "scripts"
 version = "0.1.0"
-description = "Add your description here"
+description = "博客辅助脚本工具集（blog.py 日常命令 / convert.py Hashnode 迁移）"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
