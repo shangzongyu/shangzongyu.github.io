@@ -1,9 +1,10 @@
 ---
-title: "给文科生Markdown语法介绍"
+title: "给文科生 Markdown 语法介绍"
 date: 2026-01-01T00:00:00+08:00
 draft: true
 categories: ["未分类"]
-tags: []
+tags: 
+  - Markdown
 weight: 1
 ---
 

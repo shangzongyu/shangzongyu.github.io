@@ -7,7 +7,5 @@ tags: []
 weight: 1
 ---
 
-## LocalSend
-
 - GitHub: <https://github.com/localsend/localsend>
 - 官网：<https://localsend.org/>
