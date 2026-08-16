@@ -7,6 +7,7 @@ featuredImage: https://raw.githubusercontent.com/shangzongyu/blog-image/main/202
 tags:
   - AI
   - Prompt
+  - "Nano Banana"
 weight: 1
 ---
 > 主要收集一些生成图片的 Prompt。
@@ -441,7 +442,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260105_nano-banana-00.webp)
 
-### 1
+### 眨眼吐舌黑裙写真 (棕发)
 
 ```json
 {
@@ -501,7 +502,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8640.webp)
 
-### 2
+### 眨眼吐舌黑裙写真 (金发)
 
 ```json
 {
@@ -561,7 +562,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8641.webp)
 
-### 3
+### 厨房面粉搞怪写真
 
 ```json
 {
@@ -608,7 +609,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8644.webp)
 
-### 4
+### 都市街头肖像与卡通分身
 
 ```json
 将此图片转换为64K数码单反分辨率的创意都市街头肖像。
@@ -626,7 +627,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8645.webp)
 
-### 5
+### 五张宝丽来拍立得拼贴
 
 ```json
 {
@@ -687,7 +688,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8647.webp)
 
-### 6
+### 头纱花冠仰视梦幻肖像
 
 ```json
 {
@@ -769,7 +770,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8648.webp)
 
-### 7
+### 滑雪度假风手机摄影合集
 
 ```json
  {
@@ -808,7 +809,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8649.webp)
 
-### 8
+### 牛仔束腰浴室镜前自拍
 
 ```json
 {
@@ -879,7 +880,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8651.webp)
 
-### 9
+### 复古餐厅酒杯镜面自拍
 
 ```json
 {
@@ -943,7 +944,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8652.webp)
 
-### 10
+### 水晶棱镜折射时尚大片
 
 ```json
 {
@@ -979,7 +980,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8653.webp)
 
-### 11
+### 广角俯拍孤独感概念肖像
 
 ```json
 { "pace": "extensive surrounding empty space",
@@ -1067,7 +1068,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8654.webp)
 
-### 12
+### 韩系偶像风生日四宫格
 
 ```json
 {
@@ -1124,7 +1125,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8655.webp)
 
-### 13
+### 冬日蓝天仰拍闺蜜合影
 
 ```json
 {
@@ -1191,7 +1192,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8656.webp)
 
-### 14
+### 香槟色丝绸睡衣卧室写真
 
 ```json
 {
@@ -1326,7 +1327,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8626.webp)
 
-### 15
+### 深夜手机屏幕光自拍
 
 ```json
 {
@@ -1487,7 +1488,7 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8628.webp)
 
-### 16
+### 迷你片场分身导演大片
 
 ```json
 Ultra-realistic cinematic studio portrait of a woman directing a miniature film set starring a tiny lifelike version of herself.
@@ -1503,7 +1504,7 @@ Style: cinematic studio realism, no illustration, no CGI. 1:1
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8629.webp)
 
-### 17
+### 卡通角色同框奇幻合影
 
 ```json
 {
@@ -1542,7 +1543,7 @@ Style: cinematic studio realism, no illustration, no CGI. 1:1
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8632.webp)
 
-### 18
+### 西装棒棒糖酷飒肖像
 
 ```json
 {
@@ -1683,7 +1684,7 @@ Style: cinematic studio realism, no illustration, no CGI. 1:1
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8636.webp)
 
-### 19
+### 红裙玫瑰奢华回眸
 
 ```json
 {
@@ -1744,7 +1745,7 @@ Style: cinematic studio realism, no illustration, no CGI. 1:1
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8637.webp)
 
-### 20
+### 日系学院风蹲姿特写
 
 ```json
 {photorealistic image of a 18-year-old Japanese muse-level beauty, cute mischievous sly smiling face, fair pale skin, large purple eyes, long eyelashes, slight blush, very long straight black hair with ahoge antenna strand, slender youthful figure, modest natural small breasts, wearing dark navy school blazer over white collared shirt with green striped tie and plaid pleated skirt with black pantyhose, school backpack slung over shoulder, squatting down on ground with one foot extended toward camera in deep well lens view, hands gently holding brown mary jane school shoes with 'Playfoge' engraved, feet bare in black stockings visible without shoes, one stocking-clad foot stretched forward close to lens creating strong perspective distortion, subtle reveal of stocking-clad feet, nearby faint blurry footprints from foot sweat stains, composition/camera: subject fills 85–95% of frame, almost touching top edge, feet in extreme foreground massively prominent, extremely close framing with minimal negative space, camera height 5–10cm from ground, 18mm ultra-wide angle, lens distance from toes 0.2–0.45m, strong low-angle worm’s-eye view, legs occupy 89–95% of frame, background heavily blurred, soft diffused indoor lighting, cool blueish tone.
@@ -1761,7 +1762,7 @@ Style: cinematic studio realism, no illustration, no CGI. 1:1
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_IMG_8638.webp)
 
-### 21
+### 粉色云朵礼服高定大片
 
 ```json
 9:16 竖版，写实高定时尚大片风格。使用我上传的人物五官图作为唯一身份参考，100%还原同一张脸

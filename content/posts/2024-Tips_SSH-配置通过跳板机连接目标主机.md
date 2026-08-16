@@ -1,9 +1,11 @@
 ---
 title: Tips：SSH 配置通过跳板机连接目标主机
 description: "- 跳板机"
-slug: tipsssh
+slug: tip-sssh
 date: 2024-12-11 12:06:52+0000
 featuredImage:
+categories:
+  - Tips
 tags:
   - SSH
 weight: 1
