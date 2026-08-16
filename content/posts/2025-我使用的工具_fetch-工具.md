@@ -8,7 +8,6 @@ tags:
   - tools
   - command-line
 weight: 1
-draft: true
 ---
 
 > 自己使用的各种 `fetch` 工具。
