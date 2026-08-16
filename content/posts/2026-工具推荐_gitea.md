@@ -7,6 +7,8 @@ tags: []
 weight: 1
 ---
 
+> 搭建自己的 Git 仓库。
+
 <!--more-->
 
 - **官方网站**：[https://gitea.io](https://gitea.io)

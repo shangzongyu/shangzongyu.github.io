@@ -4,7 +4,6 @@ date: 2026-08-16T22:44:08+08:00
 featuredImage: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclists_20260816_pake-deepseek-harness-cover.webp
 categories: ["工具"]
 tags: ["AI Agents", "DeepSeek", "Harness"]
-math: 
 weight: 1
 ---
 
