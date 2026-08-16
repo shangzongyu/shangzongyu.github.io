@@ -14,6 +14,8 @@ weight: 1
 
 Linux 系统安装之后，`root` 路径的创建时间是不会变更，因此可以通过做个特性来查找。
 
+<!--more-->
+
 ```sh
 $ stat / | awk '/Birth: /{print $2 " " substr($3,1,5)}'
 2023-07-28 11:19

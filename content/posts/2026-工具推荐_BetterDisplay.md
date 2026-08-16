@@ -10,6 +10,8 @@ weight: 1
 - GitHub: [https://github.com/waydabber/BetterDisplay](https://github.com/waydabber/BetterDisplay)
 - 官网：[https://betterdisplay.pro/](https://betterdisplay.pro/)
 
+<!--more-->
+
 之前用 MonitorControl，现在改用 BetterDisplay。
 
 ## 主要功能

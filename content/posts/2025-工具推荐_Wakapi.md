@@ -11,6 +11,8 @@ weight: 1
 
 > 之前使用 [Wakatime](https://wakatime.com/) 记录自己日常编程时间消耗，支持各种不同的编辑器，包括 VSCode 系列、Vim、Emacs 以及 JetBrains 系列。
 
+<!--more-->
+
 ![wakatime](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_wakatime.webp)
 
 > 有些不好的点是：

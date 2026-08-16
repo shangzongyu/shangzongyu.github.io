@@ -14,6 +14,8 @@ weight: 1
 
 我在公司使用自己的电脑，因此使用 git 提交代码的时候经常使用自己的个人的 Git 信息提交代码，我在想要是有个可以切换 Git 配置的工具好了，现在这个工具找到了。
 
+<!--more-->
+
 [git-switcher](https://github.com/TheYkk/git-switcher) 这个工具很简单，就是帮助我们切换 git 的配置。
 
 ## 安装

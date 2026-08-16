@@ -13,6 +13,8 @@ draft: true
 
 > 自己使用的各种 `fetch` 工具。
 
+<!--more-->
+
 - `neofetch`：用于获取系统信息，使用 Shell 实现
   - Github：<https://github.com/dylanaraps/neofetch>
 - `fastfetch`：用于获取系统信息，C 实现比 `neofetch` 快很多。neofetch 停止更新，现在使用 fastfetch

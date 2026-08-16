@@ -17,6 +17,8 @@ weight: 1
 
 upgit 可以快捷地将文件上传到 Github 仓库并得到其链接。简洁跨平台，不常驻内存。
 
+<!--more-->
+
 **特点**：
 
 - 支持多平台，包括 Linux、Windows 和 macOS

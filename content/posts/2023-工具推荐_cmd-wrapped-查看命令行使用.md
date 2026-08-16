@@ -14,6 +14,8 @@ weight: 1
 
 使用 Rust 实现的用户查看自己命令行的使用。
 
+<!--more-->
+
 ## 安装
 
 Github：<https://github.com/YiNNx/cmd-wrapped>

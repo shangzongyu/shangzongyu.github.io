@@ -13,6 +13,8 @@ weight: 1
 
 介绍下为什么要学习 Markdown，以及 MacOS 写 Markdown 的工具。
 
+<!--more-->
+
 <https://x.com/PandaTalk8/status/2036277542802629107>
 
 ## MianYan

@@ -11,6 +11,8 @@ comment: true
 weight: 1
 ---
 
+<!--more-->
+
 ## Vim Diff
 
 ```bash

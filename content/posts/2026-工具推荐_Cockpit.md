@@ -7,5 +7,7 @@ tags: []
 weight: 1
 ---
 
+<!--more-->
+
 - GitHub: [https://github.com/cockpit-project/cockpit](https://github.com/cockpit-project/cockpit)
 - 官网：[https://cockpit-project.org/](https://cockpit-project.org/)

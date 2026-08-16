@@ -8,3 +8,5 @@ weight: 1
 ---
 
 - **仓库**：[https://github.com/farion1231/cc-switch](https://github.com/farion1231/cc-switch)
+
+<!--more-->

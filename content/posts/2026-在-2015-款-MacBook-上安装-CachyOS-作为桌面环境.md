@@ -12,6 +12,8 @@ draft: true
 weight: 1
 ---
 
+<!--more-->
+
 ## 我的电脑信息
 
 - **电脑**：MacBook Pro 2015 款 (8GB RAM + 512GB SSD)

@@ -14,6 +14,8 @@ draft: false
 
 我的 Github Insight。
 
+<!--more-->
+
 ![shangzongyu_2025_yearly_report](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251229_shangzongyu_2025_yearly_report.png)
 
 ## Generate your certificate

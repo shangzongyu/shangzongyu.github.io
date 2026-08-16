@@ -2,7 +2,7 @@
  "compilerOptions": {
   "paths": {
    "*": [
-    "../.go-cache/pkg/mod/github.com/!h!e!i!g!e-!p!cloud/!do!it@v1.0.2/assets/*"
+    "../../../../Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!h!e!i!g!e-!p!cloud/!do!it@v1.0.2/assets/*"
    ]
   }
  }

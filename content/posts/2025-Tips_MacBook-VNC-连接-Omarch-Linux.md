@@ -18,7 +18,7 @@ weight: 1
 
 换了一个新的办公环境，新的办公桌比之前小不少，导致我的两个显示器放不下 (两个显示器一个被 Omarhcy 使用，一个被 MacBook 使用)，MacBook 是我的主力机，因此就能把 Linux 的显示器去掉，Linux 我平常使用 SSH 直接连接的，但是偶尔使用 GUI，我想折腾下。
 
-!<!--more-->
+<!--more-->
 
 最初就是找到 [Tiger VNC](https://tigervnc.org/)，使用 VNC Server 搭建一个服务器，然后通过 Mac 的 VNC Client 连接，但是执行过程有关问题：
 
@@ -156,4 +156,3 @@ ERROR: ../wayvnc/src/main.c: 2069: Failed to initialise wayland`
 
 原因：因为 SSH 会话没有继承到图形用户会话的 Wayland 环境变量，wayvnc 需要连接正在运行的 Wayland 会话才能工作，而 SSH 默认没有 Wayland 图形会话上下文。
 解决：登录图形终端然后执行 `wayvnc 0.0.0.0`
-

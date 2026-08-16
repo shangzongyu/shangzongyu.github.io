@@ -12,6 +12,8 @@ weight: 1
 
 本文记录了适合文科生使用的 macOS 工具和使用技巧，帮助提高日常工作效率。
 
+<!--more-->
+
 ## 浏览器 - Chrome/FireFox
 
 > 这两个没有什么好说的，使用任何一个都可以的，但是如果有 Gemini 的会员，推荐使用 Chrome，因为 Chrome 有 `Ask Gemini` 功能

@@ -7,6 +7,8 @@ tags: []
 weight: 1
 ---
 
+<!--more-->
+
 - **官方网站**：[https://gitea.io](https://gitea.io)
 - **文档**：[https://docs.gitea.io](https://docs.gitea.io)
 - **GitHub**：[https://github.com/go-gitea/gitea](https://github.com/go-gitea/gitea)

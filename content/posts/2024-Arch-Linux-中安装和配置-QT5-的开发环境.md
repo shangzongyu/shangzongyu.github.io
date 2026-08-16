@@ -15,6 +15,8 @@ weight: 1
 - OS：EndeavourOS x86_64
 - QT 版本：QT5
 
+<!--more-->
+
 ```sh
 # 更新系统
 sudo pacman -Syu

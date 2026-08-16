@@ -10,6 +10,8 @@ tags:
 weight: 1
 ---
 
+<!--more-->
+
 ## 介绍
 
 - Github：<https://github.com/muandane/goji>

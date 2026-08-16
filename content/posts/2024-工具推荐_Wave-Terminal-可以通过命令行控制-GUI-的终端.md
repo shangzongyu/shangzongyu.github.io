@@ -15,6 +15,8 @@ weight: 1
 - 官网：<https://www.waveterm.dev/>
 - Github：<https://github.com/wavetermdev/waveterm>
 
+<!--more-->
+
 ## 介绍
 
 这个终端的有意思的是：

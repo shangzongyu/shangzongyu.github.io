@@ -12,6 +12,8 @@ weight: 1
 
 [git-commits-visualizer](https://github.com/abdullah-alaadine/git-commits-visualizer) 可以帮助用户通过图形化查看仓库的贡献度。
 
+<!--more-->
+
 特点：
 
 - 扫描本地仓库，并且生成一个贡献图

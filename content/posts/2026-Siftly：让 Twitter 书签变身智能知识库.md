@@ -9,6 +9,8 @@ weight: 1
 
 还在为 Twitter/X 书签管理发愁吗？[Siftly](https://github.com/viperrcrypto/Siftly) 是一个本地自托管的书签管理工具，用 AI 自动分类，还能生成思维导图。
 
+<!--more-->
+
 ## 核心功能
 
 ### 1。AI 智能分类

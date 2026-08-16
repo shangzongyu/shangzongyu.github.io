@@ -14,6 +14,8 @@ weight: 1
 
 自己很喜欢 Markdown 这个文本格式，因此写简历的时候就想到 Markdown 了，自己就去找符合自己需求的工具，当然最后还是需要把 Markdown 转换为 PDF，因为使用的时候需要打印出来。
 
+<!--more-->
+
 自己需求为：
 
 1. 支持 Markdown
