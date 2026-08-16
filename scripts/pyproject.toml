@@ -5,5 +5,10 @@ description = "博客辅助脚本工具集（blog.py 日常命令 / convert.py H
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "aiohttp>=3.13.2",
+    "rich>=13.9.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.3",
 ]

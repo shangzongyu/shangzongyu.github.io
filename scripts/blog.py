@@ -1,4 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.12"
+# dependencies = ["rich>=13.9.0"]
+# ///
 """blog.py - 博客日常命令工具（Hugo）
 
 用法:
@@ -16,7 +20,7 @@ fix 选项:
       --top-only          仅处理目录顶层文件（默认递归）
   -j, --jobs N            并行线程数（默认 4）
 
-仅使用标准库，无第三方依赖。zhlint 需已安装。
+依赖由 uv 内联脚本元数据自动管理。zhlint 需已安装。
 """
 
 import argparse
@@ -25,8 +29,15 @@ import os
 import re
 import subprocess
 import sys
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+
+from rich import box
+from rich.console import Console
+from rich.panel import Panel
+from rich.progress import BarColumn, Progress, TextColumn
+from rich.prompt import Prompt
+from rich.table import Table
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 CONTENT_DIR = ROOT_DIR / "content" / "posts"
@@ -34,33 +45,42 @@ CONTENT_DIR = ROOT_DIR / "content" / "posts"
 # 东八区（博客日期固定 +08:00 格式）
 TZ_CST = datetime.timezone(datetime.timedelta(hours=8))
 
-USE_COLOR = sys.stdout.isatty()
-RED = "\033[0;31m"
-GREEN = "\033[0;32m"
-YELLOW = "\033[0;33m"
-CYAN = "\033[0;36m"
-NC = "\033[0m"
-
-
-def _color(color: str, text: str) -> str:
-    return f"{color}{text}{NC}" if USE_COLOR else text
+console = Console()
+err_console = Console(stderr=True)
 
 
 def info(msg: str) -> None:
-    print(_color(CYAN, f"ℹ️  {msg}"), flush=True)
+    console.print(f"[cyan]ℹ  {msg}[/]")
 
 
 def ok(msg: str) -> None:
-    print(_color(GREEN, f"✅ {msg}"), flush=True)
+    console.print(f"[green]✔ {msg}[/]")
 
 
 def warn(msg: str) -> None:
-    print(_color(YELLOW, f"⚠️  {msg}"), flush=True)
+    console.print(f"[yellow]⚠ {msg}[/]")
 
 
 def fail(msg: str) -> None:
-    print(_color(RED, f"❌ {msg}"), flush=True)
+    console.print(f"[red]✖ {msg}[/]")
     sys.exit(1)
+
+
+def banner(title: str) -> None:
+    """命令横幅"""
+    console.print()
+    console.print(Panel.fit(f"[bold cyan]{title}[/]", border_style="cyan", padding=(0, 1)))
+    console.print()
+
+
+def card(rows: list[tuple[str, str]]) -> None:
+    """键值信息卡片"""
+    table = Table(show_header=False, box=box.ROUNDED, pad_edge=False, padding=(0, 1))
+    table.add_column(style="bold cyan", no_wrap=True)
+    table.add_column(style="bold white", no_wrap=False)
+    for k, v in rows:
+        table.add_row(k, v)
+    console.print(table)
 
 
 # ---------- serve: 启动本地服务 ----------
@@ -68,7 +88,9 @@ def cmd_serve(args: argparse.Namespace) -> None:
     cmd = ["hugo", "server", "-D", "-E", "-F"]
     if args.port:
         cmd += ["--port", str(args.port)]
-    info(f"启动 Hugo 服务（含草稿/过期/未来文章）端口 {args.port or 1313}")
+    banner("serve · 本地服务")
+    info(f"启动 Hugo 服务（含草稿/过期/未来文章），端口 {args.port or 1313}")
+    console.print("[dim]按 Ctrl+C 停止[/]")
     # 用 exec 替换进程，信号处理与直接运行 hugo 一致
     os.chdir(ROOT_DIR)
     os.execvp("hugo", cmd)
@@ -86,8 +108,10 @@ def to_cwd_relative(f: Path) -> str:
         fail(f"文件不在当前工作目录下（zhlint 不支持），请从项目根目录运行并使用相对路径: {f}")
 
 
-def zhlint_fix(rel_path: str) -> None:
-    subprocess.run(["zhlint", "--fix", rel_path], check=False)
+def zhlint_fix(rel_path: str) -> bool:
+    """运行 zhlint --fix，返回该文件是否被修改（zhlint 无论成败都以 0 退出）"""
+    result = subprocess.run(["zhlint", "--fix", rel_path], capture_output=True, text=True, check=False)
+    return "[fixed]" in result.stdout
 
 
 def cmd_fix(args: argparse.Namespace) -> None:
@@ -95,22 +119,37 @@ def cmd_fix(args: argparse.Namespace) -> None:
     for d in args.dirs:
         p = Path(d)
         if not p.is_dir():
-            print(f"目录不存在，跳过: {d}", file=sys.stderr)
+            warn(f"目录不存在，跳过: {d}")
             continue
         files.extend(f for f in (p.glob("*.md") if args.top_only else p.rglob("*.md")) if f.is_file())
 
     if not files:
-        print("没有找到任何 Markdown 文件。")
+        warn("没有找到任何 Markdown 文件。")
         return
 
     # 主线程统一校验相对路径，fail() 才能正常终止程序（线程内 sys.exit 无效）
     rels = [to_cwd_relative(f) for f in files]
 
-    with ThreadPoolExecutor(max_workers=args.jobs) as executor:
-        list(executor.map(zhlint_fix, rels))
-
     mode = "顶层" if args.top_only else "递归"
-    print(f"修复完成（{mode}，共 {len(files)} 个文件）。")
+    banner("fix · 修复 Markdown")
+    info(f"{mode}扫描，共 {len(files)} 个文件，{args.jobs} 线程并行")
+
+    fixed = 0
+    with Progress(
+        TextColumn("[bold cyan]修复 Markdown"),
+        BarColumn(bar_width=28),
+        TextColumn("[cyan]{task.completed}/{task.total}"),
+        TextColumn("{task.percentage:>3.0f}%"),
+        console=console,
+    ) as progress:
+        task = progress.add_task("修复", total=len(files))
+        with ThreadPoolExecutor(max_workers=args.jobs) as executor:
+            futures = [executor.submit(zhlint_fix, r) for r in rels]
+            for fut in as_completed(futures):
+                if fut.result():
+                    fixed += 1
+                progress.advance(task)
+    ok(f"修复完成：{fixed} 个被修改，{len(files) - fixed} 个无需处理")
 
 
 # ---------- update-date: 修改 date 字段 ----------
@@ -121,31 +160,31 @@ def now_date() -> str:
 def update_date(filepath: str, new_date: str) -> bool:
     p = Path(filepath)
     if not p.is_file():
-        print(f"❌ 文件不存在: {filepath}")
+        warn(f"文件不存在，跳过: {filepath}")
         return False
     if p.suffix != ".md":
-        print(f"❌ 跳过非 Markdown 文件: {filepath}")
+        warn(f"跳过非 Markdown 文件: {filepath}")
         return False
 
     text = p.read_text(encoding="utf-8")
     # 仅匹配开头的 frontmatter 块，避免误改正文中 date:/title: 开头的行
     m = re.match(r"^---\n(.*?)\n---", text, re.DOTALL)
     if not m:
-        print(f"❌ 文件不包含合法 frontmatter: {filepath}")
+        warn(f"文件不包含合法 frontmatter: {filepath}")
         return False
     fm = m.group(1)
 
     if re.search(r"(?m)^date:", fm):
         # 更新现有的 date 字段
         fm = re.sub(r"(?m)^date:.*", f"date: {new_date}", fm, count=1)
-        print(f"✅ 已更新: {filepath}")
+        ok(f"已更新  {filepath}")
     else:
         # 在 title 字段后添加 date 字段
         if not re.search(r"(?m)^title:", fm):
-            print(f"❌ 未找到 title 字段，无法插入 date: {filepath}")
+            warn(f"未找到 title 字段，无法插入 date: {filepath}")
             return False
         fm = re.sub(r"(?m)^(title:.*)$", rf"\1\ndate: {new_date}", fm, count=1)
-        print(f"✅ 已添加: {filepath}")
+        ok(f"已添加  {filepath}")
 
     p.write_text("---\n" + fm + "\n---" + text[m.end():], encoding="utf-8")
     return True
@@ -163,12 +202,15 @@ def cmd_update_date(args: argparse.Namespace) -> None:
     if new_date is None:
         new_date = now_date()
 
-    print(f"使用日期: {new_date}")
-    print()
+    banner("update-date · 修改日期")
+    card([("日期", new_date), ("文件", f"{len(files)} 个")])
+
+    ok_count = 0
     for f in files:
-        update_date(f, new_date)
-    print()
-    print("完成！")
+        if update_date(f, new_date):
+            ok_count += 1
+    console.print()
+    ok(f"完成：成功 {ok_count}，失败 {len(files) - ok_count}")
 
 
 # ---------- 分类相关 ----------
@@ -206,13 +248,15 @@ def select_category() -> str:
     cats = extract_categories() or ["未分类"]
     cats.append("（自定义输入）")
 
-    print(_color(CYAN, "已有分类："), file=sys.stderr)
+    err_console.print()
+    err_console.print("[bold cyan]已有分类：[/]")
     for i, c in enumerate(cats, 1):
-        print(f"  {i}) {c}", file=sys.stderr)
+        err_console.print(f"  [cyan]{i:>2}[/]  {c}")
+    err_console.print()
 
     while True:
         try:
-            choice = input("请选择分类编号，或输入新分类: ").strip()
+            choice = Prompt.ask("请选择分类编号，或输入新分类").strip()
         except EOFError:
             sys.exit(1)
         if choice.isdigit():
@@ -220,14 +264,14 @@ def select_category() -> str:
             if 1 <= n <= len(cats):
                 picked = cats[n - 1]
                 if picked == "（自定义输入）":
-                    new_cat = input("输入新分类名称: ").strip()
+                    new_cat = Prompt.ask("输入新分类名称").strip()
                     if new_cat:
                         return new_cat
-                    print(_color(YELLOW, "⚠️  分类不能为空，请重试"), file=sys.stderr)
+                    warn("分类不能为空，请重试")
                 else:
                     return picked
             else:
-                print(_color(YELLOW, f"⚠️  编号 {n} 超出范围（1-{len(cats)}），请重试"), file=sys.stderr)
+                warn(f"编号 {n} 超出范围（1-{len(cats)}），请重试")
         elif choice:
             return choice
 
@@ -267,10 +311,12 @@ def open_in_editor(filepath: Path) -> None:
 
 # ---------- new: 新建文章 ----------
 def cmd_new(args: argparse.Namespace) -> None:
+    banner("new · 新建文章")
+
     title = (args.title or "").strip()
     if not title:
         try:
-            title = input("请输入文章标题: ").strip()
+            title = Prompt.ask("请输入文章标题").strip()
         except EOFError:
             fail("标题不能为空")
         if not title:
@@ -304,9 +350,19 @@ def cmd_new(args: argparse.Namespace) -> None:
 
     fix_frontmatter(filepath, title, category, args.publish)
     ok(f"已创建: content/posts/{filename}")
+    console.print()
+    card(
+        [
+            ("标题", title),
+            ("分类", category),
+            ("状态", "已发布" if args.publish else "草稿"),
+            ("文件", f"content/posts/{filename}"),
+        ]
+    )
+    console.print()
 
     if args.no_open:
-        info(f"文件路径: {filepath}")
+        info(f"文件路径: {filepath.relative_to(ROOT_DIR)}")
     else:
         open_in_editor(filepath)
 
