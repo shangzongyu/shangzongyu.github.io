@@ -15,4 +15,4 @@ weight: 1
 
 这个 <https://github.com/shangzongyu/deepseek-harness-desktop> 地址就是我的成果，可以在 Release 中下载 macOS M 芯片的桌面版。
 
-！[Screenshot 2026-08-15 at 23-05-32 —](/Users/tomshine/Library/Containers/com.sw33tlie.macshot.macshot/Data/Library/Application Support/com.sw33tlie.macshot/clipboard/Screenshot 2026-08-15 at 23-05-32 —。png)
+![pake-deepseek-harness](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclists_20260816_pake-deepseek-harness.webp)
