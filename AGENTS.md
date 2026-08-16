@@ -5,7 +5,7 @@
 ## 项目概述
 
 - **类型**: Hugo 个人博客
-- **主题**: DoIt v1.0.2（通过 Go Modules 引入，见 `go.mod`）
+- **主题**: LoveIt v0.3.1（通过 Go Modules 引入，见 `go.mod`；项目 `layouts/` 下有兼容性覆盖模板）
 - **内容语言**: 中文（zh-cn）
 - **主分支**: `master`（注意不是 main）
 - **部署**: GitHub Actions 自动部署到 `gh-pages` 分支

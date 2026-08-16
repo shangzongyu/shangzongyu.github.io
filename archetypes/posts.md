@@ -1,29 +1,35 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+subtitle: ""
 date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
-authors: []
+author: ""
+authorLink: ""
 description: ""
+license: ""
+images: []
 
 tags: []
 categories: ["未分类"]
-series: []
 weight: 1
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
 
 featuredImage: ""
 featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: false
+ruby: true
+fraction: true
+fontawesome: true
+comment: true
 
 toc:
   enable: true
 math:
   enable: false
-lightgallery: false
-comment: true
-license: ""
 ---
 
 <!--more-->

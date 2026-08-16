@@ -86,8 +86,8 @@ def to_cwd_relative(f: Path) -> str:
         fail(f"文件不在当前工作目录下（zhlint 不支持），请从项目根目录运行并使用相对路径: {f}")
 
 
-def zhlint_fix(file: Path) -> None:
-    subprocess.run(["zhlint", "--fix", to_cwd_relative(file)], check=False)
+def zhlint_fix(rel_path: str) -> None:
+    subprocess.run(["zhlint", "--fix", rel_path], check=False)
 
 
 def cmd_fix(args: argparse.Namespace) -> None:
@@ -103,8 +103,11 @@ def cmd_fix(args: argparse.Namespace) -> None:
         print("没有找到任何 Markdown 文件。")
         return
 
+    # 主线程统一校验相对路径，fail() 才能正常终止程序（线程内 sys.exit 无效）
+    rels = [to_cwd_relative(f) for f in files]
+
     with ThreadPoolExecutor(max_workers=args.jobs) as executor:
-        list(executor.map(zhlint_fix, files))
+        list(executor.map(zhlint_fix, rels))
 
     mode = "顶层" if args.top_only else "递归"
     print(f"修复完成（{mode}，共 {len(files)} 个文件）。")
@@ -125,23 +128,26 @@ def update_date(filepath: str, new_date: str) -> bool:
         return False
 
     text = p.read_text(encoding="utf-8")
-    if not text.startswith("---"):
-        print(f"❌ 文件不包含 frontmatter: {filepath}")
+    # 仅匹配开头的 frontmatter 块，避免误改正文中 date:/title: 开头的行
+    m = re.match(r"^---\n(.*?)\n---", text, re.DOTALL)
+    if not m:
+        print(f"❌ 文件不包含合法 frontmatter: {filepath}")
         return False
+    fm = m.group(1)
 
-    if re.search(r"(?m)^date:", text):
+    if re.search(r"(?m)^date:", fm):
         # 更新现有的 date 字段
-        text = re.sub(r"(?m)^date:.*", f"date: {new_date}", text, count=1)
+        fm = re.sub(r"(?m)^date:.*", f"date: {new_date}", fm, count=1)
         print(f"✅ 已更新: {filepath}")
     else:
         # 在 title 字段后添加 date 字段
-        if not re.search(r"(?m)^title:", text):
+        if not re.search(r"(?m)^title:", fm):
             print(f"❌ 未找到 title 字段，无法插入 date: {filepath}")
             return False
-        text = re.sub(r"(?m)^(title:.*)$", rf"\1\ndate: {new_date}", text, count=1)
+        fm = re.sub(r"(?m)^(title:.*)$", rf"\1\ndate: {new_date}", fm, count=1)
         print(f"✅ 已添加: {filepath}")
 
-    p.write_text(text, encoding="utf-8")
+    p.write_text("---\n" + fm + "\n---" + text[m.end():], encoding="utf-8")
     return True
 
 
@@ -169,7 +175,7 @@ def cmd_update_date(args: argparse.Namespace) -> None:
 def extract_categories() -> list[str]:
     """提取现有文章 frontmatter 中的分类（兼容单行 ["a","b"] 与列表 - a 两种格式）"""
     cats: set[str] = set()
-    for md in CONTENT_DIR.glob("*.md"):
+    for md in CONTENT_DIR.rglob("*.md"):
         text = md.read_text(encoding="utf-8", errors="ignore")
         m = re.search(r"^---\n(.*?)\n---", text, re.DOTALL)
         if not m:
@@ -209,15 +215,19 @@ def select_category() -> str:
             choice = input("请选择分类编号，或输入新分类: ").strip()
         except EOFError:
             sys.exit(1)
-        if choice.isdigit() and 1 <= int(choice) <= len(cats):
-            picked = cats[int(choice) - 1]
-            if picked == "（自定义输入）":
-                new_cat = input("输入新分类名称: ").strip()
-                if new_cat:
-                    return new_cat
-                print(_color(YELLOW, "⚠️  分类不能为空，请重试"), file=sys.stderr)
+        if choice.isdigit():
+            n = int(choice)
+            if 1 <= n <= len(cats):
+                picked = cats[n - 1]
+                if picked == "（自定义输入）":
+                    new_cat = input("输入新分类名称: ").strip()
+                    if new_cat:
+                        return new_cat
+                    print(_color(YELLOW, "⚠️  分类不能为空，请重试"), file=sys.stderr)
+                else:
+                    return picked
             else:
-                return picked
+                print(_color(YELLOW, f"⚠️  编号 {n} 超出范围（1-{len(cats)}），请重试"), file=sys.stderr)
         elif choice:
             return choice
 
@@ -235,7 +245,8 @@ def fix_frontmatter(filepath: Path, title: str, category: str, publish: bool) ->
     """修正 frontmatter：title 用用户输入（archetype 默认从文件名派生）、categories、draft"""
     text = filepath.read_text(encoding="utf-8")
     escaped_title = title.replace("\\", "\\\\").replace('"', '\\"')
-    text = re.sub(r"(?m)^title:.*$", f'title: "{escaped_title}"', text, count=1)
+    # 用 lambda 作为替换，避免 re.sub 对替换串中的反斜杠做二次转义（否则 \\ 会被还原成 \）
+    text = re.sub(r"(?m)^title:.*$", lambda m: f'title: "{escaped_title}"', text, count=1)
     text = re.sub(r"(?m)^categories:.*$", f'categories: ["{category}"]', text, count=1)
     if publish:
         text = re.sub(r"(?m)^draft: true$", "draft: false", text, count=1)

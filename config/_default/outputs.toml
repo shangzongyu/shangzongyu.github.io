@@ -1,5 +1,5 @@
-# 输出格式配置
-home = ["HTML", "RSS", "JSON", "JsonFeed"]
+# 用于 Hugo 输出文档的设置
+home = ["HTML", "RSS", "JSON"]
 page = ["HTML", "MarkDown"]
 section = ["HTML", "RSS"]
 taxonomy = ["HTML", "RSS"]

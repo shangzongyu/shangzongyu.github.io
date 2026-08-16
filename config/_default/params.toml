@@ -1,372 +1,341 @@
-# DoIt 主题版本
-version = "1.0.2"
-# 站点默认主题 ("light", "dark", "black", "auto")
-defaultTheme = "auto"
-# 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
-gitRepo = "https://github.com/shangzongyu/shangzongyu.github.io"
-# 日期格式
-dateFormat = "2006-01-02"
-# 网站图片, 用于 Open Graph 和 Twitter Cards
-images = ["/img/avatar.png"]
-# 开启 PWA 支持
-enablePWA = false
-# 许可协议信息 (支持 HTML 格式)
-license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
-# [Experimental] Bundle js
-bundle = false
+[params]
+  # 网站默认主题 ["auto", "light", "dark"]
+  defaultTheme = "auto"
+  # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
+  gitRepo = "https://github.com/shangzongyu/shangzongyu.github.io"
+  # 日期格式
+  dateFormat = "2006-01-02"
+  # 网站标题, 用于 Open Graph 和 Twitter Cards
+  title = "我的世界"
+  # 网站描述, 用于 RSS, SEO, Open Graph 和 Twitter Cards
+  description = "生命不熄，Coding 不止"
+  # 网站图片, 用于 Open Graph 和 Twitter Cards
+  images = ["/img/avatar.png"]
 
-[author]
-  name = "shangzongyu"
-  email = ""
-  link = "https://github.com/shangzongyu"
-  avatar = "/img/avatar.png"
-  gravatarEmail = ""
+  # 作者配置
+  [params.author]
+    name = "shangzongyu"
+    email = ""
+    link = "https://github.com/shangzongyu"
 
-[image]
-  # 缓存图片链接到本地（本博客图片均为远程图床，开启会导致构建下载并处理所有大图，故关闭）
-  cacheRemote = false
-  # 图片缩放和优化
-  optimise = true
+  # 页面头部导航栏配置
+  [params.header]
+    # 桌面端导航栏模式 ["fixed", "normal", "auto"]
+    desktopMode = "fixed"
+    # 移动端导航栏模式 ["fixed", "normal", "auto"]
+    mobileMode = "auto"
+    # 页面头部导航栏标题配置
+    [params.header.title]
+      # LOGO 的 URL
+      logo = ""
+      # 标题名称
+      name = "我的世界"
+      # 在名称之前添加额外信息 (支持 HTML 格式)
+      pre = ""
+      # 在名称之后添加额外信息 (支持 HTML 格式)
+      post = ""
+      # 是否为标题显示打字机动画
+      typeit = false
 
-# 页面头部导航栏配置
-[header]
-  # 主题切换模式 ("switch", "select")
-  themeChangeMode = "switch"
-  [header.title]
-    # LOGO 的 URL
-    logo = ""
-    # 标题名称
-    name = "我的世界"
-    # 在名称之前添加额外信息 (支持 HTML 格式)
-    pre = ""
-    # 在名称之后添加额外信息 (支持 HTML 格式)
-    post = ""
-    # 是否为标题显示打字机动画
-    typeit = false
-
-# 页面底部信息配置
-[footer]
-  enable = true
-  # 自定义内容 (支持 HTML 格式)
-  custom = ''
-  # 是否显示 Hugo 和主题信息
-  hugo = true
-  # 托管服务信息 (支持 HTML 格式)
-  hostedOn = ''
-  # 是否显示版权信息
-  copyright = true
-  # 是否显示作者
-  author = true
-  # 网站创立年份
-  since = 2020
-  # ICP 备案信息，仅在中国使用 (支持 HTML 格式)
-  icp = ""
-  # 许可协议信息 (支持 HTML 格式)
-  license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
-
-# Section (所有文章) 页面配置
-[section]
-  # section 页面每页显示文章数量
-  paginate = 10
-  # 日期格式 (月和日)
-  dateFormat = "01-02"
-  # RSS 文章数目
-  rss = 10
-  # 最近更新文章设置
-  [section.recentlyUpdated]
+  # 页面底部信息配置
+  [params.footer]
     enable = true
-    rss = true
-    days = 30
-    maxCount = 10
+    # 自定义内容 (支持 HTML 格式)
+    custom = ""
+    # 是否显示 Hugo 和主题信息
+    hugo = true
+    # 是否显示版权信息
+    copyright = true
+    # 是否显示作者
+    author = true
+    # 网站创立年份
+    since = 2020
+    # ICP 备案信息，仅在中国使用 (支持 HTML 格式)
+    icp = ""
+    # 许可协议信息 (支持 HTML 格式)
+    license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
 
-# List (category or tag) page config
-# List (目录或标签) 页面配置
-[list]
-  paginate = 20
-  dateFormat = "01-02"
-  rss = 10
+  # Section (所有文章) 页面配置
+  [params.section]
+    paginate = 10
+    dateFormat = "01-02"
+    rss = 10
 
-# 文章页面配置
-[page]
-  # 是否在主页隐藏一篇文章
-  hiddenFromHomePage = false
-  # 是否在搜索结果中隐藏一篇文章
-  hiddenFromSearch = false
-  # 是否使用 twemoji
-  twemoji = false
-  # 是否使用 lightgallery
-  lightgallery = false
-  # 是否使用 ruby 扩展语法
-  ruby = true
-  # 是否使用 fraction 扩展语法
-  fraction = true
-  # 是否显示原始 Markdown 文档内容的链接
-  linkToMarkdown = false
-  # 是否在 RSS 中显示全文内容
-  rssFullText = true
-  # 是否启用最后修改时间
-  enableLastMod = true
-  # 是否启用字数统计
-  enableWordCount = true
-  # 是否启用阅读时间估计
-  enableReadingTime = true
-  # 相关文章推荐配置
-  [page.related]
+  # List (目录或标签) 页面配置
+  [params.list]
+    paginate = 20
+    dateFormat = "01-02"
+    rss = 10
+
+  # 应用图标配置
+  [params.app]
+    title = "我的世界"
+    noFavicon = false
+    svgFavicon = ""
+    themeColor = "#ffffff"
+    iconColor = "#5bbad5"
+    tileColor = "#da532c"
+
+  # 搜索配置
+  [params.search]
     enable = true
-    count = 5
-  # 目录配置
-  [page.toc]
-    # 是否使用目录
-    enable = true
-    # 是否保持使用文章前面的静态目录
-    keepStatic = false
-    # 是否使侧边目录自动折叠展开
-    auto = true
-  # 代码配置
-  [page.code]
-    # 默认展开显示的代码行数
-    maxShownLines = 10
-    # 是否显示代码行号
-    lineNos = true
-    # 是否开启代码换行
-    wrap = false
-    # 是否显示代码块标题
-    header = true
-  # 表格配置
-  [page.table]
-    # 是否开启表格排序
-    sort = true
-  # KaTeX 数学公式配置
-  [page.math]
-    enable = false
-    # 默认块定界符是 $$ ... $$ 和 \[ ... \]
-    blockLeftDelimiter = ""
-    blockRightDelimiter = ""
-    # 默认行内定界符是 $ ... $ 和 \( ... \)
-    inlineLeftDelimiter = ""
-    inlineRightDelimiter = ""
-    # KaTeX 扩展 copy_tex
-    copyTex = true
-    # KaTeX 扩展 mhchem
-    mhchem = true
-    # 使用 MathJax 替代 KaTeX
-    mathjax = false
-  # 评论系统设置
-  [page.comment]
-    enable = true
-    # Disqus 评论系统设置
-    [page.comment.disqus]
+    # 搜索引擎的类型 ["lunr", "algolia", "fuse", "pagefind"]
+    type = "fuse"
+    contentLength = 4000
+    placeholder = ""
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
+    [params.search.algolia]
+      index = ""
+      appID = ""
+      searchKey = ""
+    [params.search.fuse]
+      isCaseSensitive = false
+      minMatchCharLength = 2
+      findAllMatches = false
+      location = 0
+      threshold = 0.3
+      distance = 100
+      ignoreLocation = false
+    [params.search.pagefind]
+      basePath = "/_pagefind/"
+
+  # 主页信息设置
+  [params.home]
+    rss = 10
+    # 主页个人信息
+    [params.home.profile]
       enable = true
-      # Disqus 的 shortname
-      shortname = "hugo-theme-stack"
-    # Gitalk 评论系统设置
-    [page.comment.gitalk]
+      gravatarEmail = ""
+      # 主页显示头像的 URL
+      avatarURL = "/img/avatar.png"
+      # 主页显示的网站标题 (支持 HTML 格式)
+      title = ""
+      # 主页显示的网站副标题 (支持 HTML 格式)
+      subtitle = "生命不熄，Coding 不止"
+      # 是否为副标题显示打字机动画
+      typeit = false
+      # 是否显示社交账号
+      social = true
+      # 免责声明 (支持 HTML 格式)
+      disclaimer = ""
+    # 主页文章列表
+    [params.home.posts]
+      enable = true
+      paginate = 10
+
+  # 主页的社交信息设置
+  [params.social]
+    GitHub = "shangzongyu"
+    Email = ""
+
+  # 文章页面全局配置
+  [params.page]
+    hiddenFromHomePage = false
+    hiddenFromSearch = false
+    twemoji = false
+    lightgallery = false
+    # 是否使用 ruby 扩展语法
+    ruby = true
+    # 是否使用 fraction 扩展语法
+    fraction = true
+    # 是否使用 fontawesome 扩展语法
+    fontawesome = true
+    # 是否显示原始 Markdown 文档内容的链接
+    linkToMarkdown = false
+    # 是否在 RSS 中显示全文内容
+    rssFullText = true
+    # 目录配置
+    [params.page.toc]
+      enable = true
+      keepStatic = false
+      auto = true
+    # 代码配置
+    [params.page.code]
+      copy = true
+      maxShownLines = 50
+      [params.page.code.render]
+        goat = true
+        mermaid = true
+    # KaTeX 数学公式配置
+    [params.page.math]
       enable = false
-      owner = ""
-      repo = ""
-      clientId = ""
-      clientSecret = ""
-    # Valine 评论系统设置
-    [page.comment.valine]
-      enable = false
-      appId = ""
-      appKey = ""
-    # Waline 评论系统设置
-    [page.comment.waline]
-      enable = false
-      serverURL = ""
-    # Facebook 评论系统设置
-    [page.comment.facebook]
-      enable = false
-      width = "100%"
-      numPosts = 10
-      appId = ""
-      locale = ""
-    # Telegram comments 评论系统设置
-    [page.comment.telegram]
-      enable = false
-      siteID = ""
-    # Commento 评论系统设置
-    [page.comment.commento]
-      enable = false
-    # Comentario 评论系统设置
-    [page.comment.comentario]
-      enable = false
-      host = ""
+      inlineLeftDelimiter = ""
+      inlineRightDelimiter = ""
+      blockLeftDelimiter = ""
+      blockRightDelimiter = ""
+      copyTex = true
+      mhchem = true
+    # 文章页面的分享信息设置
+    [params.page.share]
+      enable = true
+      X = true
+      Facebook = true
+      Linkedin = true
+      Whatsapp = false
+      Pinterest = false
+      Tumblr = false
+      HackerNews = true
+      Reddit = false
+      VK = false
+      Buffer = false
+      Xing = false
+      Line = true
+      Instapaper = false
+      Pocket = false
+      Flipboard = false
+      Weibo = true
+      Blogger = false
+      Baidu = false
+      Odnoklassniki = false
+      Evernote = false
+      Skype = false
+      Trello = false
+      Diaspora = false
+      Mix = false
+      Telegram = true
+    # 评论系统设置
+    [params.page.comment]
+      enable = true
+      # Disqus 评论系统设置
+      [params.page.comment.disqus]
+        enable = true
+        shortname = "hugo-theme-stack"
+      # Gitalk 评论系统设置
+      [params.page.comment.gitalk]
+        enable = false
+        owner = ""
+        repo = ""
+        clientId = ""
+        clientSecret = ""
+      # Valine 评论系统设置
+      [params.page.comment.valine]
+        enable = false
+        appId = ""
+        appKey = ""
+        placeholder = ""
+        avatar = "mp"
+        meta = ""
+        pageSize = 10
+        lang = ""
+        visitor = true
+        recordIP = true
+        highlight = true
+        enableQQ = false
+        serverURLs = ""
+        emoji = ""
+      # Facebook 评论系统设置
+      [params.page.comment.facebook]
+        enable = false
+        width = "100%"
+        numPosts = 10
+        appId = ""
+        languageCode = ""
+      # Telegram comments 评论系统设置
+      [params.page.comment.telegram]
+        enable = false
+        siteID = ""
+        limit = 5
+        height = ""
+        color = ""
+        colorful = true
+        dislikes = false
+        outlined = false
+      # Commento 评论系统设置
+      [params.page.comment.commento]
+        enable = false
+      # utterances 评论系统设置
+      [params.page.comment.utterances]
+        enable = false
+        repo = ""
+        issueTerm = "pathname"
+        label = ""
+        lightTheme = "github-light"
+        darkTheme = "github-dark"
+      # giscus 评论系统设置
+      [params.page.comment.giscus]
+        enable = false
+        repo = ""
+        repoId = ""
+        category = "Announcements"
+        categoryId = ""
+        lang = ""
+        mapping = "pathname"
+        reactionsEnabled = "1"
+        emitMetadata = "0"
+        inputPosition = "bottom"
+
+  # TypeIt 配置
+  [params.typeit]
+    # 每一步的打字速度 (单位是毫秒)
+    speed = 100
+    # 光标的闪烁速度 (单位是毫秒)
+    cursorSpeed = 1000
+    # 光标的字符 (支持 HTML 格式)
+    cursorChar = "|"
+    # 打字结束之后光标的持续时间 (单位是毫秒, "-1" 代表无限大)
+    duration = -1
+
+  # 网站验证代码
+  [params.verification]
+    google = ""
+    bing = ""
+    yandex = ""
+    pinterest = ""
+    baidu = ""
+    so = ""
+    sogou = ""
+
+  # 网站分析配置
+  [params.analytics]
+    enable = false
+    [params.analytics.google]
+      id = ""
+      anonymizeIP = true
+    [params.analytics.fathom]
+      id = ""
+      server = ""
+    [params.analytics.baidu]
+      id = ""
+    [params.analytics.umami]
+      data_website_id = ""
+      src = ""
+      data_host_url = ""
+      data_domains = ""
+    [params.analytics.plausible]
+      data_domain = ""
+      src = ""
       script = ""
-    # Utterances 评论系统设置
-    [page.comment.utterances]
+    [params.analytics.cloudflare]
+      token = ""
+    [params.analytics.splitbee]
       enable = false
-      # owner/repo
-      repo = ""
-      issueTerm = "pathname"
-      label = ""
-      lightTheme = "github-light"
-      darkTheme = "github-dark"
-    # Twikoo 评论系统设置
-    [page.comment.twikoo]
-      enable = false
-      envId = ""
-      region = ""
-      path = ""
-    # Vssue 评论系统设置
-    [page.comment.vssue]
-      enable = false
-      platform = ""
-      owner = ""
-      repo = ""
-      clientId = ""
-      clientSecret = ""
-    # Remark42 评论系统设置
-    [page.comment.remark42]
-      enable = false
-      host = ""
-      site_id = ""
-    # giscus 评论系统设置
-    [page.comment.giscus]
-      enable = false
-      dataRepo = ""
-      dataRepoId = ""
-      dataCategory = ""
-      dataCategoryId = ""
-      dataMapping = "pathname"
-      dataStrict = "0"
-      dataReactionsEnabled = "1"
-      dataEmitMetadata = "0"
-      dataInputPosition = "bottom"
-      lightTheme = "light"
-      darkTheme = "dark"
-      dataLang = "zh-CN"
-      dataLoading = "lazy"
-    # artalk 评论系统设置
-    [page.comment.artalk]
+      No_cookie = true
+      Do_not_track = true
+      data_token = ""
+    [params.analytics.matomo]
       enable = false
       server = ""
-      site = ""
-      lite = false
-      katex = false
-      lightbox = false
-      pageview = true
-      commentCount = true
+      site_id = 1
+      Track_no_js = true
+      No_cookie = true
+      Do_not_track = true
 
-# 主页信息设置
-[home]
-  # RSS 文章数目
-  rss = 10
-  # 主页个人信息
-  [home.profile]
-    enable = true
-    # Gravatar 邮箱，用于优先在主页显示的头像
-    gravatarEmail = ""
-    # 主页显示头像的 URL
-    avatarURL = "/img/avatar.png"
-    # 头像的链接指向的 URL
-    avatarLinkURL = "https://github.com/shangzongyu"
-    # 主页显示的网站标题 (支持 HTML 格式)
-    title = "我的世界"
-    # 主页显示的网站副标题
-    subtitle = "生命不熄，Coding 不止"
-    # 是否为副标题显示打字机动画
-    typeit = false
-    # 是否显示社交账号
-    social = true
-    # 免责声明 (支持 HTML 格式)
-    disclaimer = ""
-  # 主页文章列表
-  [home.posts]
-    enable = true
-    # 主页每页显示文章数量
-    paginate = 10
-
-# 主页的社交信息设置
-[social]
-  Github = "shangzongyu"
-  Email = ""
-
-# 搜索配置
-[search]
-  enable = true
-  # 搜索引擎的类型 ("algolia", "fuse", "pagefind")
-  type = "fuse"
-  # 文章内容最长索引长度
-  contentLength = 4000
-  # 搜索框的占位提示语
-  placeholder = ""
-  # 最大结果数目
-  maxResultLength = 10
-  # 结果内容片段长度
-  snippetLength = 40
-  # 搜索结果中高亮部分的 HTML 标签
-  highlightTag = "em"
-  # 是否在搜索索引中使用基于 baseURL 的绝对路径
-  absoluteURL = false
-  [search.fuse]
-    # https://fusejs.io/api/options.html
-    isCaseSensitive = false
-    minMatchCharLength = 1
-    findAllMatches = false
-    location = 0
-    threshold = 0.1
-    distance = 100
-    ignoreLocation = false
-    useExtendedSearch = false
-    ignoreFieldNorm = false
-
-# TypeIt 配置
-[typeit]
-  speed = 100
-  cursorSpeed = 1000
-  cursorChar = "|"
-  duration = -1
-
-# 网站分析配置
-[analytics]
-  enable = false
-  [analytics.google]
-    id = ""
-    anonymizeIP = true
-  [analytics.fathom]
-    id = ""
-    server = ""
-  [analytics.baidu]
-    id = ""
-  [analytics.umami]
-    data_website_id = ""
-    src = ""
-    data_host_url = ""
-    data_domains = ""
-  [analytics.plausible]
-    data_domain = ""
-    src = ""
-    script = ""
-  [analytics.cloudflare]
-    token = ""
-  [analytics.splitbee]
+  # Cookie 许可配置
+  [params.cookieconsent]
     enable = false
-    No_cookie = true
-    Do_not_track = true
-    data_token = ""
-  [analytics.matomo]
-    enable = false
-    server = ""
-    site_id = 1
-    Track_no_js = true
-    No_cookie = true
-    Do_not_track = true
+    [params.cookieconsent.content]
+      message = ""
+      dismiss = ""
+      link = ""
 
-# Cookie 许可配置
-[cookieconsent]
-  enable = false
-  [cookieconsent.content]
-    message = ""
-    dismiss = ""
-    link = ""
+  # CDN 配置
+  [params.cdn]
+    data = ""
 
-# CDN 配置
-[cdn]
-  data = ""
-
-# 兼容性设置
-[compatibility]
-  # 是否使用 Polyfill.io 来兼容旧式浏览器
-  polyfill = false
+  # 兼容性设置
+  [params.compatibility]
+    # 是否使用 Polyfill.io 来兼容旧式浏览器
+    polyfill = false

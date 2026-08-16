@@ -5,7 +5,7 @@ featuredImage: https://raw.githubusercontent.com/shangzongyu/blog-image/main/202
 categories: ["工具"]
 tags: ["AI Agents", "DeepSeek", "Harness"]
 math: 
-weight : 1 
+weight: 1
 ---
 
 20260813 [DeepSeek Harness](https://www.deepseek.com/harness/en/) 发布，当天没有尝试，等第二天到公司事情不多，我就想想着试试看看效果如何，就参考官方文档是红 `npx` 启动了 DeepSeek Harnnes，一切都顺利，但是启动后没有想到用它来做什么。
