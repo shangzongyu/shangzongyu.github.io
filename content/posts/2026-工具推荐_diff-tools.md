@@ -1,13 +1,17 @@
 ---
 title: "工具推荐: Diff Tools"
 description: 文件对比和 Git diff 美化工具
+slug: "工具推荐-diff-tools"
 date: 2026-04-18T20:07:20+08:00
 featuredImage:
-tags: ["工具", "diff", "Git"]
-categories: ["工具推荐"]
+tags:
+  - 工具
+  - diff
+  - Git
+categories:
+  - 工具推荐
 weight: 1
 ---
-
 > 介绍一些 Diff 工具。
 
 <!--more-->

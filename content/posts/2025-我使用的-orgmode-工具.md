@@ -1,6 +1,7 @@
 ---
 title: "2025 我使用的 Orgmode 工具"
 description: 
+slug: "2025-我使用的-orgmode-工具"
 date: 2025-11-27T10:51:26+08:00
 featuredImage: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/upgit_20251127_orgmode-cover.png
 tags:
@@ -8,7 +9,6 @@ tags:
   - Org
 weight: 1
 ---
-
 ## 前言
 
 2025 年这个时代，Markdown 文档盛行，大部分的技术文档都使用 Markdown 进行编写，现在的 AI 对 Markdown 的支持也很好。不过有一个文档格式 org 文档，我自己认为它比 Markdown 文档更好用。但是由于它通常被用在 Emacs，导致除 Emacs 用户之外的其他的很少接触这个更好的文档，今天不会介绍他的语法，说下我自己使用 Org 文档的几个工具。

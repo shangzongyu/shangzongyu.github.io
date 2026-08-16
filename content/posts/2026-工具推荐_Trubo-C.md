@@ -1,13 +1,14 @@
 ---
 title: "2026-Trubo C"
+slug: "2026-trubo-c"
 date: 2026-08-17T00:22:05+08:00
 draft: true
-categories: ["工具推荐"]
+categories:
+  - 工具推荐
 tags: []
 featuredImage: ""
 weight: 1
----
-<!--more-->
+---<!--more-->
 
 [https://skywind.me/blog/archives/3656](https://skywind.me/blog/archives/3656)
 

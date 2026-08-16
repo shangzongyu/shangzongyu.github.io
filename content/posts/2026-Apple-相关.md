@@ -1,18 +1,18 @@
 ---
 title: "Apple 相关"
 description: 
+slug: "apple-相关"
 date: 2026-01-25T16:20:18+08:00
-featuredImage: 
-math: 
 license: 
-tags: ["Apple", "macOS"]
-categories: ["Apple"]
-comment: true
+tags:
+  - Apple
+  - macOS
+categories:
+  - Apple
 draft: true
 weight: 1
 ---
-
-> 主要收集 Apple 相关的。
+> 主要收集 Apple 相关的信息。
 
 <!--more-->
 

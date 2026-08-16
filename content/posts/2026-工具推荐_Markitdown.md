@@ -1,12 +1,13 @@
 ---
 title: "工具推荐：Markitdown"
+slug: "工具推荐markitdown"
 date: 2026-01-01T00:00:00+08:00
 draft: true
-categories: ["工具推荐"]
+categories:
+  - 工具推荐
 tags: []
 weight: 1
 ---
-
 - GitHub: [https://github.com/microsoft/markitdown](https://github.com/microsoft/markitdown)
 - PyPI: [https://pypi.org/project/markitdown/](https://pypi.org/project/markitdown/)
 

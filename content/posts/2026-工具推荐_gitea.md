@@ -1,12 +1,13 @@
 ---
 title: "工具推荐：gitea"
+slug: "工具推荐gitea"
 date: 2026-01-01T00:00:00+08:00
 draft: true
-categories: ["工具推荐"]
+categories:
+  - 工具推荐
 tags: []
 weight: 1
 ---
-
 > 搭建自己的 Git 仓库。
 
 <!--more-->

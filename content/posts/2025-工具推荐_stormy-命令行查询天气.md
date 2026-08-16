@@ -1,6 +1,7 @@
 ---
 title: "工具推荐：stormy 命令行查询天气"
 description:
+slug: "工具推荐stormy-命令行查询天气"
 date: 2025-11-17T14:28:42+08:00
 featuredImage: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251117_stormy-cover.webp
 tags:
@@ -9,7 +10,6 @@ tags:
   - tools
 weight: 1
 ---
-
 之前介绍过一个通过命令找查询天气的工具 [工具推荐：wttr-命令行查询天气]({{< relref "posts/2022-工具推荐_wttr-命令行查询天气.md" >}})，这次主要介绍另外一款命令行查询工具 [stormy](https://github.com/ashish0kumar/stormy) 。
 
 <!--more-->

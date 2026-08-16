@@ -1,19 +1,17 @@
 ---
 title: "Tips：MacBook VNC 连接 Omarchy Linux"
 description: 
+slug: "tipsmacbook-vnc-连接-omarchy-linux"
 date: 2025-11-18T19:17:00+08:00
 featuredImage: 
-math: 
-license: 
 tags:
   - tips
   - Linux
   - VNC
-categories: ["Tips"]
-comment: true
+categories:
+  - Tips
 weight: 1
 ---
-
 ## 前言
 
 换了一个新的办公环境，新的办公桌比之前小不少，导致我的两个显示器放不下 (两个显示器一个被 Omarhcy 使用，一个被 MacBook 使用)，MacBook 是我的主力机，因此就能把 Linux 的显示器去掉，Linux 我平常使用 SSH 直接连接的，但是偶尔使用 GUI，我想折腾下。

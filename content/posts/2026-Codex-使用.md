@@ -1,13 +1,14 @@
 ---
 title: "Codex 使用"
+slug: "codex-使用"
 date: 2026-01-01T00:00:00+08:00
 draft: true
-categories: ["未分类"]
+categories:
+  - 未分类
 tags: []
 weight: 1
 ---
-
-2026-Codex 使用
+> 主要介绍 Codex 相关的工具。
 
 <!--more-->
 
@@ -55,6 +56,8 @@ GitHub：https://github.com/Yeachan-Heo/oh-my-codex
 官网：https://yeachan-heo.github.io/oh-my-codex-website/
 
 推荐组合：macOS/Linux + Codex CLI (Windows 原生支持仍在完善中)。适合已经在用 Codex、想把工作流做得更系统，并把运行时状态管理做扎实的开发者。
+
+## Codex Plus Plus
 
 ## RKT
 

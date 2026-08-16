@@ -8,11 +8,9 @@ tags:
   - terminal
   - tools
 weight: 1
-comment: true
-draft: false
 ---
 
-我的 Github Insight。
+我的 Github Insight, 会持续更新。
 
 <!--more-->
 
@@ -20,6 +18,6 @@ draft: false
 
 ## Generate your certificate
 
- [https://certificate.brendonmatos.com](https://t.co/RW0tiZnPXq)
+<https://certificate.brendonmatos.com>
 
 ![](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclist_20260124_Certificate-Github.webp)

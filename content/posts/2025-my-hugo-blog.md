@@ -1,17 +1,15 @@
 ---
 title: "My Hugo Blog"
 description:
+slug: "my-hugo-blog"
 date: 2025-11-11T18:23:41+08:00
 featuredImage:
-math:
-license:
 comment: true
 draft: true
 tags: []
 categories: []
 weight: 1
 ---
-
 ## 写作工作
 
 - Typora

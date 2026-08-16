@@ -1,6 +1,7 @@
 ---
 title: "文科生的 macOS 使用指南"
 description: 适合文科生的 macOS 工具和使用技巧
+slug: "文科生的-macos-使用指南"
 date: 2026-04-18T00:00:00+08:00
 featuredImage:
 math:
@@ -9,7 +10,6 @@ comment: true
 draft: true
 weight: 1
 ---
-
 本文记录了适合文科生使用的 macOS 工具和使用技巧，帮助提高日常工作效率。
 
 <!--more-->
