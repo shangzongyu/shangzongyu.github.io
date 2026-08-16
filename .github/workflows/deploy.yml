@@ -1,51 +1,87 @@
-name: Deploy to Github Pages
+name: Deploy Blog
 
 on:
-    push:
-        branches: [master]
-    pull_request:
-        branches: [master]
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  schedule:
+    # 每天 00:00 UTC 检查主题更新，有更新则自动发布
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+# 同一时间只允许一个部署在跑，避免并发写入 gh-pages 分支
+concurrency:
+  group: deploy-blog
+  cancel-in-progress: false
+
+permissions:
+  contents: write
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
+  # 仅在定时/手动触发时更新主题；
+  # 若主题有更新会提交到 master，随后 push 事件自动触发下面的构建部署
+  update-theme:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
 
-        permissions:
-            # Give the default GITHUB_TOKEN write permission to commit and push the
-            # added or changed files to the repository.
-            contents: write
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "latest"
+          extended: true
 
-        steps:
-            - uses: actions/checkout@v5
-              with:
-                  fetch-depth: 0
+      - name: Update theme
+        run: hugo mod get -u github.com/CaiJimmy/hugo-theme-stack/v3
 
-            - name: Cache Hugo resources
-              uses: actions/cache@v5
-              env:
-                  cache-name: cache-hugo-resources
-              with:
-                  path: resources
-                  key: ${{ env.cache-name }}
+      - name: Tidy go.mod, go.sum
+        run: hugo mod tidy
 
-            - uses: actions/setup-go@v6
-              with:
-                  go-version: "^1.17.0"
-            - run: go version
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "CI: Update theme"
 
-            - name: Setup Hugo
-              uses: peaceiris/actions-hugo@v3
-              with:
-                  hugo-version: "latest"
-                  extended: true
+  # 构建并部署到 gh-pages；PR 只验证构建、不部署
+  build-and-deploy:
+    needs: update-theme
+    if: always() && github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref }}
 
-            - name: Build
-              run: hugo --minify --gc
+      - name: Cache Hugo resources
+        uses: actions/cache@v5
+        with:
+          path: resources
+          key: ${{ runner.os }}-hugo-resources-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-resources-
 
-            - name: Deploy 🚀
-              uses: JamesIves/github-pages-deploy-action@v4
-              with:
-                  branch: gh-pages
-                  folder: public
-                  clean: true
-                  single-commit: true
+      - name: Setup Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: "^1.17.0"
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "latest"
+          extended: true
+
+      - name: Build
+        run: hugo --minify --gc
+
+      - name: Deploy 🚀
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: public
+          clean: true
+          single-commit: true
