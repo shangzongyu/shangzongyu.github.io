@@ -34,7 +34,7 @@ jobs:
           extended: true
 
       - name: Update theme
-        run: hugo mod get -u github.com/CaiJimmy/hugo-theme-stack/v3
+        run: hugo mod get -u github.com/HEIGE-PCloud/DoIt
 
       - name: Tidy go.mod, go.sum
         run: hugo mod tidy
@@ -66,7 +66,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v6
         with:
-          go-version: "^1.17.0"
+          go-version: "^1.20.0"
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3

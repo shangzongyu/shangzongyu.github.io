@@ -1,0 +1,7 @@
+# 隐私信息配置
+[googleAnalytics]
+  # 由 params.analytics.google 替代
+[x]
+  enableDNT = true
+[youtube]
+  privacyEnhanced = true

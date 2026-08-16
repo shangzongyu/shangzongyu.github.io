@@ -1,3 +1,3 @@
-# Permalinks format of each content section
-post = "/p/:slug/"
+# 文章 URL 格式（保持与旧版 stack 主题一致，URL 不变）
+posts = "/p/:slug/"
 page = "/:slug/"

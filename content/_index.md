@@ -1,8 +1,3 @@
 ---
-menu:
-    main:
-        name: Home
-        weight: 1
-        params:
-            icon: home
+# 主页内容（可留空，主页由主题渲染 profile 和文章列表）
 ---

@@ -5,7 +5,7 @@
 ## 项目概述
 
 - **类型**: Hugo 个人博客
-- **主题**: hugo-theme-stack v3.33.0（通过 Go Modules 引入，见 `go.mod`）
+- **主题**: DoIt v1.0.2（通过 Go Modules 引入，见 `go.mod`）
 - **内容语言**: 中文（zh-cn）
 - **主分支**: `master`（注意不是 main）
 - **部署**: GitHub Actions 自动部署到 `gh-pages` 分支
@@ -65,8 +65,8 @@
 
 ### 文章位置
 
-- 博客文章: `content/post/`
-- 页面: `content/page/`（archives、search、links）
+- 博客文章: `content/posts/`
+- 页面: `content/page/`（links）
 - 分类: `content/categories/`
 - 配置: `config/_default/`
 - CI 流水线: `.github/workflows/`
@@ -132,9 +132,9 @@ zhlint 会检查全角/半角标点、中英文之间空格等规范，发现问
 
 ### 内容管理
 
-- 在 `content/post/` 下创建新文章
+- 在 `content/posts/` 下创建新文章
 - 使用 Obsidian 或 Typora 编辑
-- Obsidian 配置位于 `content/post/.obsidian/`，已加入 .gitignore 不入库
+- Obsidian 配置位于 `content/posts/.obsidian/`，已加入 .gitignore 不入库
 
 ## 与 AI 交互
 

@@ -29,7 +29,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
-CONTENT_DIR = ROOT_DIR / "content" / "post"
+CONTENT_DIR = ROOT_DIR / "content" / "posts"
 
 # 东八区（博客日期固定 +08:00 格式）
 TZ_CST = datetime.timezone(datetime.timedelta(hours=8))
@@ -78,7 +78,7 @@ def cmd_serve(args: argparse.Namespace) -> None:
 def to_cwd_relative(f: Path) -> str:
     """转为相对当前工作目录的路径（zhlint 只接受不含 .. 的相对路径）
 
-    请从项目根目录运行本脚本，并使用项目内相对路径（如 content/post）。
+    请从项目根目录运行本脚本，并使用项目内相对路径（如 content/posts）。
     """
     try:
         return f.resolve().relative_to(Path.cwd().resolve()).as_posix()
@@ -280,9 +280,9 @@ def cmd_new(args: argparse.Namespace) -> None:
         fail(f"文件已存在: {filename}（换个标题或分类）")
 
     # 用 archetype 生成骨架（date 自动填当前时间），随后修正 frontmatter
-    info(f"生成文章: content/post/{filename}")
+    info(f"生成文章: content/posts/{filename}")
     try:
-        subprocess.run(["hugo", "new", f"content/post/{filename}"], cwd=ROOT_DIR, check=True)
+        subprocess.run(["hugo", "new", f"content/posts/{filename}"], cwd=ROOT_DIR, check=True)
     except subprocess.CalledProcessError as e:
         # hugo new 失败（如现有文章有语法错误导致站点组装失败），清理可能残留的半成品
         filepath.unlink(missing_ok=True)
@@ -292,7 +292,7 @@ def cmd_new(args: argparse.Namespace) -> None:
         )
 
     fix_frontmatter(filepath, title, category, args.publish)
-    ok(f"已创建: content/post/{filename}")
+    ok(f"已创建: content/posts/{filename}")
 
     if args.no_open:
         info(f"文件路径: {filepath}")

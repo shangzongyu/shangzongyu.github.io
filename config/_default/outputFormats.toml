@@ -1,0 +1,10 @@
+# 输出 Markdown 格式文档的设置
+[MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+[JsonFeed]
+  mediaType = "application/feed+json"
+  isPlainText = true
+  notAlternative = true

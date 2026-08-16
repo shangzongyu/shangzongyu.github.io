@@ -1,5 +1,5 @@
-module github.com/CaiJimmy/hugo-theme-stack-starter
+module github.com/shangzongyu/shangzongyu.github.io
 
-go 1.17
+go 1.20
 
-require github.com/CaiJimmy/hugo-theme-stack/v3 v3.34.2 // indirect
+require github.com/HEIGE-PCloud/DoIt v1.0.2 // indirect

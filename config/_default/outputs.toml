@@ -1,0 +1,5 @@
+# 输出格式配置
+home = ["HTML", "RSS", "JSON", "JsonFeed"]
+page = ["HTML", "MarkDown"]
+section = ["HTML", "RSS"]
+taxonomy = ["HTML", "RSS"]
