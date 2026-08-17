@@ -1,7 +1,7 @@
 ---
 title: "工具推荐：AI 浏览器 Comet"
 description: 
-slug: "工具推荐ai-浏览器-comet"
+slug: ai-browser-comet
 date: 2025-11-19T10:41:46+08:00
 featuredImage: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251119_perplexity-cover.png
 weight: 1
@@ -10,6 +10,7 @@ tags:
   - AI
   - Tools
 ---
+
 今年有好几家公司都出了 AI 浏览器，自己也尝试了一款 AI 浏览器器 [Comet](https://www.perplexity.ai/comet)，它是 Perplexiy 推出的浏览器，集成自己 AI Perplexiy。
 
 <!--more-->

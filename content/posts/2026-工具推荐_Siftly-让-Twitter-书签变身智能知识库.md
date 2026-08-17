@@ -1,6 +1,6 @@
 ---
 title: "Siftly：让 Twitter 书签变身智能知识库"
-slug: "siftly让-twitter-书签变身智能知识库"
+slug: siftly-twitter-bookmarks
 date: 2026-08-06T18:02:42+08:00
 draft: true
 categories:

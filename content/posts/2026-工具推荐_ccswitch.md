@@ -1,6 +1,6 @@
 ---
 title: "工具推荐：ccswitch"
-slug: "工具推荐ccswitch"
+slug: ccswitch
 date: 2026-01-01T00:00:00+08:00
 draft: true
 categories:

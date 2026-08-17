@@ -1,7 +1,7 @@
 ---
 title: "在 2015 款 MacBook Pro 上安装 CachyOS 作为桌面环境"
 description: 在旧 MacBook 上安装 Linux 桌面环境，配置常用工具和软件
-slug: "在-2015-款-macbook-pro-上安装-cachyos-作为桌面环境"
+slug: cachyos-on-macbook-pro-2015
 date: 2026-04-18T20:00:00+08:00
 featuredImage: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_作为自己的桌面环境_CachyOS.webp
 tags:

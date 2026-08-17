@@ -1,7 +1,7 @@
 ---
 title: "Apple 相关"
 description: 
-slug: "apple-相关"
+slug: apple-related
 date: 2026-01-25T16:20:18+08:00
 license: 
 tags:

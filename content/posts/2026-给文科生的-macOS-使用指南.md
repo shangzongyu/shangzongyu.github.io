@@ -1,7 +1,7 @@
 ---
 title: "文科生的 macOS 使用指南"
 description: 适合文科生的 macOS 工具和使用技巧
-slug: "文科生的-macos-使用指南"
+slug: macos-guide-for-liberal-arts
 date: 2026-04-18T00:00:00+08:00
 featuredImage:
 draft: true

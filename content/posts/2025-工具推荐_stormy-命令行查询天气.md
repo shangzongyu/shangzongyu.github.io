@@ -1,7 +1,7 @@
 ---
 title: "工具推荐：stormy 命令行查询天气"
 description:
-slug: "工具推荐stormy-命令行查询天气"
+slug: stormy-weather
 date: 2025-11-17T14:28:42+08:00
 featuredImage: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251117_stormy-cover.webp
 tags:

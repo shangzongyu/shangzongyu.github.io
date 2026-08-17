@@ -1,4 +1,5 @@
 name: Deploy Blog
+description: 推送 master 后自动构建 Hugo 站点并部署到 gh-pages；定时任务检查主题更新
 
 on:
   push:

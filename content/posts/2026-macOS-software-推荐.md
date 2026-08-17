@@ -1,7 +1,7 @@
 ---
 title: "我的在使用的 macOS 的软件"
 description: 
-slug: "我的在使用的-macos-software"
+slug: my-macos-software
 date: 2026-01-25T14:43:29+08:00
 featuredImage: 
 tags:

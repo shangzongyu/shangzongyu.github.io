@@ -10,7 +10,7 @@ tags:
 weight: 1
 ---
 
-我的 Github Insight, 会持续更新。
+我的 Github Insight。
 
 <!--more-->
 

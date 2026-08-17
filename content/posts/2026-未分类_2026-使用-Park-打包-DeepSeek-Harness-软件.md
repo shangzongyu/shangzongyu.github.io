@@ -1,6 +1,6 @@
 ---
 title: "使用 Park 打包 DeepSeek Harness 软件"
-slug: "使用-park-打包-deepseek-harness-软件"
+slug: packaging-deepseek-harness-with-park
 date: 2026-08-16T22:44:08+08:00
 featuredImage: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2026/piclists_20260816_pake-deepseek-harness-cover.webp
 categories:

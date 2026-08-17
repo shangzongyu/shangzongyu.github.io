@@ -1,6 +1,6 @@
 ---
 title: "Codex 使用"
-slug: "codex-使用"
+slug: codex-usage
 date: 2026-01-01T00:00:00+08:00
 draft: true
 categories:

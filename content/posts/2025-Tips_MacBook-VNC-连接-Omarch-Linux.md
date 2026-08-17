@@ -1,7 +1,7 @@
 ---
 title: "Tips：MacBook VNC 连接 Omarchy Linux"
 description: 
-slug: "tipsmacbook-vnc-连接-omarchy-linux"
+slug: tips-macbook-vnc-omarchy-linux
 date: 2025-11-18T19:17:00+08:00
 featuredImage: 
 tags:

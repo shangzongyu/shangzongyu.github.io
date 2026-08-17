@@ -1,6 +1,6 @@
 ---
 title: "工具推荐：Markitdown"
-slug: "工具推荐markitdown"
+slug: markitdown
 date: 2026-01-01T00:00:00+08:00
 draft: true
 categories:

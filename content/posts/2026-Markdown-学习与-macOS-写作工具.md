@@ -1,7 +1,7 @@
 ---
 title: "Markdown 学习与 macOS 写作工具"
 description: 介绍学习 Markdown 的原因以及 macOS 平台下的 Markdown 写作工具
-slug: "markdown-学习与-macos-写作工具"
+slug: markdown-macos-writing-tools
 date: 2026-04-18T00:00:00+08:00
 draft: true
 tags:
