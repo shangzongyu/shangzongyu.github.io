@@ -10,7 +10,8 @@ tags:
   - "Nano Banana"
 weight: 1
 ---
-> 主要收集一些生成图片的 Prompt。
+
+主要收集一些使用 Genimi Nano Nanana 生成图片的 Prompt。
 
 <!--more-->
 

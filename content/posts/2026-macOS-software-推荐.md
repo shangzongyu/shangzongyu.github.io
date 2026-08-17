@@ -1,5 +1,5 @@
 ---
-title: "我的在使用的 MacOS Software"
+title: "我的在使用的 macOS 的软件"
 description: 
 slug: "我的在使用的-macos-software"
 date: 2026-01-25T14:43:29+08:00
@@ -9,7 +9,7 @@ tags:
   - 软件
   - 工具
 categories:
-  - 我使用的工具
+  - 工具
 draft: true
 weight: 1
 ---
@@ -31,8 +31,8 @@ weight: 1
 ### 壁纸
 
 - Wallspace：动态壁纸
-  - 地址：[https://wallspace.app/](https://wallspace.app/)
-
+  - 地址：<https://wallspace.app/>
+  
 ## 录屏幕 - Recordly
 
 Screnn Studio 的开源替代
