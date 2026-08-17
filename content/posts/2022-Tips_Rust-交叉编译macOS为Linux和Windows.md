@@ -1,5 +1,5 @@
 ---
-title: Rust 交叉编译 macOS 为 Linux 和 Windows
+title: "Tips: Rust 交叉编译 macOS 为 Linux 和 Windows"
 description: 
 slug: rust-macos-linux-windows
 date: 2022-05-15 06:23:27+0000

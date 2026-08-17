@@ -9,12 +9,31 @@ tags:
   - macOS
 categories:
   - Apple
-draft: true
 weight: 1
 ---
-> 主要收集 Apple 相关的信息。
+
+> 主要收集 Apple 相关的软件信息等。
 
 <!--more-->
+
+## 系统
+
+- 压缩解压缩
+  - Keka
+
+## 清理
+
+- Mole
+- PureMac
+
+### 壁纸
+
+- Wallspace：动态壁纸
+  - 地址：<https://wallspace.app/>
+  
+## 录屏幕 - Recordly
+
+Screnn Studio 的开源替代
 
 ##  宝藏网站，关于苹果产品的所有参数细
 

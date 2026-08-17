@@ -1,5 +1,5 @@
 ---
-title: Tips：macOS 中安装和配置 Qt 开发环境
+title: "Tips：macOS 中安装和配置 Qt 开发环境"
 description: 
 slug: macos-config-qt
 date: 2022-05-02 06:37:50+0000

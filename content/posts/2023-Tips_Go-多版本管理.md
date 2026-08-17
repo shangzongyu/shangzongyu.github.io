@@ -1,11 +1,12 @@
 ---
 title: 'Go 多版本管理'
 description: 
-slug: go
+slug: go-version-manager-tools
 date: 2023-07-28 09:55:20+0000
 featuredImage: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_2023-Go-多版本管理.webp
 tags:
   - go
+  - tools
 weight: 1
 ---
 

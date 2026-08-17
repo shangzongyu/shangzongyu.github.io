@@ -1,13 +1,13 @@
 ---
-title: 'Tips:查询 Linux 系统安装时间'
+title: "Tips：查询 Linux 系统安装时间"
 description: 'Linux 系统安装之后，`root` 路径的创建时间是不会变更，因此可以通过做个特性来查找。'
 slug: tips-linux
 date: 2024-01-14 03:20:54+0000
 categories:
   - Tips
 tags:
-    - linux
-    - tips
+  - linux
+  - tips
 weight: 1
 ---
 

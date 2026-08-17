@@ -1,7 +1,7 @@
 ---
-title: "2我使用的工具：fetch 工具"
+title: "我使用的工具：fetch 工具"
 description: 自己使用的各种 fetch 工具
-slug: fetch
+slug: fetch-tools
 date: 2025-07-10 07:56:48+0000
 featuredImage: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_我使用的工具_fetch-工具.webp
 tags:

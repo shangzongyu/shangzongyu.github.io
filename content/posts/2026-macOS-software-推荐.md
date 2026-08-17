@@ -17,22 +17,3 @@ weight: 1
 > 主要是我经常在 macOS 上使用的软件，持续更新...。
 
 <!--more-->
-
-## 系统
-
-- 压缩解压缩
-  - Keka
-
-## 清理
-
-- Mole
-- PureMac
-
-### 壁纸
-
-- Wallspace：动态壁纸
-  - 地址：<https://wallspace.app/>
-  
-## 录屏幕 - Recordly
-
-Screnn Studio 的开源替代

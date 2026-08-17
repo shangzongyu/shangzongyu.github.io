@@ -1,11 +1,12 @@
 ---
-title: 'macOS 分应用音量控制最佳实践：免费开源工具 Background Music 推荐'
+title: '工具推荐：macOS 分应用音量控制最佳实践：免费开源工具 Background Music'
 description: ''
 slug: macos-background-music
 date: 2025-10-06 04:31:13+0000
 tags:
   - tools
   - macos
+  - music
 weight: 1
 ---
 

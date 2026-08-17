@@ -1,5 +1,5 @@
 ---
-title: MySQL 和 PostgreSQL 的远程连接设置
+title: "Tips: MySQL 和 PostgreSQL 的远程连接设置"
 description: 
 slug: mysql-postgresql
 date: 2024-12-02 02:41:53+0000
