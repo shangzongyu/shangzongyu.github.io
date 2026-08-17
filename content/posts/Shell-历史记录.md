@@ -31,7 +31,7 @@ weight: 1
 
 ![cmd-wrapped-2024-02](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2024/upgit_20241221_cmd-wrapped-2024-02.png)
 
-## 025
+## 2025
 
 ![cmd-wrapped-2025-00](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251231_cmd-wrapped-00.webp)
 
