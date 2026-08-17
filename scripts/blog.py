@@ -291,7 +291,7 @@ def fix_frontmatter(filepath: Path, title: str, category: str, publish: bool) ->
     escaped_title = title.replace("\\", "\\\\").replace('"', '\\"')
     # 用 lambda 作为替换，避免 re.sub 对替换串中的反斜杠做二次转义（否则 \\ 会被还原成 \）
     text = re.sub(r"(?m)^title:.*$", lambda m: f'title: "{escaped_title}"', text, count=1)
-    text = re.sub(r"(?m)^categories:.*$", f'categories: ["{category}"]', text, count=1)
+    text = re.sub(r"(?m)^categories:.*(?:\n[ \t]+-.*)*", f'categories:\n  - {category}', text, count=1)
     if publish:
         text = re.sub(r"(?m)^draft: true$", "draft: false", text, count=1)
     filepath.write_text(text, encoding="utf-8")

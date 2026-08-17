@@ -46,19 +46,3 @@ cargo run -- 2023
 ![cmd-wrapped-01](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2024/upgit_20240106_cmd-wrapped-01.png)
 
 ![cmd-wrapped-02](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2024/upgit_20240106_cmd-wrapped-02.png)
-
-## 查看自己 2024 年命令使用
-
-![cmd-wrapped-2024](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2024/upgit_20241221_cmd-wrapped-2024.png)
-
-![cmd-wrapped-2024-01](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2024/upgit_20241221_cmd-wrapped-2024-01.png)
-
-![cmd-wrapped-2024-02](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2024/upgit_20241221_cmd-wrapped-2024-02.png)
-
-## 查看自己 2025 年命令使用
-
-![cmd-wrapped-2025-00](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251231_cmd-wrapped-00.webp)
-
-![cmd-wrapped-2025-01](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251231_cmd-wrapped-01.webp)
-
-![cmd-wrapped-2025-02](https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251231_cmd-wrapped-02.webp)
