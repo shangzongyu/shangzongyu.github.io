@@ -1,6 +1,6 @@
 ---
-title: "在 2015 款 MacBook Pro 上安装 CachyOS 作为桌面环境"
-description: 在旧 MacBook 上安装 Linux 桌面环境，配置常用工具和软件
+title: "在 2015 款 MacBook Pro 上安装 Omarchy 作为桌面环境"
+description: "在旧 MacBook 上安装 Linux 桌面环境，配置常用工具和软件"
 slug: cachyos-on-macbook-pro-2015
 date: 2026-04-18T20:00:00+08:00
 featuredImage: https://raw.githubusercontent.com/shangzongyu/blog-image/main/2025/piclist_20251114_作为自己的桌面环境_CachyOS.webp
@@ -13,23 +13,26 @@ categories:
 draft: true
 weight: 1
 ---
+
+
+
 <!--more-->
 
 ## 我的电脑信息
 
 - **电脑**：MacBook Pro 2015 款 (8GB RAM + 512GB SSD)
-- **操作系统**：CachyOS
+- **操作系统**：[Omarchy Linux](https://omarchy.org/),  [版本 4.0 (Quattro)](https://github.com/basecamp/omarchy/releases/tag/v4.0.0)。
 
 ## 安装经历
 
 尝试了多个 Linux 发行版，最终选择了 CachyOS：
 
-1. **Omarchy Linux** - 安装过程顺利，但重启后无法输入密码，放弃
+1. **Omarchy Linux** - 安装过程顺利，但重启后无法输入密码，没有找到原因,于是放弃
 2. **CachyOS** - 安装时无法连接 WiFi，虽然可解决但选择放弃
 3. **EndeavourOS** - 对硬件支持良好，支持离线安装，重启后，无法连接 WiFi
-4. PopOS - 硬件支持最好，还是无法连接 WiFi
+4. **PopOS** - 硬件支持最好，还是依旧无法连接 WiFi
 
-最终决定还是使用 CachyOS，因为 CachyOS 的性能最好，然后通过连接网线就有网络了，不用折腾 Wifi 了。
+> 最终决定还是使用 CachyOS，原因是 CachyOS 的性能最好，然后通过连接网线就有网络了，不用折腾 Wifi 了。
 
 ## 系统初始化
 

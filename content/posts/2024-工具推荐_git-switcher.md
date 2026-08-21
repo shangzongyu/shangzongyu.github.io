@@ -1,5 +1,5 @@
 ---
-title: "工具推荐s: git-switcher - 切换 git 配置"
+title: "工具推荐: git-switcher - 切换 git 配置"
 description: 切换不同的 Git 配置
 slug: tips-git-switcher-git
 date: 2024-01-06 09:54:08+0000
@@ -10,11 +10,11 @@ tags:
 weight: 1
 ---
 
+<!--more-->
+
 ## 为什么推荐这个工具？
 
 我在公司使用自己的电脑，因此使用 git 提交代码的时候经常使用自己的个人的 Git 信息提交代码，我在想要是有个可以切换 Git 配置的工具好了，现在这个工具找到了。
-
-<!--more-->
 
 [git-switcher](https://github.com/TheYkk/git-switcher) 这个工具很简单，就是帮助我们切换 git 的配置。
 

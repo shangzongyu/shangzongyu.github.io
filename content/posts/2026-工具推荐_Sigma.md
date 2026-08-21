@@ -12,4 +12,4 @@ weight: 1
 
 <!--more-->
 
- [https://github.com/aleksey-hoffman/sigma-file-manager]
+<https://github.com/aleksey-hoffman/sigma-file-manager>

@@ -1152,17 +1152,17 @@ Photorealistic edit using the input person photo as strict identity reference: k
 
   "subject_group": {
     "concept": "A group of friends looking down at the camera, framing the shot",
-    
+
     "PRIMARY_SUBJECTS (STRICT IDENTITY LOCK)": {
       "note": "These two must look exactly like the reference images",
-      
+
       "character_bottom_left": {
         "position": "Bottom Left (7 o'clock), closest to lens",
         "face": "Face Reference A, distinct features, big cheerful smile showing teeth",
         "outfit": "White fuzzy texture jacket or sweater, wearing large white plush earmuffs (cute winter vibe)",
         "action": "Leaning in close, hair hanging down slightly"
       },
-      
+
       "character_bottom_right": {
         "position": "Bottom Right (5 o'clock), closest to lens",
         "face": "Face Reference B, distinct features, soft sweet smile",

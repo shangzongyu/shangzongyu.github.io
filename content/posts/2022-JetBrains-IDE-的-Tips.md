@@ -10,7 +10,7 @@ tags:
 weight: 1
 ---
 
-> 介绍使用 JetBrains IDE 过程的的一些 Tips。
+介绍使用 JetBrains IDE 过程的的一些 Tips。
 
 <!--more-->
 

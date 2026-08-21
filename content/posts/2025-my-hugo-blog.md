@@ -13,10 +13,8 @@ weight: 1
 
 - Typora
 - MiaoYan
-- Obsidian
-- 
-<!--more-->
 
+<!--more-->
 
 ## 工具
 
