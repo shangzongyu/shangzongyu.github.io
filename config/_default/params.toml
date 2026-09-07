@@ -6,7 +6,7 @@
   # 日期格式
   dateFormat = "2006-01-02"
   # 网站标题, 用于 Open Graph 和 Twitter Cards
-  title = "我的世界"
+  title = "SZY Notes"
   # 网站描述, 用于 RSS, SEO, Open Graph 和 Twitter Cards
   description = "生命不熄，Coding 不止"
   # 网站图片, 用于 Open Graph 和 Twitter Cards
@@ -27,9 +27,9 @@
     # 页面头部导航栏标题配置
     [params.header.title]
       # LOGO 的 URL
-      logo = ""
+      logo = "/img/logo-szy-orbit.svg"
       # 标题名称
-      name = "我的世界"
+      name = "生命不熄，Coding 不止"
       # 在名称之前添加额外信息 (支持 HTML 格式)
       pre = ""
       # 在名称之后添加额外信息 (支持 HTML 格式)
@@ -69,9 +69,9 @@
 
   # 应用图标配置
   [params.app]
-    title = "我的世界"
+    title = "SZY Notes"
     noFavicon = false
-    svgFavicon = ""
+    svgFavicon = "/favicon-szy-orbit.svg?v=20260907-4"
     themeColor = "#ffffff"
     iconColor = "#5bbad5"
     tileColor = "#da532c"

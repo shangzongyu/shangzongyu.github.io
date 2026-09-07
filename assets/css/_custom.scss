@@ -1,0 +1,39 @@
+/*
+    You can add your own custom styles here.
+*/
+
+#header-desktop .header-wrapper {
+  .header-title {
+    flex: 0 0 auto;
+    overflow: visible;
+    text-overflow: clip;
+    font-size: 1rem;
+    min-width: 0;
+    margin-right: 1rem;
+  }
+
+  .header-title a {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    white-space: nowrap;
+  }
+
+  .logo {
+    width: 4.7rem;
+    height: auto;
+    min-height: 0;
+    padding-right: 0;
+  }
+
+  .menu {
+    flex: 0 0 auto;
+  }
+}
+
+body[theme="light"] {
+  #header-desktop .logo,
+  #header-mobile .logo {
+    filter: invert(1);
+  }
+}

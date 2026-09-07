@@ -21,13 +21,13 @@ weight: 1
 ## 我的电脑信息
 
 - **电脑**：MacBook Pro 2015 款 (8GB RAM + 512GB SSD)
-- **操作系统**：[Omarchy Linux](https://omarchy.org/),  [版本 4.0 (Quattro)](https://github.com/basecamp/omarchy/releases/tag/v4.0.0)。
+- **操作系统**：[Omarchy Linux](https://omarchy.org/)，[版本 4.0 (Quattro)](https://github.com/basecamp/omarchy/releases/tag/v4.0.0)。
 
 ## 安装经历
 
 尝试了多个 Linux 发行版，最终选择了 CachyOS：
 
-1. **Omarchy Linux** - 安装过程顺利，但重启后无法输入密码，没有找到原因,于是放弃
+1. **Omarchy Linux** - 安装过程顺利，但重启后无法输入密码，没有找到原因，于是放弃
 2. **CachyOS** - 安装时无法连接 WiFi，虽然可解决但选择放弃
 3. **EndeavourOS** - 对硬件支持良好，支持离线安装，重启后，无法连接 WiFi
 4. **PopOS** - 硬件支持最好，还是依旧无法连接 WiFi
