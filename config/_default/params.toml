@@ -10,7 +10,7 @@
   # 网站描述, 用于 RSS, SEO, Open Graph 和 Twitter Cards
   description = "生命不熄，Coding 不止"
   # 网站图片, 用于 Open Graph 和 Twitter Cards
-  images = ["/img/avatar.png"]
+  images = ["/img/szy-notes-social-cover.png"]
 
   # 作者配置
   [params.author]
