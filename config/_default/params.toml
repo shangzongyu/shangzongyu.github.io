@@ -309,7 +309,7 @@
       src = ""
       script = ""
     [params.analytics.cloudflare]
-      token = ""
+      token = "4e9b30e2e45b4723a047ade6693aca40"
     [params.analytics.splitbee]
       enable = false
       No_cookie = true
