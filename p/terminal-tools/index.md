@@ -1,0 +1,166 @@
+# 2025 我使用的工具：终端篇
+
+
+作为一名开发者，终端 (Terminal) 是我们日常工作中接触最频繁的工具之一。它不仅是与操作系统交互的窗口，更是一个可以高度定制、提升效率的利器。在过去的几年里，我尝试了市面上许多主流和新兴的终端应用，从追求性能的 GPU 加速终端，到集成 AI 的新时代终端，各有千秋。
+
+<!--more-->
+
+在这里，我想分享一下我个人使用过的终端工具，以及它们各自的特点和我的主观看法。
+
+## iTerm2
+
+![iTerm2](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_iterm2.png)
+
+- **官网**：<https://iterm2.com/>
+- **平台**：macOS
+- **特点**：免费、开源
+
+> **PS：**我接触 Mac 后使用时间最长的终端。整体体验很好，配置简单，功能中规中矩，是原生 Terminal 的绝佳替代品。
+
+## Ghostty
+
+![Ghostty](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_ghostty.png)
+
+- **官网**：<https://ghostty.org/>
+- **Github**：<https://github.com/ghostty-org/ghostty>
+- **平台**：macOS / Linux
+- **特点**：
+  - 开源
+  - GPU 加速
+
+> **PS：**它的定位是 iTerm2 的替代品。经过一段时间的使用，我感觉不错，但最大的缺点是配置相对有些麻烦。
+
+## Kitty
+
+![Kitty](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_kitty.png)
+
+- **官网**：<https://sw.kovidgoyal.net/kitty/>
+- **Github**：<https://github.com/kovidgoyal/kitty>
+- **平台**：macOS / Linux / Windows
+- **特点**：
+  - 开源
+  - GPU 加速
+  - 功能丰富
+
+> **PS：**速度确实很快，功能也很丰富，内置了对标签页 (Tabs) 和分屏 (Splits) 的良好支持。
+
+## WezTerm
+
+![WezTerm](wezterm-vday-screenshot.png)
+
+- **官网**：<https://wezterm.org/>
+- **Github**：<https://github.com/wezterm/wezterm>
+- **平台**：macOS / Linux / Windows
+- **特点**：
+  - 开源
+  - GPU 加速
+  - 功能丰富
+
+> **PS：**同样以速度快、功能丰富著称，内置标签页和分屏管理。它的一大特色是使用 Lua 进行配置，这提供了极高的灵活性。
+
+## Alacritty
+
+![Alacritty](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_alacritty_example.png)
+
+- **官网**：<https://alacritty.org/>
+- **Github**：<https://github.com/alacritty/alacritty>
+- **平台**：macOS / Linux / Windows
+- **特点**：
+  - 开源
+  - GPU 加速
+
+> **PS：**虽然在我的日常使用中，其速度与 Kitty 的体感差异不大，但 Alacritty 确实以性能为核心卖点。值得一提的是，早期版本还不支持标签页，但现在这个功能也已经加上了。
+
+## Tabby
+
+![Tabby](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_tabby.png)
+
+- **官网**：<https://tabby.sh/>
+- **Github**：<https://github.com/eugeny/tabby>
+- **平台**：macOS / Linux / Windows
+- **特点**：
+  - 开源
+  - 功能丰富
+  - 可自定义扩展
+  - 强大的 SSH 管理
+
+> **PS：**这款终端我个人使用得比较少。但它内置了强大的 SSH 管理功能，对于不想手动配置 SSH 连接的场景 (尤其是在 Windows 上) 来说非常方便。
+
+## Zoc Terminal
+
+![ZOC Terminal](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_zocscreen_small_us_osx.webp)
+
+- **官网**：<https://www.emtec.com/zoc/index.html>
+- **平台**：macOS / Windows
+
+> **PS：**这是一款付费软件，我用得不多。最初吸引我的是它对 `rz/sz` 的原生支持，无需额外配置，而 iTerm2/Ghostty 等终端则需要手动设置。不过，自从我发现了 `zssh` 这个工具后，Zoc 的使用频率就更低了。
+
+## Warp
+
+![Warp](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_warp.png)
+
+- **官网**：<https://www.warp.dev/>
+- **平台**：macOS / Linux / Windows
+- **特点**：可免费使用，提供 AI 功能订阅
+
+> **PS：**Warp 主打 AI 相关功能，号称 “下一代终端”。但就我个人而言，感觉它的功能有些过于复杂，整体设计风格也不太符合我的审美。
+
+## WaveTerm
+
+![WaveTerm](https://raw.githubusercontent.com/shangzongyu/blog-image/main/hashnode/2025/upgit_20250913_waveterm.png)
+
+- **官网**：<https://www.waveterm.dev/>
+- **Github**：<https://github.com/wavetermdev/waveterm>
+- **平台**：macOS / Linux / Windows
+
+> **PS：**这款终端我非常喜欢的一点是它可以在内部直接渲染网页。它同样集成了 AI 功能，但相比 Warp 感觉更为克制。
+
+## 功能特性横向对比
+
+为了更直观地展示这些终端的差异，我整理了以下对比表格。需要注意的是，某些特性 (如 “内置 SSH 客户端”) 的实现程度不同，这里只做概要性归纳。
+
+| 特性 / 终端 | iTerm2 | Ghostty | Kitty | WezTerm | Alacritty | Tabby | Zoc | Warp | WaveTerm |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **平台支持** | Mac | Mac/Linux | 全平台 | 全平台 | 全平台 | 全平台 | Mac/Win | 全平台 | 全平台 |
+| **性能核心** | CPU | GPU | GPU | GPU | GPU | CPU | CPU | GPU | CPU |
+| **配置方式** | GUI/Plist | Lua (计划) | 配置文件 | Lua | YAML/TOML | GUI/YAML | GUI | GUI/云同步 | GUI/YAML |
+| **标签页/分屏**| ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🟡¹ | ✅ |
+| **内置 SSH** | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ | ✅ | 🟡² | ❌ |
+| **AI 功能** | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ |
+| **授权/价格** | 开源免费 | 开源免费 | 开源免费 | 开源免费 | 开源免费 | 开源免费 | 付费 | 免费增值 | 开源免费 |
+
+**表格注释：**
+¹ **Warp**：使用独特的 “块” (Blocks) 和工作流来组织命令，而非传统的分屏。
+² **Warp**：通过其工作流功能简化了 SSH 连接，但不是一个传统的、带主机列表的 SSH 客户端。
+
+## 对比分析
+
+从表格中，我们可以将这些终端大致归为几个流派：
+
+1. **追求极致性能与定制 (Performance & Customization)：**
+   * **代表：**`Kitty`，`WezTerm`，`Alacritty`，`Ghostty`
+   * **共同点：**都采用 GPU 加速，响应速度和滚动流畅度是第一梯队。它们通常需要通过编写配置文件 (如 Lua，TOML) 来进行深度定制，为高级用户提供了极大的灵活性。
+   * **选择建议：**如果你热衷于用代码配置环境、追求零延迟的输入体验，并且不介意花时间打磨配置，这几款是你的不二之选。`WezTerm` 以其内置的 Multiplexer 功能脱颖而出，而 `Kitty` 则以强大的 `kitten` 脚本生态见长。
+
+2. **macOS 平台的全能选手 (The All-Rounder for macOS)：**
+  * **代表：**`iTerm2`
+  * **共同点：**虽然基于 CPU 渲染，但在现代 Mac 上的性能已足够优秀。它最大的优势是功能全面且拥有成熟的图形化配置界面，几乎所有功能都可以通过鼠标点击完成，开箱即用。
+  * **选择建议：**如果你是 Mac 用户，想要一款功能强大、稳定且无需折腾配置的终端，iTerm2 依然是黄金标准。
+
+3. **现代 AI 与革新体验 (Modern AI & Innovative Experience)：**
+  * **代表：**`Warp`，`WaveTerm`
+  * **共同点：**它们重新思考了终端的交互模式。`Warp` 的命令块和 AI 集成彻底改变了命令的输入输出体验。`WaveTerm` 则将 Markdown 和网页渲染能力引入终端，并提供了相对克制的 AI 辅助。
+  * **选择建议：**如果你对 AI 辅助编程充满兴趣，或者希望终端能提供超越传统文本界面的现代化、富文本体验，那么这两款产品值得一试。
+4. **强大的连接管理 (Powerful Connection Management)：**
+  * **代表：**`Tabby`，`Zoc`
+  * **共同点：**它们的核心优势在于对远程连接 (特别是 SSH 和串口) 的强大管理能力。提供了直观的主机管理器、密码保存、便捷的文件传输等功能。
+  * **选择建议：**如果你的日常工作需要频繁连接和管理大量远程服务器 (尤其是 Windows 用户)，`Tabby` 的现代化界面和 `Zoc` 的老牌稳定性与 `rz/sz` 支持会是极大的效率提升工具。
+
+## 总结
+
+体验了这么多款终端，让我对它们的特点有了更深的理解。许多终端都提供了强大的命令行工具，例如 Kitty 的 `kitten` 工具集和 WezTerm 自带的 `wezterm` 命令行工具，都隐藏着许多值得发掘的强大功能。
+
+接下来的计划是，每两个月深度体验一款终端，并分享一篇详细的使用感受。
+
+> PS：**功能对比**和**对比分析**都是 AI 帮助我生成的。
+
