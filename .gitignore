@@ -3,6 +3,7 @@ resources
 .hugo_build.lock
 /.DS_Store
 content/posts/.obsidian/
+/content/posts/**/*.assets/
 __pycache__/
 .venv/
 .ruff_cache/

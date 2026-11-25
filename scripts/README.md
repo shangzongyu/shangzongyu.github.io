@@ -28,6 +28,18 @@
 - 分类从现有文章 frontmatter 自动提取 (兼容单行与列表格式)，交互式选择或直接输入新分类
 - 创建后默认用 Typora 打开 (`--no-open` 关闭)
 
+### blog:image - 上传文章配图
+
+写草稿时，在文章旁建立同名的 `.assets` 目录。例如 `2026-工具推荐_T3-Code.md` 的图片放在 `2026-工具推荐_T3-Code.assets/`，正文用 `![配图](2026-工具推荐_T3-Code.assets/screenshot.png)` 引用，封面在 `featuredImage` 中填写同样的相对路径。Markdown 图片链接里的路径如果有空格，可用尖括号包住路径或将空格写成 `%20`。
+
+```bash
+mise run blog:image 2026-工具推荐_T3-Code.md
+```
+
+首次使用时，在本机的 `~/.config/upgit/config.toml` 的 `[uploaders.github]` 中设置 `pat`，也可以通过环境变量 `UPGIT_TOKEN` 提供。令牌需要 `shangzongyu/blog-image` 仓库的 `Contents` 读写权限。mise 会为此任务安装所需的 `upgit` 版本。
+
+命令会上传文章引用的 `.assets` 图片，再统一更新正文中的行内 Markdown 图片、HTML `<img src>` 和封面字段中的链接。上传失败时可重试，同一份图片内容会使用同一个远端路径。草稿状态和 Git 提交由作者控制，本地原图保留在 Git 忽略的配图目录中。
+
 ### fix - 修复 Markdown 格式 (zhlint --fix)
 
 ```bash

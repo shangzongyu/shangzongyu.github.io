@@ -27,6 +27,12 @@ run = 'zhlint "content/**/*.md" --fix'
 description = "运行博客工具，可追加 new、fix、update-date 等子命令"
 run = "uv run --script scripts/blog.py"
 
+[tasks."blog:image"]
+description = "上传文章引用的本地图片并替换链接"
+tools."github:pluveto/upgit" = "0.3.0"
+usage = 'arg "<article>" help="文章文件名或路径"'
+run = 'uv run --script scripts/blog.py image -- "${usage_article?}"'
+
 [tasks."hooks:install"]
 description = "安装 Git 提交前检查钩子"
 run = "pre-commit install"

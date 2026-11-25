@@ -10,6 +10,7 @@
   ./scripts/blog.py new "标题" [选项]         新建文章
   ./scripts/blog.py fix <目录>... [选项]      修复 Markdown 格式（zhlint --fix）
   ./scripts/blog.py update-date <文件>...     修改文章 date 字段
+  ./scripts/blog.py image <文件>             上传文章引用的本地图片并替换链接
 
 new 选项:
   -c, --category <分类>   直接指定分类（默认交互式选择）
@@ -32,6 +33,7 @@ import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
+from blog_images import upload_article_images
 from rich import box
 from rich.console import Console
 from rich.panel import Panel
@@ -367,6 +369,26 @@ def cmd_new(args: argparse.Namespace) -> None:
         open_in_editor(filepath)
 
 
+# ---------- image: 上传文章配图 ----------
+def cmd_image(args: argparse.Namespace) -> None:
+    try:
+        article = Path(args.article)
+        if article == Path(article.name):
+            article = CONTENT_DIR / article
+        article = article.resolve()
+        if not article.is_relative_to(CONTENT_DIR.resolve()) or article.suffix != ".md":
+            fail("请指定 content/posts/ 下的 Markdown 文章。")
+        if not article.is_file():
+            fail(f"找不到文章：{article}")
+        count = upload_article_images(article, CONTENT_DIR.resolve())
+    except (OSError, ValueError) as error:
+        fail(str(error))
+    if count:
+        ok(f"已处理 {count} 张本地图片并更新链接：{article.name}")
+    else:
+        info(f"没有需要上传的本地图片：{article.name}")
+
+
 # ---------- 主入口 ----------
 def main() -> None:
     parser = argparse.ArgumentParser(
@@ -397,6 +419,10 @@ def main() -> None:
     p_date = sub.add_parser("update-date", aliases=["date"], help="修改文章 date 字段")
     p_date.add_argument("files", nargs="+", metavar="文件", help="文件路径（可多个，第二个参数若是日期则视为指定日期）")
     p_date.set_defaults(func=cmd_update_date)
+
+    p_image = sub.add_parser("image", help="上传文章引用的本地图片并替换链接")
+    p_image.add_argument("article", metavar="文件", help="文章文件名或路径")
+    p_image.set_defaults(func=cmd_image)
 
     args = parser.parse_args()
     if not args.command:
