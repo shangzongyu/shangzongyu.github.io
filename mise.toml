@@ -1,0 +1,32 @@
+[tools]
+hugo-extended = "0.166.0"
+go = "1.26.7"
+node = "24.15.0"
+python = "3.12.13"
+uv = "0.10.12"
+"npm:zhlint" = "0.8.2"
+"pypi:pre-commit" = "4.3.0"
+
+[tasks.dev]
+description = "启动本地预览（含草稿、过期和未来文章）"
+run = "hugo server -D -E -F"
+
+[tasks.build]
+description = "构建静态网站"
+run = "hugo --minify --gc"
+
+[tasks.lint]
+description = "检查文章的中文 Markdown 格式"
+run = 'zhlint "content/**/*.md"'
+
+[tasks.fix]
+description = "修复文章的中文 Markdown 格式"
+run = 'zhlint "content/**/*.md" --fix'
+
+[tasks.blog]
+description = "运行博客工具，可追加 new、fix、update-date 等子命令"
+run = "uv run --script scripts/blog.py"
+
+[tasks."hooks:install"]
+description = "安装 Git 提交前检查钩子"
+run = "pre-commit install"

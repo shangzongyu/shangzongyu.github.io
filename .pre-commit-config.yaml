@@ -4,7 +4,7 @@ repos:
       - id: zhlint-md-fix
         name: zhlint fix markdown
         description: 使用 zhlint 自动修复中文 Markdown 格式（全角/半角标点、中英文间距）
-        entry: zhlint --fix
+        entry: mise exec -- zhlint --fix
         language: system
         types: [markdown]
         always_run: true

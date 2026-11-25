@@ -28,11 +28,10 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+      - name: 安装构建工具
+        uses: jdx/mise-action@v4
         with:
-          hugo-version: "latest"
-          extended: true
+          install_args: "hugo-extended go"
 
       - name: Update theme
         run: hugo mod get -u github.com/dillonzq/LoveIt
@@ -67,19 +66,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugo-resources-
 
-      - name: Setup Go
-        uses: actions/setup-go@v6
+      - name: 安装构建工具
+        uses: jdx/mise-action@v4
         with:
-          go-version: "^1.20.0"
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: "latest"
-          extended: true
+          install_args: "hugo-extended go"
 
       - name: Build
-        run: hugo --minify --gc
+        run: mise run --skip-tools build
 
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'

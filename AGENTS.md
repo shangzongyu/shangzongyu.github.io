@@ -5,6 +5,7 @@
 ## 项目概述
 
 - **类型**: Hugo 个人博客
+- **工具管理**: 使用 mise，版本和任务统一维护在 `mise.toml`；运行工具时使用 `mise run` 或 `mise exec --`
 - **主题**: LoveIt v0.3.1（通过 Go Modules 引入，见 `go.mod`；项目 `layouts/` 下有兼容性覆盖模板）
 - **内容语言**: 中文（zh-cn）
 - **主分支**: `master`（注意不是 main）
@@ -101,14 +102,19 @@ weight: 1
 ### 本地开发
 
 ```bash
-# 启动本地服务器（含草稿，start.sh 等价于此命令）
-hugo server -D -E -F
+# 安装项目工具和提交检查钩子
+mise trust
+mise install
+mise run hooks:install
 
-# 构建静态网站
-hugo
+# 启动本地服务器（含草稿、过期和未来文章）
+mise run dev
 
-# 仅本地构建预览，不负责部署
-./start.sh
+# 构建静态网站（仅在用户明确要求时运行）
+mise run build
+
+# 新建文章
+mise run blog new "文章标题" -c 工具推荐
 ```
 
 ### 提交检查
@@ -117,10 +123,10 @@ hugo
 
 ```bash
 # 检查所有 Markdown 文件
-zhlint "content/**/*.md"
+mise run lint
 
 # 发现问题时自动修复
-zhlint "content/**/*.md" --fix
+mise run fix
 ```
 
 zhlint 会检查全角/半角标点、中英文之间空格等规范，发现问题先修复再提交。另外，pre-commit 钩子也会在提交时自动运行 zhlint 作为兜底。
