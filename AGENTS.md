@@ -114,7 +114,7 @@ mise run dev
 mise run build
 
 # 新建文章
-mise run blog new "文章标题" -c 工具推荐
+mise run blog:new "文章标题" -c 工具推荐
 ```
 
 ### 提交检查

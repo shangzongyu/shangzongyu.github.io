@@ -24,8 +24,29 @@ description = "修复文章的中文 Markdown 格式"
 run = 'zhlint "content/**/*.md" --fix'
 
 [tasks.blog]
-description = "运行博客工具，可追加 new、fix、update-date 等子命令"
+hide = true
+raw_args = true
 run = "uv run --script scripts/blog.py"
+
+[tasks."blog:serve"]
+description = "启动 Hugo 本地预览，可指定端口"
+raw_args = true
+run = "uv run --script scripts/blog.py serve"
+
+[tasks."blog:new"]
+description = "新建博客文章"
+raw_args = true
+run = "uv run --script scripts/blog.py new"
+
+[tasks."blog:fix"]
+description = "修复指定目录内文章的中文 Markdown 格式"
+raw_args = true
+run = "uv run --script scripts/blog.py fix"
+
+[tasks."blog:update-date"]
+description = "修改文章的 date 字段"
+raw_args = true
+run = "uv run --script scripts/blog.py update-date"
 
 [tasks."blog:image"]
 description = "上传文章引用的本地图片并替换链接"

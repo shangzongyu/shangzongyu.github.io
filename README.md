@@ -24,7 +24,7 @@ mise run dev
 mise run dev --port 8080
 
 # 新建文章
-mise run blog new "文章标题" -c 工具推荐
+mise run blog:new "文章标题" -c 工具推荐
 
 # 检查或修复文章格式
 mise run lint
