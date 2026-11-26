@@ -1,0 +1,24 @@
+{{- $resource := 0 -}}
+{{- $url := urls.Parse .Path -}}
+{{- if not $url.Host | and $url.Path | and (strings.HasSuffix $url.Path "/" | not) -}}
+    {{- if .Resources -}}
+        {{- with .Resources.GetMatch $url.Path -}}
+            {{- $resource = . -}}
+        {{- end -}}
+    {{- end -}}
+    {{- if not $resource -}}
+        {{- with resources.Get $url.Path -}}
+            {{- $resource = . -}}
+        {{- end -}}
+    {{- end -}}
+    {{- if and (not $resource) (not $url.Scheme) (strings.HasSuffix (index (split $url.Path "/") 0) ".assets") -}}
+        {{- /* 独立文章旁的 .assets 图片是 posts 栏目的资源。 */ -}}
+        {{- with site.GetPage "/posts" -}}
+            {{- with .Resources.Get $url.Path -}}
+                {{- $resource = . -}}
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
+{{- return $resource -}}
