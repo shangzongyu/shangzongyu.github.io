@@ -37,3 +37,8 @@ body[theme="light"] {
     filter: invert(1);
   }
 }
+
+.page.single .featured-image img {
+  width: 100%;
+  height: auto;
+}
