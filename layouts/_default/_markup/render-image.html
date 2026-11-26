@@ -1,0 +1,22 @@
+{{- $src := .Destination -}}
+{{- with .Page.File -}}
+    {{- $url := urls.Parse $src -}}
+    {{- if and (not $url.Scheme) (not $url.Host) (strings.HasPrefix $url.Path (printf "%s.assets/" .BaseFileName)) -}}
+        {{- /* 独立文章旁的配图属于父级栏目资源，文章的 permalink 不影响配图地址。 */ -}}
+        {{- with $.Page.Parent -}}
+            {{- with .Resources.Get $url.Path -}}
+                {{- $src = .RelPermalink -}}
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+{{- if .Title -}}
+    <figure>
+        {{- dict "Src" $src "Title" .Text "Caption" .Title "Linked" true "Resources" .Page.Resources | partial "plugin/img.html" -}}
+        <figcaption class="image-caption">
+            {{- .Title | safeHTML -}}
+        </figcaption>
+    </figure>
+{{- else -}}
+    {{- dict "Src" $src "Title" .Text "Resources" .Page.Resources | partial "plugin/img.html" -}}
+{{- end -}}
