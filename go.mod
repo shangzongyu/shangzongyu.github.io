@@ -2,4 +2,4 @@ module github.com/shangzongyu/shangzongyu.github.io
 
 go 1.20
 
-require github.com/dillonzq/LoveIt v0.4.0 // indirect
+require github.com/dillonzq/LoveIt v0.4.1 // indirect
